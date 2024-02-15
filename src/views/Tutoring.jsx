@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 
-const Apply = () => {
+const Tutoring = () => {
 
   useEffect(() => {
     window.scrollTo(0,0),
-    changeTitle("Apply - ")
+    changeTitle("Tutoring - ")
   },[])
 
   return (
@@ -13,7 +13,7 @@ const Apply = () => {
       <div className="wrapper">
         <div className="large_box">
           <h2>
-            APPLICATION PAGE
+            TUTORING PAGE
           </h2>
         </div>
       </div>
@@ -21,4 +21,4 @@ const Apply = () => {
   );
 };
 
-export default Apply;
+export default Tutoring;

@@ -2,10 +2,21 @@ import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 
 const Courses = () => {
-  useEffect(() => changeTitle("Courses - "), []);
+
+  useEffect(() => {
+    window.scrollTo(0,0),
+    changeTitle("Courses - ")
+  },[])
+
   return (
     <main>
-      <h1>Our Course Offerings</h1>
+      <div className="wrapper">
+        <div className="large_box">
+          <h2>
+            COURSES PAGE
+          </h2>
+        </div>
+      </div>
     </main>
   );
 };

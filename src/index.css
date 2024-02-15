@@ -71,15 +71,15 @@ body header h2 {
   margin: 0.5em;
 } */
 
-body main {
-  /* display: flex;
+/* body main {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: #b59e4b groove 3px; */
-  /* width: 100%;
-  min-height: 500px; */
-}
+  border: #b59e4b groove 3px;
+  width: 100%;
+  min-height: 500px;
+} */
 
 /* body main .row {
   display: flex;

@@ -11,28 +11,27 @@ const NavBar = () => {
       </div>
       <ul className="navbar_menu">
         <li>
-        <a href="#">Services</a>
-        <ul className="drop menu">
-          <li><a href="#">Home Page</a></li>
-          <li><a href="#">Web Development</a></li>
-          <li><a href="#">Tutoring</a></li>
-          <li><a href="#">Something Here!!</a></li>
+        <Link to="#">Services</Link>
+        <ul className="drop menu2">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/courses">Web Development</Link></li>
+          <li><Link to="tutoring">Tutoring</Link></li>
         </ul>
         </li>
-        <li><a href="#">News</a>
+        <li><Link to="#">Enrollment</Link>
         <ul className="drop menu">
-          <li><a href="#">Next Cohort</a></li>
-          <li><a href="#">Hot Off The Press</a></li>
-          <li><a href="#">Something Here!!</a></li>
-          <li><a href="#">Something Here Too!</a></li>
+          <li><Link to="nexthive">Next Cohort</Link></li>
+          <li><Link to="/apply">Apply</Link></li>
+          <li><Link to="/pricingplans">Pricing</Link></li>
+          <li><Link to="/tuitionassistance">Tuition Assistance</Link></li>
         </ul>
         </li>
-        <li><a href="#">About Us</a>
+        <li><Link to="#">About Us</Link>
         <ul className="drop menu">
-          <li><a href="#">Meet Our Hive</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Our Discord</a></li>
+          <li><Link to="/ourhive">Meet Our Hive</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
+          <li><Link to="/careers">Careers</Link></li>
+          <li><Link to="/discord">Our Discord</Link></li>
         </ul>
         </li>
       </ul>
@@ -41,4 +40,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
