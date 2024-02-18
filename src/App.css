@@ -837,3 +837,79 @@ color: var(--green);
     border-radius: 10px;
     box-shadow: 3px 3px 10px var(--green_shadow);
 }
+
+
+
+
+
+
+
+
+
+/*                         */
+/*        STAFF BIOS       */
+/*                         */
+
+.background {
+    width: 100vw;
+}
+
+.cardContent {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.employeeCard {
+    min-width: calc(33% - 2rem);
+    height: 400px;
+    min-height: 400px;
+    margin: 1rem;
+    position: relative;
+    filter: drop-shadow(8px 8px 8px black);
+}
+@media screen and (max-width: 800px) {
+    .employeeCard {
+    width: calc(50% - 2rem);
+    }
+}
+@media screen and (max-width: 500px) {
+    .employeeCard {
+    width: 100%;
+    }
+}
+
+.cardFront,
+.cardBack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: ease-in-out 600ms;
+    padding: 5px;
+    overflow: hidden;
+    font-family: Poppins, sans-serif;
+}
+
+.employeeCard:hover .cardFront {
+    transform: rotateY(180deg);
+}
+
+.cardBack {
+    transform: rotateY(-180deg);
+}
+
+.employeeCard:hover .cardBack {
+    transform: rotateY(0deg);
+}
+
+/*                         */
+/*    END STAFF BIOS       */
+/*                         */
