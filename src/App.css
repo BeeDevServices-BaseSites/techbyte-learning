@@ -684,7 +684,6 @@ main h1{
     width: 47%;
     min-width: 370px;
     height: auto;
-    /* min-height: 100px; */
     margin: 15px auto;
     display: flex;
     align-items: center;
@@ -725,7 +724,54 @@ main h1{
     width: 100px;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 1250px) {
+    #css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
+        height: 70px;
+        padding: 2px;
+    }
+    #css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
+        width: 60px;
+    }
+    
+    #postgres, #python, #django {
+        width: 70px;
+    }
+    
+    #flask {
+        width: 90px;
+    }
+    
+    #expressjs, #nodejs {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .course_icons {
+        width: 90%;
+    }
+    #css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
+        height: 80px;
+        padding: 5px;
+    }
+    #css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
+        width: 70px;
+    }
+    
+    #postgres, #python, #django {
+        width: 80px;
+    }
+    
+    #flask {
+        width: 100px;
+    }
+    
+    #expressjs, #nodejs {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 650px) {
     #css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
         height: 70px;
         padding: 2px;
