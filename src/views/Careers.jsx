@@ -19,7 +19,7 @@ const Careers = () => {
             We are actively seeking highly skilled and talented developers with expertise in various technologies.
           </h3>
           <h3>
-            Send inquiries to <a id="career_link"href="mailto:careers@beedev-services.com?subject=Career%20Inquiry%20">careers@beedev-services.com</a> 
+            Send inquiries to <a id="career_link" href="mailto:careers@beedev-services.com?subject=Career%20Inquiry%20">careers@beedev-services.com</a> 
           </h3>
         </div>
         {/* Positions Container */}

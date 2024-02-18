@@ -15,19 +15,19 @@ const Pricing = () => {
   return (
     <main>
       <div className="wrapper">
-
+        {/* TITLE */}
         <div className="large_box">
           <h2>
             Development Pricing
           </h2>
         </div>
+        {/* END TITLE */}
 
 
-
-
+        {/* SECTION 1 */}
         <div className="pricing_wrapper">
-
           <div className="pricing_container">
+            {/* CARD 1 */}
             <div className="pricing_card">
               <div className="pricing_ribbon">
                 <div className="pricing_ribbon-text">Full Stack Web Development</div>
@@ -40,7 +40,8 @@ const Pricing = () => {
                 <a href="#">$8000.00</a>
               </div>
             </div>
-
+            {/* END CARD 1 */}
+            {/* CARD 2 */}
             <div className="pricing_card">
               <div className="pricing_ribbon">
                 <div className="pricing_ribbon-text">2D Gaming Development</div>
@@ -53,28 +54,21 @@ const Pricing = () => {
                 <a href="#">$8000.00</a>
               </div>
             </div>
+            {/* END CARD 2 */}
           </div>
-
         </div>
-
-
-
-
-
-
+        {/* END SECTION 1 */}
+        {/* SECTION 2 TITLE */}
         <div className="large_box">
           <h2>
             Tutoring Pricing (Bundle And Save!!)
           </h2>
         </div>
-
-
-
-
+        {/* END SECTION 2 TITLE */}
+        {/* SECTION 2 */}
         <div className="pricing_wrapper">
-
           <div className="pricing_container">
-            
+            {/* CARD 1 */}
             <div className="pricing_card">
               <div className="pricing_ribbon">
                 <div className="pricing_ribbon-text">1-Hour Session</div>
@@ -85,7 +79,8 @@ const Pricing = () => {
                 <a href="#">$45.00</a>
               </div>
             </div>
-            
+            {/* END CARD 1 */}
+            {/* CARD 2 */}
             <div className="pricing_card">
               <div className="pricing_ribbon">
                 <div className="pricing_ribbon-text">3x 1-Hour Sessions</div>
@@ -96,7 +91,8 @@ const Pricing = () => {
                 <a href="#">$120.00</a>
               </div>
             </div>
-            
+            {/* END CARD 2 */}
+            {/* CARD 3 */}
             <div className="pricing_card">
               <div className="pricing_ribbon">
                 <div className="pricing_ribbon-text">5x 1-Hour Sessions</div>
@@ -107,7 +103,8 @@ const Pricing = () => {
                 <a href="#">$175.00</a>
               </div>
             </div>
-            
+            {/* END CARD 3 */}
+            {/* CARD 4 */}
             <div className="pricing_card">
               <div className="pricing_ribbon">
                 <div className="pricing_ribbon-text">10x 1-Hour Sessions</div>
@@ -118,26 +115,10 @@ const Pricing = () => {
                 <a href="#">$300.00</a>
               </div>
             </div>
-
+            {/* END CARD 4 */}
           </div>
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        {/* END SECTION 2 */}
       </div>
     </main>
   );

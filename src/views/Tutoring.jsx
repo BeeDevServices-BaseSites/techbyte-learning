@@ -8,32 +8,32 @@ const Tutoring = () => {
 
     {
       "image": "https://www.giantbomb.com/a/uploads/square_medium/4/48992/1089078-bart.png",
-      "name": "Instructor 1",
+      "name": "Bart Simpson",
       "technologies": ["Java", "Python"],
     },
     {
       "image": "https://i.pinimg.com/originals/52/8b/8a/528b8a72f82761343c0824ab2ff47d2e.png",
-      "name": "Instructor 2",
+      "name": "Homer Simpson",
       "technologies": ["Java", "Python","JavaScript"],
     },
     {
       "image": "https://i.pinimg.com/originals/99/74/6f/99746f4a12ba6546c8d58cff456059be.png",
-      "name": "Instructor 3",
+      "name": "Bender Bot",
       "technologies": ["JavaScript", "Python"],
     },
     {
       "image": "https://www.giantbomb.com/a/uploads/square_small/2/21673/1291758-krusty_the_clown.png",
-      "name": "Instructor 4",
+      "name": "Krusty The Clown",
       "technologies": ["Python", "JavaScript", "C#", "Ruby"],
     },
     {
       "image": "https://upload.wikimedia.org/wikipedia/en/e/ec/Lisa_Simpson.png",
-      "name": "Instructor 5",
+      "name": "Lisa Simpson",
       "technologies": ["Python", "JavaScript", "C#"],
     },
     {
       "image": "https://pngimg.com/d/minions_PNG34.png",
-      "name": "Instructor 6",
+      "name": "Bob the Minion",
       "technologies": ["Python", "JavaScript", "C#", "Ruby"],
     }
   ]

@@ -7,7 +7,6 @@ import Careers from "./views/Careers";
 import Contact from "./views/Contact";
 import Cookies from "./components/Cookies";
 import Courses from "./views/Courses";
-import Discord from "./views/Discord";
 import Footer from "./components/Footer";
 import Index from "./views/Index";
 import NavBar from "./components/Navbar";
@@ -27,7 +26,6 @@ const App = () => {
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/courses" element={<Courses />} />
-        <Route path="/discord" element={<Discord />} />
         <Route path="/nexthive" element={<NextHive />} />
         <Route path="/ourhive" element={<OurHive />} />
         <Route path="/pricingplans" element={<Pricing />} />
