@@ -43,32 +43,20 @@ const NextHive = () => {
           </div>
         </div>
         {/* END SECTION 2 */}
+
         {/* SECTION 3 */}
         <div className="split_box">
           <div className="box_left_text">
-            <h2>Financial Aid Programs</h2>
-            <p>
-              <span>W</span>e understand that finances can be a barrier for some aspiring learners. That's why we have partnered with various lenders to provide flexible financing options. We want to ensure that nothing stands in the way of your dreams of becoming a web developer. At TechByte Learning, we are committed to your success, both academically and financially.
-            </p>
-          </div>
-          <div className="box_right_img">
-            <img src="https://miro.medium.com/v2/resize:fit:798/1*5qJ2qOkh9TrxBr3lHgJWeQ.jpeg" alt="" />
-          </div>
-        </div>
-        {/* END SECTION 3 */}
-        {/* SECTION 4 */}
-        <div className="split_box flip">
-          <Link className="signup_link" to="/apply">
-            <img src="https://seorealestateexperts.com/wp-content/uploads/2015/04/Sign-up.png" alt="Sign Up Here!" />
-          </Link>
-          <div className="box_right_text">
             <h2>Apply Today!</h2>
             <p>
               <span>D</span>on't miss out on this incredible opportunity to join our hive and embark on an exciting journey into the world of web development. Secure your spot today and unlock a world of endless possibilities. Whether you're passionate about creating stunning user interfaces or diving into data-driven backend development, our web development program will be your gateway to a thriving career in the tech industry. Join us at TechByte Learning and let's build a brighter future together!
             </p>
           </div>
+          <Link className="signup_link" to="/apply">
+            <img src="https://seorealestateexperts.com/wp-content/uploads/2015/04/Sign-up.png" alt="Sign Up Here!" />
+          </Link>
         </div>
-        {/* END SECTION 4 */}
+        {/* END SECTION 3 */}
         </div>
     </main>
   );
