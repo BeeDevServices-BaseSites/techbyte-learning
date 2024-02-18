@@ -132,13 +132,13 @@ const Courses = () => {
         {/* END SECTION 5 */}
         {/* SECTION 6 */}
         <div className="split_box flip">
-          <div className="box_left_img">
-            <img id="intern" src={internship} alt="intern" />
-          </div>
-          <div className="box_right_text">
+          <div className="box_left_text">
             <p>
               <span>A</span>dditionally, we offer a two-month internship program, where students have the opportunity to work alongside professionals in the industry. This internship program not only offers valuable insights into the world of web and software development but also allows students to fill out their portfolios with impressive real-world projects. Join TechByte Learning and gain the practical experience and confidence you need to excel in your career.
             </p>
+          </div>
+          <div className="box_right_img">
+            <img id="intern" src={internship} alt="intern" />
           </div>
         </div>
         {/* END SECTION 6 */}
