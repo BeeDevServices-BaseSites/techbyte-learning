@@ -38,7 +38,7 @@ const NextHive = () => {
           <div className="box_right_text">
             <h2>What Sets TechByte Apart?</h2>
             <p>
-              <span>O</span>ur dedication to affordability. We understand that investing in education can be a significant financial commitment. That's why we offer our web development program at prices starting at just $7500. We believe that high-quality education should be accessible to all, and we're proud to offer competitive pricing without compromising the curriculum's integrity.
+              <span>O</span>ur dedication to affordability. We understand that investing in education can be a significant financial commitment. That's why we offer our web development program at prices starting at just $8000. We believe that high-quality education should be accessible to all, and we're proud to offer competitive pricing without compromising the curriculum's integrity.
             </p>
           </div>
         </div>
