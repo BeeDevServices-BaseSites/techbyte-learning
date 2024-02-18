@@ -1314,59 +1314,81 @@ footer a {
     min-width: 290px;
     border: 3px solid var(--green);
     border-radius: 10px;
-    box-shadow: 5px 5px 10px var(--green_shadow);
+    box-shadow: 3px 3px 10px var(--green_shadow);
 }
 
-/*                             */
-/*     BUTTON COMPONENT        */
-/*                             */
 
-.button_link {
+
+
+
+
+
+
+
+/*                         */
+/*        STAFF BIOS       */
+/*                         */
+
+.background {
+    width: 100vw;
+}
+
+.cardContent {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.employeeCard {
+    min-width: calc(33% - 2rem);
+    height: 400px;
+    min-height: 400px;
+    margin: 1rem;
     position: relative;
-    font-size: 1.25rem;
-    min-width: 250px;
-    margin: 10px auto;
-    padding: 5px 8px;
-    background-color: var(--dark_yellow);
-    border: 2px solid var(--green);
-    border-radius: 10px;
-    color: var(--green);
-    cursor: pointer;
-    text-shadow: .5px .5px .5px var(--green_shadow);
-    box-shadow: 5px 5px 10px var(--green_shadow);
-    transition: all 300ms ease;
-    
-    &:hover {
-        background-color: var(--green_shadow);
-        border: 2px solid var(--dark_yellow);
-        color: var(--dark_yellow);
-        text-shadow: .5px .5px .5px var(--green);
-        box-shadow: 5px 5px 15px var(--green_shadow);
-        transform: scale(1.1);
+    filter: drop-shadow(8px 8px 8px black);
+}
+@media screen and (max-width: 800px) {
+    .employeeCard {
+    width: calc(50% - 2rem);
     }
-    
-    &:active {
-        top: 3px
+}
+@media screen and (max-width: 500px) {
+    .employeeCard {
+    width: 100%;
     }
 }
 
-/*                             */
-/*     BUTTON COMPONENT        */
-/*                             */
-
-
-/*                             */
-/*        CHAT COMPONENT       */
-/*                             */
-
-.admissions_chat {
-    height: 600px;
-    width: 50dvw;
-    min-width: 300px;
-    border: 3px solid var(--green);
-    box-shadow: 5px 5px 10px var(--green_shadow);
+.cardFront,
+.cardBack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: ease-in-out 600ms;
+    padding: 5px;
+    overflow: hidden;
+    font-family: Poppins, sans-serif;
 }
 
-/*                             */
-/*     END CHAT COMPONENT      */
-/*                             */
+.employeeCard:hover .cardFront {
+    transform: rotateY(180deg);
+}
+
+.cardBack {
+    transform: rotateY(-180deg);
+}
+
+.employeeCard:hover .cardBack {
+    transform: rotateY(0deg);
+}
+
+/*                         */
+/*    END STAFF BIOS       */
+/*                         */
