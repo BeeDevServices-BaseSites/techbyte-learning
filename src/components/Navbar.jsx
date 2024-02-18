@@ -31,7 +31,7 @@ const NavBar = () => {
           <li><Link to="/ourhive">Meet Our Hive</Link></li>
           <li><Link to="/contact">Contact Us</Link></li>
           <li><Link to="/careers">Careers</Link></li>
-          <li><Link to="/discord">Our Discord</Link></li>
+          <li><Link to="/socialmedia">Social Media</Link></li>
         </ul>
         </li>
       </ul>
