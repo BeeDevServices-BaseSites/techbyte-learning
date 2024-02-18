@@ -1168,11 +1168,30 @@ footer a {
     position: fixed;
     top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
     z-index: -5;
     width: 100%;
     max-width: 1065px;
-    opacity: .6;
+    opacity: .7;
+    animation-name: beeFade;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    filter: drop-shadow(30px 10px 4px rgba(128, 128, 128, 0.7));
+}
+
+@keyframes beeFade {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    25% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    75% {
+        transform: translate(-50%, -50%) scale(0);
+    }
 }
 
 .honeycomb_image {
@@ -1181,6 +1200,8 @@ footer a {
 	display: block;
     background-color: var(--black);
 }
+
+
 
 .honeycomb_container {
 	padding: 1rem 0 2.4rem;
