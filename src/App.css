@@ -92,8 +92,15 @@ main h1{
     align-items: center;
     font-size: 34px;
     text-shadow: 1px 1px 1px var(--green_shadow);
-    color: var(--green);
+    /* color: var(--green);  /** no longer effects any of the font colors in the nav bar */
     transition: 0.25s;
+}
+
+/** Added so the link to the home page has no decorations */
+.page_title a {
+    text-decoration: none;
+    color: var(--green);
+    
 }
 
 .page_title img {
