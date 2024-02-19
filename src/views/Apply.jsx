@@ -13,7 +13,7 @@ const Apply = () => {
       <div className="wrapper">
         <div className="large_box">
           <h2>
-            APPLY PAGE
+            APPLICATION PAGE
           </h2>
         </div>
       </div>

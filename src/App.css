@@ -7,6 +7,11 @@
     --light_yellow: #F6E8B7;
     --dark_yellow: rgb(239, 215, 128);
     --header_gradient: linear-gradient(0deg, rgba(239, 215, 128, 1) 42%, rgba(246, 232, 182, 1) 79%);
+    --black: #0D1F2D;
+}
+
+#root {
+    overflow-x: hidden;
 }
 
 HTML, body, * {
@@ -55,8 +60,10 @@ main h1{
     .wrapper {
         margin: 80px auto 20px;
     }
+    main {
+        min-height: 82dvh;
+    }
 }
-
 
 .link {
     position: relative;
@@ -66,15 +73,14 @@ main h1{
     margin: 10px auto;
     color: var(--green);
     text-shadow: 1px 1px 1px var(--green_shadow);
+    transition: all 300ms ease;
 }
 
 .link:hover {
     color: var(--green_shadow);
     text-shadow: 1px 1px 1px var(--green);
     transform: scale(1.3, 1.2) translateY(-1px);
-    transition: 0.1s ;
 }
-
 
 
 /*                         */
@@ -104,8 +110,15 @@ main h1{
     align-items: center;
     font-size: 34px;
     text-shadow: 1px 1px 1px var(--green_shadow);
-    color: var(--green);
+    /* color: var(--green);  /** no longer effects any of the font colors in the nav bar */
     transition: 0.25s;
+}
+
+/** Added so the link to the home page has no decorations */
+.page_title a {
+    text-decoration: none;
+    color: var(--green);
+    
 }
 
 .page_title img {
@@ -144,12 +157,17 @@ main h1{
     text-transform: capitalize;
     font-family: monospace;
     display: block;
-    padding: 10px 15px;
+    padding: 10px 2px;
     font-size: 16px;
+    width: 124px;
     transition: background-color 0.2s ease-in-out;
     font-family: "Raleway", sans-serif;
     pointer-events: none;
     z-index: 10;
+}
+
+.drop {
+    display: none;
 }
 
 .drop li {
@@ -170,6 +188,10 @@ main h1{
 
 .drop li a:hover {
     background: var(--green_shadow);
+}
+
+.navbar_menu:hover .drop {
+    display: block;
 }
 
 /* Drop down for 4 menu items */
@@ -197,18 +219,25 @@ main h1{
     border: 2px solid var(--green);
 }
 
-/* Drop down for 2 menu items */
+/* Drop down for 3 menu items */
 .navbar_menu li:hover .menu2 li:first-of-type {
     animation: menu_inner 0.1s ease-in-out forwards;
     animation-delay: 0.1s;
     border: 2px solid var(--green);
 }
 
-.navbar_menu li:hover .menu2 li:last-of-type {
+.navbar_menu li:hover .menu2 li:nth-of-type(2) {
     animation: menu_inner 0.1s ease-in-out forwards;
     animation-delay: 0.2s;
     border: 2px solid var(--green);
 }
+
+.navbar_menu li:hover .menu2 li:last-of-type {
+    animation: menu_inner 0.1s ease-in-out forwards;
+    animation-delay: 0.3s;
+    border: 2px solid var(--green);
+}
+
 
 .navbar_menu:hover > li > a, .navbar_menu:hover .drop li a {
     pointer-events: auto;
@@ -313,7 +342,6 @@ main h1{
 /*       END NAVBAR       */
 /*                        */
 
-
 /*                        */
 /*      PAGE LAYOUT       */
 /*                        */
@@ -330,21 +358,20 @@ main h1{
 .large_box a {
     width:200px;
     margin: 5px auto;
-    text-decoration: none;
-    color: #000;
+    color: var(--green);
+    text-shadow: 1px 1px 1px var(--green_shadow);
     position: relative;
     font-size: 24px;
+    transition: all 300ms ease;
 }
 
 .large_box a:hover {
-    text-decoration: none;
-    color: var(--green);
-    text-shadow: 1px 1px 1px var(--green_shadow);
+    color: var(--green_shadow);
+    text-shadow: 1px 1px 1px var(--green);
     transform: scale(1.3, 1.2) translateY(-1px);
-    transition: 0.1s ;
 }
 
-.large_box h1, .large_box h2, .large_box h3 {
+.large_box h1, .large_box h2, .large_box h3, .large_box h4 {
     color: var(--green);
     text-shadow: 1px 1px 1px var(--green_shadow);
     text-align:center;
@@ -361,14 +388,20 @@ main h1{
 
 .large_box h3 {
     font-size: 22px;
-    color: #000;
+    color: var(--black);
+}
+
+.large_box h4 {
+    font-size: 18px;
+    text-align: start;
+    color: var(--black);
 }
 
 .large_box p {
     margin: 10px;
     font-size: 20px;
     text-align:start;
-    color: #000;
+    color: var(--black);
     text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
 }
 
@@ -391,10 +424,16 @@ main h1{
     min-width: 325px;
     min-height: 200px;
     display: flex;
-    margin: 20px 5px;
+    margin: 0px 5px 20px 5px;
     padding: 5px 10px;
     flex-direction: column;
     justify-content:center;
+}
+
+.box_left_text ul, .box_right_text ul {
+    list-style-type:circle;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .box_left_img, .box_right_img {
@@ -440,6 +479,15 @@ main h1{
     text-shadow: 1px 1px 1px var(--green_shadow);
 }
 
+
+.box_left_text h4, .box_right_text h4 {
+    color: var(--green);
+    text-shadow: 1px 1px 1px var(--green_shadow);
+    font-size: 18px;
+    text-align: start;
+    color: var(--black);
+}
+
 .box_left_text p, .box_right_text p {
     font-size:22px;
     text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
@@ -454,11 +502,16 @@ main h1{
         text-shadow: 1px 1px 1px var(--green_shadow);
 }
 
+.add_background {
+    background-color: var(--light_yellow);
+    border: 5px solid var(--green);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px var(--green_shadow);
+}
 /*                             */
 /*      END PAGE LAYOUT        */
 /*                             */
-
-
 
 
 /*                             */
@@ -558,8 +611,7 @@ main h1{
 
 .signup_link {
     margin: 0 auto;
-    width: 45%;
-    min-width: 325px;
+    width: 325px;
     display: flex;
     justify-content:center;
     position: relative;    
@@ -581,6 +633,482 @@ main h1{
 /*       END NEXT COHORT        */
 /*                              */
 
+/*                              */
+/*         CAREERS PAGE         */
+/*                              */
+
+#career_link {
+    text-decoration: underline;
+    color: var(--green);
+    text-shadow: 1px 1px 1px var(--green_shadow);
+}
+
+#career_link:hover {
+    color: var(--green_shadow);
+    text-shadow: 1px 1px 3px var(--green);
+}
+
+/*                              */
+/*       END CAREERS PAGE       */
+/*                              */
+
+/*                             */
+/*          Courses            */
+/*                             */
+
+#apply_now {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--green);
+    text-shadow: 0.5px 0.5px 1px var(--green_shadow);
+    text-decoration: underline;
+    transition: all 300ms ease;
+}
+
+#apply_now:hover {
+    color: var(--green_shadow);
+    text-shadow: 0.5px 0.5px 1px var(--green);
+    transform: scale(1.3, 1.3) translateY(-1px);
+}
+
+#apply_now:active {
+    top: 3px;
+    transform: scale(1, 1) translateY(-1px);
+}
+
+#intern  {
+    min-width: 325px;
+    aspect-ratio: 2/1;
+    margin: 0 auto;
+    background: var(--dark_yellow);
+    background: var(--header_gradient);
+    border: 3px solid var(--green);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px var(--green_shadow);
+}
+
+.project_icon_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 47%;
+    min-width: 370px;
+}
+
+.course_icons {
+    width: 47%;
+    min-width: 370px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.project_icons{
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+#projects {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border: 3px solid var(--green);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px var(--green_shadow);
+    transition: all 300ms ease;
+    
+    &:hover {
+        transform: scale(1.3, 1.3) translateY(-1px);
+        box-shadow: 5px 5px 10px var(--green_shadow);
+        z-index: 100;
+    }
+}
+
+#css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
+    position: relative;
+    height:80px;
+    padding: 5px;
+    background: var(--dark_yellow);
+    background: var(--header_gradient);
+    border: 3px solid var(--green);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px var(--green_shadow);
+    transition: all 300ms ease;
+
+    &:hover {
+        transform: scale(1.3, 1.3) translateY(-1px);
+        box-shadow: 5px 5px 10px var(--green_shadow);
+        z-index: 100;
+    }
+}
+
+#css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
+    width: 70px;
+}
+
+#postgres, #python, #django {
+    width: 80px;
+}
+
+#flask {
+    width: 100px;
+}
+
+#expressjs, #nodejs {
+    width: 100px;
+}
+
+@media screen and (max-width: 1250px) {
+    #css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
+        height: 70px;
+        padding: 2px;
+    }
+    #css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
+        width: 60px;
+    }
+    
+    #postgres, #python, #django {
+        width: 70px;
+    }
+    
+    #flask {
+        width: 90px;
+    }
+    
+    #expressjs, #nodejs {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .course_icons, .project_icon_container {
+        width: 100%;
+    }
+    #css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
+        height: 80px;
+        padding: 5px;
+    }
+    #css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
+        width: 70px;
+    }
+    
+    #postgres, #python, #django {
+        width: 80px;
+    }
+    
+    #flask {
+        width: 100px;
+    }
+    
+    #expressjs, #nodejs {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
+        height: 70px;
+        padding: 2px;
+    }
+    #css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
+        width: 60px;
+    }
+    
+    #postgres, #python, #django {
+        width: 70px;
+    }
+    
+    #flask {
+        width: 90px;
+    }
+    
+    #expressjs, #nodejs {
+        width: 90px;
+    }
+}
+
+/*                             */
+/*      END Courses            */
+/*                             */
+
+
+/*                             */
+/*         Tutoring            */
+/*                             */
+
+.card_container {
+    max-width: 1300px;
+    min-width: 325px;
+    margin: 0px auto 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card_one {
+    position: relative;
+    width: 250px;
+    min-height: 245px;
+    margin: 15px auto;
+    padding: 5px;
+    border: 3px solid var(--green);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--dark_yellow);
+    background: var(--header_gradient);
+    box-shadow: 5px 5px 10px var(--green_shadow);
+    transition: all 300ms ease;
+
+    &:hover, &:focus-within {
+        transform: scale(1.05);
+        box-shadow: 4px 4px 16px 2px var(--green_shadow);
+    }
+}
+
+.card_one h2 {
+    text-align: center;
+    margin: 5px 0;
+    color: var(--green);
+    text-shadow: 1px 1px 1px var(--green_shadow);
+}
+
+.card_one img {
+    height: 100px;
+    width: 100px;
+    background-color: var(--green_shadow);
+    border: 3px solid var(--green);
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.card_one li {
+    width: 60px;
+    list-style-type: none;
+    text-align: center;
+}
+
+/*                             */
+/*      END Tutoring           */
+/*                             */
+
+
+/*                             */
+/*      Pricing Page           */
+/*                             */
+
+.pricing_wrapper {
+    display: grid;
+    place-items: center;
+}
+
+.pricing_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 60px;
+    width: 80vw;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    > * {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+    .pricing_card {
+        min-width: 15rem;
+        max-width: calc(12.5rem + 13vw);
+        background-color: var(--dark_yellow);
+        border: 3px solid var(--green);
+        border-radius: 10px;
+        box-shadow: 4px 4px 16px -2px var(--green_shadow);
+        position: relative;
+        transition: all 300ms ease;
+
+        .pricing_ribbon {
+            position: absolute;
+            top: 32px;
+            right: 24px;
+            border-radius: 30px;
+            border-bottom-left-radius: 0;
+            height: 3rem;
+            width: 100%;
+            background-color: var(--dark_yellow);
+            box-shadow: 6px 6px 16px -6px var(--green_shadow);
+
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                top: 3rem;
+                width: 24px;
+            }
+
+            &::before {
+                border-bottom-left-radius: 30px;
+                border-top-left-radius: 30px;
+                background-color: var(--green_shadow);
+                height: 2rem;
+                z-index: 1;
+            }
+
+            &::after {
+                height: 1rem;
+                background-color: var(--dark_yellow);
+            }
+
+            .pricing_ribbon-text {
+                position: absolute;
+                top: 50%;
+                left: 24px;
+				width: 100%;
+                transform: translatey(-50%);
+                font-size: 24px;
+                font-weight: bold;
+                color: var(--green);
+                text-shadow: 1px 1px 1px var(--green_shadow);
+				text-align: center
+            }
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            aspect-ratio: 16/9;
+            height: auto;
+            object-fit: cover;
+            border-top-left-radius: 8px;;
+            border-top-right-radius: 8px;
+        }
+
+        .pricing_card-info {
+            color: #0D1F2D;
+            padding: 5px;
+
+            .card-text {
+                line-height: 1.3;
+                text-align: center;
+            }
+
+            a {
+                text-decoration: none;
+                color: var(--green);
+                text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
+                outline: none;
+                display: block;
+                margin: 10px auto 8px;
+                width: fit-content;
+                text-align: center;
+                border: thin solid var(--green);
+                box-shadow: 2px 2px 4px var(--green_shadow);
+                padding: 8px 16px;
+                border-radius: 4px;
+                transition: background-color 300ms ease, color 300ms ease;
+                
+                &:hover, &:focus {
+                    background-color: var(--green);
+                    color: var(--light_yellow);
+                    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
+                    box-shadow: 4px 4px 8px var(--green_shadow);
+                    border: thin solid var(--light_yellow);
+                }
+            }
+        }
+
+        &:hover, &:focus-within {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 16px 2px var(--green_shadow);
+        }
+    }
+}
+
+/*                              */
+/*     END PRICING PAGES        */
+/*                              */
+
+
+/*                              */
+/*          CONTACT US          */
+/*                              */
+
+.contact_container {
+    padding: 5px 20px;
+    margin-top: 50px;
+    width: 45%;
+    min-width: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--light_yellow);
+    border: 4px solid var(--green);
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px var(--green_shadow);
+}
+
+.contact_container h2 {
+    color: var(--green);
+    text-shadow: 1px 1px 1px var(--green_shadow);
+    margin-top: 25px;
+}
+
+.contact_container h4{
+    color: var(--black);
+    text-shadow: 1px 1px 1px var(--green_shadow);
+    font-size: 20px;
+}
+
+.contacts {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+.contacts a, .phone_number {
+    position: relative;
+    margin:0;
+    padding: 0;
+    font-size: 20px;
+    text-align: end;
+    color: var(--green);
+    text-shadow: .5px .5px 1px var(--green_shadow);
+    transition: all 300ms ease;
+
+    &:hover {
+        color: var(--green_shadow);
+        text-shadow: .5px .5px 1px var(--green);
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contact_container {
+        padding: 5px;
+    }
+    .contacts a, .phone_number {
+        &:hover {
+            transform: scale(1);
+        }
+    }
+}
+
+/*                              */
+/*       END CONTACT US         */
+/*                              */
 
 
 /*                            */
@@ -603,13 +1131,13 @@ footer a {
     color: var(--green);
     text-shadow: 1px 1px 1px var(--green_shadow);
     margin-left: 30px;
-}
+    transition: all 300ms ease;
 
-footer a:hover {
-    color: var(--green_shadow);
-    text-shadow: 1px 1px 1px var(--green);
-    transform: scale(1.3, 1.2) translateY(-1px);
-    transition: 0.1s ;
+        &:hover {
+        color: var(--green_shadow);
+        text-shadow: 1px 1px 1px var(--green);
+        transform: scale(1.3, 1.2) translateY(-1px);
+    }
 }
 
 .footer_images {
@@ -647,38 +1175,44 @@ footer a:hover {
     position: fixed;
     top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
     z-index: -5;
     width: 100%;
     max-width: 1065px;
-    opacity: .6;
+    opacity: .7;
+    animation-name: beeFade;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    filter: drop-shadow(30px 10px 4px rgba(128, 128, 128, 0.7));
+}
+
+@keyframes beeFade {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    25% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    75% {
+        transform: translate(-50%, -50%) scale(0);
+    }
 }
 
 .honeycomb_image {
 	width: 100%;
     height: 100%;
 	display: block;
-    background-color: #000;
+    background-color: var(--black);
 }
+
+
 
 .honeycomb_container {
 	padding: 1rem 0 2.4rem;
-    opacity: 0;
-    transition: opacity 2s;
-    animation: 2s slide-left;
-}
-
-.honeycomb_container.reveal {
-opacity: 1;
-}
-
-@keyframes slide-left {
-    from {
-        margin-left: 100%;
-    }
-    to {
-        margin-left: 0%;
-    }
+    width: 37.5rem;
 }
 
 .honeycomb_container::after {
@@ -687,12 +1221,28 @@ opacity: 1;
 	clear: both;
 }
 
+.placeholder {
+    opacity: 0 !important;
+}
+
 .item {
 	width: 7.5rem;
 	height: 7.5rem;
 	position: relative;
 	display: inline-block;
 	margin: 0.375rem;
+    animation: 1s reveal;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: scale(0) translateX(1000px) translateY(-250px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateX(0) translateY(0);
+    }
 }
 
 .item::before {
@@ -738,6 +1288,9 @@ opacity: 1;
 }
 
 @media (min-width: 22rem) and (max-width: 31.999rem) {
+    .item {
+        animation: none;
+    }
 	.honeycomb_container {
 		max-width: 15rem;
 	}
@@ -823,15 +1376,16 @@ opacity: 1;
 
 .error_404 h4 a {
 color: var(--green);
-}
+text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
 
-.error_404 h4 a:hover {
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
+&:hover {
+        color: var(--green_shadow);
+        text-shadow: 0.5px 0.5px 0.5px var(--green);
+    }
 }
 
 .error_image {
     margin: 10px auto 20px;
-    /* height: 63%; */
     width: 63%;
     border: 4px solid var(--green);
     border-radius: 10px;
