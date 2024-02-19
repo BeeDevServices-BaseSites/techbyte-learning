@@ -1364,6 +1364,9 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #F6E8B7;
+    border: 2px solid #18AC58;
+    border-radius: 4px;
     align-items: center;
     position: absolute;
     height: 100%;
@@ -1375,6 +1378,7 @@ footer a {
     padding: 5px;
     overflow: hidden;
     font-family: Poppins, sans-serif;
+    background: linear-gradient(0deg, rgba(239,215,128,1) 42%, rgba(246,232,182,1) 79%);
 }
 
 .employeeCard:hover .cardFront {
