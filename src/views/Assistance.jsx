@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
-import { Link } from "react-router-dom";
 import flexxbuy from "../assets/images/flexxbuy.png"
+import Button from "../components/Button";
 
 const Assistance = () => {
 
@@ -33,7 +33,7 @@ const Assistance = () => {
           </div>
         </div>
         {/* END SECTION 1 */}
-        <Link className="link" to="#">LINK TO FLEXXBUY</Link>
+        <Button to="#" text="APPLY WITH FLEXXBUY" />
         {/* SECTION 2 */}
         <div className="split_box">
           <div className="box_left_img">

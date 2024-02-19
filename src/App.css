@@ -65,24 +65,6 @@ main h1{
     }
 }
 
-.link {
-    position: relative;
-    width:325px;
-    text-align: center;
-    font-size: 28px;
-    margin: 10px auto;
-    color: var(--green);
-    text-shadow: 1px 1px 1px var(--green_shadow);
-    transition: all 300ms ease;
-}
-
-.link:hover {
-    color: var(--green_shadow);
-    text-shadow: 1px 1px 1px var(--green);
-    transform: scale(1.3, 1.2) translateY(-1px);
-}
-
-
 /*                         */
 /*         NAVBAR          */
 /*                         */
@@ -346,22 +328,7 @@ main h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.large_box a {
-    width:200px;
-    margin: 5px auto;
-    color: var(--green);
-    text-shadow: 1px 1px 1px var(--green_shadow);
-    position: relative;
-    font-size: 24px;
-    transition: all 300ms ease;
-}
-
-.large_box a:hover {
-    color: var(--green_shadow);
-    text-shadow: 1px 1px 1px var(--green);
-    transform: scale(1.3, 1.2) translateY(-1px);
+    align-items: center;
 }
 
 .large_box h1, .large_box h2, .large_box h3, .large_box h4 {
@@ -421,6 +388,7 @@ main h1{
     padding: 5px 10px;
     flex-direction: column;
     justify-content:center;
+    align-items: center;
 }
 
 .box_left_text ul, .box_right_text ul {
@@ -437,6 +405,7 @@ main h1{
     display: flex;
     flex-direction: column;
     justify-content:center;
+    align-items: center;
 }
 
 .box_left_img img, .box_right_img img {
@@ -599,34 +568,6 @@ main h1{
 
 
 /*                              */
-/*        NEXT COHORT           */
-/*                              */
-
-.signup_link {
-    margin: 0 auto;
-    width: 325px;
-    display: flex;
-    justify-content:center;
-    position: relative;    
-    transform: scale(.7, .7);
-    transition: 0.25s ;
-}
-
-.signup_link:hover {
-    transform: scale(1, 1) translateY(-1px);
-}
-
-.signup_link:active {
-    top:4px;
-    transform: scale(0.8, 0.8) translateY(-5px);
-    transition: 0.1s ;
-}
-
-/*                              */
-/*       END NEXT COHORT        */
-/*                              */
-
-/*                              */
 /*         CAREERS PAGE         */
 /*                              */
 
@@ -648,26 +589,6 @@ main h1{
 /*                             */
 /*          Courses            */
 /*                             */
-
-#apply_now {
-    margin-top: 20px;
-    text-align: center;
-    color: var(--green);
-    text-shadow: 0.5px 0.5px 1px var(--green_shadow);
-    text-decoration: underline;
-    transition: all 300ms ease;
-}
-
-#apply_now:hover {
-    color: var(--green_shadow);
-    text-shadow: 0.5px 0.5px 1px var(--green);
-    transform: scale(1.3, 1.3) translateY(-1px);
-}
-
-#apply_now:active {
-    top: 3px;
-    transform: scale(1, 1) translateY(-1px);
-}
 
 #intern  {
     min-width: 325px;
@@ -1084,7 +1005,7 @@ main h1{
     &:hover {
         color: var(--green_shadow);
         text-shadow: .5px .5px 1px var(--green);
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 }
 
@@ -1367,16 +1288,6 @@ footer a {
     margin-top: 10px;
 }
 
-.error_404 h4 a {
-color: var(--green);
-text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
-
-&:hover {
-        color: var(--green_shadow);
-        text-shadow: 0.5px 0.5px 0.5px var(--green);
-    }
-}
-
 .error_image {
     margin: 10px auto 20px;
     width: 63%;
@@ -1384,3 +1295,40 @@ text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
     border-radius: 10px;
     box-shadow: 3px 3px 10px var(--green_shadow);
 }
+
+
+/*                             */
+/*     BUTTON COMPONENT        */
+/*                             */
+
+.button_link {
+    position: relative;
+    font-size: 24px;
+    min-width: 250px;
+    margin: 10px auto;
+    padding: 5px 8px;
+    background-color: var(--dark_yellow);
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    color: var(--green);
+    text-shadow: .5px .5px .5px var(--green_shadow);
+    box-shadow: 5px 5px 10px var(--green_shadow);
+    transition: all 300ms ease;
+    
+    &:hover {
+        background-color: var(--green_shadow);
+        border: 2px solid var(--dark_yellow);
+        color: var(--dark_yellow);
+        text-shadow: .5px .5px .5px var(--green);
+        box-shadow: 5px 5px 15px var(--green_shadow);
+        transform: scale(1.1);
+    }
+    
+    &:active {
+        top: 3px
+    }
+}
+
+/*                             */
+/*     BUTTON COMPONENT        */
+/*                             */
