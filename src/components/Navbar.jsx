@@ -7,7 +7,7 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="page_title">
         <img src={ bee_logo } alt="TechByte Learning Bee" />
-        <h1>TechByte Learning</h1>
+        <h1><Link to="/">TechByte Learning</Link></h1>
       </div>
       <ul className="navbar_menu">
         <li>
