@@ -12,7 +12,7 @@ const Index = () => {
 
   useEffect(() => {
     window.scrollTo(0,0),
-    changeTitle("")
+    changeTitle("Welcome - ")
   },[])
 
   return (

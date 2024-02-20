@@ -219,7 +219,6 @@ main h1{
     border: 2px solid var(--green);
 }
 
-
 .navbar_menu:hover > li > a, .navbar_menu:hover .drop li a {
     pointer-events: auto;
 }
@@ -322,6 +321,7 @@ main h1{
 /*                        */
 /*       END NAVBAR       */
 /*                        */
+
 
 /*                        */
 /*      PAGE LAYOUT       */
@@ -446,7 +446,6 @@ main h1{
     color: var(--green);
     text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
 }
-
 
 .box_left_text h4, .box_right_text h4 {
     color: var(--green);
@@ -591,6 +590,7 @@ main h1{
 /*                              */
 /*       END CAREERS PAGE       */
 /*                              */
+
 
 /*                             */
 /*          Courses            */
@@ -1242,6 +1242,7 @@ footer a {
 		margin-left: 3.75rem;
 	}
 }
+
 /* IE resets - because of clip-path no support */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 /* IE10+ CSS */
@@ -1254,6 +1255,7 @@ footer a {
 		margin: 0.6375rem !important;
 	}
 }
+
 @supports (-ms-ime-align: auto) {
 	/* IE Edge 12+ */
 	.honeycomb_container {
@@ -1265,7 +1267,6 @@ footer a {
 		margin: 0.6375rem !important;
 	}
 }
-
 
 /*                            */
 /*        ERROR 404           */
@@ -1290,7 +1291,6 @@ footer a {
     border-radius: 10px;
     box-shadow: 5px 5px 10px var(--green_shadow);
 }
-
 
 /*                             */
 /*     BUTTON COMPONENT        */
@@ -1327,4 +1327,21 @@ footer a {
 
 /*                             */
 /*     BUTTON COMPONENT        */
+/*                             */
+
+
+/*                             */
+/*        CHAT COMPONENT       */
+/*                             */
+
+.admissions_chat {
+    height: 600px;
+    width: 50dvw;
+    min-width: 325px;
+    border: 3px solid var(--green);
+    box-shadow: 5px 5px 10px var(--green_shadow);
+}
+
+/*                             */
+/*     END CHAT COMPONENT      */
 /*                             */
