@@ -1345,3 +1345,76 @@ footer a {
 /*                             */
 /*     END CHAT COMPONENT      */
 /*                             */
+
+
+/*                         */
+/*        STAFF BIOS       */
+/*                         */
+
+.background {
+    width: 100vw;
+}
+
+.cardContent {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.employeeCard {
+    min-width: calc(33% - 2rem);
+    height: 400px;
+    min-height: 400px;
+    margin: 1rem;
+    position: relative;
+    filter: drop-shadow(8px 8px 8px black);
+}
+@media screen and (max-width: 800px) {
+    .employeeCard {
+    width: calc(50% - 2rem);
+    }
+}
+@media screen and (max-width: 500px) {
+    .employeeCard {
+    width: 100%;
+    }
+}
+
+.cardFront,
+.cardBack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F6E8B7;
+    border: 2px solid #18AC58;
+    border-radius: 4px;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: ease-in-out 600ms;
+    padding: 5px;
+    overflow: hidden;
+    font-family: Poppins, sans-serif;
+    background: linear-gradient(0deg, rgba(239,215,128,1) 42%, rgba(246,232,182,1) 79%);
+}
+
+.employeeCard:hover .cardFront {
+    transform: rotateY(180deg);
+}
+
+.cardBack {
+    transform: rotateY(-180deg);
+}
+
+.employeeCard:hover .cardBack {
+    transform: rotateY(0deg);
+}
+
+/*                         */
+/*    END STAFF BIOS       */
+/*                         */
