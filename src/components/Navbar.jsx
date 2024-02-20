@@ -12,10 +12,11 @@ const NavBar = () => {
       <ul className="navbar_menu">
         <li>
         <Link to="#">Services</Link>
-        <ul className="drop menu2">
+        <ul className="drop menu">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/courses">Web Development</Link></li>
-          <li><Link to="tutoring">Tutoring</Link></li>
+          <li><Link to="/tutoring">Tutoring</Link></li>
+          <li><a href="https://learn.techbyte-learning.com/">Student Login</a></li>
         </ul>
         </li>
         <li><Link to="#">Enrollment</Link>

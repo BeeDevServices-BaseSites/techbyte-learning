@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import Button from "../components/Button";
 import { changeTitle } from "../utilities/utilityFunctions";
+import Button from "../components/Button";
 import price_point from "../assets/images/price_point.jpg"
 
 const NextHive = () => {

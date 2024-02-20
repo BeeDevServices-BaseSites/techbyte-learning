@@ -100,7 +100,6 @@ main h1{
 .page_title a {
     text-decoration: none;
     color: var(--green);
-    
 }
 
 .page_title img {
@@ -442,7 +441,7 @@ main h1{
 }
 
 .box_left_text h3, .box_right_text h3 {
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
     color: var(--green);
     text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
@@ -458,7 +457,7 @@ main h1{
 }
 
 .box_left_text p, .box_right_text p {
-    font-size:22px;
+    font-size:20px;
     margin-top: 5px;
     text-align:start;
 }
@@ -520,7 +519,8 @@ main h1{
 .slideout > .slideout_tab > .tab_text {
     display: inline-block;
     font-family: Roboto, sans-serif;
-    font-size: .9rem;
+    color: var(--black);
+    font-size: 14px;
     font-weight: bold;
     margin-top: 42px;
     transform: rotate(90deg);
@@ -529,7 +529,7 @@ main h1{
 
 .slideout > .slideout_tab > .tab_text > span {
     letter-spacing: 1px;
-    color: var(--green);
+    color: var(--black);
 }
 
 .slideout > .slideout_content {
@@ -539,7 +539,7 @@ main h1{
     border-bottom: 3px solid var(--green);
     border-radius: 0 5px 5px 0;
     cursor: auto;
-    font-size: .95rem;
+    font-size: 15px;
     height: 235px;
     left: -234px;
     padding: 5px 10px 15px 0px;
@@ -891,7 +891,7 @@ main h1{
                 left: 24px;
 				width: 100%;
                 transform: translatey(-50%);
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: bold;
                 color: var(--green);
                 text-shadow:  0.5px 0.5px 0.5px var(--green_shadow);
@@ -983,7 +983,7 @@ main h1{
 .contact_container h4{
     color: var(--black);
     text-shadow:  0.5px 0.5px 0.5px var(--green_shadow);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .contacts {
@@ -1003,7 +1003,7 @@ main h1{
     position: relative;
     margin:0;
     padding: 0;
-    font-size: 20px;
+    font-size: 18px;
     text-align: end;
     color: var(--green);
     text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
@@ -1082,8 +1082,6 @@ footer a {
 /*                            */
 
 
-
-
 /*                         */
 /*    Honey Comb Tiles     */
 /*                         */
@@ -1128,8 +1126,6 @@ footer a {
 	display: block;
     background-color: var(--black);
 }
-
-
 
 .honeycomb_container {
 	padding: 1rem 0 2.4rem;
@@ -1271,14 +1267,6 @@ footer a {
 }
 
 
-
-
-
-
-
-
-
-
 /*                            */
 /*        ERROR 404           */
 /*                            */
@@ -1310,7 +1298,7 @@ footer a {
 
 .button_link {
     position: relative;
-    font-size: 24px;
+    font-size: 22px;
     min-width: 250px;
     margin: 10px auto;
     padding: 5px 8px;
