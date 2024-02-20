@@ -43,9 +43,41 @@ body::before {
     z-index: -10;
 }
 
-main h1{ 
-    text-align: center;
+/* font sizes */
+h1 {
+    font-size: 2.25rem;
+    color: var(--green);
+    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
 }
+
+h2 {
+    font-size: 1.75rem;
+    color: var(--green);
+    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
+}
+
+h3 {
+    font-size: 1.375rem;
+    color: var(--green);
+    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
+}
+
+h4 {
+    font-size: 1.125rem;
+    color: var(--black);
+}
+
+h5 {
+    font-size: 1rem;
+    color: var(--black);
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--black);
+}
+
+
 
 .wrapper {
     width: 80%;
@@ -90,9 +122,8 @@ main h1{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 34px;
+    font-size: 2.25rem;
     text-shadow: 1px 1px 1px var(--green_shadow);
-    /* color: var(--green);  /** no longer effects any of the font colors in the nav bar */
     transition: 0.25s;
 }
 
@@ -139,7 +170,7 @@ main h1{
     font-family: monospace;
     display: block;
     padding: 10px 2px;
-    font-size: 16px;
+    font-size: 1rem;
     width: 124px;
     transition: background-color 0.2s ease-in-out;
     font-family: "Raleway", sans-serif;
@@ -240,6 +271,7 @@ main h1{
     }
     .page_title {
         font-size: 28px;
+        font-size: 1.75rem;
     }
     .page_title img {
         height: 60px;
@@ -249,9 +281,10 @@ main h1{
 @media screen and (max-width: 500px) {
     .navbar {
         height: 95px;
+        border-bottom: 3px solid var(--green);
     }
     .page_title {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
     .navbar_menu {
         justify-content: center;
@@ -266,7 +299,7 @@ main h1{
         height: 85px;
     }
     .page_title {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .page_title img {
@@ -279,20 +312,21 @@ main h1{
         height: 85px;
     }
     .page_title {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
     .page_title img {
         height: 50px;
     }
     .navbar_menu a {
-        font-size: 14px;
+        width: 104px;
+        font-size: 0.9rem;
     }
     .drop li {
         width: 104px;
     }
     .drop li a {
         width: 100px;
-        font-size: 14px;
+        font-size: 0.9rem;
     }
 }
 
@@ -301,20 +335,19 @@ main h1{
         height: 67px;
     }
     .page_title {
-        font-size: 14px;
+        font-size: 0.9rem;
     }
     .page_title img {
         height: 35px;
     }
     .navbar_menu a {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
     .drop li {
         width: 84px;
     }
     .drop li a {
-        width: 80px;
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 }
 
@@ -328,47 +361,33 @@ main h1{
 /*                        */
 
 .large_box {
-    min-width: 325px;
+    min-width: 300px;
     margin: 20px 5px;
-    padding: 5px 10px;
+    padding: 5px 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.large_box h1, .large_box h2, .large_box h3, .large_box h4 {
-    color: var(--green);
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
+.large_box h1, .large_box h2, .large_box h3 {
     text-align:center;
     margin: 5px 0;
 }
 
-.large_box h1 {
-    font-size: 36px;
-}
-
-.large_box h2 {
-    font-size: 28px;
-}
-
 .large_box h3 {
-    font-size: 22px;
     color: var(--black);
 }
 
 .large_box h4 {
-    font-size: 18px;
     text-align: start;
-    color: var(--black);
+    text-align:center;
+    margin: 5px 0;
 }
 
 .large_box p {
     margin: 10px;
-    font-size: 20px;
     text-align:start;
-    color: var(--black);
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
 }
 
 .large_box p span {
@@ -382,16 +401,14 @@ main h1{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-width: 325px;
 }
 
 .box_left_text, .box_right_text {
     width: 45%;
-    min-width: 325px;
-    min-height: 200px;
+    min-width: 300px;
+    margin: 5px 5px 20px 5px;
+    padding: 5px 5px;
     display: flex;
-    margin: 0px 5px 20px 5px;
-    padding: 5px 10px;
     flex-direction: column;
     justify-content:center;
     align-items: center;
@@ -399,14 +416,14 @@ main h1{
 
 .box_left_text ul, .box_right_text ul {
     list-style-type:circle;
-    width: 80%;
+    width: 75%;
+    min-width: 240px;
     margin: 0 auto;
 }
 
 .box_left_img, .box_right_img {
     width: 45%;
-    min-width: 325px;
-    min-height: 200px;
+    min-width: 290px;
     margin: 20px 5px;
     display: flex;
     flex-direction: column;
@@ -415,8 +432,8 @@ main h1{
 }
 
 .box_left_img img, .box_right_img img {
-    width: 100%;
-    min-width: 325px;
+    width: 90%;
+    min-width: 290px;
     border: 3px solid var(--green);
     box-shadow:  5px 5px 10px var(--green_shadow);
     border-radius: 20px;
@@ -433,31 +450,16 @@ main h1{
     flex-wrap: wrap-reverse;
 }
 
-.box_left_text h2, .box_right_text h2 {
-    font-size: 28px;
+.box_left_text h2, .box_right_text h2, .box_left_text h3, .box_right_text h3  {
     text-align: center;
-    color: var(--green);
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
-}
-
-.box_left_text h3, .box_right_text h3 {
-    font-size: 22px;
-    text-align: center;
-    color: var(--green);
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
 }
 
 .box_left_text h4, .box_right_text h4 {
-    color: var(--green);
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
-    font-size: 18px;
     text-align: start;
-    color: var(--black);
 }
 
 .box_left_text p, .box_right_text p {
-    font-size:20px;
-    margin-top: 5px;
+    margin: 10px;
     text-align:start;
 }
 
@@ -469,10 +471,11 @@ main h1{
 }
 
 .add_background {
+    width: 45%;
+    min-width: 290px;
     background-color: var(--light_yellow);
     border: 5px solid var(--green);
     border-radius: 10px;
-    padding: 10px;
     box-shadow: 5px 5px 10px var(--green_shadow);
 }
 /*                             */
@@ -503,7 +506,6 @@ main h1{
 .slideout > .slideout_tab { 
     display: block;
     background-color: var(--dark_yellow);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23efe4a6' fill-opacity='0.05' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     border: 3px solid var(--green);
     border-radius: 0 5px 5px 0;
     cursor: pointer;
@@ -519,7 +521,7 @@ main h1{
     display: inline-block;
     font-family: Roboto, sans-serif;
     color: var(--black);
-    font-size: 14px;
+    font-size: .85rem;
     font-weight: bold;
     margin-top: 42px;
     transform: rotate(90deg);
@@ -538,7 +540,7 @@ main h1{
     border-bottom: 3px solid var(--green);
     border-radius: 0 5px 5px 0;
     cursor: auto;
-    font-size: 15px;
+    font-size: 1rem;
     height: 235px;
     left: -234px;
     padding: 5px 10px 15px 0px;
@@ -553,7 +555,7 @@ main h1{
 
 .pst {
     padding-left: 10px;
-    font-size:28px;
+    font-size: 1.75rem;
     color: var(--green);
 }
 
@@ -597,7 +599,7 @@ main h1{
 /*                             */
 
 #intern  {
-    min-width: 325px;
+    min-width: 300px;
     aspect-ratio: 2/1;
     margin: 0 auto;
     background: var(--dark_yellow);
@@ -608,18 +610,17 @@ main h1{
 }
 
 .project_icon_container{
+    width: 47%;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 47%;
-    min-width: 370px;
 }
 
 .course_icons {
     width: 47%;
-    min-width: 370px;
-    height: auto;
+    min-width: 300px;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
@@ -635,8 +636,8 @@ main h1{
 
 #projects {
     position: relative;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     border: 3px solid var(--green);
     border-radius: 10px;
     box-shadow:  5px 5px 10px  var(--green_shadow);
@@ -743,12 +744,34 @@ main h1{
         width: 70px;
     }
     
-    #flask {
+    #flask, #expressjs, #nodejs {
         width: 90px;
     }
+    #projects {
+        height: 90px;
+        width: 90px
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
+        height: 55px;
+        padding: 2px;
+    }
+    #css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
+        width: 45px;
+    }
     
-    #expressjs, #nodejs {
-        width: 90px;
+    #postgres, #python, #django {
+        width: 55px;
+    }
+    
+    #flask, #expressjs, #nodejs {
+        width: 75px;
+    }
+    #projects {
+        height: 70px;
+        width: 70px
     }
 }
 
@@ -763,7 +786,7 @@ main h1{
 
 .card_container {
     max-width: 1300px;
-    min-width: 325px;
+    min-width: 300px;
     margin: 0px auto 10px;
     display: flex;
     justify-content: space-between;
@@ -961,9 +984,9 @@ main h1{
 
 .contact_container {
     padding: 5px 20px;
-    margin-top: 50px;
+    margin: 40px 0 30px;
     width: 45%;
-    min-width: 325px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -980,15 +1003,9 @@ main h1{
     margin-top: 25px;
 }
 
-.contact_container h4{
-    color: var(--black);
-    text-shadow:  0.5px 0.5px 0.5px var(--green_shadow);
-    font-size: 18px;
-}
-
 .contacts {
-    width: 100%;
-    margin: 10px 0;
+    width: 95%;
+    margin: 10px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1003,10 +1020,10 @@ main h1{
     position: relative;
     margin:0;
     padding: 0;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: end;
     color: var(--green);
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
+    /* text-shadow: 0.5px 0.5px 0.5px var(--green_shadow); */
     transition: all 300ms ease;
 
     &:hover {
@@ -1018,12 +1035,18 @@ main h1{
 
 @media screen and (max-width: 650px) {
     .contact_container {
-        padding: 5px;
+        padding: 0px;
     }
     .contacts a, .phone_number {
         &:hover {
             transform: scale(1);
         }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contact_container {
+        width: 290px;
     }
 }
 
@@ -1050,7 +1073,6 @@ footer {
 footer a {
     position: relative;
     color: var(--green);
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
     margin-left: 30px;
     transition: all 300ms ease;
 
@@ -1280,14 +1302,17 @@ footer a {
     height: 80vh;
 }
 
-.error_404 h1, .error_404 h4 {
+.error_404 h2 {
+    color: var(--green);
+    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
     margin-top: 10px;
 }
 
 .error_image {
     margin: 10px auto 20px;
     width: 63%;
-    border: 4px solid var(--green);
+    min-width: 290px;
+    border: 3px solid var(--green);
     border-radius: 10px;
     box-shadow: 5px 5px 10px var(--green_shadow);
 }
@@ -1298,7 +1323,7 @@ footer a {
 
 .button_link {
     position: relative;
-    font-size: 22px;
+    font-size: 1.25rem;
     min-width: 250px;
     margin: 10px auto;
     padding: 5px 8px;
@@ -1337,7 +1362,7 @@ footer a {
 .admissions_chat {
     height: 600px;
     width: 50dvw;
-    min-width: 325px;
+    min-width: 300px;
     border: 3px solid var(--green);
     box-shadow: 5px 5px 10px var(--green_shadow);
 }
