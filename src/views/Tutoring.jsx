@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom"
 import { changeTitle } from "../utilities/utilityFunctions";
 import Button from "../components/Button.jsx"
 
@@ -58,12 +59,11 @@ const Tutoring = () => {
             Take advantage of our bundle pricing options, where buying more tutoring sessions saves you money.
           </p>
           <Button to="/pricingplans" text="VIEW PRICING PLANS" />
-
           <p>
             Don't let coding challenges hold you back any longer. Contact TechByte Learning today to schedule your personalized tutoring session and unlock your full coding potential.
           </p>
           <h2>
-            Meet Our Tutors
+            Meet Our Instructors
           </h2>
         </div>
         {/* INSTRUCTOR CARDS */}
@@ -89,7 +89,6 @@ const Tutoring = () => {
           })}
         </div>
         <Button to="/pricingplans" text="VIEW PRICING PLANS" />
-
       </div>
     </main>
   );
