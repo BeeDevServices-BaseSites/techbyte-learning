@@ -1,0 +1,134 @@
+[
+    {
+        "id": "1",
+        "firstName": "Tom",
+        "lastName": "Cruise",
+        "photo": "https://jsonformatter.org/img/tom-cruise.jpg",
+        "position": "Instructor",
+        "location": "California",
+        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
+        "mentor": "yes",
+        "tutor": "yes"
+    },
+    {
+        "id": "2",
+        "firstName": "Maria",
+        "lastName": "Sharapova",
+        "photo": "https://jsonformatter.org/img/Maria-Sharapova.jpg",
+        "position": "Instructor",
+        "location": "California",
+        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
+        "mentor": "yes",
+        "tutor": "yes"
+    },
+    {
+        "id": "3",
+        "firstName": "Robert",
+        "lastName": "Downey Jr.",
+        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
+        "position": "Instructor",
+        "location": "California",
+        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
+        "mentor": "yes",
+        "tutor": "yes"
+    },
+    {
+        "id": "4",
+        "firstName": "Scooby",
+        "lastName": "Dooby-Doo",
+        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
+        "position": "Teaching Assistant",
+        "location": "California",
+        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
+        "mentor": "yes",
+        "tutor": "yes"
+    },
+    {
+        "id": "5",
+        "firstName": "Shaggy",
+        "lastName": "Rogers",
+        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
+        "position": "Teaching Assistant",
+        "location": "California",
+        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
+        "mentor": "yes",
+        "tutor": "yes"
+    },
+    {
+        "id": "6",
+        "firstName": "Daphne",
+        "lastName": "Blake",
+        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
+        "position": "Developer",
+        "location": "California",
+        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
+        "mentor": "yes",
+        "tutor": "yes"
+    },
+    {
+        "id": "7",
+        "firstName": "Velma",
+        "lastName": "Dinkley",
+        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
+        "position": "Instructor",
+        "location": "California",
+        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
+        "mentor": "yes",
+        "tutor": "yes"
+    },
+    {
+        "id": "8",
+        "firstName": "Frederick",
+        "lastName": "Herman",
+        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
+        "position": "Teaching Assistant",
+        "location": "California",
+        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
+        "mentor": "yes",
+        "tutor": "yes"
+    },
+    {
+        "id": "9",
+        "firstName": "Tanjiro",
+        "lastName": "Kamado",
+        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
+        "position": "Instructor",
+        "location": "California",
+        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
+        "mentor": "yes",
+        "tutor": "yes"
+    },
+    {
+        "id": "10",
+        "firstName": "Zenitsu",
+        "lastName": "Agatsuma",
+        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
+        "position": "Instructor",
+        "location": "California",
+        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
+        "mentor": "yes",
+        "tutor": "yes"
+    },
+    {
+        "id": "11",
+        "firstName": "Inosuke",
+        "lastName": "Hashibira",
+        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
+        "position": "Instructor",
+        "location": "California",
+        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
+        "mentor": "yes",
+        "tutor": "yes"
+    },
+    {
+        "id": "12",
+        "firstName": "Nezuko",
+        "lastName": "Kamado",
+        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
+        "position": "Teaching Assistant",
+        "location": "California",
+        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
+        "mentor": "yes",
+        "tutor": "yes"
+    }
+]
