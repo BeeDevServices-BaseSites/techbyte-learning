@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom"
 import error_404 from "../assets/images/404_error.png"
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
+import Button from "../components/Button";
 
 const BadLink = () => {
 
@@ -14,8 +14,8 @@ const BadLink = () => {
         <main>
         <div className="wrapper">
             <div className="error_404">
-                <h1>It appears you're lost...</h1>
-                <h4>(Click <Link to="/">HERE</Link> and we'll get you back home)</h4>
+                <h2>It appears you're lost...</h2>
+                <Button to="/" text="TAKE ME HOME" />
                 <img className="error_image" src={error_404} alt="Oops 404" />
             </div>
             </div>

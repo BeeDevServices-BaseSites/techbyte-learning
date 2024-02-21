@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
-import { Link } from "react-router-dom"
+import Button from "../components/Button.jsx"
 import html5 from "../assets/images/html5.png"
 import css from "../assets/images/css.png"
 import javascript from "../assets/images/javascript.png"
@@ -14,7 +14,6 @@ import python from "../assets/images/python.png"
 import django from "../assets/images/django.png"
 import flask from "../assets/images/flask.png"
 import postgres from "../assets/images/postgres.png"
-// import capstone from "../assets/images/capstone.png"
 import step_01 from "../assets/images/step_01.png"
 import step_02 from "../assets/images/step_02.png"
 import step_03 from "../assets/images/step_03.png"
@@ -48,7 +47,7 @@ const Courses = () => {
           <h2>
             Cutting-edge classes that appeal to different interests and skill levels.
           </h2>
-          <Link id="apply_now" to="/apply">APPLY NOW</Link>
+          <Button to="/apply" text="APPLY NOW" />
         </div>
         {/* END SECTION 1 */}
         {/* SECTION 2 */}
@@ -99,35 +98,23 @@ const Courses = () => {
         {/* END SECTION 4 */}
         {/* SECTION 5 */}
         <div className="split_box flip">
-
           <div className="project_icon_container">
-
             <div className="project_icons">
-              {/* <img id="projects" src={capstone} alt="path forward" /> */}
               <img id="projects" src={step_01} alt="path forward" />
               <img id="projects" src={step_02} alt="path forward" />
               <img id="projects" src={step_03} alt="path forward" />
-              {/* <img id="projects" src={step_04} alt="path forward" />
-              <img id="projects" src={step_05} alt="path forward" />
-            <img id="projects" src={step_06} alt="path forward" /> */}
             </div>
             <div className="project_icons">
-              {/* <img id="projects" src={capstone} alt="path forward" /> */}
-              {/* <img id="projects" src={step_01} alt="path forward" />
-              <img id="projects" src={step_02} alt="path forward" />
-            <img id="projects" src={step_03} alt="path forward" /> */}
               <img id="projects" src={step_04} alt="path forward" />
               <img id="projects" src={step_05} alt="path forward" />
               <img id="projects" src={step_06} alt="path forward" />
             </div>
-
           </div>
           <div className="box_right_text">
             <p>
               <span>B</span>ut the learning doesn't stop there. TechByte Learning believes in providing our students with real-world experience to further enhance their skills and boost their career prospects. Throughout their journey with us, students will work on engaging and challenging capstone projects. These projects are built along the way, allowing students to apply the knowledge they have gained while getting hands-on experience in solving real-world problems. 
             </p>
           </div>
-
         </div>
         {/* END SECTION 5 */}
         {/* SECTION 6 */}
@@ -157,7 +144,7 @@ const Courses = () => {
             For more information contact us at <a id="career_link"href="mailto:info@beedev-services.com?subject=Requesting%Course%20Info%20">info@beedev-services.com</a>&nbsp;
             or call us at 867-5309 to learn more and secure your spot. Limited seats available, so act now!
           </p>
-          <Link id="apply_now" to="/apply">APPLY NOW</Link>
+          <Button to="/apply" text="APPLY NOW" />
         </div>
         {/* END SECTION 7 */}
       </div>

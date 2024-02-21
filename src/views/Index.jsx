@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { changeTitle } from "../utilities/utilityFunctions";
 import dev_instruction from "../assets/images/dev_instruction.jpg"
 import react_python from "../assets/images/react_and_python.jpg"
@@ -7,12 +6,13 @@ import projects from "../assets/images/projects.png"
 import newest_tech from "../assets/images/high_tech_dev.jpg"
 import your_career from "../assets/images/your_career.png"
 import Honeycomb from "../components/Honeycomb";
+import Button from "../components/Button";
 
 const Index = () => {
 
   useEffect(() => {
     window.scrollTo(0,0),
-    changeTitle("")
+    changeTitle("Welcome - ")
   },[])
 
   return (
@@ -29,7 +29,7 @@ const Index = () => {
           <p><span>A</span>ttention, aspiring tech enthusiasts, busy bees of the coding world, and those eager to expand their horizons! At TechByte, we believe in the power of education and hands-on experience to shape the future generation of web developers. Just as bees are vital to the ecosystem, we aim to be essential for your growth in the ever-evolving tech industry.</p>
           <p>With TechByte, you'll gain proficiency in cutting-edge technologies that are shaping the future. Our curriculum is meticulously designed to focus on the latest trends, ensuring you stay ahead of the game. We offer a comprehensive learning experience that encompasses web fundamentals, moving to Python, JavaScript with React.js, and so much more!</p>
         </div>
-        <Link to="/courses" className="link">View Courses</Link>
+        <Button to="/courses" text="VIEW COURSES" />
         {/* END SECTION 1 */}
         {/* SECTION 2 */}
         <Honeycomb />
@@ -84,7 +84,7 @@ const Index = () => {
           <div className="box_left_text">
             <h2>Expanding Opportunities</h2>
             <p><span>T</span>echByte ensures your growth and opens up endless possibilities in the dynamic industry of web development. Buzz on over to TechByte and let us help you build a rewarding career!</p>
-            <Link to="/nexthive" className="link">Next Cohort Dates</Link>
+            <Button to="/nexthive" text="NEXT COHORT DATES" />
           </div>
           <div className="box_right_img">
             <img src={your_career} alt="your career" />

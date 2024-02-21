@@ -4,6 +4,7 @@ import Apply from "./views/Apply";
 import Assistance from "./views/Assistance";
 import BadLink from "./views/BadLink";
 import Careers from "./views/Careers";
+import ChatBox from "./components/ChatBox.jsx"
 import Contact from "./views/Contact";
 import Cookies from "./components/Cookies";
 import Courses from "./views/Courses";
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/tutoring" element={<Tutoring />} />
         <Route path="/:bad/*" element={<BadLink/>} />
       </Routes>
+      <ChatBox />
       <Cookies />
       <Footer />
     </>

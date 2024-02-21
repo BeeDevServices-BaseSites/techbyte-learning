@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
+import AdmissionsChat from "../components/AdmissionsChat";
 
 const Apply = () => {
 
@@ -15,6 +16,7 @@ const Apply = () => {
           <h2>
             APPLICATION PAGE
           </h2>
+          <AdmissionsChat />
         </div>
       </div>
     </main>
