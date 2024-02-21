@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 
-import bee_logo from "../assets/images/tech_byte_learning_logo.png"
-
 const NavBar = () => {
   return (
     <nav className="navbar">
