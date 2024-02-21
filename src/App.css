@@ -69,7 +69,6 @@ h2 {
 h3 {
     font-size: 1.375rem;
     color: var(--green);
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
 }
 
 h4 {
@@ -184,16 +183,10 @@ p {
     text-align: center;
 }
 
-.navbar_menu > li a:hover {
-    background-color: var(--green_shadow);
-    border-left: 1px solid var(--green);
-    text-shadow: 0.5px 0.5px 0.5px var(--dark_yellow);
-}
-
 .navbar_menu a, .drop li a {
     text-decoration: none;
     color: var(--green);
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
+    font-weight: 600;
     text-transform: capitalize;
     font-family: monospace;
     display: block;
@@ -206,6 +199,11 @@ p {
     z-index: 10;
 }
 
+.navbar_menu > li a:hover {
+    background-color: var(--green_shadow);
+    border-left: 1px solid var(--green);
+}
+
 .drop {
     display: none;
 }
@@ -214,6 +212,7 @@ p {
     opacity: 0;
     transform-origin: top center;
     width: 125px;
+    background-color: var(--dark_yellow);
     box-shadow: 5px 5px 10px var(--green_shadow);
 }
 
@@ -600,12 +599,11 @@ p {
 #career_link {
     text-decoration: underline;
     color: var(--green);
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
 }
 
 #career_link:hover {
     color: var(--green_shadow);
-    text-shadow: 0.5px 0.5px 0.5px var(--green);
+    text-shadow: 0.5px 0.5px 1px var(--green);
 }
 
 /*                              */
@@ -839,7 +837,6 @@ p {
     text-align: center;
     margin: 5px 0;
     color: var(--green);
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
 }
 
 .card_one img {
@@ -898,11 +895,11 @@ p {
 
         .pricing_ribbon {
             position: absolute;
-            top: 32px;
+            top: 10px;
             right: 24px;
             border-radius: 30px;
             border-bottom-left-radius: 0;
-            height: 3rem;
+            height: 2.5rem;
             width: 100%;
             background-color: var(--dark_yellow);
             box-shadow:  5px 5px 15px  var(--green_shadow);
@@ -910,7 +907,7 @@ p {
             &::before, &::after {
                 content: '';
                 position: absolute;
-                top: 3rem;
+                top: 2.5rem;
                 width: 24px;
             }
 
@@ -918,7 +915,7 @@ p {
                 border-bottom-left-radius: 30px;
                 border-top-left-radius: 30px;
                 background-color: var(--green_shadow);
-                height: 2rem;
+                height: 1.25rem;
                 z-index: 1;
             }
 
@@ -929,25 +926,24 @@ p {
 
             img {
                 position: relative;
-                top: -82px;
-                left: 75%;
-                width: 100px;
-                height: 100px;
+                top: -60px;
+                left: 80%;
+                width: 80px;
+                height: 80px;
                 background-color: var(--white);
                 border-radius: 50%;
-                border: thin solid var(--green);
+                border: 2px solid #A70000;
             }
 
             .pricing_ribbon-text {
                 position: absolute;
                 top: 50%;
-                left: 24px;
+                left: 5px;
 				width: 100%;
                 transform: translatey(-50%);
-                font-size: 22px;
-                font-weight: bold;
+                font-size: 1.275rem;
+                font-weight: 900;
                 color: var(--green);
-                text-shadow:  0.5px 0.5px 0.5px var(--green_shadow);
 				text-align: center
             }
         }
@@ -969,13 +965,13 @@ p {
             .pricing_card-text {
                 line-height: 1.3;
                 text-align: start;
-                margin-bottom: 8px;
+                margin: 5px 5px 8px 5px;
             }
 
             a {
                 text-decoration: none;
                 color: var(--green);
-                text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
+                font-weight: 800;
                 outline: none;
                 display: block;
                 margin: 10px auto 8px;
@@ -1030,7 +1026,6 @@ p {
 
 .contact_container h2 {
     color: var(--green);
-    text-shadow:  0.5px 0.5px 0.5px var(--green_shadow);
     margin-top: 25px;
 }
 
@@ -1054,12 +1049,12 @@ p {
     font-size: 1.125rem;
     text-align: end;
     color: var(--green);
-    /* text-shadow: 0.5px 0.5px 0.5px var(--green_shadow); */
+    font-weight: 600;
     transition: all 300ms ease;
 
     &:hover {
         color: var(--green_shadow);
-        text-shadow: 0.5px 0.5px 0.5px var(--green);
+        text-shadow: 0.5px 0.5px 1px var(--green);
         transform: scale(1.05);
     }
 }
@@ -1337,7 +1332,6 @@ footer {
 
 .error_404 h2 {
     color: var(--green);
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
     margin-top: 10px;
 }
 
@@ -1350,12 +1344,59 @@ footer {
     box-shadow: 3px 3px 10px var(--green_shadow);
 }
 
+/*                             */
+/*     BUTTON COMPONENT        */
+/*                             */
+
+.button_link {
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: 600;
+    min-width: 250px;
+    margin: 10px auto;
+    padding: 5px 8px;
+    background-color: var(--dark_yellow);
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    color: var(--green);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px var(--green_shadow);
+    transition: all 300ms ease;
+    
+    &:hover {
+        background-color: var(--green_shadow);
+        border: 2px solid var(--dark_yellow);
+        color: var(--dark_yellow);
+        text-shadow: .5px .5px .5px var(--green);
+        box-shadow: 5px 5px 15px var(--green_shadow);
+        transform: scale(1.1);
+    }
+    
+    &:active {
+        top: 3px
+    }
+}
+
+/*                             */
+/*     BUTTON COMPONENT        */
+/*                             */
 
 
+/*                             */
+/*        CHAT COMPONENT       */
+/*                             */
 
+.admissions_chat {
+    height: 600px;
+    width: 50dvw;
+    min-width: 300px;
+    border: 3px solid var(--green);
+    box-shadow: 5px 5px 10px var(--green_shadow);
+}
 
-
-
+/*                             */
+/*     END CHAT COMPONENT      */
+/*                             */
 
 
 /*                         */
