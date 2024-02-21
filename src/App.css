@@ -42,6 +42,7 @@ body::before {
     background-image: url('https://images.craftsnherbs.com/backgrounds/hex.png');
     background-repeat: no-repeat;
     background-attachment: fixed; 
+    background-size: contain;
     width: 100%;
     height: 100%;
     opacity : 0.2;
@@ -49,6 +50,10 @@ body::before {
 }
 
 /* font sizes */
+h1,h2,h3,h4,h5,h6,a,p {
+    transition: all 300ms ease;
+}
+
 h1 {
     font-size: 2.25rem;
     color: var(--green);
@@ -82,6 +87,25 @@ p {
     color: var(--black);
 }
 
+
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.58rem;
+    }
+    h4 {
+        font-size: 1.295rem;
+    }
+    p {
+        font-size: 1.265rem;
+    }
+}
 
 
 .wrapper {
@@ -127,20 +151,19 @@ p {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 2.25rem;
-    text-shadow: 1px 1px 1px var(--green_shadow);
-    transition: 0.25s;
 }
 
-/** Added so the link to the home page has no decorations */
 .page_title a {
-    text-decoration: none;
+    font-size: 3.25rem;
     color: var(--green);
+    text-shadow: 1px 1px 1px var(--green_shadow);
+    text-decoration: none;
+    transition: all 300ms ease;
 }
 
 .page_title img {
     height: 85px;
-    transition: 0.25s;
+    transition: all 300ms ease;
 }
 
 .navbar_menu {
@@ -149,7 +172,7 @@ p {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    transition: 0.25s;
+    transition: all 300ms ease;
 }
 
 .navbar_menu, .drop {
@@ -274,8 +297,7 @@ p {
     .navbar {
         height: 95px;
     }
-    .page_title {
-        font-size: 28px;
+    .page_title a {
         font-size: 1.75rem;
     }
     .page_title img {
@@ -286,10 +308,9 @@ p {
 @media screen and (max-width: 500px) {
     .navbar {
         height: 95px;
-        border-bottom: 3px solid var(--green);
     }
-    .page_title {
-        font-size: 1.5rem;
+    .page_title a {
+        font-size: 1.65rem;
     }
     .navbar_menu {
         justify-content: center;
@@ -303,10 +324,6 @@ p {
     .navbar {
         height: 85px;
     }
-    .page_title {
-        font-size: 1.375rem;
-    }
-
     .page_title img {
         height: 50px;
     }
@@ -315,9 +332,6 @@ p {
 @media screen and (max-width: 400px) {
     .navbar {
         height: 85px;
-    }
-    .page_title {
-        font-size: 1.125rem;
     }
     .page_title img {
         height: 50px;
@@ -337,11 +351,11 @@ p {
 
 @media screen and (max-width: 335px) {
     .navbar {
-        height: 67px;
+        height: 65px;
     }
-    .page_title {
+    /* .page_title a {
         font-size: 0.9rem;
-    }
+    } */
     .page_title img {
         height: 35px;
     }
