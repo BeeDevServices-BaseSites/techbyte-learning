@@ -8,16 +8,21 @@
     --dark_yellow: rgb(239, 215, 128);
     --header_gradient: linear-gradient(0deg, rgba(239, 215, 128, 1) 42%, rgba(246, 232, 182, 1) 79%);
     --black: #0D1F2D;
+    --font_size_default: 16px;
 }
 
 #root {
     overflow-x: hidden;
 }
 
-HTML, body, * {
+html, body, * {
     margin: 0px;
     padding: 0px;
     border: 0px;
+}
+
+html {
+    font-size: var(--font_size_default);
 }
 
 body {
