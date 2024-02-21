@@ -29,7 +29,7 @@ const Pricing = () => {
             {/* CARD 1 */}
             <div className="pricing_card">
               <div className="pricing_ribbon">
-                <div className="pricing_ribbon-text">Full Stack Web Development</div>
+                <div className="pricing_ribbon-text">Web Development</div>
               </div>
               <img src={full_stack} alt="web dev card"/>
               <div className="pricing_card-info">
