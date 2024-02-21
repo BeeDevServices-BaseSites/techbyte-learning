@@ -1459,3 +1459,47 @@ text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
       width: 100%; /* Stack columns on very small screens */
     }
   }
+
+  .wrapper {
+    padding: 20px;
+  }
+  
+  .large_box {
+    margin: auto;
+    width: 80%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .large_box {
+    text-align: center;
+}
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .column {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 15px;
+  }
+
+  .member-name{
+    font-size: 20rem;
+  }
