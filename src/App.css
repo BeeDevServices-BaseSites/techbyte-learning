@@ -1155,7 +1155,7 @@ footer a {
 }
 
 .honeycomb_container {
-	padding: 1rem 0 2.4rem;
+	padding: 2rem 0 2rem;
     width: 37.5rem;
 }
 
@@ -1222,25 +1222,24 @@ footer a {
 	}
 }
 
-@media (min-width: 17rem) and (max-width: 21.999rem) {
-	.honeycomb_container {
-		max-width: 11.25rem;
-	}
-	.item:nth-child(even) {
-		margin-left: 3.75rem;
-	}
-}
-
-@media (min-width: 22rem) and (max-width: 31.999rem) {
+@media (max-width: 25.999rem) {
     .item {
         animation: none;
     }
-	.honeycomb_container {
-		max-width: 15rem;
+}
+
+@media (max-width: 31.999rem) {
+    .honeycomb_container {
+		max-width: 17rem;
 	}
-	.item:nth-child(3n+3) {
-		margin-left: 3.75rem
-	}
+    .item {
+        width: 3.25rem;
+        height: 3.25rem;
+        margin-bottom: -.60rem;
+    }
+    .item:nth-child(9n+6) {
+        margin-left: 1.655rem;
+    }
 }
 
 @media (min-width: 32rem) and (max-width: 41.999rem) {
