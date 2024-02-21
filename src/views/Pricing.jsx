@@ -91,8 +91,9 @@ const Pricing = () => {
               </div>
               <img src={tutor} alt="tutor"/>
               <div className="pricing_card-info">
-                <p className="pricing_card-text">Are you struggling to understand the basics of web development? Sign up for a ½ hour tutoring session where we will break down complex concepts into easy-to-understand explanations. Whether you're a beginner or just need a refresher, our experienced tutors will work with you at your own pace to help you build a solid foundation in web development. Don't let confusion hold you back from creating amazing websites - sign up for our tutoring session today!</p>
-                <a href="#">$45.00</a>
+                <p className="pricing_card-text">Are you struggling to understand the basics of web development?</p>
+                <p className="pricing_card-text">Sign up for a ½ hour tutoring session where our experienced tutors will work with you at your own pace to help you build a solid foundation in web development.</p>
+                <p className="pricing_card-text">Don't let confusion hold you back from creating amazing websites - sign up for our tutoring session today!</p>                <a href="#">$45.00</a>
               </div>
             </div>
             {/* END CARD 1 */}
@@ -103,8 +104,9 @@ const Pricing = () => {
               </div>
               <img src={tutor} alt="tutor"/>
               <div className="pricing_card-info">
-                <p className="pricing_card-text">Are you struggling to understand the basics of web development? Sign up for a ½ hour tutoring session where we will break down complex concepts into easy-to-understand explanations. Whether you're a beginner or just need a refresher, our experienced tutors will work with you at your own pace to help you build a solid foundation in web development. Don't let confusion hold you back from creating amazing websites - sign up for our tutoring session today!</p>
-                <a href="#">$120.00</a>
+                <p className="pricing_card-text">Are you struggling to understand the basics of web development?</p>
+                <p className="pricing_card-text">Sign up for a ½ hour tutoring session where our experienced tutors will work with you at your own pace to help you build a solid foundation in web development.</p>
+                <p className="pricing_card-text">Don't let confusion hold you back from creating amazing websites - sign up for our tutoring session today!</p>                <a href="#">$120.00</a>
               </div>
             </div>
             {/* END CARD 2 */}
@@ -116,8 +118,9 @@ const Pricing = () => {
               </div>
               <img src={tutor} alt="tutor"/>
               <div className="pricing_card-info">
-                <p className="pricing_card-text">Are you struggling to understand the basics of web development? Sign up for a ½ hour tutoring session where we will break down complex concepts into easy-to-understand explanations. Whether you're a beginner or just need a refresher, our experienced tutors will work with you at your own pace to help you build a solid foundation in web development. Don't let confusion hold you back from creating amazing websites - sign up for our tutoring session today!</p>
-                <a href="#">$175.00</a>
+                <p className="pricing_card-text">Are you struggling to understand the basics of web development?</p>
+                <p className="pricing_card-text">Sign up for a ½ hour tutoring session where our experienced tutors will work with you at your own pace to help you build a solid foundation in web development.</p>
+                <p className="pricing_card-text">Don't let confusion hold you back from creating amazing websites - sign up for our tutoring session today!</p>                <a href="#">$175.00</a>
               </div>
             </div>
             {/* END CARD 3 */}
@@ -128,7 +131,9 @@ const Pricing = () => {
               </div>
               <img src={tutor} alt="tutor"/>
               <div className="pricing_card-info">
-                <p className="pricing_card-text">Are you struggling to understand the basics of web development? Sign up for a ½ hour tutoring session where we will break down complex concepts into easy-to-understand explanations. Whether you're a beginner or just need a refresher, our experienced tutors will work with you at your own pace to help you build a solid foundation in web development. Don't let confusion hold you back from creating amazing websites - sign up for our tutoring session today!</p>
+                <p className="pricing_card-text">Are you struggling to understand the basics of web development?</p>
+                <p className="pricing_card-text">Sign up for a ½ hour tutoring session where our experienced tutors will work with you at your own pace to help you build a solid foundation in web development.</p>
+                <p className="pricing_card-text">Don't let confusion hold you back from creating amazing websites - sign up for our tutoring session today!</p>
                 <a href="#">$300.00</a>
               </div>
             </div>
