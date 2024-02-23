@@ -1,75 +1,83 @@
 const staffBios = [
     {
-        "name": "Melissa Longenberger",
+        "fName": "Melissa",
+        "lName": "Longenberger",
         "location": "Berwick, PA",
-        "linkToImage": "https://images.craftsnherbs.com/new-melissa.jpg",
+        "linkToImage": "https://i.ibb.co/vc3Dw0b/new-melissa.jpg",
         "about": "",
         "openToMentoringTutoring": "Yes",
         "skills": "",
-        "position": "Leave Blank for now as it will change when we open"
+        "position": "Position: TBD"
     },
     {
-        "name": "Christopher Jones",
+        "fName": "Christopher",
+        "lName": "Jones",
         "location": "Plano, TX",
         "linkToImage": "",
         "about": "Software developer with a flair for crafting creative code.",
         "openToMentoringTutoring": "Yes",
         "skills": "HTML | CSS | JS | React | Next.js | Django | Python | VS Code | Git | GitHub | SQLite",
-        "position": "Leave Blank for now as it will change when we open"
+        "position": "Position: TBD"
     },
     {
-        "name": "Brent Cleary",
+        "fName": "Brent",
+        "lName": "Cleary",
         "location": "Seattle, WA",
         "linkToImage": "",
         "about": "Full Stack Software Developer with an emphasis in C#",
         "openToMentoringTutoring": "Yes",
         "skills": "HTML | CSS | JavaScript | C# | React | Next.js | Python | VS Code | Git | GitHub | PostgresSQL",
-        "position": "Leave Blank for now as it will change when we open"
+        "position": "Position: TBD"
     },
     {
-        "name": "Chris Bridgewater",
+        "fName": "Chris",
+        "lName": "Bridgewater",
         "location": "Creswell, OR",
-        "linkToImage": "https://live.staticflickr.com/65535/53041911057_89c714ff20_w.jpg",
+        "linkToImage": "https://i.ibb.co/HXQV9gS/chris-bridgewater.jpg",
         "about": "Full Stack Software Developer. If I’m not on my computer, I’m enjoying the outdoors!",
         "openToMentoringTutoring": "Yes",
         "skills": "HTML | CSS | JavaScript | React | Express.js | Node.js | Java | Python | Flask | Django | C# | ASP.NET | VS Code | Spring Boot | Git | GitHub | MongoDB | MySQL | AWS EC2",
-        "position": "Leave Blank for now as it will change when we open"
+        "position": "Position: TBD"
     },
     {
-        "name": "Abrar Hussain",
-        "location": "Chicago, Illinois",
+        "fName": "Abrar",
+        "lName": "Hussain",
+        "location": "Chicago, IL",
         "linkToImage": "https://i.ibb.co/vHxB3nL/abrar.jpg",
-        "about": "Full Stack Engineer",
+        "about": "Full Stack Engineer | If I'm not on my computer, I'm most likely at the gym!",
         "openToMentoringTutoring": "Yes",
         "skills": "JavaScript, React, Next JS, MERN, Firebase, Java, Spring, Python, Git, GitHub, MySQL",
-        "position": "Leave Blank for now as it will change when we open"
+        "position": "Position: TBD"
     },
     {
-        "name": "Marc Boisvert",
+        "fName": "Marc",
+        "lName": "Boisvert",
         "location": "Vine Grove, Kentucky",
         "linkToImage": "",
         "about": "No idea what to fill out for me :)",
         "openToMentoringTutoring": "",
         "skills": "",
-        "position": "Leave Blank for now as it will change when we open"
+        "position": "Position: TBD"
     },
     {
-        "name": "Kyle Rohr-Morey",
+        "fName": "Kyle",
+        "lName": "Rohr-Morey",
         "location": "Wethersfield, Connecticut",
         "linkToImage": "",
         "about": "Frontend Development | Game Development for over 4+ years!",
         "openToMentoringTutoring": "Yes",
         "skills": "HTML | CSS | JavaScript | TypeScript | React | Canvas API | Phaser 3 | Express.js | Mongoose | Express.js | MongoDB | Node.js | Electron | Git | GitHub",
-        "position": "Leave Blank for now as it will change when we open"
+        "position": "Position: TBD"
     },
     {
-        "name": "Luis Hernandez",
+        "fName": "Luis",
+        "lName": "Hernandez",
         "location": "Seattle, Wa",
         "linkToImage": "",
         "about": "Full Stack Software Developer",
         "openToMentoringTutoring": "Yes",
         "skills": "HTML, CSS, JavaScript, React, Express.js, Node.js, Python, Flask, Django, Java, Spring Boot, Linux, MySQL, MongoDB, Git, GitHub, AWS EC2",
-        "position": "Leave Blank for now as it will change when we open"
+        "position": "Position: TBD"
     }
 ]
 
