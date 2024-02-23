@@ -19,7 +19,7 @@ const Pricing = () => {
         {/* TITLE */}
         <div className="large_box">
           <h2>
-            Development Pricing
+            TECHBYTE PRICING
           </h2>
         </div>
         {/* END TITLE */}

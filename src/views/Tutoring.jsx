@@ -48,7 +48,7 @@ const Tutoring = () => {
       <div className="wrapper">
         <div className="large_box">
           <h2>
-            Expert Tutoring to Improve Your Skills
+            EXPERT TUTORING TO IMPROVE YOUR SKILLS
           </h2>
           <p>
             Are you struggling with C#, Java, Python, or JavaScript programming? Our TechByte Learning instructors are here to help! With years of experience in the field, our instructors are available for one-on-one tutoring sessions to help you master these full stack platforms.

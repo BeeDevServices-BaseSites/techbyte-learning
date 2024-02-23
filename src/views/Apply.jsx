@@ -14,7 +14,7 @@ const Apply = () => {
       <div className="wrapper">
         <div className="large_box">
           <h2>
-            APPLICATION PAGE
+            TALK WITH OUR ADMISSIONS
           </h2>
           <AdmissionsChat />
         </div>

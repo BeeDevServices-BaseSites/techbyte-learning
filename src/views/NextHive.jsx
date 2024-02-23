@@ -15,7 +15,9 @@ const NextHive = () => {
       {/* TITLE SECTION */}
       <div className="wrapper">
         <div className="large_box">
-          <h1>Next Cohort Info</h1>
+          <h2>
+            NEXT COHORT INFO
+          </h2>
         </div>
         {/* SECTION 1 */}
         <div className="split_box">

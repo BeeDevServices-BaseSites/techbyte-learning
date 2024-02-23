@@ -5,7 +5,11 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="page_title">
         <img style={{paddingLeft:"20px"}} src="https://cdn.discordapp.com/attachments/1204477744830746655/1208990870171287633/computerBee.png?ex=65e54b7d&is=65d2d67d&hm=e9ce9fda34d8ced8d29a87e9d493dd3295c98e41479f06e32b09490cf5e8fc96&" alt="TechByte Learning Bee" />
-        <h1><Link to="/">TechByte Learning</Link></h1>
+        <h1>
+          <Link to="/">
+            TechByte Learning
+          </Link>
+        </h1>
       </div>
       <ul className="navbar_menu">
         <li>
