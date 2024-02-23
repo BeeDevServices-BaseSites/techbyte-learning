@@ -14,7 +14,9 @@ const BadLink = () => {
         <main>
         <div className="wrapper">
             <div className="error_404">
-                <h2>It appears you're lost...</h2>
+                <h2>
+                    It appears you're lost...
+                </h2>
                 <Button to="/" text="TAKE ME HOME" />
                 <img className="error_image" src={error_404} alt="Oops 404" />
             </div>

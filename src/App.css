@@ -2,12 +2,13 @@
 
 :root {
     --white: #CBE5EC;
-    --green: #18AC58;
-    --green_shadow: #6e6e6e;
+    --midnight_blue: #0f2f47;
+    --shadow: #979393;
     --light_yellow: #F6E8B7;
     --dark_yellow: rgb(239, 215, 128);
     --header_gradient: linear-gradient(0deg, rgba(239, 215, 128, 1) 42%, rgba(246, 232, 182, 1) 79%);
     --black: #0D1F2D;
+    --green: #18AC58;
     --font_size_default: 16px;
 }
 
@@ -56,19 +57,19 @@ h1,h2,h3,h4,h5,h6,a,p {
 
 h1 {
     font-size: 2.25rem;
-    color: var(--green);
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
+    color: var(--midnight_blue);
+    text-shadow: 0.5px 0.5px 0.5px var(--shadow);
 }
 
 h2 {
     font-size: 1.75rem;
-    color: var(--green);
-    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
+    color: var(--midnight_blue);
+    text-shadow: 0.5px 0.5px 0.5px var(--shadow);
 }
 
 h3 {
     font-size: 1.375rem;
-    color: var(--green);
+    color: var(--midnight_blue);
 }
 
 h4 {
@@ -139,9 +140,9 @@ p {
     flex-direction: column;
     background: var(--dark_yellow);
     background: var(--header_gradient);
-    border-bottom: 5px solid var(--green);
+    border-bottom: 5px solid var(--midnight_blue);
     transition: 0.25s;
-    box-shadow: 5px 5px 25px var(--green_shadow);
+    box-shadow: 5px 5px 25px var(--shadow);
     z-index: 9999;
 }
 
@@ -154,8 +155,8 @@ p {
 
 .page_title a {
     font-size: 3.25rem;
-    color: var(--green);
-    text-shadow: 1px 1px 1px var(--green_shadow);
+    color: var(--midnight_blue);
+    text-shadow: 0.5px 0.5px 1px var(--shadow);
     text-decoration: none;
     transition: all 300ms ease;
 }
@@ -185,7 +186,7 @@ p {
 
 .navbar_menu a, .drop li a {
     text-decoration: none;
-    color: var(--green);
+    color: var(--midnight_blue);
     font-weight: 600;
     text-transform: capitalize;
     font-family: monospace;
@@ -200,8 +201,8 @@ p {
 }
 
 .navbar_menu > li a:hover {
-    background-color: var(--green_shadow);
-    border-left: 1px solid var(--green);
+    background-color: var(--shadow);
+    border-left: 1px solid var(--midnight_blue);
 }
 
 .drop {
@@ -213,7 +214,7 @@ p {
     transform-origin: top center;
     width: 125px;
     background-color: var(--dark_yellow);
-    box-shadow: 5px 5px 10px var(--green_shadow);
+    box-shadow: 5px 5px 10px var(--shadow);
 }
 
 .drop li a {
@@ -226,7 +227,7 @@ p {
 }
 
 .drop li a:hover {
-    background: var(--green_shadow);
+    background: var(--shadow);
 }
 
 .navbar_menu:hover .drop {
@@ -237,44 +238,44 @@ p {
 .navbar_menu li:hover .menu li:first-of-type {
     animation: menu_inner 0.1s ease-in-out forwards;
     animation-delay: 0.1s;
-    border: 2px solid var(--green);
+    border: 2px solid var(--midnight_blue);
 }
 
 .navbar_menu li:hover .menu li:nth-of-type(2) {
     animation: menu_inner 0.1s ease-in-out forwards;
     animation-delay: 0.2s;
-    border: 2px solid var(--green);
+    border: 2px solid var(--midnight_blue);
 }
 
 .navbar_menu li:hover .menu li:nth-of-type(3) {
     animation: menu_inner 0.1s ease-in-out forwards;
     animation-delay: 0.3s;
-    border: 2px solid var(--green);
+    border: 2px solid var(--midnight_blue);
 }
 
 .navbar_menu li:hover .menu li:last-of-type {
     animation: menu_inner 0.1s ease-in-out forwards;
     animation-delay: 0.4s;
-    border: 2px solid var(--green);
+    border: 2px solid var(--midnight_blue);
 }
 
 /* Drop down for 3 menu items */
 .navbar_menu li:hover .menu2 li:first-of-type {
     animation: menu_inner 0.1s ease-in-out forwards;
     animation-delay: 0.1s;
-    border: 2px solid var(--green);
+    border: 2px solid var(--midnight_blue);
 }
 
 .navbar_menu li:hover .menu2 li:nth-of-type(2) {
     animation: menu_inner 0.1s ease-in-out forwards;
     animation-delay: 0.2s;
-    border: 2px solid var(--green);
+    border: 2px solid var(--midnight_blue);
 }
 
 .navbar_menu li:hover .menu2 li:last-of-type {
     animation: menu_inner 0.1s ease-in-out forwards;
     animation-delay: 0.3s;
-    border: 2px solid var(--green);
+    border: 2px solid var(--midnight_blue);
 }
 
 .navbar_menu:hover > li > a, .navbar_menu:hover .drop li a {
@@ -412,7 +413,7 @@ p {
     font-size: 200%;
     font-weight: 700;
     line-height: 80%;
-    text-shadow:  0.5px 0.5px 0.5px var(--green_shadow);
+    text-shadow:  0.5px 0.5px 0.5px var(--shadow);
 }
 
 .split_box {
@@ -452,8 +453,8 @@ p {
 .box_left_img img, .box_right_img img {
     width: 90%;
     min-width: 290px;
-    border: 3px solid var(--green);
-    box-shadow:  5px 5px 10px var(--green_shadow);
+    border: 3px solid var(--midnight_blue);
+    box-shadow:  5px 5px 10px var(--shadow);
     border-radius: 20px;
 }
 
@@ -485,16 +486,16 @@ p {
         font-size: 200%;
         font-weight: 700;
         line-height: 80%;
-        text-shadow:  0.5px 0.5px 0.5px var(--green_shadow);
+        text-shadow:  0.5px 0.5px 0.5px var(--shadow);
 }
 
 .add_background {
     width: 45%;
     min-width: 290px;
     background-color: var(--light_yellow);
-    border: 5px solid var(--green);
+    border: 5px solid var(--midnight_blue);
     border-radius: 10px;
-    box-shadow: 5px 5px 10px var(--green_shadow);
+    box-shadow: 5px 5px 10px var(--shadow);
 }
 /*                             */
 /*      END PAGE LAYOUT        */
@@ -524,14 +525,14 @@ p {
 .slideout > .slideout_tab { 
     display: block;
     background-color: var(--dark_yellow);
-    border: 3px solid var(--green);
+    border: 3px solid var(--midnight_blue);
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    height: 100px;
+    height: 90px;
     margin-left: -30px; 
     position: relative;
-    left:-5px;
-    margin-top: 90px;
+    left:-15px;
+    margin-top: -10px;
     width: 60px;
 }
 
@@ -542,6 +543,7 @@ p {
     font-size: .85rem;
     font-weight: bold;
     margin-top: 42px;
+    padding-right: 10px;
     transform: rotate(90deg);
     white-space: nowrap;
 }
@@ -553,9 +555,9 @@ p {
 
 .slideout > .slideout_content {
     background-color: var(--dark_yellow);
-    border-top: 3px solid var(--green);
-    border-right: 3px solid var(--green);
-    border-bottom: 3px solid var(--green);
+    border-top: 3px solid var(--midnight_blue);
+    border-right: 3px solid var(--midnight_blue);
+    border-bottom: 3px solid var(--midnight_blue);
     border-radius: 0 5px 5px 0;
     cursor: auto;
     font-size: 1rem;
@@ -574,7 +576,7 @@ p {
 .pst {
     padding-left: 10px;
     font-size: 1.75rem;
-    color: var(--green);
+    color: var(--midnight_blue);
 }
 
 .cookie {
@@ -598,12 +600,12 @@ p {
 
 #career_link {
     text-decoration: underline;
-    color: var(--green);
+    color: var(--midnight_blue);
 }
 
 #career_link:hover {
-    color: var(--green_shadow);
-    text-shadow: 0.5px 0.5px 1px var(--green);
+    color: var(--shadow);
+    text-shadow: 0.5px 0.5px 1px var(--midnight_blue);
 }
 
 /*                              */
@@ -621,9 +623,9 @@ p {
     margin: 0 auto;
     background: var(--dark_yellow);
     background: var(--header_gradient);
-    border: 3px solid var(--green);
+    border: 3px solid var(--midnight_blue);
     border-radius: 10px;
-    box-shadow:  5px 5px 10px var(--green_shadow);
+    box-shadow:  5px 5px 10px var(--shadow);
 }
 
 .project_icon_container{
@@ -655,14 +657,14 @@ p {
     position: relative;
     height: 90px;
     width: 90px;
-    border: 3px solid var(--green);
+    border: 3px solid var(--midnight_blue);
     border-radius: 10px;
-    box-shadow:  5px 5px 10px  var(--green_shadow);
+    box-shadow:  5px 5px 10px  var(--shadow);
     transition: all 300ms ease;
     
     &:hover {
         transform: scale(1.3, 1.3) translateY(-1px);
-        box-shadow: 5px 5px 15px var(--green_shadow);
+        box-shadow: 5px 5px 15px var(--shadow);
         z-index: 100;
     }
 }
@@ -673,14 +675,14 @@ p {
     padding: 5px;
     background: var(--dark_yellow);
     background: var(--header_gradient);
-    border: 3px solid var(--green);
+    border: 3px solid var(--midnight_blue);
     border-radius: 10px;
-    box-shadow:  5px 5px 10px var(--green_shadow);
+    box-shadow:  5px 5px 10px var(--shadow);
     transition: all 300ms ease;
 
     &:hover {
         transform: scale(1.3, 1.3) translateY(-1px);
-        box-shadow: 5px 5px 15px var(--green_shadow);
+        box-shadow: 5px 5px 15px var(--shadow);
         z-index: 100;
     }
 }
@@ -816,19 +818,19 @@ p {
     min-height: 245px;
     margin: 15px auto;
     padding: 5px;
-    border: 3px solid var(--green);
+    border: 3px solid var(--midnight_blue);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: var(--dark_yellow);
     background: var(--header_gradient);
-    box-shadow: 5px 5px 10px var(--green_shadow);
+    box-shadow: 5px 5px 10px var(--shadow);
     transition: all 300ms ease;
 
     &:hover, &:focus-within {
         transform: scale(1.1);
-        box-shadow: 5px 5px 15px var(--green_shadow);
+        box-shadow: 5px 5px 15px var(--shadow);
         z-index: 100;
     }
 }
@@ -836,14 +838,14 @@ p {
 .card_one h2 {
     text-align: center;
     margin: 5px 0;
-    color: var(--green);
+    color: var(--midnight_blue);
 }
 
 .card_one img {
     height: 100px;
     width: 100px;
-    background-color: var(--green_shadow);
-    border: 3px solid var(--green);
+    background-color: var(--shadow);
+    border: 3px solid var(--midnight_blue);
     border-radius: 50%;
     margin-top: 10px;
 }
@@ -887,9 +889,9 @@ p {
         min-width: 15rem;
         max-width: calc(12.5rem + 13vw);
         background-color: var(--dark_yellow);
-        border: 3px solid var(--green);
+        border: 3px solid var(--midnight_blue);
         border-radius: 10px;
-        box-shadow:  5px 5px 10px var(--green_shadow);
+        box-shadow:  5px 5px 10px var(--shadow);
         position: relative;
         transition: all 300ms ease;
 
@@ -902,7 +904,7 @@ p {
             height: 2.5rem;
             width: 100%;
             background-color: var(--dark_yellow);
-            box-shadow:  5px 5px 15px  var(--green_shadow);
+            box-shadow:  5px 5px 15px  var(--shadow);
 
             &::before, &::after {
                 content: '';
@@ -914,7 +916,7 @@ p {
             &::before {
                 border-bottom-left-radius: 30px;
                 border-top-left-radius: 30px;
-                background-color: var(--green_shadow);
+                background-color: var(--shadow);
                 height: 1.25rem;
                 z-index: 1;
             }
@@ -943,7 +945,7 @@ p {
                 transform: translatey(-50%);
                 font-size: 1.275rem;
                 font-weight: 900;
-                color: var(--green);
+                color: var(--midnight_blue);
 				text-align: center
             }
         }
@@ -970,24 +972,24 @@ p {
 
             a {
                 text-decoration: none;
-                color: var(--green);
+                color: var(--midnight_blue);
                 font-weight: 800;
                 outline: none;
                 display: block;
                 margin: 10px auto 8px;
                 width: fit-content;
                 text-align: center;
-                border: thin solid var(--green);
-                box-shadow: 5px 5px 10px var(--green_shadow);
+                border: thin solid var(--midnight_blue);
+                box-shadow: 5px 5px 10px var(--shadow);
                 padding: 8px 16px;
                 border-radius: 4px;
                 transition: background-color 300ms ease, color 300ms ease;
                 
                 &:hover, &:focus {
-                    background-color: var(--green);
+                    background-color: var(--midnight_blue);
                     color: var(--light_yellow);
-                    text-shadow: 0.5px 0.5px 0.5px var(--green_shadow);
-                    box-shadow: 5px 5px 15px var(--green_shadow);
+                    text-shadow: 0.5px 0.5px 0.5px var(--shadow);
+                    box-shadow: 5px 5px 15px var(--shadow);
                     border: thin solid var(--light_yellow);
                 }
             }
@@ -995,7 +997,7 @@ p {
 
         &:hover, &:focus-within {
             transform: scale(1.05);
-            box-shadow: 5px 5px 15px var(--green_shadow);
+            box-shadow: 5px 5px 15px var(--shadow);
         }
     }
 }
@@ -1019,13 +1021,13 @@ p {
     align-items: center;
     justify-content: center;
     background: var(--light_yellow);
-    border: 4px solid var(--green);
+    border: 4px solid var(--midnight_blue);
     border-radius: 10px;
-    box-shadow: 5px 5px 10px var(--green_shadow);
+    box-shadow: 5px 5px 10px var(--shadow);
 }
 
 .contact_container h2 {
-    color: var(--green);
+    color: var(--midnight_blue);
     margin-top: 25px;
 }
 
@@ -1048,13 +1050,12 @@ p {
     padding: 0;
     font-size: 1.125rem;
     text-align: end;
-    color: var(--green);
+    color: var(--black);
     font-weight: 600;
     transition: all 300ms ease;
 
     &:hover {
-        color: var(--green_shadow);
-        text-shadow: 0.5px 0.5px 1px var(--green);
+        color: var(--green);
         transform: scale(1.05);
     }
 }
@@ -1093,7 +1094,7 @@ footer {
     height: 80px;
     background: var(--dark_yellow);
     background: var(--header_gradient);
-    border-top: 5px solid var(--green);
+    border-top: 5px solid var(--midnight_blue);
 }
 
 
@@ -1102,12 +1103,11 @@ footer {
     padding-left: 30px;
     
     a {
-        color: var(--green);
+        color: var(--black);
         transition: all 300ms ease;
         
         &:hover {
-            color: var(--green_shadow);
-            text-shadow: 0.5px 0.5px 1px var(--green);
+            color: var(--green);
         }
     }
 }
@@ -1331,7 +1331,7 @@ footer {
 }
 
 .error_404 h2 {
-    color: var(--green);
+    color: var(--midnight_blue);
     margin-top: 10px;
 }
 
@@ -1339,9 +1339,9 @@ footer {
     margin: 10px auto 20px;
     width: 63%;
     min-width: 290px;
-    border: 3px solid var(--green);
+    border: 3px solid var(--midnight_blue);
     border-radius: 10px;
-    box-shadow: 5px 5px 10px var(--green_shadow);
+    box-shadow: 5px 5px 10px var(--shadow);
 }
 
 /*                             */
@@ -1356,24 +1356,22 @@ footer {
     margin: 10px auto;
     padding: 5px 8px;
     background-color: var(--dark_yellow);
-    border: 2px solid var(--green);
+    border: 2px solid var(--midnight_blue);
     border-radius: 10px;
-    color: var(--green);
+    color: var(--midnight_blue);
     cursor: pointer;
-    box-shadow: 5px 5px 10px var(--green_shadow);
+    box-shadow: 5px 5px 10px var(--shadow);
     transition: all 300ms ease;
     
     &:hover {
-        background-color: var(--green_shadow);
+        background-color: var(--shadow);
         border: 2px solid var(--dark_yellow);
-        color: var(--dark_yellow);
-        text-shadow: .5px .5px .5px var(--green);
-        box-shadow: 5px 5px 15px var(--green_shadow);
-        transform: scale(1.1);
+        box-shadow: 5px 5px 15px var(--shadow);
+        transform: scale(1.05);
     }
     
     &:active {
-        top: 3px
+        top: 4px
     }
 }
 
@@ -1390,8 +1388,8 @@ footer {
     height: 600px;
     width: 50dvw;
     min-width: 300px;
-    border: 3px solid var(--green);
-    box-shadow: 5px 5px 10px var(--green_shadow);
+    border: 3px solid var(--midnight_blue);
+    box-shadow: 5px 5px 10px var(--shadow);
 }
 
 /*                             */

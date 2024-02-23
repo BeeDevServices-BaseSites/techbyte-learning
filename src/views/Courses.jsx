@@ -35,7 +35,7 @@ const Courses = () => {
         {/* SECTION 1 */}
         <div className="large_box">
           <h2>
-            Unlock Your Full Potential In Web Development!
+            UNLOCK YOUR FULL POTENTIAL IN WEB DEVELOPMENT!
           </h2>
           <p>
             <span>A</span>re you ready to dive into the thrilling world of web development and become a master in full stack programming? Look no further!
