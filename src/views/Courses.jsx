@@ -74,20 +74,20 @@ const Courses = () => {
             </p>
           </div>
           <div className="course_icons">
-            <img id="python" src={python} alt="Python" />
-            <img id="django" src={django} alt="Django" />
-            <img id="flask" src={flask} alt="Flask" />
-            <img id="postgres" src={postgres} alt="PostgreSQL" />
+            <img id="mysql" src={mysql} alt="MySQL" />
+            <img id="expressjs" src={express} alt="Express JS" />
+            <img id="reactjs" src={react} alt="React JS" />
+            <img id="nodejs" src={node} alt="Node JS" />
           </div>
         </div>
         {/* END SECTION 3 */}
         {/* SECTION 4 */}
         <div className="split_box flip">
           <div className="course_icons">
-            <img id="mysql" src={mysql} alt="MySQL" />
-            <img id="expressjs" src={express} alt="Express JS" />
-            <img id="reactjs" src={react} alt="React JS" />
-            <img id="nodejs" src={node} alt="Node JS" />
+            <img id="python" src={python} alt="Python" />
+            <img id="django" src={django} alt="Django" />
+            <img id="flask" src={flask} alt="Flask" />
+            <img id="postgres" src={postgres} alt="PostgreSQL" />
           </div>
           <div className="box_right_text">
             <p>
