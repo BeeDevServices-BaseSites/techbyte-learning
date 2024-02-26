@@ -57,12 +57,12 @@ const Tutoring = () => {
           <p>
             Take advantage of our bundle pricing options, where buying more tutoring sessions saves you money.
           </p>
-          <Button to="/pricingplans" text="VIEW PRICING PLANS" />
+          <Button to="/pricingplans" text="PRICING PLANS" />
           <p>
             Don't let coding challenges hold you back any longer. Contact TechByte Learning today to schedule your personalized tutoring session and unlock your full coding potential.
           </p>
           <h2>
-            Meet Our Instructors
+            Meet Our Tutors
           </h2>
         </div>
         {/* INSTRUCTOR CARDS */}
@@ -87,7 +87,7 @@ const Tutoring = () => {
             )
           })}
         </div>
-        <Button to="/pricingplans" text="VIEW PRICING PLANS" />
+        <Button to="/pricingplans" text="PRICING PLANS" />
       </div>
     </main>
   );
