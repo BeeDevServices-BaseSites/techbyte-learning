@@ -1723,87 +1723,102 @@ footer {
 .hive-container {
     display: grid;
     flex-wrap: wrap;
-    gap: 6vh; 
+    gap: 6vh;
     justify-content: center;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     flex-direction: column;
-  }
-  
-  .flip_box {
-    width: 40vh; 
-    height: 30vh;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+}
+
+.flip_box {
+    width: 40vh;
+    height: 38vh;
     perspective: 1000px;
     margin-top: 10vh;
     margin-bottom: 10vh;
-  }
-  
-  .front, .back {
+}
+
+.front,
+.back {
     width: 100%;
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
     display: flex;
-    border-radius: 10px; 
-  }
+    border-radius: 10px;
+}
 
-  .front-bottom-info {
+
+.front-bottom-info {
     padding: 0.1vh;
     background-color: #dedede;
-    }
-  
-  .back {
+}
+
+
+
+.flipped {
     transform: rotateY(180deg);
-    border: 1px solid #ccc; 
-    padding: 10px;
-  }
-  
-  .flipped {
-    transform: rotateY(180deg);
-  }
-  
-  .flip_box {
+}
+
+.flip_box {
     transition: transform 0.6s;
     transform-style: preserve-3d;
-  }
-  
-  .grid-item img {
+}
+
+.grid-item img {
     max-width: 100%;
-    border-radius: 10px 10px 0 0; 
-  }
-  
-  .grid-item p {
+    border-radius: 10px 10px 0 0;
+}
+
+.grid-item p {
     margin: 10px;
-  }
-  
-  @media (max-width: 1024px) {
+}
+
+@media (max-width: 1024px) {
     .hive-container {
-      grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
     }
+
     .flip_box {
-        width: 30vh; 
-        height: 75vh; 
+        width: 30vh;
+        height: 75vh;
         perspective: 1000px;
     }
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .hive-container {
-      grid-template-columns: 1fr; 
-      gap: 1vh; 
+        grid-template-columns: 1fr;
+        gap: 1vh;
 
     }
+
     .flip_box {
-        width: 50vh; 
-        height: 60vh; 
+        width: 50vh;
+        height: 60vh;
         perspective: 1000px;
-        position: relative; 
+        position: relative;
         margin-top: 1vh;
         margin-bottom: 1vh;
     }
-  }
+}
 
-  .rightArrow {
+.hive-title {
+    margin-bottom: "20px";
+}
+
+.employee-name {
+    font-weight: bold;
+}
+
+.employee-position {
+    font-style: italic;
+    font-size: 15px;
+}
+
+.rightArrow {
     padding: 1px;
     justify-content: end;
     align-items: end;
@@ -1811,40 +1826,92 @@ footer {
     cursor: pointer;
     animation: 0.1s ease-in-out forwards;
     animation-delay: 0.4s;
-  }
+}
 
-  .leftArrow {
-    padding: 1px;
-    display: inline-block;
-    justify-content: end;
-    align-items: end;
-    display: flex;
-    cursor: pointer;
-  }
+/* .rightArrow:hover {
+    transform: scale(1.1);
+} */
 
-  .flex-bottom-info {
-  }
+/* BACK  */
+.back {
+    transform: rotateY(180deg);
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light grey background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add shadow for depth */
+    transition: box-shadow 0.3s ease-in-out;
+    /* Smooth transition for shadow */
+}
 
-  .back-info {
+.back:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Slightly larger shadow on hover */
+}
+
+.back-info {
     text-align: left;
-  }
+}
 
-  .hive-title{
-    margin-bottom: "20px";
-  }
-
-  .employee-name {
+.back-first-name {
     font-weight: bold;
-  }
+    text-align: center;
+    /* Center align the name for better focus */
+    margin-bottom: 15px;
+    /* Increase spacing */
+    font-size: 1.2em;
+    /* Larger font size */
+    color: #333;
+    /* Dark grey color for better readability */
+}
 
-  .employee-position {
-    font-style: italic;
-    font-size: 15px;
-  }
+/* Specific Styles for About Section */
+.employees-about {
+    background-color: #fff;
+    /* Light background to highlight the section */
+    border: 1px solid #e6e6e6;
+    /* Subtle border for definition */
+    border-radius: 8px;
+    /* Soften edges for a modern look */
+    padding: 15px;
+    /* Spacing inside the section */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /* Light shadow for depth */
+    font-size: 0.95em;
+    /* Slightly smaller font size for this section */
+    line-height: 1.6;
+    /* Increased line height for readability */
+}
 
-  .back-first-name {
-    font-weight: bold;
+/* Specific Styles for Skills Section */
+.employees-skills {
+    padding: 10px;
+    background-color: #f2f2f2;
+    /* Slightly different background for contrast */
+    border-radius: 8px;
+    /* Consistent rounded corners */
+    margin: 0;
+    /* Reset default margin */
+    padding-left: 20px;
+    /* Add some padding for content */
+    font-size: 0.9em;
+    /* Adjust font size for clarity */
+}
+
+
+.leftArrow {
+    padding: 5px;
+    justify-content: flex-end;
+    /* Align arrow to the right */
     align-items: center;
-    justify-content: center;
-    margin-bottom: 5px;
-  }
+    /* Vertically center in its container */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    /* Smooth transition for rotation */
+}
+
+.leftArrow:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+}
