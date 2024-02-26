@@ -19,26 +19,53 @@ const Index = () => {
     <main >
       <div className="wrapper">
         {/* SECTION 1 */}
-        <div className="large_box">
-          <h2>
-            BEE PART OF OUR HIVE!
-          </h2>
-          {/* <h3>
-            Introducing TechByte - where learning meets industry-leading technologies and builds a solid foundation in web development!
-          </h3> */}
-          <p><span>A</span>ttention, aspiring tech enthusiasts, busy bees of the coding world, and those eager to expand their horizons! At TechByte, we believe in the power of education and hands-on experience to shape the future generation of web developers. Just as bees are vital to the ecosystem, we aim to be essential for your growth in the ever-evolving tech industry.</p>
-          <p>With TechByte, you'll gain proficiency in cutting-edge technologies that are shaping the future. Our curriculum is meticulously designed to focus on the latest trends, ensuring you stay ahead of the game. We offer a comprehensive learning experience that encompasses web fundamentals, moving to Python, JavaScript with React.js, and so much more!</p>
-        </div>
-        <Button to="/courses" text="VIEW COURSES" />
+        
+        
+        
+        
+        
+        
+        
         {/* END SECTION 1 */}
+
         {/* SECTION 2 */}
-        <Honeycomb />
+        <div className="split_box index">
+          <div className="box_left_text honeycomb_background">
+            <h2>
+              Bee Part Of Our Hive
+            </h2>
+            <p><span>A</span>ttention, aspiring tech enthusiasts, busy bees of the coding world, and those eager to expand their horizons! At TechByte, we believe in the power of education and hands-on experience to shape the future generation of web developers. Just as bees are vital to the ecosystem, we aim to be essential for your growth in the ever-evolving tech industry.</p>
+            <p>With TechByte, you'll gain proficiency in cutting-edge technologies that are shaping the future. Our curriculum is meticulously designed to focus on the latest trends, ensuring you stay ahead of the game. We offer a comprehensive learning experience that encompasses web fundamentals, moving to Python, JavaScript with React.js, and so much more!</p>
+            <Button to="/courses" text="COURSES" />
+          </div>
+          <div className="box_right_honeycomb">
+            <Honeycomb />
+          </div>
+        </div>
         {/* END SECTION 2 */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {/* SECTION 3 */}
         <div className="split_box">
           <div className="box_left_text">
             <h2>Building a Solid Foundation</h2>
-            <p><span>J</span>ust as bees carefully construct their hives, we take pride in teaching our students the fundamentals of web development. From HTML and CSS to responsive web design, we believe in laying the groundwork for success. Our skilled instructors will guide you through each step, providing hands-on projects and practical exercises to ensure a strong understanding of the subject matter!</p>
+            <p><span>W</span>e take pride in teaching our students the fundamentals of web development. From HTML and CSS to responsive web design, we believe in laying the groundwork for success. Our skilled instructors will guide you through each step, providing hands-on projects and practical exercises to ensure a strong understanding of the subject matter!</p>
           </div>
           <div className="box_right_img">
             <img src={dev_instruction} alt="Teaching" />
@@ -84,7 +111,7 @@ const Index = () => {
           <div className="box_left_text">
             <h2>Expanding Opportunities</h2>
             <p><span>T</span>echByte ensures your growth and opens up endless possibilities in the dynamic industry of web development. Buzz on over to TechByte and let us help you build a rewarding career!</p>
-            <Button to="/nexthive" text="NEXT COHORT DATES" />
+            <Button to="/nexthive" text="NEXT COHORT" />
           </div>
           <div className="box_right_img">
             <img src={your_career} alt="your career" />

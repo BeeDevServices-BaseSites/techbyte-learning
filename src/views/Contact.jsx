@@ -14,12 +14,12 @@ const Contact = () => {
       <div className="wrapper">
         {/* CONTACT CONTAINER */}
         <div className="contact_container">
-          <img className="bumble_bee_image" src={flying_bee} alt="bumble bee" />  
+          {/* <img className="bumble_bee_image" src={flying_bee} alt="bumble bee" />   */}
           {/* SECTION 1 */}
           <h2>Get In Touch:</h2>
           <div className="contacts">
             <h4>Phone:</h4>
-            <h4 className="phone_number">some phone number</h4>
+            <h4 className="phone_number">570-890-5252</h4>
           </div>
           <div className="contacts">
             <h4>Admissions Email:</h4>

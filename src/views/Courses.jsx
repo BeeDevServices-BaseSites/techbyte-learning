@@ -54,8 +54,8 @@ const Courses = () => {
         <div className="split_box">
           <div className="box_left_text">
             <p>
-              <span>F</span>or those looking to delve into the world of web development, we start with in-depth courses that cover the fundamentals of HTML5, CSS, and JavaScript. Students will gain a thorough understanding of these programming languages and be equipped with the tools to create stunning websites and web applications. 
-            </p>          
+              <span>F</span>irst we start with in-depth courses that cover the fundamentals of HTML5, CSS, and JavaScript. For those looking to delve into the world of web development we ensure a thorough understanding of these programming languages and equip you with the tools to create stunning websites and web applications.
+            </p>
           </div>
           <div className="course_icons">
             <img id="html5" src={html5} alt="html5" />
