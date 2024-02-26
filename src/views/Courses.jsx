@@ -58,11 +58,18 @@ const Courses = () => {
             </p>
           </div>
           <div className="course_icons">
-            <img id="html5" src={html5} alt="html5" />
-            <img id="css" src={css} alt="CSS" />
-            <img id="javascript" src={javascript} alt="JavaScript" />
-            <img id="bootstrap" src={bootstrap} alt="Bootstrap" />
-            <img id="sass" src={sass} alt="Sass" />
+            <div className="icon">
+              <img id="html5" src={html5} alt="html5" />
+            </div>
+            <div className="icon">
+              <img id="css" src={css} alt="CSS" />
+            </div>
+            <div className="icon">
+              <img id="javascript" src={javascript} alt="JavaScript" />
+            </div>
+            <div className="icon">
+              <img id="bootstrap" src={bootstrap} alt="Bootstrap" />
+            </div>
           </div>
         </div>
         {/* END SECTION 2 */}
@@ -74,20 +81,36 @@ const Courses = () => {
             </p>
           </div>
           <div className="course_icons">
-            <img id="mysql" src={mysql} alt="MySQL" />
-            <img id="expressjs" src={express} alt="Express JS" />
-            <img id="reactjs" src={react} alt="React JS" />
-            <img id="nodejs" src={node} alt="Node JS" />
+          <div className="icon">
+              <img id="mysql" src={mysql} alt="MySQL" />
+            </div>
+            <div className="icon">
+              <img id="expressjs" src={express} alt="Express JS" />
+            </div>
+            <div className="icon">
+              <img id="reactjs" src={react} alt="React JS" />
+            </div>
+            <div className="icon">
+              <img id="nodejs" src={node} alt="Node JS" />
+            </div>
           </div>
         </div>
         {/* END SECTION 3 */}
         {/* SECTION 4 */}
         <div className="split_box flip">
           <div className="course_icons">
-            <img id="python" src={python} alt="Python" />
-            <img id="django" src={django} alt="Django" />
-            <img id="flask" src={flask} alt="Flask" />
-            <img id="postgres" src={postgres} alt="PostgreSQL" />
+          <div className="icon">
+              <img id="python" src={python} alt="Python" />
+            </div>
+            <div className="icon">
+              <img id="django" src={django} alt="Django" />
+            </div>
+            <div className="icon">
+              <img id="flask" src={flask} alt="Flask" />
+            </div>
+            <div className="icon">
+              <img id="postgres" src={postgres} alt="PostgreSQL" />
+            </div>
           </div>
           <div className="box_right_text">
             <p>

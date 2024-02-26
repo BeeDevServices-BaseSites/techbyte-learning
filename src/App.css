@@ -684,6 +684,26 @@ p {
     align-items: center;
 }
 
+.icon {
+    width: 115px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    background: var(--dark_yellow);
+    background: var(--header_gradient);
+    border: 3px solid var(--midnight_blue);
+    border-radius: 10px;
+    box-shadow:  5px 5px 10px  var(--shadow);
+    transition: all 300ms ease;
+
+    &:hover {
+        transform: scale(1.3, 1.3) translateY(-1px);
+        box-shadow: 5px 5px 15px var(--shadow);
+        z-index: 100;
+    }
+}
+
 .course_icons {
     width: 47%;
     min-width: 300px;
@@ -702,8 +722,8 @@ p {
 
 #projects {
     position: relative;
-    height: 90px;
-    width: 90px;
+    height: 100px;
+    width: 115px;
     border: 3px solid var(--midnight_blue);
     border-radius: 10px;
     box-shadow:  5px 5px 10px  var(--shadow);
@@ -716,50 +736,44 @@ p {
     }
 }
 
-#css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
+#css, #html5, #javascript, #bootstrap, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs, #projects {
     position: relative;
     height:80px;
-    padding: 5px;
-    background: var(--dark_yellow);
-    background: var(--header_gradient);
-    border: 3px solid var(--midnight_blue);
-    border-radius: 10px;
-    box-shadow:  5px 5px 10px var(--shadow);
-    transition: all 300ms ease;
-
-    &:hover {
-        transform: scale(1.3, 1.3) translateY(-1px);
-        box-shadow: 5px 5px 15px var(--shadow);
-        z-index: 100;
-    }
+    width: 80px;
+    /* padding: 5px; */
 }
 
-#css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
+#css, #html5, #javascript, #bootstrap,#reactjs,#mysql  {
     width: 70px;
 }
 
-#postgres, #python, #django {
+/* #postgres, #python, #django {
     width: 80px;
-}
+} */
 
-#flask {
+/* #flask {
     width: 100px;
-}
+} */
 
-#expressjs, #nodejs {
+/* #expressjs, #nodejs {
     width: 100px;
-}
+} */
 
-@media screen and (max-width: 1250px) {
-    #css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
-        height: 70px;
-        padding: 2px;
+@media screen and (max-width: 1330px) {
+    .icon {
+        height: 75px;
+        width: 75px;
     }
-    #css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
+    #css, #html5, #javascript, #bootstrap, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs, #projects {
+        height: 70px;
+        width: 70px;
+        /* padding: 2px; */
+    }
+    #css, #html5, #javascript, #bootstrap,#reactjs,#mysql  {
         width: 60px;
     }
     
-    #postgres, #python, #django {
+    /* #postgres, #python, #django {
         width: 70px;
     }
     
@@ -769,22 +783,27 @@ p {
     
     #expressjs, #nodejs {
         width: 90px;
-    }
+    } */
 }
 
 @media screen and (max-width: 1064px) {
+    .icon {
+        height: 115px;
+        width: 100px;
+    }
     .course_icons, .project_icon_container {
         width: 100%;
     }
-    #css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
+    #css, #html5, #javascript, #bootstrap, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs, #projects {
         height: 80px;
-        padding: 5px;
+        width: 80px;
+        /* padding: 5px; */
     }
-    #css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
+    #css, #html5, #javascript, #bootstrap,#reactjs,#mysql  {
         width: 70px;
     }
     
-    #postgres, #python, #django {
+    /* #postgres, #python, #django {
         width: 80px;
     }
     
@@ -794,18 +813,23 @@ p {
     
     #expressjs, #nodejs {
         width: 100px;
-    }
+    } */
 }
 
 @media screen and (max-width: 650px) {
-    #css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
-        height: 70px;
-        padding: 2px;
+    .icon {
+        height: 75px;
+        width: 75px;
     }
-    #css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
+    #css, #html5, #javascript, #bootstrap, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs, #projects {
+        height: 70px;
+        width: 70px;
+        /* padding: 2px; */
+    }
+    #css, #html5, #javascript, #bootstrap,#reactjs,#mysql  {
         width: 60px;
     }
-    
+/*     
     #postgres, #python, #django {
         width: 70px;
     }
@@ -816,18 +840,23 @@ p {
     #projects {
         height: 90px;
         width: 90px
-    }
+    } */
 }
 
 @media screen and (max-width: 450px) {
-    #css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
-        height: 55px;
-        padding: 2px;
+    .icon {
+        height: 60px;
+        width: 60px;
     }
-    #css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
+    #css, #html5, #javascript, #bootstrap, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs, #projects {
+        height: 55px;
+        width: 55px;
+        /* padding: 2px; */
+    }
+    #css, #html5, #javascript, #bootstrap,#reactjs,#mysql  {
         width: 45px;
     }
-    
+/*     
     #postgres, #python, #django {
         width: 55px;
     }
@@ -838,7 +867,7 @@ p {
     #projects {
         height: 70px;
         width: 70px
-    }
+    } */
 }
 
 /*                             */
@@ -1421,9 +1450,9 @@ footer {
     position: relative;
     font-size: 1.25rem;
     font-weight: 600;
-    min-width: 250px;
+    /* min-width: 250px; */
     margin: 10px auto;
-    padding: 5px 8px;
+    padding: 5px 10px;
     background-color: var(--dark_yellow);
     border: 2px solid var(--midnight_blue);
     border-radius: 10px;

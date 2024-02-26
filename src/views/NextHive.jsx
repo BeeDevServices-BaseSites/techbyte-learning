@@ -49,13 +49,13 @@ const NextHive = () => {
         {/* SECTION 3 */}
         <div className="split_box">
           <div className="box_left_text">
-            <h2>Apply Today!</h2>
+            <h2>Apply Today</h2>
             <p>
               <span>D</span>on't miss out on this incredible opportunity to join our hive and embark on an exciting journey into the world of web development. Secure your spot today and unlock a world of endless possibilities. Whether you're passionate about creating stunning user interfaces or diving into data-driven backend development, our web development program will be your gateway to a thriving career in the tech industry. Join us at TechByte Learning and let's build a brighter future together!
             </p>
           </div>
           <div className="box_right_text">
-            <Button to="/apply" text="APPLY TODAY!" />
+            <Button to="/apply" text="APPLY NOW" />
           </div>
         </div>
         {/* END SECTION 3 */}
