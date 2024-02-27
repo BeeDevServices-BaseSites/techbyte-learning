@@ -1,5 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
+import { useState } from 'react';
 import Apply from "./views/Apply";
 import Assistance from "./views/Assistance";
 import BadLink from "./views/BadLink";
@@ -14,9 +15,13 @@ import NavBar from "./components/Navbar";
 import NextHive from "./views/NextHive";
 import OurHive from "./views/OurHive";
 import Pricing from "./views/Pricing";
+import Receipt from "./views/Receipt.jsx";
 import Tutoring from "./views/Tutoring";
 
 const App = () => {
+
+  const [details, setDetails] = useState(""); 
+
   return (
     <>
       <NavBar />
@@ -29,7 +34,8 @@ const App = () => {
         <Route path="/courses" element={<Courses />} />
         <Route path="/nexthive" element={<NextHive />} />
         <Route path="/ourhive" element={<OurHive />} />
-        <Route path="/pricingplans" element={<Pricing />} />
+        <Route path="/pricingplans" element={<Pricing setDetails={ setDetails } />} />
+        <Route path="/receipt" element={<Receipt details={ details } />} />
         <Route path="/tutoring" element={<Tutoring />} />
         <Route path="/:bad/*" element={<BadLink/>} />
       </Routes>
