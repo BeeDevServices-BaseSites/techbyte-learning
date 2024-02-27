@@ -51,15 +51,12 @@ const Tutoring = () => {
             EXPERT TUTORING TO IMPROVE YOUR SKILLS
           </h2>
           <p>
-            Are you struggling with C#, Java, Python, or JavaScript programming? Our TechByte Learning instructors are here to help! With years of experience in the field, our instructors are available for one-on-one tutoring sessions to help you master these full stack platforms.
+            <span>A</span>re you struggling with C#, Java, Python, or JavaScript programming? Our TechByte Learning instructors are here to help! With years of experience in the field, our instructors are available for one-on-one tutoring sessions to help you master these full stack platforms.
             Whether you are a beginner or an experienced coder looking to level up your skills, our instructors have the expertise to guide you every step of the way. 
-          </p>
-          <p>
-            Take advantage of our bundle pricing options, where buying more tutoring sessions saves you money.
           </p>
           <Button to="/pricingplans" text="PRICING PLANS" />
           <p>
-            Don't let coding challenges hold you back any longer. Contact TechByte Learning today to schedule your personalized tutoring session and unlock your full coding potential.
+            <span>D</span>on't let coding challenges hold you back any longer. Contact TechByte Learning today to schedule your personalized tutoring session and unlock your full coding potential.
           </p>
           <h2>
             Meet Our Tutors

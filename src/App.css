@@ -1,4 +1,5 @@
 /* App.css */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
 :root {
     --white: #CBE5EC;
@@ -20,6 +21,7 @@ html, body, * {
     margin: 0px;
     padding: 0px;
     border: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 html {
@@ -512,10 +514,6 @@ p {
 /*                             */
 
 
-
-
-
-
 /*                             */
 /*   Cookies SlideOut Section  */
 /*                             */
@@ -543,11 +541,11 @@ p {
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     height: 90px;
-    margin-left: -30px; 
+    margin-left: -28px; 
     position: relative;
-    left:-15px;
+    left:-10px;
     margin-top: -10px;
-    width: 60px;
+    width: 55px;
 }
 
 .slideout > .slideout_tab > .tab_text {
@@ -631,7 +629,7 @@ p {
 /*                             */
 
 #intern  {
-    min-width: 300px;
+    min-width: 290px;
     aspect-ratio: 2/1;
     margin: 0 auto;
     background: var(--dark_yellow);
@@ -843,7 +841,7 @@ p {
     flex-flow: row wrap;
     gap: 60px;
     width: 80vw;
-    padding-top: 32px;
+    padding-top: 20px;
     padding-bottom: 32px;
 
     > * {

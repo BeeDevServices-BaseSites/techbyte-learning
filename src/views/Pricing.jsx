@@ -84,8 +84,11 @@ const Pricing = (props) => {
         >
         <div className="large_box">
           <h2>
-            Tutoring Pricing (Bundle And Save!!)
+            Tutoring Pricing
           </h2>
+          <p>
+            Take advantage of our bundle pricing options, where buying more tutoring sessions saves you money.
+          </p>
         </div>
         {/* END SECTION 2 TITLE */}
         {/* SECTION 2 */}

@@ -165,7 +165,7 @@ const Courses = () => {
           </p>
           <p>
             For more information contact us at <a id="career_link"href="mailto:info@beedev-services.com?subject=Requesting%Course%20Info%20">info@beedev-services.com</a>&nbsp;
-            or call us at 867-5309 to learn more and secure your spot. Limited seats available, so act now!
+            or call us at (570) 890-5252 to learn more and secure your spot. Limited seats available, so act now!
           </p>
           <Button to="/apply" text="APPLY NOW" />
         </div>

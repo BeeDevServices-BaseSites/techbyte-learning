@@ -19,7 +19,7 @@ const Contact = () => {
           <h2>Get In Touch:</h2>
           <div className="contacts">
             <h4>Phone:</h4>
-            <h4 className="phone_number">570-890-5252</h4>
+            <h4 className="phone_number">(570) 890-5252</h4>
           </div>
           <div className="contacts">
             <h4>Student Login:</h4>
