@@ -22,6 +22,7 @@ html, body, * {
     padding: 0px;
     border: 0px;
     font-family: 'Source Sans Pro', sans-serif;
+    word-spacing: .095rem;
 }
 
 html {
@@ -146,7 +147,7 @@ p {
     transition: all 300ms ease;
     
     &:hover {
-        text-shadow: 0.5px 0.5px 1px var(--green);
+        text-shadow: 1px 1px 1px var(--green);
     }
 }
 
@@ -530,7 +531,7 @@ p {
     font-family: Roboto, sans-serif;
     left: 5px;  
     position: fixed;
-    top: 60%; 
+    top: 55%; 
     transition: 0.250s; 
 }
 
