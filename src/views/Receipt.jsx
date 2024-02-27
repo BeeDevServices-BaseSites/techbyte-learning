@@ -34,6 +34,8 @@ const Receipt = ({details}) => {
                             {/* left header */}
                             <div className="receipt_left">
                                 <h3>TechByte Learning </h3>
+                                <h5>1014 Lasalle Street</h5>
+                                <h5>Berwick, PA 18603</h5>
                                 <br />
                                 <h5>Invoice#: { details.id }</h5>
                             </div>
