@@ -1056,7 +1056,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 80px;
+    height: 95px;
     background: var(--dark_yellow);
     background: var(--header_gradient);
     border-top: 5px solid var(--midnight_blue);
