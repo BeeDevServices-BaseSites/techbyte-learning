@@ -20,10 +20,12 @@ const Paypal = (props) => {
     }
 
     return(
-        <div className='PaypalContainer'>
+        <div className='paypal_container'>
             <div className='pay_button'>
             { isOnSale === true ?
-            <p><span className="lineout">${ total_amount }</span> <span className="sale">save { percent }%</span></p>
+            <p>
+                <span className="lineout">${ total_amount }</span> <span className="sale">save { percent }%</span>
+            </p>
             : <br /> }
                 <p>${ discount_amount }</p>
                 <PayPalButtons

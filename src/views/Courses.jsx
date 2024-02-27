@@ -5,7 +5,6 @@ import html5 from "../assets/images/html5.png"
 import css from "../assets/images/css.png"
 import javascript from "../assets/images/javascript.png"
 import bootstrap from "../assets/images/bootstrap.png"
-import sass from "../assets/images/sass.png"
 import node from "../assets/images/nodejs.png"
 import express from "../assets/images/express.png"
 import react from "../assets/images/reactjs.png"
@@ -59,16 +58,16 @@ const Courses = () => {
           </div>
           <div className="course_icons">
             <div className="icon">
-              <img id="html5" src={html5} alt="html5" />
+              <img id="html5" src={ html5 } alt="html5" />
             </div>
             <div className="icon">
-              <img id="css" src={css} alt="CSS" />
+              <img id="css" src={ css } alt="CSS" />
             </div>
             <div className="icon">
-              <img id="javascript" src={javascript} alt="JavaScript" />
+              <img id="javascript" src={ javascript } alt="JavaScript" />
             </div>
             <div className="icon">
-              <img id="bootstrap" src={bootstrap} alt="Bootstrap" />
+              <img id="bootstrap" src={ bootstrap } alt="Bootstrap" />
             </div>
           </div>
         </div>
@@ -82,16 +81,16 @@ const Courses = () => {
           </div>
           <div className="course_icons">
           <div className="icon">
-              <img id="mysql" src={mysql} alt="MySQL" />
+              <img id="mysql" src={ mysql } alt="MySQL" />
             </div>
             <div className="icon">
-              <img id="expressjs" src={express} alt="Express JS" />
+              <img id="expressjs" src={ express } alt="Express JS" />
             </div>
             <div className="icon">
-              <img id="reactjs" src={react} alt="React JS" />
+              <img id="reactjs" src={ react } alt="React JS" />
             </div>
             <div className="icon">
-              <img id="nodejs" src={node} alt="Node JS" />
+              <img id="nodejs" src={ node } alt="Node JS" />
             </div>
           </div>
         </div>
@@ -100,16 +99,16 @@ const Courses = () => {
         <div className="split_box flip">
           <div className="course_icons">
           <div className="icon">
-              <img id="python" src={python} alt="Python" />
+              <img id="python" src={ python } alt="Python" />
             </div>
             <div className="icon">
-              <img id="django" src={django} alt="Django" />
+              <img id="django" src={ django } alt="Django" />
             </div>
             <div className="icon">
-              <img id="flask" src={flask} alt="Flask" />
+              <img id="flask" src={ flask } alt="Flask" />
             </div>
             <div className="icon">
-              <img id="postgres" src={postgres} alt="PostgreSQL" />
+              <img id="postgres" src={ postgres } alt="PostgreSQL" />
             </div>
           </div>
           <div className="box_right_text">
@@ -123,14 +122,14 @@ const Courses = () => {
         <div className="split_box flip">
           <div className="project_icon_container">
             <div className="project_icons">
-              <img id="projects" src={step_01} alt="path forward" />
-              <img id="projects" src={step_02} alt="path forward" />
-              <img id="projects" src={step_03} alt="path forward" />
+              <img id="projects" src={ step_01 } alt="path forward" />
+              <img id="projects" src={ step_02 } alt="path forward" />
+              <img id="projects" src={ step_03 } alt="path forward" />
             </div>
             <div className="project_icons">
-              <img id="projects" src={step_04} alt="path forward" />
-              <img id="projects" src={step_05} alt="path forward" />
-              <img id="projects" src={step_06} alt="path forward" />
+              <img id="projects" src={ step_04 } alt="path forward" />
+              <img id="projects" src={ step_05 } alt="path forward" />
+              <img id="projects" src={ step_06 } alt="path forward" />
             </div>
           </div>
           <div className="box_right_text">
@@ -148,7 +147,7 @@ const Courses = () => {
             </p>
           </div>
           <div className="box_right_img">
-            <img id="intern" src={internship} alt="intern" />
+            <img id="intern" src={ internship } alt="intern" />
           </div>
         </div>
         {/* END SECTION 6 */}
@@ -164,7 +163,7 @@ const Courses = () => {
             Don't miss out on this incredible opportunity to become a master in full stack programming with Python and React. Take the first step towards a rewarding career and join the Techbyte Learning family today!
           </p>
           <p>
-            For more information contact us at <a id="career_link"href="mailto:info@beedev-services.com?subject=Requesting%Course%20Info%20">info@beedev-services.com</a>&nbsp;
+            For more information contact us at <a id="career_link" href="mailto:info@beedev-services.com?subject=Requesting%Course%20Info%20">info@beedev-services.com</a>&nbsp;
             or call us at (570) 890-5252 to learn more and secure your spot. Limited seats available, so act now!
           </p>
           <Button to="/apply" text="APPLY NOW" />

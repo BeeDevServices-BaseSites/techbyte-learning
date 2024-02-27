@@ -22,7 +22,9 @@ const NextHive = () => {
         {/* SECTION 1 */}
         <div className="split_box">
           <div className="box_left_text">
-            <h2>Buzzing With Skills</h2>
+            <h2>
+              Buzzing With Skills
+            </h2>
             <p>
               <span>O</span>ur program is designed to equip you with the knowledge and skills needed to thrive in the fast-paced world of web development. Whether you're a beginner looking to break into the industry or an experienced programmer seeking to expand your skillset, our courses have something for everyone. Our upcoming cohort, affectionately known as a "hive," is set to kick off in mid-June 2024, offering a comprehensive curriculum that covers web fundamentals, python, and react.js.
             </p>
@@ -35,10 +37,12 @@ const NextHive = () => {
         {/* SECTION 2 */}
         <div className="split_box flip">
           <div className="box_left_img">
-            <img src={price_point} alt="price point" />
+            <img src={ price_point } alt="price point" />
           </div>
           <div className="box_right_text">
-            <h2>What Sets TechByte Apart?</h2>
+            <h2>
+              What Sets TechByte Apart?
+            </h2>
             <p>
               <span>O</span>ur dedication to affordability. We understand that investing in education can be a significant financial commitment. That's why we offer our web development program at prices starting at just $8000. We believe that high-quality education should be accessible to all, and we're proud to offer competitive pricing without compromising the curriculum's integrity.
             </p>
@@ -49,7 +53,9 @@ const NextHive = () => {
         {/* SECTION 3 */}
         <div className="split_box">
           <div className="box_left_text">
-            <h2>Apply Today</h2>
+            <h2>
+              Apply Today
+            </h2>
             <p>
               <span>D</span>on't miss out on this incredible opportunity to join our hive and embark on an exciting journey into the world of web development. Secure your spot today and unlock a world of endless possibilities. Whether you're passionate about creating stunning user interfaces or diving into data-driven backend development, our web development program will be your gateway to a thriving career in the tech industry. Join us at TechByte Learning and let's build a brighter future together!
             </p>

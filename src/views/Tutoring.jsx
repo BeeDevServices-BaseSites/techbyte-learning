@@ -66,10 +66,10 @@ const Tutoring = () => {
         <div className="card_container">
           {[...instructors].map((instructor, index) => {
             return(
-              <div className="card_one" key={index}>
-                <img src={instructor.image} alt="User Icon" />
+              <div className="card_one" key={ index }>
+                <img src={ instructor.image } alt="User Icon" />
                 <h2>
-                  {instructor.name}
+                  { instructor.name }
                 </h2>
                   <h4>
                     Language Specializations
@@ -77,7 +77,9 @@ const Tutoring = () => {
                   <ul>
                     {[...instructor.technologies].map((tech, idx) => {
                       return(
-                        <li key={idx}>{tech}</li>
+                        <li key={ idx }>
+                          { tech }
+                        </li>
                     )})}
                   </ul>
               </div>

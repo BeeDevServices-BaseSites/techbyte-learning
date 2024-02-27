@@ -902,7 +902,7 @@ p {
                 border: 2px solid #A70000;
             }
 
-            .pricing_ribbon-text {
+            .pricing_ribbon_text {
                 position: absolute;
                 top: 50%;
                 left: 5px;
@@ -925,7 +925,7 @@ p {
             border-top-right-radius: 8px;
         }
 
-        .pricing_card-info {
+        .pricing_card_info {
             color: #0D1F2D;
             padding: 5px;
 
