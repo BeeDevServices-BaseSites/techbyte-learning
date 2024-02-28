@@ -51,28 +51,25 @@ const Tutoring = () => {
             EXPERT TUTORING TO IMPROVE YOUR SKILLS
           </h2>
           <p>
-            Are you struggling with C#, Java, Python, or JavaScript programming? Our TechByte Learning instructors are here to help! With years of experience in the field, our instructors are available for one-on-one tutoring sessions to help you master these full stack platforms.
+            <span>A</span>re you struggling with C#, Java, Python, or JavaScript programming? Our TechByte Learning instructors are here to help! With years of experience in the field, our instructors are available for one-on-one tutoring sessions to help you master these full stack platforms.
             Whether you are a beginner or an experienced coder looking to level up your skills, our instructors have the expertise to guide you every step of the way. 
           </p>
+          <Button to="/pricingplans" text="PRICING PLANS" />
           <p>
-            Take advantage of our bundle pricing options, where buying more tutoring sessions saves you money.
-          </p>
-          <Button to="/pricingplans" text="VIEW PRICING PLANS" />
-          <p>
-            Don't let coding challenges hold you back any longer. Contact TechByte Learning today to schedule your personalized tutoring session and unlock your full coding potential.
+            <span>D</span>on't let coding challenges hold you back any longer. Contact TechByte Learning today to schedule your personalized tutoring session and unlock your full coding potential.
           </p>
           <h2>
-            Meet Our Instructors
+            Meet Our Tutors
           </h2>
         </div>
         {/* INSTRUCTOR CARDS */}
         <div className="card_container">
           {[...instructors].map((instructor, index) => {
             return(
-              <div className="card_one" key={index}>
-                <img src={instructor.image} alt="User Icon" />
+              <div className="card_one" key={ index }>
+                <img src={ instructor.image } alt="User Icon" />
                 <h2>
-                  {instructor.name}
+                  { instructor.name }
                 </h2>
                   <h4>
                     Language Specializations
@@ -80,14 +77,16 @@ const Tutoring = () => {
                   <ul>
                     {[...instructor.technologies].map((tech, idx) => {
                       return(
-                        <li key={idx}>{tech}</li>
+                        <li key={ idx }>
+                          { tech }
+                        </li>
                     )})}
                   </ul>
               </div>
             )
           })}
         </div>
-        <Button to="/pricingplans" text="VIEW PRICING PLANS" />
+        <Button to="/pricingplans" text="PRICING PLANS" />
       </div>
     </main>
   );

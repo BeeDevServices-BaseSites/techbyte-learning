@@ -13,27 +13,73 @@ const NavBar = () => {
       </div>
       <ul className="navbar_menu">
         <li>
-        <Link to="#">Services</Link>
+        <Link to="#">
+          Services
+        </Link>
         <ul className="drop menu">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/courses">Web Development</Link></li>
-          <li><Link to="/tutoring">Tutoring</Link></li>
-          <li><a href="https://learn.techbyte-learning.com/">Student Login</a></li>
+          <li>
+            <Link to="/">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/courses">
+              Web Development
+            </Link>
+          </li>
+          <li>
+            <Link to="/tutoring">
+              Tutoring
+            </Link>
+          </li>
+          <li>
+            <a href="https://learn.techbyte-learning.com/">
+              Student Login
+            </a>
+          </li>
         </ul>
         </li>
         <li><Link to="#">Enrollment</Link>
         <ul className="drop menu">
-          <li><Link to="nexthive">Next Cohort</Link></li>
-          <li><Link to="/apply">Apply</Link></li>
-          <li><Link to="/pricingplans">Pricing</Link></li>
-          <li><Link to="/tuitionassistance">Tuition Assistance</Link></li>
+          <li>
+            <Link to="nexthive">
+              Next Cohort
+            </Link>
+          </li>
+          <li>
+            <Link to="/pricingplans">
+              Pricing
+            </Link>
+          </li>
+          <li>
+            <Link to="/tuitionassistance">
+              Tuition Assistance
+            </Link>
+          </li>
+          <li>
+            <Link to="/apply">
+              Apply
+            </Link>
+          </li>
         </ul>
         </li>
         <li><Link to="#">About Us</Link>
         <ul className="drop menu2">
-          <li><Link to="/ourhive">Meet Our Hive</Link></li>
-          <li><Link to="/contact">Contact Us</Link></li>
-          <li><Link to="/careers">Careers</Link></li>
+          <li>
+            <Link to="/ourhive">
+              Meet Our Hive
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact">
+              Contact Us
+            </Link>
+          </li>
+          <li>
+            <Link to="/careers">
+              Careers
+            </Link>
+          </li>
         </ul>
         </li>
       </ul>

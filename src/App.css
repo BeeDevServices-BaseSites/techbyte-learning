@@ -1,4 +1,5 @@
 /* App.css */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
 :root {
     --white: #CBE5EC;
@@ -20,6 +21,8 @@ html, body, * {
     margin: 0px;
     padding: 0px;
     border: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    word-spacing: .095rem;
 }
 
 html {
@@ -33,21 +36,6 @@ body {
 
 main {
     min-height: 77.5dvh;
-}
-
-body::before {
-    content : "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-image: url('https://images.craftsnherbs.com/backgrounds/hex.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: contain;
-    width: 100%;
-    height: 100%;
-    opacity : 0.2;
-    z-index: -10;
 }
 
 /* font sizes */
@@ -87,8 +75,7 @@ p {
     color: var(--black);
 }
 
-
-
+/* increase font sizes for larger screen views */
 @media (min-width: 1200px) {
     h1 {
         font-size: 2.8rem;
@@ -106,7 +93,6 @@ p {
         font-size: 1.265rem;
     }
 }
-
 
 .wrapper {
     width: 80%;
@@ -159,6 +145,10 @@ p {
     text-shadow: 0.5px 0.5px 1px var(--shadow);
     text-decoration: none;
     transition: all 300ms ease;
+    
+    &:hover {
+        text-shadow: 1px 1px 1px var(--green);
+    }
 }
 
 .page_title img {
@@ -433,6 +423,17 @@ p {
     align-items: center;
 }
 
+.box_right_honeycomb {
+    max-width: 450px;
+    min-width: 300px;
+    margin: 5px auto;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
 .box_left_text ul, .box_right_text ul {
     list-style-type:circle;
     width: 75%;
@@ -501,6 +502,18 @@ p {
 /*      END PAGE LAYOUT        */
 /*                             */
 
+/*                             */
+/*      INDEX    LAYOUT        */
+/*                             */
+
+.index {
+    margin-top: 30px;
+}
+
+/*                             */
+/*      END INDEX LAYOUT       */
+/*                             */
+
 
 /*                             */
 /*   Cookies SlideOut Section  */
@@ -518,7 +531,7 @@ p {
     font-family: Roboto, sans-serif;
     left: 5px;  
     position: fixed;
-    top: 60%; 
+    top: 55%; 
     transition: 0.250s; 
 }
 
@@ -529,11 +542,11 @@ p {
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     height: 90px;
-    margin-left: -30px; 
+    margin-left: -28px; 
     position: relative;
-    left:-15px;
+    left:-10px;
     margin-top: -10px;
-    width: 60px;
+    width: 55px;
 }
 
 .slideout > .slideout_tab > .tab_text {
@@ -604,8 +617,7 @@ p {
 }
 
 #career_link:hover {
-    color: var(--shadow);
-    text-shadow: 0.5px 0.5px 1px var(--midnight_blue);
+    color: var(--green);
 }
 
 /*                              */
@@ -618,7 +630,7 @@ p {
 /*                             */
 
 #intern  {
-    min-width: 300px;
+    min-width: 290px;
     aspect-ratio: 2/1;
     margin: 0 auto;
     background: var(--dark_yellow);
@@ -637,6 +649,30 @@ p {
     align-items: center;
 }
 
+#projects, .icon {
+    position: relative;
+    width: 115px;
+    height: 100px;
+    border: 3px solid var(--midnight_blue);
+    border-radius: 10px;
+    box-shadow:  5px 5px 10px  var(--shadow);
+    transition: all 300ms ease;
+    
+    &:hover {
+        transform: scale(1.3, 1.3) translateY(-1px);
+        box-shadow: 5px 5px 15px var(--shadow);
+        z-index: 100;
+    }
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    background: var(--dark_yellow);
+    background: var(--header_gradient);
+}
+
 .course_icons {
     width: 47%;
     min-width: 300px;
@@ -653,144 +689,73 @@ p {
     justify-content:space-evenly;
 }
 
-#projects {
+#css, #html5, #javascript, #bootstrap, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
     position: relative;
-    height: 90px;
-    width: 90px;
-    border: 3px solid var(--midnight_blue);
-    border-radius: 10px;
-    box-shadow:  5px 5px 10px  var(--shadow);
-    transition: all 300ms ease;
-    
-    &:hover {
-        transform: scale(1.3, 1.3) translateY(-1px);
-        box-shadow: 5px 5px 15px var(--shadow);
-        z-index: 100;
+    height: 75px;
+    width: 85px;
+}
+
+#css, #html5, #javascript, #bootstrap,#reactjs,#mysql {
+    width: 65px;
+}
+
+
+@media screen and (max-width: 1330px) {
+    .icon, #projects  {
+        height: 75px;
+        width: 75px;
     }
-}
-
-#css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
-    position: relative;
-    height:80px;
-    padding: 5px;
-    background: var(--dark_yellow);
-    background: var(--header_gradient);
-    border: 3px solid var(--midnight_blue);
-    border-radius: 10px;
-    box-shadow:  5px 5px 10px var(--shadow);
-    transition: all 300ms ease;
-
-    &:hover {
-        transform: scale(1.3, 1.3) translateY(-1px);
-        box-shadow: 5px 5px 15px var(--shadow);
-        z-index: 100;
-    }
-}
-
-#css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
-    width: 70px;
-}
-
-#postgres, #python, #django {
-    width: 80px;
-}
-
-#flask {
-    width: 100px;
-}
-
-#expressjs, #nodejs {
-    width: 100px;
-}
-
-@media screen and (max-width: 1250px) {
-    #css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
+    #css, #html5, #javascript, #bootstrap, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
         height: 70px;
-        padding: 2px;
-    }
-    #css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
-        width: 60px;
-    }
-    
-    #postgres, #python, #django {
         width: 70px;
     }
-    
-    #flask {
-        width: 90px;
-    }
-    
-    #expressjs, #nodejs {
-        width: 90px;
+    #css, #html5, #javascript, #bootstrap,#reactjs,#mysql {
+        width: 60px;
     }
 }
 
 @media screen and (max-width: 1064px) {
+    .icon, #projects  {
+        height: 115px;
+        width: 100px;
+    }
     .course_icons, .project_icon_container {
         width: 100%;
     }
-    #css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
+    #css, #html5, #javascript, #bootstrap, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
         height: 80px;
-        padding: 5px;
-    }
-    #css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
-        width: 70px;
-    }
-    
-    #postgres, #python, #django {
         width: 80px;
     }
-    
-    #flask {
-        width: 100px;
-    }
-    
-    #expressjs, #nodejs {
-        width: 100px;
+    #css, #html5, #javascript, #bootstrap,#reactjs,#mysql  {
+        width: 70px;
     }
 }
 
 @media screen and (max-width: 650px) {
-    #css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
+    .icon, #projects  {
+        height: 75px;
+        width: 75px;
+    }
+    #css, #html5, #javascript, #bootstrap, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
         height: 70px;
-        padding: 2px;
-    }
-    #css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
-        width: 60px;
-    }
-    
-    #postgres, #python, #django {
         width: 70px;
     }
-    
-    #flask, #expressjs, #nodejs {
-        width: 90px;
-    }
-    #projects {
-        height: 90px;
-        width: 90px
+    #css, #html5, #javascript, #bootstrap,#reactjs,#mysql  {
+        width: 60px;
     }
 }
 
 @media screen and (max-width: 450px) {
-    #css, #html5, #javascript, #bootstrap, #sass, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
+    .icon, #projects {
+        height: 60px;
+        width: 60px;
+    }
+    #css, #html5, #javascript, #bootstrap, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {
         height: 55px;
-        padding: 2px;
-    }
-    #css, #html5, #javascript, #bootstrap, #sass,#reactjs,#mysql  {
-        width: 45px;
-    }
-    
-    #postgres, #python, #django {
         width: 55px;
     }
-    
-    #flask, #expressjs, #nodejs {
-        width: 75px;
-    }
-    #projects {
-        height: 70px;
-        width: 70px
+    #css, #html5, #javascript, #bootstrap,#reactjs,#mysql  {
+        width: 45px;
     }
 }
 
@@ -877,7 +842,7 @@ p {
     flex-flow: row wrap;
     gap: 60px;
     width: 80vw;
-    padding-top: 32px;
+    padding-top: 20px;
     padding-bottom: 32px;
 
     > * {
@@ -937,7 +902,7 @@ p {
                 border: 2px solid #A70000;
             }
 
-            .pricing_ribbon-text {
+            .pricing_ribbon_text {
                 position: absolute;
                 top: 50%;
                 left: 5px;
@@ -960,7 +925,7 @@ p {
             border-top-right-radius: 8px;
         }
 
-        .pricing_card-info {
+        .pricing_card_info {
             color: #0D1F2D;
             padding: 5px;
 
@@ -990,7 +955,7 @@ p {
                     color: var(--light_yellow);
                     text-shadow: 0.5px 0.5px 0.5px var(--shadow);
                     box-shadow: 5px 5px 15px var(--shadow);
-                    border: thin solid var(--light_yellow);
+                    border-color: var(--light_yellow);
                 }
             }
         }
@@ -1091,7 +1056,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 80px;
+    height: 95px;
     background: var(--dark_yellow);
     background: var(--header_gradient);
     border-top: 5px solid var(--midnight_blue);
@@ -1114,7 +1079,7 @@ footer {
 
 .footer_images {
     width: 200px;
-    padding-right: 30px;
+    padding-right: 80px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -1142,7 +1107,7 @@ footer {
 }
 
 .bumble_bee_image {
-    position: fixed;
+    position: relative;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
@@ -1175,12 +1140,13 @@ footer {
 	width: 100%;
     height: 100%;
 	display: block;
-    background-color: var(--black);
+    /* background-color: var(--black); */
 }
 
 .honeycomb_container {
 	padding: 2rem 0 2rem;
     width: 37.5rem;
+    margin:0 auto;
 }
 
 .honeycomb_container::after {
@@ -1194,12 +1160,13 @@ footer {
 }
 
 .item {
-	width: 7.5rem;
-	height: 7.5rem;
+	width: 5rem;
+	height: 5rem;
 	position: relative;
 	display: inline-block;
-	margin: 0.375rem;
+	margin:0.375rem;
     animation: 1s reveal;
+    empty-cells: hide;
 }
 
 @keyframes reveal {
@@ -1266,31 +1233,32 @@ footer {
     }
 }
 
-@media (min-width: 32rem) and (max-width: 41.999rem) {
-	.honeycomb_container {
-		max-width: 22.5rem;
+@media (min-width: 32rem) {
+    .honeycomb_container {
+		max-width: 370px;
 	}
-	.item:nth-child(5n+4) {
-		margin-left: 3.75rem;
-	}
+    .item {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-bottom: -.60rem;
+    }
+    .item:nth-child(9n+6) {
+        margin-left: 2.2rem;
+    }
 }
-
-@media (min-width: 42rem) and (max-width: 53.999rem) {
-	.honeycomb_container {
-		max-width: 30rem;
+@media (min-width: 66.563rem) {
+    .honeycomb_container {
+		max-width: 370px;
+        margin-left: 15%;
 	}
-	.item:nth-child(7n+5) {
-		margin-left: 3.75rem;
-	}
-}
-
-@media (min-width: 54rem) {
-	.honeycomb_container {
-		max-width: 37.5rem;
-	}
-	.item:nth-child(9n+6) {
-		margin-left: 3.75rem;
-	}
+    .item {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-bottom: -.60rem;
+    }
+    .item:nth-child(9n+6) {
+        margin-left: 2.2rem;
+    }
 }
 
 /* IE resets - because of clip-path no support */
@@ -1352,9 +1320,9 @@ footer {
     position: relative;
     font-size: 1.25rem;
     font-weight: 600;
-    min-width: 250px;
+    /* min-width: 250px; */
     margin: 10px auto;
-    padding: 5px 8px;
+    padding: 5px 10px;
     background-color: var(--dark_yellow);
     border: 2px solid var(--midnight_blue);
     border-radius: 10px;
@@ -1367,7 +1335,7 @@ footer {
         background-color: var(--shadow);
         border: 2px solid var(--dark_yellow);
         box-shadow: 5px 5px 15px var(--shadow);
-        transform: scale(1.05);
+        transform: scale(1.05) translateY(1px);
     }
     
     &:active {
@@ -1376,8 +1344,110 @@ footer {
 }
 
 /*                             */
-/*     BUTTON COMPONENT        */
+/*    END BUTTON COMPONENT     */
 /*                             */
+
+
+/*                             */
+/*     PAYPAL COMPONENT        */
+/*                             */
+
+.pay_button {
+    color: var(--black);
+    font-weight: 900;
+    max-width: 200px;
+    margin: 5px auto;
+    padding: 3px 5px 0 5px;
+    cursor: default;
+    text-align: center;
+}
+
+.sale {
+    color: red;
+}
+
+.lineout {
+    text-decoration: line-through;
+}
+
+/*                             */
+/*   END PAYPAL COMPONENT      */
+/*                             */
+
+
+/*                             */
+/*      RECEIPT COMPONENT      */
+/*                             */
+.receipt_container {
+    width: 50%;
+    min-width: 285px;
+    margin: 60px auto 20px;
+    border: 5px solid var(--dark_yellow);
+    border-radius: 10px;
+    background-color: silver;
+    padding: 5px 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .receipt_title{
+        display: flex;
+        align-items: center;
+    }
+
+    .receipt_title img{
+        margin-right: 20px;
+        height:60px;
+        width: 60px;
+    }
+}
+
+.receipt_header {
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .receipt_left, .receipt_right{
+        min-width: 240px;
+        margin: 10px auto;
+    }
+
+}
+
+.receipt_table {
+    width: 90%;
+    border: thin solid var(--black);
+    margin: 15px auto;
+    border-collapse: collapse;
+
+    tr {
+        border: none;
+    }
+
+    th {
+        background-color: var(--shadow);
+        width: 25%;
+        padding: 5px;
+        border: 1px solid var(--black);
+    }
+
+    td {
+        text-align: center;
+        background-color: whitesmoke;
+        border: none;
+    }
+}
+
+/*                             */
+/*   END RECEIPT COMPONENT      */
+/*                             */
+
+
+
+
 
 
 /*                             */
