@@ -64,7 +64,6 @@ const Contact = () => {
             <img src={ follow_us } alt="Follow Us!" />
           </div>
           <div className="box_right_text">
-            <h2>Social Media</h2>
             <h3>
               TechByte Learning:
             </h3>
@@ -78,7 +77,7 @@ const Contact = () => {
             </div>
             <div className="contacts">
               <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="discord icon" />
-              <a href="###" target="_blank">TechByte Leaning Discord</a>
+              <a href="https://discord.com/channels/1203563873769365584/1205562887427588116" target="_blank">TechByte Leaning Discord</a>
             </div>
             <h3>
               BeeDev Services:
