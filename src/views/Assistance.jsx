@@ -13,18 +13,11 @@ const Assistance = () => {
   return (
     <main>
       <div className="wrapper">
-        {/* TITLE */}
-        <div className="large_box">
-          <h2>
-            TUITION ASSISTANCE
-          </h2>
-        </div>
-        {/* END TITLE */}
         {/* SECTION 1 */}
         <div className="split_box">
           <div className="box_left_text">
             <h2>
-              Financial Aid Programs
+              Tuition Assistance
             </h2>
             <p>
               <span>W</span>e understand that finances can be a barrier for some aspiring learners. That's why we have partnered with Flexxbuy to bring you over 35 lenders to provide flexible financing options. We want to ensure that nothing stands in the way of your dreams of becoming a web developer. At TechByte Learning, we are committed to your success, both academically and financially.

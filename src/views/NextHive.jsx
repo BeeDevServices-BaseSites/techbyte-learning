@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 import Button from "../components/Button";
 import price_point from "../assets/images/price_point.jpg"
+import calendar from "../assets/images/calendar.jpg"
 
 const NextHive = () => {
 
@@ -12,25 +13,19 @@ const NextHive = () => {
 
   return (
     <main>
-      {/* TITLE SECTION */}
       <div className="wrapper">
-        <div className="large_box">
-          <h2>
-            NEXT COHORT INFO
-          </h2>
-        </div>
         {/* SECTION 1 */}
         <div className="split_box">
           <div className="box_left_text">
             <h2>
-              Buzzing With Skills
+              Next Cohort
             </h2>
             <p>
               <span>O</span>ur program is designed to equip you with the knowledge and skills needed to thrive in the fast-paced world of web development. Whether you're a beginner looking to break into the industry or an experienced programmer seeking to expand your skillset, our courses have something for everyone. Our upcoming cohort, affectionately known as a "hive," is set to kick off in mid-June 2024, offering a comprehensive curriculum that covers web fundamentals, python, and react.js.
             </p>
           </div>
           <div className="box_right_img">
-            <img src="https://img.freepik.com/premium-photo/background-calendar-have-copy-space-design-presentation_35956-3733.jpg" alt="Teaching" />
+            <img src={ calendar } alt="Calandar" />
           </div>
         </div>
         {/* END SECTION 1 */}

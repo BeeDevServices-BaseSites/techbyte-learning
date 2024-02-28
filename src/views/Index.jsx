@@ -20,7 +20,7 @@ const Index = () => {
     <main >
       <div className="wrapper">
         {/* SECTION 1 */}
-        <div className="split_box index">
+        <div className="split_box">
           <div className="box_left_text honeycomb_background">
             <h2>
               Bee Part Of Our Hive

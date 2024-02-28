@@ -27,26 +27,26 @@ const Receipt = ({ details }) => {
                     {/* recepit container */}
                     <div className="receipt_container">
                         <div className='receipt_title'>
-                            <img src="https://cdn.discordapp.com/attachments/1204477744830746655/1208990870171287633/computerBee.png?ex=65e54b7d&is=65d2d67d&hm=e9ce9fda34d8ced8d29a87e9d493dd3295c98e41479f06e32b09490cf5e8fc96&" alt="TechByte Bee" />
                             <h2>
                                 Receipt
                             </h2>
+                            <br />
+                            <h5>
+                                Invoice#: { details.id }
+                            </h5>
                         </div>
                         <div className="receipt_header">
                             {/* left header */}
                             <div className="receipt_left">
-                                <h3>
+                                <h4>
                                     TechByte Learning
-                                    </h3>
-                                <h5>
-                                    1014 Lasalle Street
-                                    </h5>
-                                <h5>
-                                    Berwick, PA 18603
-                                    </h5>
+                                </h4>
                                 <br />
                                 <h5>
-                                    Invoice#: { details.id }
+                                    1014 Lasalle Street
+                                </h5>
+                                <h5>
+                                    Berwick, PA 18603
                                 </h5>
                             </div>
                             {/* right header */}
@@ -54,6 +54,7 @@ const Receipt = ({ details }) => {
                                 <h4>
                                     Customer Info:
                                 </h4>
+                                <br />
                                 <h5>
                                     { details.payer.name.given_name } { details.payer.name.surname }
                                 </h5>

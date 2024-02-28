@@ -11,7 +11,7 @@ const Cookies = () => {
                 <div className="slideout_content">
                     <div className="push_right">
                         <p className="pst">
-                            Psst....<img className="cookie_img" src="https://lordicon.com/icons/wired/flat/2354-cookies.svg"/>
+                            Psst....<img className="cookie_img" src="https://lordicon.com/icons/wired/flat/2354-cookies.svg" alt="Cookies"/>
                         </p>
                         <p className="cookie">
                             We use Cookies to offer you a better browsing experience, analyse site traffic and personalize content.
