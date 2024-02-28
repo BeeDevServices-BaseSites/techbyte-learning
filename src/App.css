@@ -1720,26 +1720,26 @@ footer {
 
 /* =========NEW NEW NEW================= */
 
-.hive-wrapper {
+.hive_wrapper {
     max-width: 1200px;
     margin: auto;
     /* padding: 20px; */
     text-align: center;
 }
 
-.hive-grid {
+.hive_grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
 }
 
 @media (max-width: 600px) {
-    .hive-grid {
+    .hive_grid {
         grid-template-columns: 1fr;
     }
 }
 
-.hive-title {
+.hive_title {
     margin-top: 30px;
     margin-bottom: 15px;
 }
@@ -1756,30 +1756,30 @@ footer {
     transform: translateY(-5px);
 }
 
-.card-front,
-.card-back {
+.card_front,
+.card_back {
     padding: 15px;
 }
 
-.card-front {
+.card_front {
     /* width: 100%; */
     /* height: auto;
     border-bottom: 1px solid #eee; */
 }
 
-.employee-image {
+.employee_image {
     width: 100%;
     height: auto;
     border-bottom: 1px solid #eee;
     border-radius: 10px;
 }
 
-.card-front h3,
-.card-back h4 {
+.card_front h3,
+.card_back h4 {
     margin: 10px 0;
 }
 
-.card-back .skills span {
+.card_back .skills span {
     display: inline-block;
     background: #e1e1e1;
     padding: 5px 10px;

@@ -13,9 +13,9 @@ const OurHive = () => {
 
   return (
     <div className='wrapper'>
-      <div className="hive-wrapper">
-        <h1 className='hive-title'>Meet Our Hive Members</h1>
-        <div className="hive-grid">
+      <div className="hive_wrapper">
+        <h1 className='hive_title'>Meet Our Hive Members</h1>
+        <div className="hive_grid">
           {staffBios.map((employee, index) => (
             <Card
               key={employee.id}

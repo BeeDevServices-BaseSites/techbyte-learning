@@ -3,13 +3,13 @@ import React from 'react';
 const Card = ({ employee, isFlipped, onFlip }) => {
     return (
         <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={onFlip}>
-            <div className="card-front">
+            <div className="card_front">
                 {/* Front side content */}
-                <img src={employee.linkToImage || 'https://img1.pnghut.com/1/15/9/DLRVX7WYLt/silhouette-art-user-profile-neck-cheek.jpg'} className='employee-image'/>
+                <img src={employee.linkToImage || 'https://img1.pnghut.com/1/15/9/DLRVX7WYLt/silhouette-art-user-profile-neck-cheek.jpg'} className='employee_image'/>
                 <h2>{employee.fName} {employee.lName}</h2>
                 <p>{employee.position}</p>
             </div>
-            <div className="card-back">
+            <div className="card_back">
                 {/* Back side content */}
                 <h4>More about {employee.fName}</h4>
                 <p>{employee.about}</p>
