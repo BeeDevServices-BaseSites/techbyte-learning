@@ -5,16 +5,16 @@ const Card = ({ employee, isFlipped, onFlip }) => {
         <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={onFlip}>
             <div className="card_front">
                 {/* Front side content */}
-                <img src={employee.linkToImage || 'https://img1.pnghut.com/1/15/9/DLRVX7WYLt/silhouette-art-user-profile-neck-cheek.jpg'} className='employee_image'/>
-                <h2>{employee.fName} {employee.lName}</h2>
+                <img src={employee.photo || 'https://img1.pnghut.com/1/15/9/DLRVX7WYLt/silhouette-art-user-profile-neck-cheek.jpg'} className='employee_image'/>
+                <h2>{employee.firstName} {employee.lastName}</h2>
                 <p>{employee.position}</p>
             </div>
             <div className="card_back">
                 {/* Back side content */}
-                <h4>More about {employee.fName}</h4>
+                <h4>More about {employee.firstName}</h4>
                 <p>{employee.about}</p>
                 <div className="skills">
-                    {employee.skills.map(skill => <span key={skill}>{skill}</span>)}
+                    {employee.technologies.map(skill => <span key={skill}>{skill}</span>)}
                 </div>
             </div>
         </div>
