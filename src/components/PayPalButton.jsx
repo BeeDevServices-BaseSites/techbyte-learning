@@ -20,12 +20,12 @@ const Paypal = (props) => {
     }
 
     return(
-        <div className='paypal_container'>
+        <>
             <div className='pay_button'>
-            { isOnSale === true ?
-            <p>
-                <span className="lineout">${ total_amount }</span> <span className="sale">save { percent }%</span>
-            </p>
+                { isOnSale === true ?
+                <p>
+                    <span className="lineout">${ total_amount }</span> <span className="sale">save { percent }%</span>
+                </p>
             : <br /> }
                 <p>${ discount_amount }</p>
                 <PayPalButtons
@@ -37,6 +37,7 @@ const Paypal = (props) => {
                         width: 125,
                         tagline: "false",
                         borderRadius: 5,
+                        applepay: "true",
                     }}
                     createOrder={(data, actions) => {
                         return actions.order.create({
@@ -62,7 +63,7 @@ const Paypal = (props) => {
                     }}
                 />
             </div>
-        </div>
+        </>
     )
 }
 
