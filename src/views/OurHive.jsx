@@ -12,23 +12,60 @@ const OurHive = () => {
   };
 
   return (
-    <div className="wrapper" style={{ marginBottom: '20vh' }}>
-      <h1 className="hive-title" style={{ marginTop: "50px" }}>Meet Our Hive Members</h1>
-      <div className="hive-container">
-        {staffBios.map((employee, index) => (
-          <Card
-            key={employee.id}
-            employee={employee}
-            isFlipped={flippedStates[index]}
-            onFlip={() => handleFlip(index)}
-          />
-        ))}
+    <div className='wrapper'>
+      <div className="hive-wrapper">
+        <h1 className='hive-title'>Meet Our Hive Members</h1>
+        <div className="hive-grid">
+          {staffBios.map((employee, index) => (
+            <Card
+              key={employee.id}
+              employee={employee}
+              isFlipped={flippedStates[index]}
+              // onFlip={() => handleFlip(index)}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
 export default OurHive;
+
+
+
+// =======================NEW OLD VERSION TO REVERT TO====================================
+// import React, { useState } from 'react';
+// import staffBios from "../utilities/staffBios";
+// import Card from '../components/Card';
+
+// const OurHive = () => {
+//   const [flippedStates, setFlippedStates] = useState(new Array(staffBios.length).fill(false));
+
+//   const handleFlip = (index) => {
+//     const newFlippedStates = [...flippedStates];
+//     newFlippedStates[index] = !newFlippedStates[index];
+//     setFlippedStates(newFlippedStates);
+//   };
+
+//   return (
+//     <div className="wrapper" style={{ marginBottom: '20vh' }}>
+//       <h1 className="hive_title" style={{ marginTop: "50px" }}>Meet Our Hive Members</h1>
+//       <div className="hive_container">
+//         {staffBios.map((employee, index) => (
+//           <Card
+//             key={employee.id}
+//             employee={employee}
+//             isFlipped={flippedStates[index]}
+//             onFlip={() => handleFlip(index)}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default OurHive;
 
 // =============================OLD DYNAMIC FILE=============================
 // import { useEffect } from "react";

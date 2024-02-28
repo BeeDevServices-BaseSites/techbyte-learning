@@ -1720,198 +1720,70 @@ footer {
 
 /* =========NEW NEW NEW================= */
 
-.hive-container {
+.hive-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    /* padding: 20px; */
+    text-align: center;
+}
+
+.hive-grid {
     display: grid;
-    flex-wrap: wrap;
-    gap: 6vh;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    flex-direction: column;
-    line-height: 1.5;
-    font-family: 'Arial', sans-serif;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
 }
 
-.flip_box {
-    width: 40vh;
-    height: 38vh;
-    perspective: 1000px;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-}
-
-.front,
-.back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    display: flex;
-    border-radius: 10px;
-}
-
-
-.front-bottom-info {
-    padding: 0.1vh;
-    background-color: #dedede;
-}
-
-
-
-.flipped {
-    transform: rotateY(180deg);
-}
-
-.flip_box {
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.grid-item img {
-    max-width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
-.grid-item p {
-    margin: 10px;
-}
-
-@media (max-width: 1024px) {
-    .hive-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .flip_box {
-        width: 30vh;
-        height: 75vh;
-        perspective: 1000px;
-    }
-}
-
-@media (max-width: 768px) {
-    .hive-container {
+@media (max-width: 600px) {
+    .hive-grid {
         grid-template-columns: 1fr;
-        gap: 1vh;
-
-    }
-
-    .flip_box {
-        width: 50vh;
-        height: 60vh;
-        perspective: 1000px;
-        position: relative;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
     }
 }
 
 .hive-title {
-    margin-bottom: "20px";
-}
-
-.employee-name {
-    font-weight: bold;
-}
-
-.employee-position {
-    font-style: italic;
-    font-size: 15px;
-}
-
-.rightArrow {
-    padding: 1px;
-    justify-content: end;
-    align-items: end;
-    display: flex;
-    cursor: pointer;
-    animation: 0.1s ease-in-out forwards;
-    animation-delay: 0.4s;
-}
-
-/* .rightArrow:hover {
-    transform: scale(1.1);
-} */
-
-/* BACK  */
-.back {
-    transform: rotateY(180deg);
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color: #f9f9f9;
-    /* Light grey background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Add shadow for depth */
-    transition: box-shadow 0.3s ease-in-out;
-    /* Smooth transition for shadow */
-}
-
-.back:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    /* Slightly larger shadow on hover */
-}
-
-.back-info {
-    text-align: left;
-}
-
-.back-first-name {
-    font-weight: bold;
-    text-align: center;
-    /* Center align the name for better focus */
+    margin-top: 30px;
     margin-bottom: 15px;
-    /* Increase spacing */
-    font-size: 1.2em;
-    /* Larger font size */
-    color: #333;
-    /* Dark grey color for better readability */
 }
 
-/* Specific Styles for About Section */
-.employees-about {
-    background-color: #fff;
-    /* Light background to highlight the section */
-    border: 1px solid #e6e6e6;
-    /* Subtle border for definition */
-    border-radius: 8px;
-    /* Soften edges for a modern look */
+.card {
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-front,
+.card-back {
     padding: 15px;
-    /* Spacing inside the section */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    /* Light shadow for depth */
-    font-size: 0.95em;
-    /* Slightly smaller font size for this section */
-    line-height: 1.6;
-    /* Increased line height for readability */
 }
 
-/* Specific Styles for Skills Section */
-.employees-skills {
-    padding: 10px;
-    background-color: #f2f2f2;
-    /* Slightly different background for contrast */
-    border-radius: 8px;
-    /* Consistent rounded corners */
-    margin: 0;
-    /* Reset default margin */
-    padding-left: 20px;
-    /* Add some padding for content */
-    font-size: 0.9em;
-    /* Adjust font size for clarity */
+.card-front {
+    /* width: 100%; */
+    /* height: auto;
+    border-bottom: 1px solid #eee; */
 }
 
-
-.leftArrow {
-    padding: 5px;
-    justify-content: flex-end;
-    /* Align arrow to the right */
-    align-items: center;
-    /* Vertically center in its container */
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-    /* Smooth transition for rotation */
+.employee-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+    border-radius: 10px;
 }
 
-.leftArrow:hover {
-    transform: scale(1.1);
-    /* Slightly enlarge on hover */
+.card-front h3,
+.card-back h4 {
+    margin: 10px 0;
+}
+
+.card-back .skills span {
+    display: inline-block;
+    background: #e1e1e1;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
 }
