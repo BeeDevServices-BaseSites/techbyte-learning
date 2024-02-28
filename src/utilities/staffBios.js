@@ -1,12 +1,12 @@
-const staffBios = [
+const Bios = [
     {
         "name": "Melissa Longenberger",
         "location": "Berwick, PA",
         "linkToImage": "https://images.craftsnherbs.com/new-melissa.jpg",
-        "about": "",
+        "about": "Full Stack software Developer, Navy Veteran, Gardener and Crocheter with a passion for creating.",
         "openToMentoringTutoring": "Yes",
-        "skills": "",
-        "position": "Leave Blank for now as it will change when we open"
+        "skills": ["JavaScript", "HTML", "CSS","Less", "Python", "Java", "C#", "React", "Git", "Github", "Django", "Flask", "SQL", "Vite", "NextJs"],
+        "position": "CEO & Founder"
     },
     {
         "name": "Christopher Jones",
@@ -73,4 +73,4 @@ const staffBios = [
     }
 ]
 
-export default staffBios
+export default Bios
