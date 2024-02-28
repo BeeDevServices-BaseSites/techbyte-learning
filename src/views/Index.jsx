@@ -8,7 +8,6 @@ import your_career from "../assets/images/your_career.png"
 import Honeycomb from "../components/Honeycomb";
 import Button from "../components/Button";
 
-
 const Index = () => {
 
   useEffect(() => {
@@ -17,7 +16,7 @@ const Index = () => {
   },[])
 
   return (
-    <main >
+    <main>
       <div className="wrapper">
         {/* SECTION 1 */}
         <div className="split_box">

@@ -61,6 +61,13 @@ const Paypal = (props) => {
                         setDetails(details)
                         navigate("/receipt")
                     }}
+                    onError={(data, actions) => {
+                        navigate("/pricingplans")
+                        alert(
+                            "Paypal Error, Please Try Again Later."
+                        )
+                    }}
+
                 />
             </div>
         </>

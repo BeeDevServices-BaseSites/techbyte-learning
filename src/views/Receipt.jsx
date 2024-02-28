@@ -117,7 +117,7 @@ const Receipt = ({ details }) => {
                                         &nbsp;
                                     </td>
                                 </tr>
-                                <tr style={{borderTop:"1px solid black"}}>
+                                <tr>
                                     <td></td>
                                     <td></td>
                                     <td>
@@ -132,12 +132,13 @@ const Receipt = ({ details }) => {
                             </tbody>
                         </table>
                         {/* notes */}
-                        <p>
+                        <h5>
                             Print and keep this receipt for your records
-                        </p>
-                        <h4>
+                        </h5>
+                        <br />
+                        <p><b>
                             Thank You For Joining The TechByte Learning Hive!
-                        </h4>
+                        </b></p>
                     </div>
                     <Button to="/" text="CLOSE" />
                 </div>
