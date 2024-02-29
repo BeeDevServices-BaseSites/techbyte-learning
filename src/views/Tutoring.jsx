@@ -74,6 +74,7 @@ const Tutoring = () => {
         </div>
         {/* END SECTION 2 */}
         {/* SECTION 3 */}
+        <h2>Meet Our Tutors</h2>
         {/* INSTRUCTOR CARDS */}
         <div className="card_container">
           {[...instructors].map((instructor, index) => {

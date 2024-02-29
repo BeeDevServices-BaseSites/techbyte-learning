@@ -221,10 +221,10 @@ p {
 
 /* BIG FIRST LETTER */
 .box_left_text p span, .box_right_text p span, .large_box p span {
-        font-size: 200%;
+        font-size: 125%;
         font-weight: 700;
         line-height: 80%;
-        text-shadow:  0.5px 0.5px 0.5px var(--shadow);
+        text-shadow:  0.5px 0.5px 3px var(--shadow);
 }
 
 .large_box a, .split_box a {

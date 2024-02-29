@@ -39,7 +39,10 @@ const Courses = () => {
               In Web Development
             </h2>
             <p>
-              <span>T</span>echbyte Learning is excited to offer you an exclusive opportunity to enroll in our comprehensive course program in web development with cutting-edge classes that appeal to different interests and skill levels.
+              <span>T</span>echbyte Learning is excited to offer you a comprehensive course program in web development with cutting-edge classes that appeal to different interests and skill levels.
+            </p>
+            <p>
+              We know you're busy, so we've built a part-time course schedule, allowing you to achieve your goals while still having time for other commitments.
             </p>
             <Button to="/apply" text="APPLY NOW" />
           </div>
@@ -96,7 +99,7 @@ const Courses = () => {
             </div>
           <div className="box_right_text">
             <p>
-              <span>B</span>ut the learning doesn't stop there. TechByte Learning believes in providing our students with real-world experience to further enhance their skills and boost their career prospects. Throughout their journey with us, students will work on engaging and challenging capstone projects. These projects are built along the way, allowing students to apply the knowledge they have gained while getting hands-on experience in solving real-world problems. 
+              <span>B</span>ut the learning doesn't stop there. TechByte Learning believes in providing our students with real-world experience to further enhance their skills and boost their career prospects. Throughout their journey with us, students will work together as teams on engaging and challenging capstone projects. These projects are built along the way, allowing students to apply the knowledge they have gained while getting hands-on experience in solving real-world problems. 
             </p>
           </div>
         </div>
