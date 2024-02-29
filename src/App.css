@@ -168,6 +168,7 @@ p {
 
 /* HONEYCOMB CONTAINER */
 .box_right_honeycomb {
+    position: relative;
     max-width: 450px;
     min-width: 300px;
     margin: 5px auto;
@@ -1016,35 +1017,17 @@ footer {
 /*    Honey Comb Tiles     */
 /*                         */
 
-/* .bumble_bee_image {
-    position: relative;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    z-index: -5;
-    width: 100%;
-    max-width: 1065px;
-    opacity: .7;
-    animation-name: beeFade;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    filter: drop-shadow(30px 10px 4px rgba(128, 128, 128, 0.7));
+.bumble_bee_image {
+    position: absolute;
+    top: 25%;
+    left: -15%;
+    z-index: -1;
+    width: 150%;
+    max-width: 37.5rem;
+    opacity: 0.9;
+    filter: drop-shadow(30px 10px 12px rgba(128, 128, 128, 0.5));
 }
 
-@keyframes beeFade {
-    0% {
-        transform: translate(-50%, -50%) scale(0);
-    }
-    25% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    75% {
-        transform: translate(-50%, -50%) scale(0);
-    }
-} */
 
 .honeycomb_wrapper {
     width: 100%;
@@ -1072,7 +1055,7 @@ footer {
     opacity: 0 !important;
 }
 
-.item {
+.item, .item2 {
 	width: 5rem;
 	height: 5rem;
 	position: relative;
@@ -1104,6 +1087,16 @@ footer {
     transition: all 300ms ease;
 }
 
+.item2::before {
+	content: "";
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	background-color: transparent;
+	clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
+	transform: scale(1.1);
+    transition: all 300ms ease;
+}
+
 .item:hover::before {
 	transform: scale(1.154);
     background-color: goldenrod;
@@ -1114,9 +1107,7 @@ footer {
 
 }
 
-
-
-.item a {
+.item a, .item2 a {
 	position: absolute;
 	top: 0; bottom: 0; left: 0; right: 0;
 	background-size: cover;
@@ -1125,7 +1116,7 @@ footer {
 }
 
 @media (min-width: 17rem) {
-	.item {
+	.item, .item2 {
 		display: block;
 		float: left;
 		margin: 0;
@@ -1134,21 +1125,21 @@ footer {
 }
 
 @media (max-width: 25.999rem) {
-    .item {
+    .item, .item2 {
         animation: none;
     }
 }
 
 @media (max-width: 31.999rem) {
     .honeycomb_container {
-		max-width: 17rem;
+        max-width: 17rem;
 	}
-    .item {
+    .item, .item2 {
         width: 3.25rem;
         height: 3.25rem;
         margin-bottom: -.60rem;
     }
-    .item:nth-child(9n+6) {
+    .item:nth-child(9n+6),.item2:nth-child(9n+6) {
         margin-left: 1.655rem;
     }
 }
@@ -1157,26 +1148,27 @@ footer {
     .honeycomb_container {
 		max-width: 370px;
 	}
-    .item {
+    .item, .item2 {
         width: 4.5rem;
         height: 4.5rem;
         margin-bottom: -.60rem;
     }
-    .item:nth-child(9n+6) {
+    .item:nth-child(9n+6),.item2:nth-child(9n+6) {
         margin-left: 2.2rem;
     }
 }
+
 @media (min-width: 66.563rem) {
     .honeycomb_container {
-		max-width: 370px;
+        max-width: 370px;
         margin-left: 15%;
 	}
-    .item {
+    .item, .item2 {
         width: 4.5rem;
         height: 4.5rem;
         margin-bottom: -.60rem;
     }
-    .item:nth-child(9n+6) {
+    .item:nth-child(9n+6),.item2:nth-child(9n+6) {
         margin-left: 2.2rem;
     }
 }
@@ -1187,7 +1179,7 @@ footer {
 	.honeycomb_container {
 		padding: 0.9375rem 0;
 	}
-	.item {
+	.item, .item2 {
 		display: inline-block;
 		float: none;
 		margin: 0.6375rem !important;
@@ -1199,7 +1191,7 @@ footer {
 	.honeycomb_container {
 		padding: 0.9375rem 0;
 	}
-	.item {
+	.item, .item2 {
 		display: inline-block;
 		float: none;
 		margin: 0.6375rem !important;
