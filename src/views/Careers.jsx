@@ -13,32 +13,31 @@ const Careers = () => {
       <div className="wrapper">
         <div className="large_box">
           <h2>
-            CAREERS PAGE
+            TechByte Careers
           </h2>
-          <h3>
+          <h4>
             We are actively seeking highly skilled and talented developers with expertise in various technologies.
-          </h3>
-          <h3>
-            Send inquiries to <a id="career_link" href="mailto:careers@beedev-services.com?subject=Career%20Inquiry%20">careers@beedev-services.com</a> 
-          </h3>
+          </h4>
+          <h4>
+            Send inquiries to <a id="career_link" href="mailto:careers@techbyte-learning.com?subject=Career%20Inquiry%20">careers@techbyte-learning.com</a> 
+          </h4>
         </div>
         {/* Positions Container */}
         <div className="split_box">
           {/* Position 1 */}
           <div className="box_left_text add_background">
-            <h2>Web Developer</h2>
-            <h2>Junior</h2>
+            <h3>Web Developer <em>Junior</em></h3>
             <br />
-            <h4>
+            <h5>
               Position Type: Full Time
-            </h4>
-            <h4>
+            </h5>
+            <h5>
               Location: Remote
-            </h4>
+            </h5>
             <br />
-            <h4>
+            <h5>
               Requirements:
-            </h4>
+            </h5>
             <ul>
               <li>
                 Proficiency in React, Express, Python Django, and other relevant technologies
@@ -60,9 +59,9 @@ const Careers = () => {
               </li>
             </ul>
             <br />
-            <h4>
+            <h5>
               Responsibilities:
-            </h4>
+            </h5>
             <ul>
               <li>
                 Designing and developing efficient, scalable, and user-friendly web applications
@@ -70,12 +69,24 @@ const Careers = () => {
               <li>
                 Utilizing your expertise in React, Express, Python Django, and other technologies to handle front-end frameworks, backend servers, and database management
               </li>
+              <li>
+                Troubleshoot and debug issues as they arise
+              </li>
+              <li>
+                Stay up-to-date on the latest technologies and best practices in web development
+              </li>
+              <li>
+                Troubleshoot and debug issues as they arise
+              </li>
             </ul>
             <br />
-            <h4>
+            <h5>
               In This Roll You'll Be Able To:
-            </h4>
+            </h5>
             <ul>
+              <li>
+                Gain hands-on experience developing websites and web applications
+              </li>
               <li>
                 Opportunity to showcase your skills and contribute to exciting projects
               </li>
@@ -86,27 +97,27 @@ const Careers = () => {
                 You will be supported by mentors and teammates as you work on tasks and projects.
               </li>
               <li>
-                Collaborative and innovative work environment
+                Contribute ideas and strategies to improve the overall user experience
               </li>
             </ul>
           </div>
           {/* End Position 1 */}
           {/* Position 2 */}
           <div className="box_right_text add_background">
-            <h2>
+            <h3>
               UI/UX Developer
-            </h2>
+            </h3>
             <br />
-            <h4>
+            <h5>
               Position Type: Full Time
-            </h4>
-            <h4>
+            </h5>
+            <h5>
               Location: Remote
-            </h4>
+            </h5>
             <br />
-            <h4>
+            <h5>
               Requirements:
-            </h4>
+            </h5>
             <ul>
               <li>
                 Strong proficiency in HTML5, CSS3, JavaScript, and various front-end frameworks.
@@ -125,9 +136,9 @@ const Careers = () => {
               </li>
             </ul>
             <br />
-            <h4>
+            <h5>
               Responsibilities:
-            </h4>
+            </h5>
             <ul>
               <li>
                 Collaborate with product managers and designers to understand user requirements and create user-centered designs.
@@ -149,19 +160,21 @@ const Careers = () => {
           {/* End Position 2 */}
           {/* Position 3 */}
           <div className="box_left_text add_background">
-            <h2>Student Recruiter and Onboarding Specialist</h2>
+            <h3>
+              Student Recruiter and Onboarding Specialist
+            </h3>
             <br />
-            <h4>
+            <h5>
               Position Type: Full Time
-            </h4>
-            <h4>
+            </h5>
+            <h5>
               Location: Remote
-            </h4>
+            </h5>
             <br />
-            <h4>Responsibilities:</h4>
-            <h4>
+            <h5>Responsibilities:</h5>
+            <h5>
               1. Student Recruitment:
-            </h4>
+            </h5>
             <ul>
               <li>
                 Develop and execute recruitment strategies to attract and enroll prospective students.
@@ -174,9 +187,9 @@ const Careers = () => {
               </li>
             </ul>
             <br />
-            <h4>
+            <h5>
               2. Student Onboarding:
-            </h4>
+            </h5>
             <ul>
               <li>
                 Develop and implement an onboarding process to ensure new students have a smooth transition into the organization.                </li>
@@ -194,9 +207,9 @@ const Careers = () => {
               </li>
             </ul>
             <br />
-            <h4>
+            <h5>
               Requirements:
-            </h4>
+            </h5>
             <ul>
               <li>
                 Bachelor's degree in Human Resources, Education, or a related field (preferred).
@@ -221,20 +234,20 @@ const Careers = () => {
           {/* End Position 3 */}
           {/* Position 4 */}
           <div className="box_right_text add_background">
-            <h2>
+            <h3>
               HR Coordinator
-            </h2>
+            </h3>
             <br />
-            <h4>
+            <h5>
               Position Type: Full Time
-            </h4>
-            <h4>
+            </h5>
+            <h5>
               Location: Remote
-            </h4>
+            </h5>
             <br />
-            <h4>
+            <h5>
               Responsibilities:
-            </h4>
+            </h5>
             <ul>
               <li>
               Assist in recruitment processes, including job postings, reviewing resumes, scheduling interviews, conducting background checks, and preparing offer letters.                </li>
@@ -258,9 +271,9 @@ const Careers = () => {
               aintain professional and collaborative relationships with employees, liaising with various departments to ensure effective communication and employee satisfaction.                </li>
             </ul>
             <br />
-            <h4>
+            <h5>
                 Requirements:
-            </h4>
+            </h5>
             <ul>
               <li>
                 Bachelor's degree in Human Resources, Business Administration, or a related field.                </li>
