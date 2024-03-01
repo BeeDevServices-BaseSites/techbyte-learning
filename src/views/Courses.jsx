@@ -6,20 +6,15 @@ import css from "../assets/images/css.png"
 import javascript from "../assets/images/javascript.png"
 import bootstrap from "../assets/images/bootstrap.png"
 import node from "../assets/images/nodejs.png"
-import express from "../assets/images/express.png"
-import react from "../assets/images/reactjs.png"
+import react from "../assets/images/react_black.png"
 import mysql from "../assets/images/mysql.png"
 import python from "../assets/images/python.png"
 import django from "../assets/images/django.png"
 import flask from "../assets/images/flask.png"
 import postgres from "../assets/images/postgres.png"
-import step_01 from "../assets/images/step_01.png"
-import step_02 from "../assets/images/step_02.png"
-import step_03 from "../assets/images/step_03.png"
-import step_04 from "../assets/images/step_04.png"
-import step_05 from "../assets/images/step_05.png"
-import step_06 from "../assets/images/step_06.png"
+import project_steps from "../assets/images/project_steps.png"
 import internship from "../assets/images/internship.jpg"
+import full_stack_tech from "../assets/images/full_stack_tech.jpg"
 
 const Courses = () => {
 
@@ -32,21 +27,25 @@ const Courses = () => {
     <main>
       <div className="wrapper">
         {/* SECTION 1 */}
-        <div className="large_box">
-          <h2>
-            UNLOCK YOUR FULL POTENTIAL IN WEB DEVELOPMENT!
-          </h2>
-          <p>
-            <span>A</span>re you ready to dive into the thrilling world of web development and become a master in full stack programming? Look no further!
-          </p>
-          <p>
-            Techbyte Learning is excited to offer you an exclusive opportunity to enroll in our comprehensive course program in web development.
-          </p>
-          <br />
-          <h2>
-            Cutting-edge classes that appeal to different interests and skill levels.
-          </h2>
-          <Button to="/apply" text="APPLY NOW" />
+        <div className="split_box flip">
+          <div className="box_left_img">
+            <br />
+            <img src={ full_stack_tech } alt="Full Stack" />
+          </div>
+          <div className="box_right_text">
+            <h2>
+              Unlock Your Full Potential
+              <br />
+              In Web Development
+            </h2>
+            <p>
+              <span>T</span>echbyte Learning is excited to offer you a comprehensive course program in web development with cutting-edge classes that appeal to different interests and skill levels.
+            </p>
+            <p>
+              We know you're busy, so we've built a part-time course schedule, allowing you to achieve your goals while still having time for other commitments.
+            </p>
+            <Button to="/apply" text="APPLY NOW" />
+          </div>
         </div>
         {/* END SECTION 1 */}
         {/* SECTION 2 */}
@@ -57,18 +56,10 @@ const Courses = () => {
             </p>
           </div>
           <div className="course_icons">
-            <div className="icon">
               <img id="html5" src={ html5 } alt="html5" />
-            </div>
-            <div className="icon">
               <img id="css" src={ css } alt="CSS" />
-            </div>
-            <div className="icon">
               <img id="javascript" src={ javascript } alt="JavaScript" />
-            </div>
-            <div className="icon">
               <img id="bootstrap" src={ bootstrap } alt="Bootstrap" />
-            </div>
           </div>
         </div>
         {/* END SECTION 2 */}
@@ -80,36 +71,19 @@ const Courses = () => {
             </p>
           </div>
           <div className="course_icons">
-          <div className="icon">
-              <img id="mysql" src={ mysql } alt="MySQL" />
-            </div>
-            <div className="icon">
-              <img id="expressjs" src={ express } alt="Express JS" />
-            </div>
-            <div className="icon">
               <img id="reactjs" src={ react } alt="React JS" />
-            </div>
-            <div className="icon">
+              <img id="mysql" src={ mysql } alt="MySQL" />
               <img id="nodejs" src={ node } alt="Node JS" />
-            </div>
           </div>
         </div>
         {/* END SECTION 3 */}
         {/* SECTION 4 */}
         <div className="split_box flip">
           <div className="course_icons">
-          <div className="icon">
               <img id="python" src={ python } alt="Python" />
-            </div>
-            <div className="icon">
               <img id="django" src={ django } alt="Django" />
-            </div>
-            <div className="icon">
-              <img id="flask" src={ flask } alt="Flask" />
-            </div>
-            <div className="icon">
               <img id="postgres" src={ postgres } alt="PostgreSQL" />
-            </div>
+              <img id="flask" src={ flask } alt="Flask" />
           </div>
           <div className="box_right_text">
             <p>
@@ -120,41 +94,32 @@ const Courses = () => {
         {/* END SECTION 4 */}
         {/* SECTION 5 */}
         <div className="split_box flip">
-          <div className="project_icon_container">
-            <div className="project_icons">
-              <img id="projects" src={ step_01 } alt="path forward" />
-              <img id="projects" src={ step_02 } alt="path forward" />
-              <img id="projects" src={ step_03 } alt="path forward" />
+          <div className="box_left_img">
+              <img id="projects" src={ project_steps } alt="projects steps" />
             </div>
-            <div className="project_icons">
-              <img id="projects" src={ step_04 } alt="path forward" />
-              <img id="projects" src={ step_05 } alt="path forward" />
-              <img id="projects" src={ step_06 } alt="path forward" />
-            </div>
-          </div>
           <div className="box_right_text">
             <p>
-              <span>B</span>ut the learning doesn't stop there. TechByte Learning believes in providing our students with real-world experience to further enhance their skills and boost their career prospects. Throughout their journey with us, students will work on engaging and challenging capstone projects. These projects are built along the way, allowing students to apply the knowledge they have gained while getting hands-on experience in solving real-world problems. 
+              <span>B</span>ut the learning doesn't stop there. TechByte Learning believes in providing our students with real-world experience to further enhance their skills and boost their career prospects. Throughout their journey with us, students will work together as teams on engaging and challenging capstone projects. These projects are built along the way, allowing students to apply the knowledge they have gained while getting hands-on experience in solving real-world problems. 
             </p>
           </div>
         </div>
         {/* END SECTION 5 */}
         {/* SECTION 6 */}
-        <div className="split_box flip">
+        <div className="split_box">
           <div className="box_left_text">
             <p>
               <span>A</span>dditionally, we offer a two-month internship program, where students have the opportunity to work alongside professionals in the industry. This internship program not only offers valuable insights into the world of web and software development but also allows students to fill out their portfolios with impressive real-world projects. Join TechByte Learning and gain the practical experience and confidence you need to excel in your career.
             </p>
           </div>
           <div className="box_right_img">
-            <img id="intern" src={ internship } alt="intern" />
+            <img src={ internship } alt="intern" />
           </div>
         </div>
         {/* END SECTION 6 */}
         {/* SECTION 7 */}
         <div className="large_box">
           <h2>
-            Enroll With TechByte Learning Now!!
+            Enroll With TechByte Learning Today
           </h2>
           <p>
             <span>T</span>o unlock a world of endless possibilities in the web development industry. Whether you're a beginner with no prior coding experience or an experienced programmer looking to expand your skill set, our course program will empower you to succeed.
@@ -163,8 +128,7 @@ const Courses = () => {
             Don't miss out on this incredible opportunity to become a master in full stack programming with Python and React. Take the first step towards a rewarding career and join the Techbyte Learning family today!
           </p>
           <p>
-            For more information contact us at <a id="career_link" href="mailto:info@beedev-services.com?subject=Requesting%Course%20Info%20">info@beedev-services.com</a>&nbsp;
-            or call us at (570) 890-5252 to learn more and secure your spot. Limited seats available, so act now!
+            For more information contact us at <a id="career_link" href="mailto:admissions@beedev-services.com?subject=Admissions%20Inquiry%20">admissions@beedev-services.com</a> or call us at (570) 890-5252 to learn more and secure your spot. Limited seats available, so act now!
           </p>
           <Button to="/apply" text="APPLY NOW" />
         </div>
