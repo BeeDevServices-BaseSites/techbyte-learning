@@ -1,15 +1,30 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 import AdmissionsChat from "../components/AdmissionsChat";
+import Spinner from "../components/Spinner";
 
 const Apply = () => {
+
+  const [showSpinner, setShowSpinner] = useState(true); // State for showing spinner
+  const [chatLoaded, setChatLoaded] = useState(false); // State for tracking if chat is loaded
 
   useEffect(() => {
     window.scrollTo(0,0),
     changeTitle("Apply - ")
+    setTimeout(() => {
+      setShowSpinner(false); // Turn off the spinner after 2 seconds
+    }, 2500);
   },[])
 
+  useEffect(() => {
+    // Check if the chat component is loaded
+    if (!showSpinner && !chatLoaded) {
+      setChatLoaded(true);
+    }
+  }, [showSpinner, chatLoaded]);
+
   return (
+
     <main>
       <div className="wrapper">
         <div className="large_box">
@@ -25,7 +40,12 @@ const Apply = () => {
           <h4>
             Or chat with us live below
           </h4>
-          <AdmissionsChat />
+          {/* SPINNER AND CHAT TERNARY */}
+          {showSpinner ? (
+              <Spinner />
+          ) : (
+            chatLoaded && <AdmissionsChat />
+          )}
         </div>
       </div>
     </main>
