@@ -44,7 +44,6 @@ const NextHive = () => {
           </div>
         </div>
         {/* END SECTION 2 */}
-
         {/* SECTION 3 */}
         <div className="split_box">
           <div className="box_left_text">

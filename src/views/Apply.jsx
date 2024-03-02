@@ -1,13 +1,23 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 import AdmissionsChat from "../components/AdmissionsChat";
+import Spinner from "../components/Spinner";
 
 const Apply = () => {
 
+  const [showSpinner, setShowSpinner] = useState(true); // State for showing spinner
+
   useEffect(() => {
-    window.scrollTo(0,0),
-    changeTitle("Apply - ")
-  },[])
+    window.scrollTo(0,0);
+    changeTitle("Apply - ");
+    // swap element visability 
+    // This is allowing the chat box to fully load before being revealed 
+    //(ternary wasnt working)
+    setTimeout(() => {
+      setShowSpinner(false);
+    }, 2500);
+  },[]);
+
 
   return (
     <main>
@@ -25,7 +35,12 @@ const Apply = () => {
           <h4>
             Or chat with us live below
           </h4>
-          <AdmissionsChat />
+          <div style={{ display: showSpinner ? '' : 'none' }}>
+          <Spinner/>
+          </div>
+          <div style={{ display: !showSpinner ? '' : 'none' }} >
+            <AdmissionsChat />
+          </div>
         </div>
       </div>
     </main>
