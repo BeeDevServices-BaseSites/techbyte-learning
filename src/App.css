@@ -595,6 +595,7 @@ header img {
 }
 
 .hiring {
+    margin-top: 24px;
     height: 250px;
     aspect-ratio: 1.25/1;
     border: thin solid var(--midnight_blue);
@@ -671,6 +672,12 @@ header img {
 @media only screen and (min-width:580px) {
     .mobile_only {
         display:none !important;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .hiring {
+        margin-top: 0px;
     }
 }
 
