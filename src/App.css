@@ -104,7 +104,7 @@ p {
     align-items: center;
 
     height: calc(100% - 50px);
-    overflow: hidden;
+    /* overflow: hidden; */
     -webkit-overflow-scrolling: touch;
     transition: all 300ms ease;
     -webkit-box-sizing: border-box;
@@ -325,13 +325,11 @@ header {
     position: fixed;
     box-shadow: 0px 10px 20px var(--shadow);
     background: #efd780;   
-    background: var(--header_gradient);
-    padding-left: 60px;
-    padding-bottom: 30px;
+    /* background: var(--header_gradient); */
+    padding: 0 0 30px 60px;
     z-index: 99998;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     transition: all 300ms ease;
     border-bottom: 4px solid var(--midnight_blue);
 }
@@ -352,6 +350,8 @@ header img {
     position: relative;
     top: 15px;
     height: 100px;
+    padding-left: 30px;
+
 }
 
 #drawer {
@@ -429,7 +429,14 @@ header img {
     } 
 }
 
-@media all and (max-width:430px) {
+@media all and (max-width:560px) {
+    header a {
+            font-size: 2.25rem;
+        }
+
+}
+
+@media all and (max-width:450px) {
     #drawer_toggle_label:before {
         height: 4px;
         width: 25px;
@@ -442,7 +449,7 @@ header img {
             font-size: 1.75rem;
         }
         img {
-            padding-left: 30px;
+            padding-left: 0px;
         }
     
     }
@@ -477,7 +484,6 @@ header img {
 }
 
 .slideout {
-    font-family: Roboto, sans-serif;
     left: 5px;  
     position: fixed;
     top: 40%; 
@@ -486,7 +492,8 @@ header img {
 
 .slideout > .slideout_tab { 
     display: block;
-    background-color: var(--dark_yellow);
+    background: var(--dark_yellow);
+    background: var(--header_gradient);
     border: thin solid var(--midnight_blue);
     border-radius: 0 5px 5px 0;
     cursor: pointer;
@@ -501,7 +508,6 @@ header img {
 
 .slideout > .slideout_tab > .tab_text {
     display: inline-block;
-    font-family: Roboto, sans-serif;
     color: var(--black);
     font-size: .85rem;
     font-weight: bold;
@@ -518,7 +524,8 @@ header img {
 }
 
 .slideout > .slideout_content {
-    background-color: var(--dark_yellow);
+    background: var(--dark_yellow);
+    background: var(--header_gradient);
     border-top: thin solid var(--midnight_blue);
     border-right: thin solid var(--midnight_blue);
     border-bottom: thin solid var(--midnight_blue);
@@ -569,6 +576,101 @@ header img {
 
     &:hover {
         color: var(--green);
+    }
+}
+
+.jobs_container {
+    max-width: 1200px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    h4 {
+        text-align: center;
+        margin: 24px;
+    }
+}
+
+.hiring {
+    height: 250px;
+    aspect-ratio: 1.25/1;
+    border: thin solid var(--midnight_blue);
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px var(--shadow);
+}
+
+.career_jump_link { 
+    margin-top: 24px;
+    width: 80%;
+    max-width: 750px;
+    min-width: 290px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+    a { 
+        color: var(--midnight_blue);
+        margin: 4px 0;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    a:hover { 
+        color: var(--green)
+    }
+}
+
+.job_card {
+    width: 80%;
+    max-width: 750px;
+    min-width: 280px;
+    min-height: 245px;
+    margin: 24px;
+    padding: 24px 10px;
+    border: thin solid var(--midnight_blue);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--dark_yellow);
+    background: var(--header_gradient);
+    box-shadow: 8px 8px 10px var(--shadow);
+    transition: all 300ms ease;
+    scroll-margin-top: 150px;
+
+    h2 {
+        text-align: center;
+    }
+
+    h4 {
+        width: 90%;
+        text-align: start;
+        margin: 5px 0;
+        color: var(--midnight_blue);
+    }
+
+    h5 {
+        width: 90%;
+    }
+
+    ul {
+        width: 90%;
+        list-style-type: circle;
+    }
+
+    li {
+        width: 80%;
+        margin: 5px auto;
+    }
+}
+
+@media only screen and (min-width:580px) {
+    .mobile_only {
+        display:none !important;
     }
 }
 
@@ -949,7 +1051,7 @@ footer {
     width: 100%;
     height: 95px;
     background: var(--dark_yellow);
-    background: var(--header_gradient);
+    /* background: var(--header_gradient); */
     border-top: 5px solid var(--midnight_blue);
 }
 
@@ -1212,30 +1314,59 @@ footer {
 /*     BUTTON COMPONENT        */
 /*                             */
 
-.button_link {
-    position: relative;
-    font-size: 1.25rem;
-    font-weight: 600;
+.button_box{
     margin: 15px auto;
-    padding: 16px 16px;
-    background-color: var(--dark_yellow);
-    border: 2px solid var(--midnight_blue);
+    position:relative;
+    overflow:hidden;
+    border:thin solid var(--midnight_blue);
     border-radius: 10px;
-    color: var(--midnight_blue);
-    cursor: pointer;
+    transition:all .2s ease-in-out;
     box-shadow: 5px 5px 10px var(--shadow);
-    transition: all 150ms ease;
-    
-    &:hover {
-        background-color: var(--shadow);
-        border: 2px solid var(--dark_yellow);
-        box-shadow: 8px 8px 10px var(--shadow);
-        transform: scale(1.1);
-    }
-    
-    &:active {
-        top: 4px
-    }
+}
+
+.button_box button{
+    width:100%;
+    height:80px;
+    padding: 16px;
+    position:relative;
+    background:var(--dark_yellow);
+    background:var(--header_gradient);
+    text-transform:uppercase;
+    color: var(--midnight_blue);
+    font-weight:900;
+    letter-spacing:1px;
+    border: none;
+    font-size: 1.25rem;
+    outline:none;
+    cursor: pointer;
+}
+
+.button_box:before{
+    content:" ";
+    display:block;
+    width:200px;
+    height:80px;
+    background: #f6e8b750;
+    position:absolute;
+    top:-10px;
+    left:-200px;
+    transform:rotate(45deg);
+    transition:all .3s ease-in-out;  
+    z-index:1;
+}
+
+.button_box:hover:before{
+    margin-left:300%;
+}
+
+.button_box:hover {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px var(--shadow);
+}
+
+.button_box:active {
+    top: 4px;
 }
 
 /*                             */
