@@ -21,7 +21,7 @@ const Careers = () => {
               TechByte Careers
             </h2>
             <h4>
-              We are actively seeking highly skilled and talented individuals with expertise in various roles to join our team. See our openings below:
+              We are actively seeking highly skilled and talented individuals with expertise in various roles to join our team. See our openings below.
             </h4>
           </div>
           <div className="box_right_text">

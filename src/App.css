@@ -592,6 +592,10 @@ header img {
         text-align: center;
         margin: 24px;
     }
+
+    h5 {
+        margin-top: 24px;
+    }
 }
 
 .hiring {
@@ -604,7 +608,7 @@ header img {
 }
 
 .career_jump_link { 
-    margin-top: 24px;
+    margin-top: 12px;
     width: 80%;
     max-width: 750px;
     min-width: 290px;
