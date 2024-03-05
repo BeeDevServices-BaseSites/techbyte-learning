@@ -128,7 +128,7 @@ const Courses = () => {
             Don't miss out on this incredible opportunity to become a master in full stack programming with Python and React. Take the first step towards a rewarding career and join the Techbyte Learning family today!
           </p>
           <p>
-            For more information contact us at <a id="career_link" href="mailto:admissions@beedev-services.com?subject=Admissions%20Inquiry%20">admissions@beedev-services.com</a> or call us at (570) 890-5252 to learn more and secure your spot. Limited seats available, so act now!
+            For more information contact us at <a id="career_link" href="mailto:admissions@beedev-services.com?subject=Admissions%20Inquiry%20">admissions@beedev-services.com</a> or call us at (570) 731-8660 to learn more and secure your spot. Limited seats available, so act now!
           </p>
           <Button to="/apply" text="APPLY NOW" />
         </div>

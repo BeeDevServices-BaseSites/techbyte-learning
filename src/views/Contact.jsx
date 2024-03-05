@@ -24,7 +24,15 @@ const Contact = () => {
                 Phone:
               </h4>
               <h4 className="phone_number">
-                (570) 890-5252
+                (570) 731-8660
+              </h4>
+            </div>
+            <div className="contacts">
+              <h4>
+                Fax:
+              </h4>
+              <h4 className="phone_number">
+                (570) 202-9171
               </h4>
             </div>
             <div className="contacts">
@@ -41,15 +49,15 @@ const Contact = () => {
             </div>
             <div className="contacts">
               <h4>
-                Student Login:
-              </h4>
-              <a href="https://learn.techbyte-learning.com/">learn.techbyte-learning.com</a>
-            </div>
-            <div className="contacts">
-              <h4>
                 Support:
               </h4>
               <a href="mailto:support@beedev-services.com?subject=Support%20Inquiry%20">support@beedev-services.com</a>
+            </div>
+            <div className="contacts">
+              <h4>
+                Student Login:
+              </h4>
+              <a href="https://learn.techbyte-learning.com/">learn.techbyte-learning.com</a>
             </div>
           </div>
           <div className="box_right_img">
