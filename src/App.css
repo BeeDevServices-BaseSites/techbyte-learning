@@ -36,7 +36,6 @@ body {
 
 main {
     min-height: calc(100dvh - 234px);
-    /* min-height: 79.5dvh; */
 }
 
 /* font sizes */
@@ -386,9 +385,11 @@ header img {
     filter: none;
 }
 
-#drawer-toggle:checked ~ main {
-    margin-left: 200px; /* Adjusted to align with the drawer */
-}
+/* moves main with the drawer */
+/* #drawer_toggle:checked ~ main {  
+    margin-left: 200px; 
+    transition: all 300ms ease;
+} */
 
 #drawer_toggle:checked ~ header {
     padding-left: 250px
