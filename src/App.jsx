@@ -1,6 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { useState } from 'react';
+
 import Apply from "./views/Apply";
 import Assistance from "./views/Assistance";
 import BadLink from "./views/BadLink";
@@ -17,9 +18,9 @@ import OurHive from "./views/OurHive";
 import Pricing from "./views/Pricing";
 import Receipt from "./views/Receipt.jsx";
 import Tutoring from "./views/Tutoring";
+import GoToButton from "./components/GoTop.jsx";
 
 const App = () => {
-
   const [details, setDetails] = useState(""); 
 
   return (
@@ -41,6 +42,7 @@ const App = () => {
       </Routes>
       <ChatBox />
       <Cookies />
+      <GoToButton />
       <Footer />
     </>
   );
