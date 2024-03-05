@@ -35,7 +35,8 @@ body {
 }
 
 main {
-    min-height: 79.5dvh;
+    min-height: calc(100dvh - 234px);
+    /* min-height: 79.5dvh; */
 }
 
 /* font sizes */
@@ -956,6 +957,8 @@ header img {
             a {
                 position: relative;
                 text-decoration: none;
+                background: var(--dark_yellow);
+                background: var(--header_gradient);
                 color: var(--midnight_blue);
                 font-weight: 800;
                 outline: none;
@@ -970,7 +973,7 @@ header img {
                 transition: all 300ms ease;
                 
                 &:hover, &:focus {
-                    background-color: var(--midnight_blue);
+                    background: var(--midnight_blue);
                     color: var(--light_yellow);
                     text-shadow: 0.5px 0.5px 0.5px var(--shadow);
                     box-shadow: 5px 5px 15px var(--shadow);
@@ -980,10 +983,14 @@ header img {
         }
 
         &:hover, &:focus-within {
-            transform: scale(1.005);
-            box-shadow: 5px 5px 15px var(--shadow);
+            /* transform: scale(1.005); */
+            box-shadow: 8px 8px 15px var(--shadow);
         }
     }
+}
+
+.price_tag {
+    text-align: center;
 }
 
 .small {
