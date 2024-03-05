@@ -4,7 +4,7 @@
 :root {
     --white: #CBE5EC;
     --midnight_blue: #0f2f47;
-    --shadow: #979393;
+    --shadow: #97939390;
     --light_yellow: #F6E8B7;
     --dark_yellow: #efd780;
     --header_gradient: linear-gradient(0deg, rgba(239, 215, 128, 1) 42%, rgba(246, 232, 182, 1) 79%);
@@ -395,6 +395,8 @@ header img {
 
 #drawer_toggle:checked ~ #drawer {
     left: 0px;
+    box-shadow: 0px 0px 30px black;
+    z-index: 99999;
 }
 
 #drawer ul {
