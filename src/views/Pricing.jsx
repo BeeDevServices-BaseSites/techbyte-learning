@@ -48,10 +48,12 @@ const Pricing = ({ setDetails }) => {
                 <p className="pricing_card_text">
                   Join us and take your coding skills to the next level!
                 </p>
-                <br />
-                <Link to="/Apply">
-                  Apply Here
-                </Link>
+                <div className="price_tag">
+                  <h4>$8000</h4>
+                  <Link to="/Apply">
+                    Apply Here
+                  </Link>
+                </div>
               </div>
             </div>
             {/* END DEV CARD 1 */}
@@ -77,9 +79,12 @@ const Pricing = ({ setDetails }) => {
                 <p className="pricing_card_text">
                   Join us and embark on an exciting journey of game development in our 2D gaming course today!
                 </p>
-                <Link to="/Apply">
-                  Apply Here
-                </Link>
+                <div className="price_tag">
+                  <h4>$8000</h4>
+                  <Link to="/Apply">
+                    Apply Here
+                  </Link>
+                </div>
               </div>
             </div>
             {/* END DEV CARD 2 */}
