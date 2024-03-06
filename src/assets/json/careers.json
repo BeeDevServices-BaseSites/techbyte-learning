@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "is_active": false,
+        "is_active": true,
         "position": "Web Developer",
         "level": "Junior",
         "type": "Full Time",
@@ -14,7 +14,7 @@
     },
     {
         "id": "2",
-        "is_active": false,
+        "is_active": true,
         "position": "UI/UX Developer",
         "level": "Staff",
         "type": "Full Time",
@@ -27,7 +27,7 @@
     },
     {
         "id": "3",
-        "is_active": false,
+        "is_active": true,
         "position": "Student Recruiter and Onboarding Specialist",
         "level": "Sr.",
         "type": "Full Time",
@@ -41,7 +41,7 @@
     },
     {
         "id": "4",
-        "is_active": false,
+        "is_active": true,
         "position": "HR Coordinator",
         "level": "Sr.",
         "type": "Full Time",
@@ -54,7 +54,7 @@
     },
     {
         "id": "5",
-        "is_active": false,
+        "is_active": true,
         "position": "Instructor - Web Development",
         "level": "",
         "type": "Full Time",
@@ -75,7 +75,7 @@
         "location": "Remote",
         "about": "We are hiring a Part-Time Teaching Assistant to support our online programming courses. The ideal candidate will have a strong understanding of HTML, CSS, JavaScript, React, Express, Pug, Vite, Python, Flask, Django, PostgreSQL, MySQL, and object-oriented programming (OOP).",
         "requirements": ["Proficiency in the specified programming languages and technologies.", "Enrolled in or completed a relevant degree program.", "Strong communication and interpersonal skills.", "Passion for helping students succeed in their programming journey."],
-        "responsibilities": ["Assist instructors in delivering effective and engaging lessons.", "Provide support and guidance to students during lab sessions and projects.", "", "Evaluate and provide constructive feedback on student assignments.", "Collaborate with the instructional team to enhance the learning experience."],
+        "responsibilities": ["Assist instructors in delivering effective and engaging lessons.", "Provide support and guidance to students during lab sessions and projects.", "Evaluate and provide constructive feedback on student assignments.", "Collaborate with the instructional team to enhance the learning experience."],
         "able_to_do": false
     },
     {
@@ -87,8 +87,8 @@
         "salary": "Pending Experience",
         "location": "Remote",
         "about": "We are hiring a Part-Time Teaching Assistant to support our online programming courses. The ideal candidate will have a strong understanding of HTML, CSS, JavaScript, React, Express, Pug, Vite, Python, Flask, Django, PostgreSQL, MySQL, and object-oriented programming (OOP).",
-        "requirements": ["Proficiency in the specified programming languages and technologies.", "Enrolled in or completed a relevant degree program.", "Strong communication and interpersonal skills.", "Passion for helping students succeed in their programming journey.", "This is a part-time role with flexible hours, offering valuable experience in education and programming.", ""],
-        "responsibilities": ["Assist instructors in delivering effective and engaging lessons.", "Provide support and guidance to students during lab sessions and projects.", "", "Evaluate and provide constructive feedback on student assignments.", "Collaborate with the instructional team to enhance the learning experience."],
+        "requirements": ["Proficiency in the specified programming languages and technologies.", "Enrolled in or completed a relevant degree program.", "Strong communication and interpersonal skills.", "Passion for helping students succeed in their programming journey.", "This is a part-time role with flexible hours, offering valuable experience in education and programming."],
+        "responsibilities": ["Assist instructors in delivering effective and engaging lessons.", "Provide support and guidance to students during lab sessions and projects.", "Evaluate and provide constructive feedback on student assignments.", "Collaborate with the instructional team to enhance the learning experience."],
         "able_to_do": false
     },
     {

@@ -49,7 +49,7 @@ const Careers = () => {
           </div>
           {/* END SECTION 1 */}
           {/* JOBS LISTINGS */}
-          <Jobs positions={ positions } />
+          <Jobs positions={ active_jobs } />
         </div>
       } 
     </main>

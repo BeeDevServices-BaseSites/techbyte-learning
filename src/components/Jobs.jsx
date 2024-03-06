@@ -1,8 +1,7 @@
-import jobs from "../assets/json/careers.json"
 
 const Jobs = ({ positions }) => {
 
-    const active_jobs = positions.filter(position => position.is_active);
+    const active_jobs = positions;
 
     const handleClick = (e, id) => {
         e.preventDefault();
