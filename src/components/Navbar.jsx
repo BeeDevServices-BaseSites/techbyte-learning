@@ -26,8 +26,11 @@ useEffect(() => {
             <Link to="/" className="drawer_link">Home Page</Link>
           </li>
           <li>
-            <Link to="/courses" className="drawer_link">Web Development</Link>
+            <Link to="/webdevelopment" className="drawer_link">Web Development</Link>
           </li>
+          {/* <li>
+            <Link to="/gamedevelopment" className="drawer_link">2D Game Development</Link>
+          </li> */}
           <li>
             <Link to="/tutoring" className="drawer_link">Tutoring</Link>
           </li>

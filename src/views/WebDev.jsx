@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { changeTitle } from "../utilities/utilityFunctions";
+import { changeTitle } from "../utilities/utilityFunctions.js";
 import Button from "../components/Button.jsx"
 import html5 from "../assets/images/html5.png"
 import css from "../assets/images/css.png"
@@ -16,11 +16,11 @@ import project_steps from "../assets/images/project_steps.png"
 import internship from "../assets/images/internship.jpg"
 import full_stack_tech from "../assets/images/full_stack_tech.jpg"
 
-const Courses = () => {
+const WebDev = () => {
 
   useEffect(() => {
     window.scrollTo(0,0),
-    changeTitle("Courses - ")
+    changeTitle("Web Development - ")
   },[])
 
   return (
@@ -138,4 +138,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default WebDev;
