@@ -1,8 +1,8 @@
 import jobs from "../assets/json/careers.json"
 
-const Jobs = () => {
+const Jobs = ({ positions }) => {
 
-    const active_jobs = jobs.filter(job => job.is_active);
+    const active_jobs = positions.filter(position => position.is_active);
 
     const handleClick = (e, id) => {
         e.preventDefault();
@@ -14,12 +14,12 @@ const Jobs = () => {
     }
 
     return (
-        <div className="jobs_container">
+            <div className="jobs_container">
                 <h5>Jump To:</h5>
             {/* LINKS TO CAREERS */}
             <div className="career_jump_link">
                 {[...active_jobs].map((job) => {
-                return(
+                    return(
                         <a href={`#${ job.id }`} key={ job.id }  onClick={(e) => handleClick(e, job.id)}>
                             |&nbsp; { job.position }&nbsp;|
                         </a>
@@ -31,8 +31,8 @@ const Jobs = () => {
             </h4>
             {/* JOB CARDS */}
             {[...active_jobs].map((job) => {
-            return(
-                <div id={ job.id } className="job_card" key={ job.id }>
+                return(
+                    <div id={ job.id } className="job_card" key={ job.id }>
                     <h2>
                         { job.level } { job.position}
                     </h2>
@@ -50,8 +50,8 @@ const Jobs = () => {
                     </h4>
                     <ul>
                         {[...job.requirements].map((req, idx) => {
-                        return(
-                            <li key={ idx }>
+                            return(
+                                <li key={ idx }>
                             { req }
                             </li>
                         )})}
@@ -61,14 +61,14 @@ const Jobs = () => {
                     </h4>
                     <ul>
                         {[...job.responsibilities].map((responsability, idx) => {
-                        return(
-                            <li key={ idx }>
+                            return(
+                                <li key={ idx }>
                             { responsability }
                             </li>
                         )})}
                     </ul>
                     {job.able_to_do && job.able_to_do.length !== false ? (
-                    <>
+                        <>
                         <h4>
                             Able to do:
                         </h4>
@@ -84,10 +84,10 @@ const Jobs = () => {
                     </>
                     ) : (
                         <div></div>
-                    )}
+                        )}
                 </div>
             )})}
-        </div>
+            </div>
     );
 };
 
