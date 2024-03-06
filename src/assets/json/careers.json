@@ -67,7 +67,7 @@
     },
     {
         "id": "6",
-        "is_active": false,
+        "is_active": true,
         "position": "Teaching Assistant",
         "level": "",
         "type": "Full Time",
@@ -80,7 +80,7 @@
     },
     {
         "id": "7",
-        "is_active": false,
+        "is_active": true,
         "position": "Teaching Assistant",
         "level": "",
         "type": "Part Time",

@@ -1,0 +1,109 @@
+[
+    {
+        "id": "1",
+        "is_active": true,
+        "is_course":false,
+        "is_tutoring": true,
+        "title": "½-Hour Session",
+        "description": ["Sign up for a ½ hour tutoring session where our experienced tutors will work with you at your own pace to help you build a solid foundation in web development.", "Don't let confusion hold you back from creating amazing websites - sign up for our tutoring session today!"],
+        "price": "$30.00",
+        "units": "1",
+        "is_on_sale": false,
+        "percent": 0,
+        "image": ""
+    },
+    {
+        "id": "2",
+        "is_active": true,
+        "is_course":false,
+        "is_tutoring": true,
+        "title": "½-Hour Session",
+        "description": ["Bundle three of our ½ hour tutoring sessions where our experienced tutors will work with you at your own pace to help you build a solid foundation in web development.", "Don't let confusion hold you back from creating amazing websites - sign up for our tutoring session today!"],
+        "price": "$30.00",
+        "units": "3",
+        "is_on_sale": true,
+        "percent": 5,
+        "image": ""
+    },
+    {
+        "id": "3",
+        "is_active": true,
+        "is_course":false,
+        "is_tutoring": true,
+        "title": "½-Hour Session",
+        "description": ["Our most popular bundle of five ½ hour tutoring sessions", "Our experienced tutors will work with you at your own pace to help you build a solid foundation in web development.", "Don't let confusion hold you back from creating amazing websites - sign up for our tutoring session today!"],
+        "price": "$30.00",
+        "units": "5",
+        "is_on_sale": true,
+        "percent": 15,
+        "image": ""
+    },
+    {
+        "id": "4",
+        "is_active": true,
+        "is_course":false,
+        "is_tutoring": true,
+        "title": "½-Hour Session",
+        "description": ["Take advantage with our greatest savings bundle of ten ½ hour tutoring sessions.", "Our experienced tutors will work with you at your own pace to help you build a solid foundation in web development.", "Don't let confusion hold you back from creating amazing websites - sign up for our tutoring session today!"],
+        "price": "$30.00",
+        "units": "10",
+        "is_on_sale": true,
+        "percent": 25,
+        "image": ""
+    },
+    {
+        "id": "5",
+        "is_active": true,
+        "is_course":true,
+        "is_tutoring": false,
+        "title": "Web Development",
+        "description": ["Whether you are a beginner looking to break into the industry or a seasoned developer seeking to expand your skill set, our program is designed to provide you with the knowledge and hands-on experience needed to succeed.", "Our expert instructors will guide you through every step of the development process. On completion, you will be equipped with the skills to build dynamic, responsive applications that will set you apart in the competitive field of web development.", "Join us and take your coding skills to the next level!"],
+        "price": "$8000.00",
+        "units": "1",
+        "image": ""
+    },
+    {
+        "id": "6",
+        "is_active": true,
+        "is_course":true,
+        "is_tutoring": false,
+        "title": "2D Gaming Development",
+        "description": ["Unleash your creativity and dive into the world of 2D gaming with our comprehensive course!", "Whether you're a seasoned developer or a complete beginner, we'll guide you through the basics of creating and designing your very own 2D games.", "From mastering game mechanics to creating captivating visual assets, you'll develop the skills needed to bring your gaming ideas to life.", "Join us and embark on an exciting journey of game development in our 2D gaming course today!"],
+        "price": "$8000.00",
+        "units": "1",
+        "image": ""
+    },
+    {
+        "id": "", 
+        "is_active": false,
+        "is_course":false,
+        "is_tutoring": false,
+        "title": "", 
+        "description": [""],
+        "price": "$",
+        "units": "",
+        "image" : ""
+    },
+    {
+        "id": "", 
+        "is_active": false,
+        "is_course":false,
+        "is_tutoring": false,
+        "title": "", 
+        "description": [""],
+        "price": "$",
+        "units": "",
+        "image" : ""
+    },
+    {
+        "id": "", 
+        "is_active": false,
+        "is_course":false,
+        "is_tutoring": false,
+        "title": "", 
+        "description": [""],
+        "price": "$",
+        "units": "",
+        "image" : ""
+    }
+]
