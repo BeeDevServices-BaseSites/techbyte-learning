@@ -30,6 +30,12 @@ useEffect(() => {
           </li>
           {/* <li>
             <Link to="/gamedevelopment" className="drawer_link">2D Game Development</Link>
+          </li>
+          <li>
+            <Link to="/devops" className="drawer_link">DevOps</Link>
+          </li>
+          <li>
+            <Link to="/minicourses" className="drawer_link">Mini Sessions</Link>
           </li> */}
           <li>
             <Link to="/tutoring" className="drawer_link">Tutoring</Link>
@@ -46,15 +52,15 @@ useEffect(() => {
           <li>
             <Link to="/apply" className="drawer_link">Apply</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/ourhive" className="drawer_link">Our Hive</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/contact" className="drawer_link">Contact Us</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/careers" className="drawer_link">Careers</Link>
-          </li>
+          </li> */}
           <li>
             <a href="https://learn.techbyte-learning.com/" target="_blank" className="drawer_link">Student Login</a>
           </li>
