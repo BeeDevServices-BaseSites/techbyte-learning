@@ -1,8 +1,6 @@
 
 const Jobs = ({ positions }) => {
 
-    const active_jobs = positions;
-
     const handleClick = (e, id) => {
         e.preventDefault();
         const element = document.getElementById(id);
@@ -17,7 +15,7 @@ const Jobs = ({ positions }) => {
                 <h5>Jump To:</h5>
             {/* LINKS TO CAREERS */}
             <div className="career_jump_link">
-                {[...active_jobs].map((job) => {
+                {positions.map((job) => {
                     return(
                         <a href={`#${ job.id }`} key={ job.id }  onClick={(e) => handleClick(e, job.id)}>
                             |&nbsp; { job.position }&nbsp;|
@@ -29,7 +27,7 @@ const Jobs = ({ positions }) => {
                 Send inquiries to: <br className="mobile_only"/> <a id="career_link" href="mailto:careers@techbyte-learning.com?subject=Career%20Inquiry%20">careers@techbyte-learning.com</a> 
             </h4>
             {/* JOB CARDS */}
-            {[...active_jobs].map((job) => {
+            {positions.map((job) => {
                 return(
                     <div id={ job.id } className="job_card" key={ job.id }>
                     <h2>
