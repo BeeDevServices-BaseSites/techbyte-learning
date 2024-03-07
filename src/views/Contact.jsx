@@ -16,6 +16,29 @@ const Contact = () => {
       <div className="wrapper">
         {/* SECTION 1 */}
         <div className="split_box">
+          <div className="box_left_img">
+            <img src="https://firebotanicals.com/wp-content/uploads/2020/10/about-us-.png" alt="About Us" />
+          </div>
+          <div className="box_right_text">
+            <h2>
+              Who Is TechByte?
+            </h2>
+            <p>
+              TechByte is a woman-owned and military veteran-owned company specializing in teaching web development and game development. We pride ourself on our diverse team, which we affectionately to refer to as "Our Hive". Our Hive consists of individuals with various backgrounds and expertise in the tech industry. Together, we work towards providing innovative solutions, instruction and services to our clients. &nbsp; 
+              <Link to="/ourhive">Meet Our Team</Link>
+            </p>
+            <p>
+              If you are passionate about technology and want to work for a company that values innovation and collaboration, then TechByte may be the right fit for you. We encourage you to explore our Careers page if you are interested in joining Our Hive at TechByte and apply for positions that align with your skills and interests. 
+            </p>
+            <p>
+              We are always looking for talented individuals to join our team and look forward to seeing how your unique talents and contributions can help drive TechByte forward.
+            </p>
+            <p>TechByte's <Link to="/careers">Careers</Link> page</p>
+          </div>
+        </div>
+        {/* END SECTION 1 */}
+        {/* SECTION 2 */}
+        <div className="split_box">
           <div className="box_left_text">
             <h2>
               Get In Touch
@@ -65,9 +88,9 @@ const Contact = () => {
             <img src={ contact_us } alt="Contact Us!" />
           </div>
         </div>
-        {/* END SECTION 1 */}
+        {/* END SECTION 2 */}
         <br />
-        {/* SECTION 2 */}
+        {/* SECTION 3 */}
         <div className="split_box flip">
           <div className="box_left_img">
             <img src={ follow_us } alt="Follow Us!" />
@@ -96,30 +119,6 @@ const Contact = () => {
               <img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="facebook logo" />
               <a href="https://www.facebook.com/beedevservices" target="_blank">BeeDev Services Facebook</a>
             </div>
-          </div>
-        </div>
-        {/* END SECTION 2 */}
-        {/* SECTION 3 */}
-        <div className="split_box">
-          <div className="box_left_text">
-            <h2>
-              Who Is TechByte?
-            </h2>
-
-            <p>
-              TechByte is a woman-owned and military veteran-owned company specializing in teaching web development and game development. We pride ourself on our diverse team, which we affectionately to refer to as "Our Hive". Our Hive consists of individuals with various backgrounds and expertise in the tech industry. Together, we work towards providing innovative solutions, instruction and services to our clients. &nbsp; 
-              <Link to="/ourhive">Meet Our Team</Link>
-            </p>
-            <p>
-              If you are passionate about technology and want to work for a company that values innovation and collaboration, then TechByte may be the right fit for you. We encourage you to explore our Careers page if you are interested in joining Our Hive at TechByte and apply for positions that align with your skills and interests. 
-            </p>
-            <p>
-              We are always looking for talented individuals to join our team and look forward to seeing how your unique talents and contributions can help drive TechByte forward.
-            </p>
-            <p>TechByte's <Link to="/careers">Careers</Link> page</p>
-          </div>
-          <div className="box_right_img">
-            <img src="https://firebotanicals.com/wp-content/uploads/2020/10/about-us-.png" alt="About Us" />
           </div>
         </div>
         {/* END SECTION 3 */}
