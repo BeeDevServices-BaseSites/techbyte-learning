@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
+import { Link } from "react-router-dom";
 import contact_us from "../assets/images/contact_us.jpg"
 import follow_us from "../assets/images/follow_us.jpg"
-import { Link } from "react-router-dom";
 
 const AboutUs = () => {
 
@@ -27,7 +27,7 @@ const AboutUs = () => {
               TechByte is a woman-owned and military veteran-owned company specializing in teaching web development and game development. We pride ourself on our diverse team, which we affectionately to refer to as "Our Hive". Our Hive consists of individuals with various backgrounds and expertise in the tech industry. Together, we work towards providing innovative solutions, instruction and services to our clients. &nbsp; 
             </p>
             <br />
-            <p><Link to="/ourhive">Meet Our Team</Link></p>
+            <h4><Link to="/ourhive">Meet Our Team</Link></h4>
             <br />
             <p>
               If you are passionate about technology and want to work for a company that values innovation and collaboration, then TechByte may be the right fit for you. We encourage you to explore our Careers page if you are interested in joining Our Hive at TechByte and apply for positions that align with your skills and interests. 
@@ -36,7 +36,7 @@ const AboutUs = () => {
               We are always looking for talented individuals to join our team and look forward to seeing how your unique talents and contributions can help drive TechByte forward.
             </p>
             <br />
-            <p>TechByte's <Link to="/careers">Careers</Link> page</p>
+            <h4><Link to="/careers">TechByte Careers</Link></h4>
           </div>
         </div>
         {/* END SECTION 1 */}
