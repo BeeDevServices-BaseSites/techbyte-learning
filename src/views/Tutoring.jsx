@@ -1,43 +1,13 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
-import Button from "../components/Button.jsx"
-import rise_above from "../assets/images/rise_above.jpg"
+import Button from "../components/Button.jsx";
+import rise_above from "../assets/images/rise_above.jpg";
+import tutors from "../assets/json/employees.json";
+import TutoringCards from "../components/TutoringCards.jsx";
 
 const Tutoring = () => {
 
-  const instructors = [
-
-    {
-      "image": "https://www.giantbomb.com/a/uploads/square_medium/4/48992/1089078-bart.png",
-      "name": "Bart Simpson",
-      "technologies": ["Java", "Python"],
-    },
-    {
-      "image": "https://i.pinimg.com/originals/52/8b/8a/528b8a72f82761343c0824ab2ff47d2e.png",
-      "name": "Homer Simpson",
-      "technologies": ["Java", "Python","JavaScript"],
-    },
-    {
-      "image": "https://i.pinimg.com/originals/99/74/6f/99746f4a12ba6546c8d58cff456059be.png",
-      "name": "Bender Bot",
-      "technologies": ["JavaScript", "Python"],
-    },
-    {
-      "image": "https://www.giantbomb.com/a/uploads/square_small/2/21673/1291758-krusty_the_clown.png",
-      "name": "Krusty The Clown",
-      "technologies": ["Python", "JavaScript", "C#", "Ruby"],
-    },
-    {
-      "image": "https://upload.wikimedia.org/wikipedia/en/e/ec/Lisa_Simpson.png",
-      "name": "Lisa Simpson",
-      "technologies": ["Python", "JavaScript", "C#"],
-    },
-    {
-      "image": "https://pngimg.com/d/minions_PNG34.png",
-      "name": "Bob the Minion",
-      "technologies": ["Python", "JavaScript", "C#", "Ruby"],
-    }
-  ]
+  const active_tutors = tutors.filter(tutor => tutor.is_tutor);
 
   useEffect(() => {
     window.scrollTo(0,0),
@@ -76,29 +46,7 @@ const Tutoring = () => {
         {/* SECTION 3 */}
         <h2>Meet Our Tutors</h2>
         {/* INSTRUCTOR CARDS */}
-        <div className="card_container">
-          {[...instructors].map((instructor, index) => {
-            return(
-              <div className="card_one" key={ index }>
-                <img src={ instructor.image } alt="User Icon" />
-                <h2>
-                  { instructor.name }
-                </h2>
-                  <h4>
-                    Language Specializations
-                  </h4>
-                  <ul>
-                    {[...instructor.technologies].map((tech, idx) => {
-                      return(
-                        <li key={ idx }>
-                          { tech }
-                        </li>
-                    )})}
-                  </ul>
-              </div>
-            )
-          })}
-        </div>
+        <TutoringCards active_tutors = { active_tutors } />
         {/* END SECTION 3 */}
         <Button to="/pricingplans" text="PRICING PLANS" />
       </div>

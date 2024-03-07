@@ -1,182 +1,274 @@
 [
     {
         "id": "1",
-        "firstName": "Melissa",
-        "lastName": "Longenberger",
-        "photo": "",
+        "first_name": "Melissa",
+        "last_name": "Longenberger",
+        "photo": "https://images.craftsnherbs.com/new-melissa.jpg",
         "position": "CEO & Founder",
         "location": "Berwick, PA",
-        "about": "Full Stack software Developer, Navy Veteran, Gardener and Crocheter with a passion for creating.",
-        "technologies": ["HTML", "CSS", "JavaScript", "LESS", "React", "Vite", "Express.js", "Node", "Next.js", "Java", "C#","Python", "SQL", "PostgreSQL", "Mongo", "Pug", "Django", "Flask", "Git", "Github"],
-        "isMentor": true,
-        "isTutor": true,
-        "isInstructor": true,
-        "isTA": false,
-        "isActive": true
+        "about": "Full Stack Software Developer, Navy Veteran, Gardener and Crocheter with a passion for creating.",
+        "technologies": [
+            "HTML", "CSS", "JavaScript", "LESS", "React", "Vite", "Express.js", "Node", "Next.js", "Java", "C#","Python", "SQL", "PostgreSQL", "Mongo", "Pug", "Django", "Flask", "Git", "Github"
+        ],
+        "is_mentor": true,
+        "is_tutor": true,
+        "is_instructor": true,
+        "is_TA": false,
+        "is_active": true
     },
     {
         "id": "2",
-        "firstName": "Brent",
-        "lastName": "Cleary",
-        "photo": "",
+        "first_name": "Brent",
+        "last_name": "Cleary",
+        "photo": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "position": "VP of TechByte Learning",
         "location": "Seattle, WA",
         "about": "Full Stack Software Developer with an emphasis in C#",
-        "technologies": ["HTML", "CSS", "JavaScript", "React", "Express", "Node", "Next.js", "C#", "Python", "PostgreSQL", "Git", "Github"],
-        "isMentor": false,
-        "isTutor": false,
-        "isInstructor": true,
-        "isTA": false,
-        "isActive": true
+        "technologies": [
+            "HTML", "CSS", "JavaScript", "React", "Express.js", "Node", "Next.js", "C#", "Python", "PostgreSQL", "Git", "Github"
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": true,
+        "is_TA": false,
+        "is_active": true
     },
     {
         "id": "3",
-        "firstName": "Kyle",
-        "lastName": "Rohr-Morey",
-        "photo": "",
+        "first_name": "Kyle",
+        "last_name": "Rohr-Morey",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr3I6tj4xk40kml0-cfHS-twS8vnIij3y2SCMI77WuGTzt_MYv0CF37DMr3FEYPWsToo&usqp=CAU",
         "position": "VP of Curriculum",
         "location": "Wethersfield, CT",
         "about": "Frontend Development | Game Development for over 4+ years!",
-        "technologies": ["HTML", "CSS", "JavaScript", "React", "Express.js", "Node", "Next.js", "Mongoose", "TypeScript", "Canvas", "API", "Phaser 3", "Electron"],
-        "isMentor": true,
-        "isTutor": true,
-        "isInstructor": true,
-        "isTA": false,
-        "isActive": true
+        "technologies": [
+            "HTML", "CSS", "JavaScript", "React", "Express.js", "Node", "Next.js", "Mongoose", "TypeScript", "Canvas API", "Phaser 3", "Electron", "MongoDB", "Node.js", "Git", "Github"
+        ],
+        "is_mentor": true,
+        "is_tutor": true,
+        "is_instructor": true,
+        "is_TA": false,
+        "is_active": true
     },
     {
         "id": "4",
-        "firstName": "Chris",
-        "lastName": "Bridgewater",
-        "photo": "",
+        "first_name": "Chris",
+        "last_name": "Bridgewater",
+        "photo": "https://live.staticflickr.com/65535/53041911057_89c714ff20_w.jpg",
         "position": "VP of Development",
-        "location": "",
-        "about": "",
-        "technologies": ["HTML", "CSS", "JavaScript", "LESS", "SASS", "React", "Vite", "Express", "Node", "Next.js", "Java", "C#", "Python", "SQL", "PostgreSQL", "Mongo", "Django", "Flask"],
-        "isMentor": false,
-        "isTutor": false,
-        "isInstructor": false,
-        "isTA": false,
-        "isActive": false
+        "location": "Creswell, OR",
+        "about": "Full Stack Software Developer. If I'm not on my computer, I'm enjoying the outdoors!",
+        "technologies": [
+            "HTML", "CSS", "JavaScript", "LESS", "SASS", "React", "Vite", "Express.js", "Node.js", "Next.js", "Java", "C#", "Python", "SQL", "PostgreSQL", "Mongo", "Django", "Flask", "ASP.net", "VS Code", "Spring Boot", "Git", "Github", "MongoDB", "AWS EC2"
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": false
     },
     {
         "id": "5",
-        "firstName": "",
-        "lastName": "",
-        "photo": "",
-        "position": "",
-        "location": "",
+        "first_name": "Jason",
+        "last_name": "Brady",
+        "photo": "https://images.pexels.com/photos/5378700/pexels-photo-5378700.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "position": "Developer",
+        "location": "Remote",
         "about": "",
-        "technologies": ["HTML", "CSS", "JavaScript", "LESS", "SASS", "React", "Vite", "Express", "Node", "Next.js", "Java", "C#", "C++", "PHP", "Python", "SQL", "PostgreSQL", "Mongo", "Pug", "Django", "Flask"],
-        "isMentor": true,
-        "isTutor": true,
-        "isInstructor": true,
-        "isTA": true,
-        "isActive": true
+        "technologies": [
+
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": true
     },
     {
         "id": "6",
-        "firstName": "",
-        "lastName": "",
-        "photo": "",
-        "position": "",
-        "location": "",
+        "first_name": "Ruth",
+        "last_name": "Khan",
+        "photo": "https://images.pexels.com/photos/5490276/pexels-photo-5490276.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "position": "Developer",
+        "location": "Remote",
         "about": "",
-        "technologies": ["HTML", "CSS", "JavaScript", "LESS", "SASS", "React", "Vite", "Express", "Node", "Next.js", "Java", "C#", "C++", "PHP", "Python", "SQL", "PostgreSQL", "Mongo", "Pug", "Django", "Flask"],
-        "isMentor": true,
-        "isTutor": true,
-        "isInstructor": true,
-        "isTA": true,
-        "isActive": true
+        "technologies": [
+            
+        ],
+        "is_mentor": true,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": true
     },
     {
         "id": "7",
-        "firstName": "",
-        "lastName": "",
-        "photo": "",
-        "position": "",
-        "location": "",
-        "about": "",
-        "technologies": ["HTML", "CSS", "JavaScript", "LESS", "SASS", "React", "Vite", "Express", "Node", "Next.js", "Java", "C#", "C++", "PHP", "Python", "SQL", "PostgreSQL", "Mongo", "Pug", "Django", "Flask"],
-        "isMentor": true,
-        "isTutor": true,
-        "isInstructor": true,
-        "isTA": true,
-        "isActive": true
+        "first_name": "Luis",
+        "last_name": "Hernandez",
+        "photo": "https://images.pexels.com/photos/15853784/pexels-photo-15853784/free-photo-of-elegant-man-in-an-office.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "position": "Developer",
+        "location": "Seattle, WA",
+        "about": "Full Stack Software Developer",
+        "technologies": [
+            "HTML", "CSS", "JavaScript", "React", "Express.js", "Node.js", "Python", "Flask", "Django", "Java", "Spring Boot", "Linux", "MySQL", "MongoDB", "Git", "Github", "AWS EC2"
+        ],
+        "is_mentor": true,
+        "is_tutor": true,
+        "is_instructor": true,
+        "is_TA": true,
+        "is_active": true
     },
     {
         "id": "8",
-        "firstName": "",
-        "lastName": "",
-        "photo": "",
-        "position": "",
-        "location": "",
+        "first_name": "Marc",
+        "last_name": "Boisvert",
+        "photo": "https://images.pexels.com/photos/5384445/pexels-photo-5384445.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "position": "Developer, GPFL",
+        "location": "Vine Grove, Kentucky",
         "about": "",
-        "technologies": ["HTML", "CSS", "JavaScript", "LESS", "SASS", "React", "Vite", "Express", "Node", "Next.js", "Java", "C#", "C++", "PHP", "Python", "SQL", "PostgreSQL", "Mongo", "Pug", "Django", "Flask"],
-        "isMentor": true,
-        "isTutor": true,
-        "isInstructor": true,
-        "isTA": true,
-        "isActive": true
+        "technologies": [
+
+        ],
+        "is_mentor": true,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": true
     },
     {
         "id": "9",
-        "firstName": "",
-        "lastName": "",
-        "photo": "",
-        "position": "",
-        "location": "",
-        "about": "",
-        "technologies": ["HTML", "CSS", "JavaScript", "LESS", "SASS", "React", "Vite", "Express", "Node", "Next.js", "Java", "C#", "C++", "PHP", "Python", "SQL", "PostgreSQL", "Mongo", "Pug", "Django", "Flask"],
-        "isMentor": true,
-        "isTutor": true,
-        "isInstructor": true,
-        "isTA": true,
-        "isActive": true
+        "first_name": "Abrar",
+        "last_name": "Hussain",
+        "photo": "https://i.ibb.co/vHxB3nL/abrar.jpg",
+        "position": "Developer",
+        "location": "Chicago, IL",
+        "about": "Full Stack Engineer",
+        "technologies": [
+            "JavaScript", "React", "Next.js", "MERN", "Firebase", "Java", "Spring Boot", "Python", "Git", "Github", "MySQL"
+        ],
+        "is_mentor": true,
+        "is_tutor": true,
+        "is_instructor": true,
+        "is_TA": true,
+        "is_active": true
     },
     {
         "id": "10",
-        "firstName": "",
-        "lastName": "",
-        "photo": "",
-        "position": "",
-        "location": "",
-        "about": "",
-        "technologies": ["HTML", "CSS", "JavaScript", "LESS", "SASS", "React", "Vite", "Express", "Node", "Next.js", "Java", "C#", "C++", "PHP", "Python", "SQL", "PostgreSQL", "Mongo", "Pug", "Django", "Flask"],
-        "isMentor": true,
-        "isTutor": true,
-        "isInstructor": true,
-        "isTA": true,
-        "isActive": true
+        "first_name": "Christopher",
+        "last_name": "Jones",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1VPxcTllMKUxhSaujGs89cHnZGrZ6B6WW5Q&usqp=CAU",
+        "position": "Developer",
+        "location": "Plano, TX",
+        "about": "Full Stack Software Developer with a flair for crafting creative code",
+        "technologies": [
+            "HTML", "CSS", "JavaScript", "React", "Next.js", "Django", "Python", "VS Code", "Git", "Github", "SQLite"
+        ],
+        "is_mentor": true,
+        "is_tutor": true,
+        "is_instructor": false,
+        "is_TA": true,
+        "is_active": true
     },
     {
         "id": "11",
-        "firstName": "",
-        "lastName": "",
+        "first_name": "Christopher",
+        "last_name": "Ivy",
         "photo": "",
-        "position": "",
-        "location": "",
-        "about": "",
-        "technologies": ["HTML", "CSS", "JavaScript", "LESS", "SASS", "React", "Vite", "Express", "Node", "Next.js", "Java", "C#", "C++", "PHP", "Python", "SQL", "PostgreSQL", "Mongo", "Pug", "Django", "Flask"],
-        "isMentor": true,
-        "isTutor": true,
-        "isInstructor": true,
-        "isTA": true,
-        "isActive": true
+        "position": "Developer",
+        "location": "Springdale, AR",
+        "about": "Full Stack Software Developer with a passion for Game Development",
+        "technologies": [
+            "HTML", "CSS", "Python", "Flask", "Java", "JSP", "MongoDB", "Express.js", "React", "Node.js", "MERN", "JavaScript", "Git", "Github", "VS Code", "Spring Boot", "Windows", "MySQL", "Godot 4.1"
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": false
     },
     {
         "id": "12",
-        "firstName": "",
-        "lastName": "",
+        "first_name": "Ken",
+        "last_name": "Payne Jr",
+        "photo": "https://drive.google.com/file/d/1y0_Pyf0UR0plEy6-bEexHr4Nq0kpXC5M/view?usp=sharing",
+        "position": "Developer",
+        "location": "Wappingers Falls, NY",
+        "about": "Technical Instructor / Instructional Technologist",
+        "technologies": [
+            "Teaching & Developing Training Materials"
+        ],
+        "is_mentor": true,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": true
+    },
+    {
+        "id": "13",
+        "first_name": "Josh",
+        "last_name": "R",
         "photo": "",
-        "position": "",
-        "location": "",
+        "position": "Developer",
+        "location": "Remote",
         "about": "",
-        "technologies": ["HTML", "CSS", "JavaScript", "LESS", "SASS", "React", "Vite", "Express", "Node", "Next.js", "Java", "C#", "C++", "PHP", "Python", "SQL", "PostgreSQL", "Mongo", "Pug", "Django", "Flask"],
-        "isMentor": true,
-        "isTutor": true,
-        "isInstructor": true,
-        "isTA": true,
-        "isActive": true
+        "technologies": [
+            
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": false
+    },
+    {
+        "id": "14",
+        "first_name": "Makayla",
+        "last_name": "S",
+        "photo": "",
+        "position": "Developer",
+        "location": "Remote",
+        "about": "",
+        "technologies": [
+            
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": false
+    },
+    {
+        "id": "15",
+        "first_name": "Stevie",
+        "last_name": "G",
+        "photo": "",
+        "position": "Developer",
+        "location": "Remote",
+        "about": "",
+        "technologies": [
+            
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": false
+    },
+    {
+        "id": "16",
+        "first_name": "Laura",
+        "last_name": "L",
+        "photo": "",
+        "position": "Developer",
+        "location": "Remote",
+        "about": "",
+        "technologies": [
+            
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": false
     }
 ]
