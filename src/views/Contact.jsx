@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 import contact_us from "../assets/images/contact_us.jpg"
 import follow_us from "../assets/images/follow_us.jpg"
+import { Link } from "react-router-dom";
 
 const Contact = () => {
 
@@ -72,9 +73,9 @@ const Contact = () => {
             <img src={ follow_us } alt="Follow Us!" />
           </div>
           <div className="box_right_text">
-            <h3>
-              TechByte Learning:
-            </h3>
+            <h2>
+              Social Media:
+            </h2>
             <div className="contacts">
               <img src="https://cdn-icons-png.flaticon.com/256/174/174857.png" alt="linkedin logo" />
               <a href="https://www.linkedin.com/company/techbyte-learning/?viewAsMember=true" target="_blank">TechByte Learning LinkedIn</a>
@@ -87,9 +88,6 @@ const Contact = () => {
               <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="discord icon" />
               <a href="https://discord.com/channels/1203563873769365584/1205562887427588116" target="_blank">TechByte Leaning Discord</a>
             </div>
-            <h3>
-              BeeDev Services:
-            </h3>
             <div className="contacts">
               <img src="https://cdn-icons-png.flaticon.com/256/174/174857.png" alt="linkedin logo" />
               <a href="https://www.linkedin.com/company/beedev-services/?viewAsMember=true" target="_blank">BeeDev Services LinkedIn</a>
@@ -101,6 +99,30 @@ const Contact = () => {
           </div>
         </div>
         {/* END SECTION 2 */}
+        {/* SECTION 3 */}
+        <div className="split_box">
+          <div className="box_left_text">
+            <h2>
+              Who Is TechByte?
+            </h2>
+
+            <p>
+              TechByte is a woman-owned and military veteran-owned company specializing in teaching web development and game development. We pride ourself on our diverse team, which we affectionately to refer to as "Our Hive". Our Hive consists of individuals with various backgrounds and expertise in the tech industry. Together, we work towards providing innovative solutions, instruction and services to our clients. &nbsp; 
+              <Link to="/ourhive">Meet Our Team</Link>
+            </p>
+            <p>
+              If you are passionate about technology and want to work for a company that values innovation and collaboration, then TechByte may be the right fit for you. We encourage you to explore our Careers page if you are interested in joining Our Hive at TechByte and apply for positions that align with your skills and interests. 
+            </p>
+            <p>
+              We are always looking for talented individuals to join our team and look forward to seeing how your unique talents and contributions can help drive TechByte forward.
+            </p>
+            <p>TechByte's <Link to="/careers">Careers</Link> page</p>
+          </div>
+          <div className="box_right_img">
+            <img src="https://firebotanicals.com/wp-content/uploads/2020/10/about-us-.png" alt="About Us" />
+          </div>
+        </div>
+        {/* END SECTION 3 */}
       </div>
     </main>
   );

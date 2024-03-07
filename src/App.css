@@ -697,7 +697,7 @@ header img {
 /*          Courses            */
 /*                             */
 
-#projects {
+#projects, #devops {
     width: 100%;
     min-width: 290px;
     aspect-ratio: auto;
