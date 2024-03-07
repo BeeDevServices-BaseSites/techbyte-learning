@@ -1124,7 +1124,6 @@ footer {
     width: 150%;
     max-width: 37.5rem;
     opacity: 0.9;
-    filter: drop-shadow(30px 10px 12px rgba(128, 128, 128, 0.5));
 }
 
 
@@ -1226,6 +1225,9 @@ footer {
 @media (max-width: 25.999rem) {
     .item, .item2 {
         animation: none;
+    }
+    .bumble_bee_image {
+        display: none;
     }
 }
 

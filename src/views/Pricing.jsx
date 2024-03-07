@@ -14,7 +14,7 @@ const Pricing = ({ setDetails }) => {
 
   useEffect(() => {
     window.scrollTo(0,0),
-    changeTitle("Pricing Plans - ")
+    changeTitle("TechByte Pricing - ")
   },[])
 
   return (

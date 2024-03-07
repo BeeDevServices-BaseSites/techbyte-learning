@@ -30,11 +30,11 @@ useEffect(() => {
           </li>
           {/* <li>
             <Link to="/gamedevelopment" className="drawer_link">2D Game Development</Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link to="/devops" className="drawer_link">DevOps</Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link to="/minicourses" className="drawer_link">Mini Sessions</Link>
           </li> */}
           <li>
@@ -56,7 +56,7 @@ useEffect(() => {
             <Link to="/ourhive" className="drawer_link">Our Hive</Link>
           </li> */}
           <li>
-            <Link to="/contact" className="drawer_link">Contact Us</Link>
+            <Link to="/aboutus" className="drawer_link">About Us</Link>
           </li>
           {/* <li>
             <Link to="/careers" className="drawer_link">Careers</Link>

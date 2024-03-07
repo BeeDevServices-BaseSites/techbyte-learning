@@ -11,11 +11,10 @@ const Apply = () => {
     window.scrollTo(0,0);
     changeTitle("Apply - ");
     // swap element visability 
-    // This is allowing the chat box to fully load before being revealed 
     //(ternary wasnt working)
     setTimeout(() => {
       setShowSpinner(false);
-    }, 2500);
+    }, 2500); // Timer allowing the chat box to fully load before being revealed 
   },[]);
 
 

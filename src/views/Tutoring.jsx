@@ -48,13 +48,6 @@ const Tutoring = () => {
     <main>
       <div className="wrapper">
         {/* SECTION 1 */}
-        {/* <div className="large_box">
-          <h2>
-            Meet Our Tutors
-          </h2>
-        </div> */}
-        {/* END SECTION 1 */}
-        {/* SECTION 2 */}
         <div className="split_box">
           <div className="box_left_text">
             <h2>
@@ -72,8 +65,8 @@ const Tutoring = () => {
             <img src={ rise_above } alt="Rise Above" />
           </div>
         </div>
-        {/* END SECTION 2 */}
-        {/* SECTION 3 */}
+        {/* END SECTION 1 */}
+        {/* SECTION 2 */}
         <h2>Meet Our Tutors</h2>
         {/* INSTRUCTOR CARDS */}
         <div className="card_container">
@@ -99,7 +92,7 @@ const Tutoring = () => {
             )
           })}
         </div>
-        {/* END SECTION 3 */}
+        {/* END SECTION 2 */}
         <Button to="/pricingplans" text="PRICING PLANS" />
       </div>
     </main>
