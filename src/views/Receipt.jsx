@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import Button from "../components/Button";
 
@@ -140,6 +140,8 @@ const Receipt = ({ details }) => {
                             </tbody>
                         </table>
                         {/* notes */}
+                        <h4><Link to="/tutorbooking">Book Tutoring Here</Link></h4>
+                        <br />
                         <h5>
                             Print and keep this receipt for your records
                         </h5>
@@ -147,6 +149,7 @@ const Receipt = ({ details }) => {
                         <p><b>
                             Thank You For Joining The TechByte Learning Hive!
                         </b></p>
+
                     </div>
                     <Button to="/" text="CLOSE" />
                 </div>

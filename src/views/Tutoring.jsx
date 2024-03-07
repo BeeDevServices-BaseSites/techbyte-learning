@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { changeTitle } from "../utilities/utilityFunctions";
 import Button from "../components/Button.jsx"
 import rise_above from "../assets/images/rise_above.jpg"
@@ -38,12 +39,12 @@ const Tutoring = () => {
       "technologies": ["Python", "JavaScript", "C#", "Ruby"],
     }
   ]
-
+  
   useEffect(() => {
     window.scrollTo(0,0),
     changeTitle("Tutoring - ")
   },[])
-
+  
   return (
     <main>
       <div className="wrapper">
@@ -68,6 +69,7 @@ const Tutoring = () => {
         {/* END SECTION 1 */}
         {/* SECTION 2 */}
         <h2>Meet Our Tutors</h2>
+      <h4>(Already have tutor sessions? Schedule <Link to="/tutorbooking">Tutoring</Link> here.)</h4>
         {/* INSTRUCTOR CARDS */}
         <div className="card_container">
           {[...instructors].map((instructor, index) => {
@@ -93,7 +95,9 @@ const Tutoring = () => {
           })}
         </div>
         {/* END SECTION 2 */}
-        <Button to="/pricingplans" text="PRICING PLANS" />
+        <div className="large_box">
+          <Button to="/pricingplans" text="PRICING PLANS" />
+        </div>
       </div>
     </main>
   );

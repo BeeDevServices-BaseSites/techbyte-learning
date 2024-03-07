@@ -1454,6 +1454,15 @@ footer {
     }
 }
 
+.receipt_container a{
+    text-decoration: underline;
+    color: var(--midnight_blue);
+
+    &:hover {
+        color: var(--green);
+    }
+}
+
 .receipt_header {
     margin: 10px auto;
     width: 100%;

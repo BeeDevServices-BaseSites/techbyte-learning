@@ -22,6 +22,7 @@ import Tutoring from "./views/Tutoring";
 import WebDev from "./views/WebDev.jsx";
 import GameDev from "./views/GameDev.jsx";
 import DevOps from "./views/DevOps.jsx";
+import BookTutor from "./views/BookTutor.jsx";
 
 const App = () => {
   const [details, setDetails] = useState(""); 
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/apply" element={<Apply />} />
         <Route path="/tuitionassistance" element={<Assistance />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/tutorbooking" element={<BookTutor />} />
         {/* <Route path="/devops" element={<DevOps />} /> */}
         {/* <Route path="/gamedevelopment" element={<GameDev />} /> */}
         {/* <Route path="/minicourses" element={<MiniCourses />} /> */}
