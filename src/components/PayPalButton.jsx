@@ -37,7 +37,7 @@ const Paypal = (props) => {
                         width: 125,
                         tagline: "false",
                         borderRadius: 5,
-                        applepay: "true",
+                        // applepay: "true",
                     }}
                     createOrder={(data, actions) => {
                         return actions.order.create({
@@ -59,14 +59,15 @@ const Paypal = (props) => {
                     onApprove={async (data, actions) => {
                         const details = await actions.order.capture();
                         setDetails(details)
+                        console.log(details)
                         navigate("/receipt")
                     }}
-                    onError={(data, actions) => {
-                        navigate("/pricingplans")
-                        alert(
-                            "Paypal Error, Please Try Again Later."
-                        )
-                    }}
+                    // onError={(data, actions) => {
+                    //     navigate("/pricingplans")
+                    //     alert(
+                    //         "Paypal Error, Please Try Again Later."
+                    //     )
+                    // }}
 
                 />
             </div>

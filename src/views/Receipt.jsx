@@ -45,10 +45,16 @@ const Receipt = ({ details }) => {
                                 </h4>
                                 <br />
                                 <h5>
-                                    1014 Lasalle Street
+                                    1005 Scott Town Center #1017
                                 </h5>
                                 <h5>
-                                    Berwick, PA 18603
+                                    Bloomsburg, PA 17815
+                                </h5>
+                                <h5>
+                                    United States
+                                </h5>
+                                <h5>
+                                    Phone: (570) 731-8660
                                 </h5>
                             </div>
                             {/* right header */}

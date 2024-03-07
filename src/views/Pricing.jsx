@@ -8,9 +8,16 @@ import tutor from "../assets/images/tutor.png"
 import best_seller from "../assets/images/best_seller.png"
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 const paypal_keys = import.meta.env.VITE_paypal_keys
-
+console.log(paypal_keys)
 
 const Pricing = ({ setDetails }) => {
+
+  const initialOptions = {
+    "client-id": "AboCjdkH7teR_lvYiywVhF41PTL0gUZ6UM0Uz5mTf3BOaFaJTh_njS1PrDz0wljMB5MYOv7PvYu1NvU0",
+    "enable-funding": "venmo,card",
+    "disable-funding": "paylater",
+    "data-sdk-integration-source": "integrationbuilder_sc",
+  };
 
   useEffect(() => {
     window.scrollTo(0,0),
@@ -93,7 +100,7 @@ const Pricing = ({ setDetails }) => {
         {/* END SECTION 1 */}
         {/* SECTION 2 TITLE */}
         <PayPalScriptProvider
-          options={{ "client-id": paypal_keys }}
+          options={ initialOptions }
         >
         <div className="large_box">
           <h2>
