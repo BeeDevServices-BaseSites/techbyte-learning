@@ -373,10 +373,12 @@ header img {
 }
 
 #drawer_toggle:checked ~ #drawer_toggle_label {
-    height: 100%;
+    height: calc(100% + 20px);
     left: 200px;
-    width: calc(100% - 200px);
+    width: calc(100% - 180px);
     background: rgba(0,0,0,0.85);
+    box-shadow: 10px 10px 40px 10px black;
+    border-radius: 0 0 20px 0;
 }
 
 #drawer_toggle:checked ~ #drawer_toggle_label:hover:before {
