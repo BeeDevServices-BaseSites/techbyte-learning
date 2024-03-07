@@ -60,6 +60,7 @@ const Paypal = (props) => {
                     onApprove={async (data, actions) => {
                         const details = await actions.order.capture();
                         setDetails(details)
+                        console.log(details)  /////// REMOVE THIS BEFORE GOING LIVE!!!
                         //// Insert Axios Call Here ////
                         navigate("/receipt")
                     }}
