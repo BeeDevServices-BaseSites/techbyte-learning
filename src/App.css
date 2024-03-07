@@ -4,7 +4,7 @@
 :root {
     --white: #CBE5EC;
     --midnight_blue: #0f2f47;
-    --shadow: #979393;
+    --shadow: #97939390;
     --light_yellow: #F6E8B7;
     --dark_yellow: #efd780;
     --header_gradient: linear-gradient(0deg, rgba(239, 215, 128, 1) 42%, rgba(246, 232, 182, 1) 79%);
@@ -35,7 +35,7 @@ body {
 }
 
 main {
-    min-height: 79.5dvh;
+    min-height: calc(100dvh - 234px);
 }
 
 /* font sizes */
@@ -325,7 +325,7 @@ header {
     position: fixed;
     box-shadow: 0px 10px 20px var(--shadow);
     background: #efd780;   
-    /* background: var(--header_gradient); */
+    background: var(--header_gradient);
     padding: 0 0 30px 60px;
     z-index: 99998;
     display: flex;
@@ -385,9 +385,11 @@ header img {
     filter: none;
 }
 
-#drawer-toggle:checked ~ main {
-    margin-left: 200px; /* Adjusted to align with the drawer */
-}
+/* moves main with the drawer */
+/* #drawer_toggle:checked ~ main {  
+    margin-left: 200px; 
+    transition: all 300ms ease;
+} */
 
 #drawer_toggle:checked ~ header {
     padding-left: 250px
@@ -395,6 +397,8 @@ header img {
 
 #drawer_toggle:checked ~ #drawer {
     left: 0px;
+    box-shadow: 0px 0px 30px black;
+    z-index: 99999;
 }
 
 #drawer ul {
@@ -488,6 +492,7 @@ header img {
     position: fixed;
     top: 40%; 
     transition: all 300ms ease;
+    z-index: 999;
 }
 
 .slideout > .slideout_tab { 
@@ -513,7 +518,7 @@ header img {
     font-weight: bold;
     margin-top: 20px;
     padding-left: 5px;
-    padding-top: 28px;
+    padding-top: 32px;
     transform: rotate(90deg);
     white-space: nowrap;
 }
@@ -644,8 +649,6 @@ header img {
     background: var(--dark_yellow);
     background: var(--header_gradient);
     box-shadow: 8px 8px 10px var(--shadow);
-    transition: all 300ms ease;
-    scroll-margin-top: 150px;
 
     h2 {
         text-align: center;
@@ -694,7 +697,7 @@ header img {
 /*          Courses            */
 /*                             */
 
-#projects {
+#projects, #devops {
     width: 100%;
     min-width: 290px;
     aspect-ratio: auto;
@@ -868,7 +871,8 @@ header img {
     .pricing_card {
         min-width: 15rem;
         max-width: calc(12.5rem + 13vw);
-        background-color: var(--dark_yellow);
+        background: var(--dark_yellow);
+        background: var(--header_gradient);
         border: thin solid var(--midnight_blue);
         border-radius: 10px;
         box-shadow:  5px 5px 10px var(--shadow);
@@ -883,7 +887,8 @@ header img {
             border-bottom-left-radius: 0;
             height: 2.5rem;
             width: 100%;
-            background-color: var(--dark_yellow);
+            background: var(--dark_yellow);
+            background: var(--header_gradient);
             box-shadow:  5px 5px 15px  var(--black);
 
             &::before, &::after {
@@ -950,7 +955,10 @@ header img {
             }
 
             a {
+                position: relative;
                 text-decoration: none;
+                background: var(--dark_yellow);
+                background: var(--header_gradient);
                 color: var(--midnight_blue);
                 font-weight: 800;
                 outline: none;
@@ -962,10 +970,10 @@ header img {
                 box-shadow: 5px 5px 10px var(--shadow);
                 padding: 8px 16px;
                 border-radius: 4px;
-                transition: background-color 300ms ease, color 300ms ease;
+                transition: all 300ms ease;
                 
                 &:hover, &:focus {
-                    background-color: var(--midnight_blue);
+                    background: var(--midnight_blue);
                     color: var(--light_yellow);
                     text-shadow: 0.5px 0.5px 0.5px var(--shadow);
                     box-shadow: 5px 5px 15px var(--shadow);
@@ -975,10 +983,14 @@ header img {
         }
 
         &:hover, &:focus-within {
-            transform: scale(1.05);
-            box-shadow: 5px 5px 15px var(--shadow);
+            /* transform: scale(1.005); */
+            box-shadow: 8px 8px 15px var(--shadow);
         }
     }
+}
+
+.price_tag {
+    text-align: center;
 }
 
 .small {
@@ -1112,7 +1124,6 @@ footer {
     width: 150%;
     max-width: 37.5rem;
     opacity: 0.9;
-    filter: drop-shadow(30px 10px 12px rgba(128, 128, 128, 0.5));
 }
 
 
@@ -1214,6 +1225,9 @@ footer {
 @media (max-width: 25.999rem) {
     .item, .item2 {
         animation: none;
+    }
+    .bumble_bee_image {
+        display: none;
     }
 }
 
@@ -1407,6 +1421,7 @@ footer {
     text-decoration: line-through;
 }
 
+
 /*                             */
 /*   END PAYPAL COMPONENT      */
 /*                             */
@@ -1509,6 +1524,40 @@ footer {
 
 /*                             */
 /*   END RECEIPT COMPONENT      */
+/*                             */
+
+
+/*                             */
+/*     GO TO TOP COMPONENT     */
+/*                             */
+
+.go_top_button {
+    position: fixed;
+    bottom: 200px; 
+    right: 25px;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    background-color: var(--midnight_blue);
+    color: var(--dark_yellow);
+    border: 3px solid var(--dark_yellow);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px var(--shadow);
+    
+    &:hover {
+        background-color: var(--dark_yellow);
+        color: var(--midnight_blue);
+        border: 3px solid var(--midnight_blue);
+        box-shadow: 8px 8px 10px var(--shadow);
+    }
+}
+
+
+/*                             */
+/*   END GO TO TOP COMPONENT   */
 /*                             */
 
 

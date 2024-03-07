@@ -12,6 +12,8 @@ const Receipt = ({ details }) => {
         if (details.length === 0) {
             console.log("NO DATA!!")
             navigate("/");
+            window.scrollTo(0,0),
+            changeTitle("TechByte Pricing - ")
         }
     }, [details, navigate]);
 

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { changeTitle } from "../utilities/utilityFunctions";
+import { changeTitle } from "../utilities/utilityFunctions.js";
 import Button from "../components/Button.jsx"
 import html5 from "../assets/images/html5.png"
 import css from "../assets/images/css.png"
@@ -16,11 +16,11 @@ import project_steps from "../assets/images/project_steps.png"
 import internship from "../assets/images/internship.jpg"
 import full_stack_tech from "../assets/images/full_stack_tech.jpg"
 
-const Courses = () => {
+const WebDev = () => {
 
   useEffect(() => {
     window.scrollTo(0,0),
-    changeTitle("Courses - ")
+    changeTitle("Web Development - ")
   },[])
 
   return (
@@ -128,7 +128,7 @@ const Courses = () => {
             Don't miss out on this incredible opportunity to become a master in full stack programming with Python and React. Take the first step towards a rewarding career and join the Techbyte Learning family today!
           </p>
           <p>
-            For more information contact us at <a id="career_link" href="mailto:admissions@beedev-services.com?subject=Admissions%20Inquiry%20">admissions@beedev-services.com</a> or call us at (570) 890-5252 to learn more and secure your spot. Limited seats available, so act now!
+            For more information contact us at <a id="career_link" href="mailto:admissions@beedev-services.com?subject=Admissions%20Inquiry%20">admissions@beedev-services.com</a> or call us at (570) 731-8660 to learn more and secure your spot. Limited seats available, so act now!
           </p>
           <Button to="/apply" text="APPLY NOW" />
         </div>
@@ -138,4 +138,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default WebDev;
