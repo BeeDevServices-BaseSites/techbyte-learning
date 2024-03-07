@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { PayPalButtons } from "@paypal/react-paypal-js";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 const Paypal = (props) => {
 
@@ -37,9 +39,8 @@ const Paypal = (props) => {
                         width: 125,
                         tagline: "false",
                         borderRadius: 5,
-                        // applepay: "true",
                     }}
-                    createOrder={(data, actions) => {
+                    createOrder={async(data, actions) => {
                         return actions.order.create({
                             purchase_units: [{
                                 amount: {
@@ -59,16 +60,16 @@ const Paypal = (props) => {
                     onApprove={async (data, actions) => {
                         const details = await actions.order.capture();
                         setDetails(details)
-                        console.log(details)
+                        //// Insert Axios Call Here ////
                         navigate("/receipt")
                     }}
-                    // onError={(data, actions) => {
-                    //     navigate("/pricingplans")
-                    //     alert(
-                    //         "Paypal Error, Please Try Again Later."
-                    //     )
-                    // }}
-
+                    onError={(data, actions) => {
+                        console.log(actions)
+                        navigate("/pricingplans")
+                        alert(
+                            "Paypal Error, Try Again Later. \nPlease contact support@beedev-services.com if the issue persists"
+                        )
+                    }}
                 />
             </div>
         </>

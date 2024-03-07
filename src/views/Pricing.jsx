@@ -99,9 +99,7 @@ const Pricing = ({ setDetails }) => {
         </div>
         {/* END SECTION 1 */}
         {/* SECTION 2 TITLE */}
-        <PayPalScriptProvider
-          options={ initialOptions }
-        >
+        <PayPalScriptProvider options={ initialOptions } >
         <div className="large_box">
           <h2>
             Techbyte Tutoring Pricing
