@@ -1,89 +1,72 @@
 import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
 
 const NavBar = () => {
+
+useEffect(() => {
+    const drawerLinks = document.querySelectorAll('.drawer_link');
+    drawerLinks.forEach(link => { 
+      link.addEventListener('click', () => { 
+        document.getElementById('drawer_toggle').checked = false;
+      });
+    });
+  }, []);
+
   return (
-    <nav className="navbar">
-      <div className="page_title">
-        <img style={{paddingLeft:"20px"}} src="https://cdn.discordapp.com/attachments/1204477744830746655/1208990870171287633/computerBee.png?ex=65e54b7d&is=65d2d67d&hm=e9ce9fda34d8ced8d29a87e9d493dd3295c98e41479f06e32b09490cf5e8fc96&" alt="TechByte Learning Bee" />
-        <h1>
-          <Link to="/">
-            TechByte Learning
-          </Link>
-        </h1>
-      </div>
-      <ul className="navbar_menu">
-        <li>
-        <Link to="#">
-          Services
-        </Link>
-        <ul className="drop menu">
+    <>
+      <input type="checkbox" id="drawer_toggle" name="drawer_toggle"/>
+      <label htmlFor="drawer_toggle" id="drawer_toggle_label"></label>
+      <header>
+        <img src="https://images.craftsnherbs.com/logos/newNewLogo.png" alt="TechByte Learning Bee" />
+        <Link to="/">TechByte Learning</Link>
+      </header>
+      <nav id="drawer">
+        <ul>
           <li>
-            <Link to="/">
-              Home
-            </Link>
+            <Link to="/" className="drawer_link">Home Page</Link>
           </li>
           <li>
-            <Link to="/courses">
-              Web Development
-            </Link>
+            <Link to="/webdevelopment" className="drawer_link">Web Development</Link>
+          </li>
+          {/* <li>
+            <Link to="/gamedevelopment" className="drawer_link">2D Game Development</Link>
+          </li> */}
+          {/* <li>
+            <Link to="/devops" className="drawer_link">DevOps</Link>
+          </li> */}
+          {/* <li>
+            <Link to="/minicourses" className="drawer_link">Mini Sessions</Link>
+          </li> */}
+          <li>
+            <Link to="/tutoring" className="drawer_link">Tutoring</Link>
           </li>
           <li>
-            <Link to="/tutoring">
-              Tutoring
-            </Link>
+            <Link to="/nexthive" className="drawer_link">Next Cohort</Link>
           </li>
           <li>
-            <a href="https://learn.techbyte-learning.com/">
-              Student Login
-            </a>
-          </li>
-        </ul>
-        </li>
-        <li><Link to="#">Enrollment</Link>
-        <ul className="drop menu">
-          <li>
-            <Link to="nexthive">
-              Next Cohort
-            </Link>
+            <Link to="/pricingplans" className="drawer_link">Pricing</Link>
           </li>
           <li>
-            <Link to="/pricingplans">
-              Pricing
-            </Link>
+            <Link to="/tuitionassistance" className="drawer_link">Tuition Assistance</Link>
           </li>
           <li>
-            <Link to="/tuitionassistance">
-              Tuition Assistance
-            </Link>
+            <Link to="/apply" className="drawer_link">Apply</Link>
           </li>
+          {/* <li>
+            <Link to="/ourhive" className="drawer_link">Our Hive</Link>
+          </li> */}
           <li>
-            <Link to="/apply">
-              Apply
-            </Link>
+            <Link to="/aboutus" className="drawer_link">About Us</Link>
+          </li>
+          {/* <li>
+            <Link to="/careers" className="drawer_link">Careers</Link>
+          </li> */}
+          <li>
+            <a href="https://learn.techbyte-learning.com/" target="_blank" className="drawer_link">Student Login</a>
           </li>
         </ul>
-        </li>
-        <li><Link to="#">About Us</Link>
-        <ul className="drop menu2">
-          <li>
-            <Link to="/ourhive">
-              Meet Our Hive
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact">
-              Contact Us
-            </Link>
-          </li>
-          <li>
-            <Link to="/careers">
-              Careers
-            </Link>
-          </li>
-        </ul>
-        </li>
-      </ul>
-    </nav>
+      </nav>
+    </>
   )
 };
 
