@@ -6,6 +6,9 @@ import calendar from "../assets/images/calendar.jpg"
 
 const NextHive = () => {
 
+  const web_dev_date = "Mid-June 2024"
+  const game_dev_date = "Mid-June 2024"
+
   useEffect(() => {
     window.scrollTo(0,0),
     changeTitle("Next Hive - ")
@@ -18,11 +21,13 @@ const NextHive = () => {
         <div className="split_box">
           <div className="box_left_text">
             <h2>
-              Next Cohort
+              Next Cohorts
             </h2>
             <p>
-              <span>O</span>ur program is designed to equip you with the knowledge and skills needed to thrive in the fast-paced world of web development. Whether you're a beginner looking to break into the industry or an experienced programmer seeking to expand your skillset, our courses have something for everyone. Our upcoming cohort, affectionately known as a "hive," is set to kick off in mid-June 2024, offering a comprehensive curriculum that covers web fundamentals, python, and react.js.
+              <span>O</span>ur program is designed to equip you with the knowledge and skills needed to thrive in the fast-paced world of web and game development. Whether you're a beginner looking to break into the industry or an experienced programmer seeking to expand your skillset, our courses have something for everyone. Our next available cohort, affectionately known as a "hive," are:
             </p>
+            <h5>Web Development Start Date: { web_dev_date }</h5>
+            <h5>2D Game Development Start Date: { game_dev_date }</h5>
           </div>
           <div className="box_right_img">
             <img src={ calendar } alt="Calandar" />
@@ -39,7 +44,7 @@ const NextHive = () => {
               What Sets TechByte Apart?
             </h2>
             <p>
-              <span>O</span>ur dedication to affordability. We understand that investing in education can be a significant financial commitment. That's why we offer our web development program at prices starting at just $8000. We believe that high-quality education should be accessible to all, and we're proud to offer competitive pricing without compromising the curriculum's integrity.
+              <span>O</span>ur dedication to affordability. We understand that investing in education can be a significant financial commitment. We believe that high-quality education should be accessible to all, and we're proud to offer competitive pricing without compromising the curriculum's integrity.
             </p>
           </div>
         </div>
@@ -51,11 +56,14 @@ const NextHive = () => {
               Apply Today
             </h2>
             <p>
-              <span>D</span>on't miss out on this incredible opportunity to join our hive and embark on an exciting journey into the world of web development. Secure your spot today and unlock a world of endless possibilities. Whether you're passionate about creating stunning user interfaces or diving into data-driven backend development, our web development program will be your gateway to a thriving career in the tech industry. Join us at TechByte Learning and let's build a brighter future together!
+              <span>W</span>hether you're passionate about creating stunning user interfaces, diving into data-driven backend development, building engaging gameplay experiences, TechByte Learning's development programs will be your gateway to a thriving career in the tech industry.
+            </p>
+            <p>
+              Join us at TechByte Learning and let's build a brighter future together! Click To see available courses.
             </p>
           </div>
           <div className="box_right_text">
-            <Button to="/apply" text="APPLY NOW" />
+            <Button to="/pricingplans" text="See Openings" />
           </div>
         </div>
         {/* END SECTION 3 */}

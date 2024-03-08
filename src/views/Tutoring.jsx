@@ -61,6 +61,8 @@ const Tutoring = () => {
             <p>
               Don't let coding challenges hold you back any longer. Contact TechByte Learning today to schedule your personalized tutoring session and unlock your full coding potential.
             </p>
+            <h4>Already have tutor sessions?</h4>
+            <Button to="/tutorbooking" text="Book Tutoring" />
           </div>
           <div className="box_right_img">
             <img src={ rise_above } alt="Rise Above" />
@@ -69,7 +71,6 @@ const Tutoring = () => {
         {/* END SECTION 1 */}
         {/* SECTION 2 */}
         <h2>Meet Our Tutors</h2>
-      <h4>(Already have tutor sessions? Schedule <Link to="/tutorbooking">Tutoring</Link> here.)</h4>
         {/* INSTRUCTOR CARDS */}
         <div className="card_container">
           {[...instructors].map((instructor, index) => {
@@ -95,8 +96,8 @@ const Tutoring = () => {
           })}
         </div>
         {/* END SECTION 2 */}
-        <div className="large_box">
-          <Button to="/pricingplans" text="PRICING PLANS" />
+        <div className="large_box flex">
+          <Button to="/pricingplans" text="Tuturing Plans" />
         </div>
       </div>
     </main>
