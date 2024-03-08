@@ -140,8 +140,6 @@ const Receipt = ({ details }) => {
                             </tbody>
                         </table>
                         {/* notes */}
-                        <h4><Link to="/tutorbooking">Book Tutoring Here</Link></h4>
-                        <br />
                         <h5>
                             Print and keep this receipt for your records
                         </h5>
@@ -149,9 +147,8 @@ const Receipt = ({ details }) => {
                         <p><b>
                             Thank You For Joining The TechByte Learning Hive!
                         </b></p>
-
                     </div>
-                    <Button to="/" text="CLOSE" />
+                    <Button to="/tutorbooking" text="Book Tutoring" />
                 </div>
             </main>
             }
