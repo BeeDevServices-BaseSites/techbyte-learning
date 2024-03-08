@@ -208,7 +208,7 @@ const Pricing = ({ setDetails }) => {
         <h4>
           Already purchased a tutoring session? 
         </h4>
-        <Button to="/tutorbooking" text="Schedule Tutoring" />
+        <Button to="/booktutoring" text="Schedule Tutoring" />
       </div>
     </main>
   );

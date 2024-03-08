@@ -1,5 +1,6 @@
 import { useNavigate, Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import { changeTitle } from "../utilities/utilityFunctions";
 import Button from "../components/Button";
 
 
@@ -7,13 +8,15 @@ const Receipt = ({ details }) => {
 
     const navigate = useNavigate();
 
-    // if empty receipt //
+
+
     useEffect(() => {
+        window.scrollTo(0, 0),
+        changeTitle("TechByte Receipt - ")
+        // If empty receipt, navigate away from page
         if (details.length === 0) {
             console.log("NO DATA!!")
             navigate("/");
-            window.scrollTo(0,0),
-            changeTitle("TechByte Pricing - ")
         }
     }, [details, navigate]);
 
@@ -148,7 +151,7 @@ const Receipt = ({ details }) => {
                             Thank You For Joining The TechByte Learning Hive!
                         </b></p>
                     </div>
-                    <Button to="/tutorbooking" text="Book Tutoring" />
+                    <Button to="/booktutoring" text="Schedule Tutoring" />
                 </div>
             </main>
             }

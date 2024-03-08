@@ -62,7 +62,7 @@ const Tutoring = () => {
               Don't let coding challenges hold you back any longer. Contact TechByte Learning today to schedule your personalized tutoring session and unlock your full coding potential.
             </p>
             <h4>Already have tutor sessions?</h4>
-            <Button to="/tutorbooking" text="Book Tutoring" />
+            <Button to="/booktutoring" text="Schedule Tutoring" />
           </div>
           <div className="box_right_img">
             <img src={ rise_above } alt="Rise Above" />

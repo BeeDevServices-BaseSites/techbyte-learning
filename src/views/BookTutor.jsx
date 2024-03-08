@@ -24,7 +24,7 @@ const BookTutor = () => {
       <div className="wrapper">
         <div className="large_box">
           <h2>
-            Tutor Scheduling 
+            Schedule A Tutor
           </h2>
           <h4>
             Set up a tutoring session with one of our experts below.
