@@ -44,7 +44,7 @@ const WebDev = () => {
             <p>
               We know you're busy, so we've built a part-time course schedule, allowing you to achieve your goals while still having time for other commitments.
             </p>
-            <Button to="/apply" text="APPLY NOW" />
+            <Button to="/nexthive" text="Next Cohort" />
           </div>
         </div>
         {/* END SECTION 1 */}
@@ -130,7 +130,7 @@ const WebDev = () => {
           <p>
             For more information contact us at <a id="career_link" href="mailto:admissions@beedev-services.com?subject=Admissions%20Inquiry%20">admissions@beedev-services.com</a> or call us at (570) 731-8660 to learn more and secure your spot. Limited seats available, so act now!
           </p>
-          <Button to="/apply" text="APPLY NOW" />
+          <Button to="/nexthive" text="Next Cohort" />
         </div>
         {/* END SECTION 7 */}
       </div>

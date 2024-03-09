@@ -28,15 +28,15 @@ useEffect(() => {
           <li>
             <Link to="/webdevelopment" className="drawer_link">Web Development</Link>
           </li>
-          {/* <li>
+          <li>
             <Link to="/gamedevelopment" className="drawer_link">2D Game Development</Link>
-          </li> */}
+          </li>
           {/* <li>
             <Link to="/devops" className="drawer_link">DevOps</Link>
           </li> */}
-          {/* <li>
-            <Link to="/minicourses" className="drawer_link">Mini Sessions</Link>
-          </li> */}
+          <li>
+            <Link to="/minicourses" className="drawer_link">Mini Courses</Link>
+          </li>
           <li>
             <Link to="/tutoring" className="drawer_link">Tutoring</Link>
           </li>
@@ -51,6 +51,9 @@ useEffect(() => {
           </li>
           <li>
             <Link to="/apply" className="drawer_link">Apply</Link>
+          </li>
+          <li>
+            <Link to="/booktutoring" className="drawer_link">Schedule Tutoring</Link>
           </li>
           {/* <li>
             <Link to="/ourhive" className="drawer_link">Our Hive</Link>

@@ -1,5 +1,6 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import { changeTitle } from "../utilities/utilityFunctions";
 import Button from "../components/Button";
 
 
@@ -7,13 +8,15 @@ const Receipt = ({ details }) => {
 
     const navigate = useNavigate();
 
-    // if empty receipt //
+
+
     useEffect(() => {
+        window.scrollTo(0, 0),
+        changeTitle("TechByte Receipt - ")
+        // If empty receipt, navigate away from page
         if (details.length === 0) {
             console.log("NO DATA!!")
             navigate("/");
-            window.scrollTo(0,0),
-            changeTitle("TechByte Pricing - ")
         }
     }, [details, navigate]);
 
@@ -45,10 +48,16 @@ const Receipt = ({ details }) => {
                                 </h4>
                                 <br />
                                 <h5>
-                                    1014 Lasalle Street
+                                    1005 Scott Town Center #1017
                                 </h5>
                                 <h5>
-                                    Berwick, PA 18603
+                                    Bloomsburg, PA 17815
+                                </h5>
+                                <h5>
+                                    United States
+                                </h5>
+                                <h5>
+                                    Phone: (570) 731-8660
                                 </h5>
                             </div>
                             {/* right header */}
@@ -142,7 +151,7 @@ const Receipt = ({ details }) => {
                             Thank You For Joining The TechByte Learning Hive!
                         </b></p>
                     </div>
-                    <Button to="/" text="CLOSE" />
+                    <Button to="/booktutoring" text="Schedule Tutoring" />
                 </div>
             </main>
             }

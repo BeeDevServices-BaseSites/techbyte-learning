@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
+import { Link } from "react-router-dom";
 import contact_us from "../assets/images/contact_us.jpg"
 import follow_us from "../assets/images/follow_us.jpg"
-import { Link } from "react-router-dom";
+import Button from "../components/Button";
+import worker_bees from "../assets/images/worker_bees.jpg"
 
 const AboutUs = () => {
 
@@ -16,30 +18,33 @@ const AboutUs = () => {
       <div className="wrapper">
         {/* SECTION 1 */}
         <div className="split_box">
-          <div className="box_left_img">
-            <img src="https://firebotanicals.com/wp-content/uploads/2020/10/about-us-.png" alt="About Us" />
-          </div>
-          <div className="box_right_text">
+          <div className="box_left_text">
             <h2>
               Who Is TechByte?
             </h2>
             <p>
-              TechByte is a woman-owned and military veteran-owned company specializing in teaching web development and game development. We pride ourself on our diverse team, which we affectionately to refer to as "Our Hive". Our Hive consists of individuals with various backgrounds and expertise in the tech industry. Together, we work towards providing innovative solutions, instruction and services to our clients. &nbsp; 
+              TechByte is a woman and military veteran-owned company focused on web and game development, with a diverse team known as "Our Hive". We provide innovative solutions and services to clients.
             </p>
-            <br />
-            <p><Link to="/ourhive">Meet Our Team</Link></p>
-            <br />
-            <p>
-              If you are passionate about technology and want to work for a company that values innovation and collaboration, then TechByte may be the right fit for you. We encourage you to explore our Careers page if you are interested in joining Our Hive at TechByte and apply for positions that align with your skills and interests. 
-            </p>
-            <p>
-              We are always looking for talented individuals to join our team and look forward to seeing how your unique talents and contributions can help drive TechByte forward.
-            </p>
-            <br />
-            <p>TechByte's <Link to="/careers">Careers</Link> page</p>
+            <Button to="/ourhive" text="Meet Our Team" />
+          </div>
+          <div className="box_right_img">
+            <img src="https://firebotanicals.com/wp-content/uploads/2020/10/about-us-.png" alt="About Us" />
           </div>
         </div>
         {/* END SECTION 1 */}
+        {/* SECTION 2 */}
+        <div className="split_box flip">
+          <div className="box_right_img">
+            <img src={worker_bees} alt="Our Hive" />
+          </div>
+          <div className="box_left_text">
+            <p>
+              If you are passionate about technology and want to work for a company that values innovation and collaboration, then TechByte may be the right fit for you. We encourage you to explore our Careers page if you are interested in joining Our Hive at TechByte and apply for positions that align with your skills and interests. 
+            </p>
+            <Button to="/careers" text="TechByte Careers" />
+          </div>
+        </div>
+        {/* END SECTION 2 */}
         {/* SECTION 2 */}
         <div className="split_box">
           <div className="box_left_text">
