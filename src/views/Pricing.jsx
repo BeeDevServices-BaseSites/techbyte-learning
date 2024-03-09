@@ -108,7 +108,7 @@ const Pricing = ({ setDetails }) => {
             Not sure what you need, or have questions about TechByte Tutoring?
           </h4>
           <h4>
-            Visit <Link to="/tutoring">Tutoring</Link> or contact <a href="mailto:tutoring@techbyte-learning.com?subject=Tutoring%20Inquiry%20">tutoring@techbyte-learning.com</a>
+            Contact <a href="mailto:tutoring@techbyte-learning.com?subject=Tutoring%20Inquiry%20">tutoring@techbyte-learning.com</a>
           </h4>
           <br />
           <h5>
