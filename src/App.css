@@ -1545,7 +1545,7 @@ footer {
 
 .go_top_button {
     position: fixed;
-    bottom: 200px; 
+    top: 300px;  
     right: 25px;
     height: 50px;
     width: 50px;
@@ -1567,6 +1567,15 @@ footer {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .go_top_button {
+        height: 35px;
+        width: 35px;
+        font-size: 20px;
+        right: 10px;
+        top: 150px; 
+    }
+}
 
 /*                             */
 /*   END GO TO TOP COMPONENT   */
