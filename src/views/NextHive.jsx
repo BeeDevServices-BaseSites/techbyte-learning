@@ -37,7 +37,7 @@ const NextHive = () => {
         {/* SECTION 2 */}
         <div className="split_box flip">
           <div className="box_left_img">
-            <img src={ price_point } alt="price point" />
+            <img src="https://www.weikfitness.com/wp-content/uploads/2023/01/lowering-your-price.jpg" alt="price point" />
           </div>
           <div className="box_right_text">
             <h2>

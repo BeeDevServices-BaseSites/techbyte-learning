@@ -28,7 +28,6 @@ const Assistance = () => {
           </div>
         </div>
         {/* END SECTION 1 */}
-        <Button to="#" text="APPLY WITH FLEXXBUY" />
         <br />
         {/* SECTION 2 */}
         <div className="split_box">
@@ -57,6 +56,8 @@ const Assistance = () => {
                 <b>Instant</b> decisions
               </li>
             </ul>
+            <br />
+            <Button to="#" text="APPLY WITH FLEXXBUY" />
           </div>
         </div>
         {/* END SECTION 2 */}
