@@ -1,5 +1,5 @@
 import staff from "../assets/json/employees.json";
-import StaffBioCards from "../components/StaffBioCards";
+import StaffCard from "../components/StaffCard";
 import staff_bios_image from '../assets/images/staff_instructors_header.jpg';
 
 const OurHive = () => {
@@ -22,7 +22,7 @@ const OurHive = () => {
       <div>
         <h2 className="our_hive_h2">Meet Our Hive</h2>
       </div>
-      <StaffBioCards active_staff = { active_staff_bios } />
+      <StaffCard active_staff = { active_staff_bios } is_staff = { true } />
     </main>
   );
 };

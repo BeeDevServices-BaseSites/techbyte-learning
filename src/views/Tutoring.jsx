@@ -3,7 +3,7 @@ import { changeTitle } from "../utilities/utilityFunctions";
 import Button from "../components/Button.jsx";
 import rise_above from "../assets/images/rise_above.jpg";
 import tutors from "../assets/json/employees.json";
-import TutoringCards from "../components/TutoringCards.jsx";
+import StaffCard from "../components/StaffCard.jsx";
 
 const Tutoring = () => {
 
@@ -39,7 +39,7 @@ const Tutoring = () => {
         {/* SECTION 2 */}
         <h2>Meet Our Tutors</h2>
         {/* INSTRUCTOR CARDS */}
-        <TutoringCards active_tutors = { active_tutors } />
+        <StaffCard active_tutors = { active_tutors } is_staff = { false } />
         {/* END SECTION 3 */}
         <Button to="/pricingplans" text="PRICING PLANS" />
       </div>

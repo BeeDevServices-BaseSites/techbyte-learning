@@ -113,7 +113,7 @@
             "HTML", "CSS", "JavaScript", "React", "Express.js", "Node.js", "Python", "Flask", "Django", "Java", "Spring Boot", "Linux", "MySQL", "MongoDB", "Git", "Github", "AWS EC2"
         ],
         "is_mentor": true,
-        "is_tutor": true,
+        "is_tutor": false,
         "is_instructor": true,
         "is_TA": true,
         "is_active": true
@@ -147,7 +147,7 @@
             "JavaScript", "React", "Next.js", "MERN", "Firebase", "Java", "Spring Boot", "Python", "Git", "Github", "MySQL"
         ],
         "is_mentor": true,
-        "is_tutor": true,
+        "is_tutor": false,
         "is_instructor": true,
         "is_TA": true,
         "is_active": true

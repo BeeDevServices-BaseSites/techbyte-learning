@@ -1704,8 +1704,65 @@ footer {
 .our_hive_h2 {
     text-align: center;
 }
+
 .our_hive_split_box {
     padding-top: 1rem;
+}
+
+.r_wrap {
+    position: absolute;
+    right: 30px;
+    bottom: 44px;
+    z-index: 5;
+}
+
+.b_round, .s_round {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 3px solid var(--dark_yellow);
+    background-color: var(--shadow);
+    color: var(--dark_yellow);
+    box-shadow: 5px 5px 10px var(--shadow);
+    transition: all 0.2s linear;
+    font-size: 30px;
+}
+
+.b_round {
+    opacity: 0;
+    background-color: #D21849;
+}
+
+.b_round_hover {
+    transform: scale(1.37);
+    opacity: 0.4;
+}
+
+.b_round_back_hover {
+    background-color: #F60044;
+}
+
+.s_round_click {
+    transform: scale(1.7);
+}
+
+.s_round_back {
+    background-color: #C30C3D;
+}
+
+.s_arrow {
+    width: 52px;
+    height: 52px;
+    background-image: url('https://img-fotki.yandex.ru/get/194549/29644339.5/0_d6c60_1d7815f0_orig');
+    background-color: transparent;
+    transition: all 0.35s linear;
+}
+
+.s_arrow_rotate {
+    transform: rotate(-180deg);
 }
 
 /*                         */
