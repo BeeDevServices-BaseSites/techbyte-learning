@@ -1723,9 +1723,8 @@ footer {
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    border: 3px solid var(--dark_yellow);
+    border: 4px solid var(--midnight_blue);
     background-color: var(--shadow);
-    color: var(--dark_yellow);
     box-shadow: 5px 5px 10px var(--shadow);
     transition: all 0.2s linear;
     font-size: 30px;
@@ -1733,7 +1732,7 @@ footer {
 
 .b_round {
     opacity: 0;
-    background-color: #D21849;
+    background-color: var(--midnight_blue);
 }
 
 .b_round_hover {
@@ -1742,7 +1741,7 @@ footer {
 }
 
 .b_round_back_hover {
-    background-color: #F60044;
+    background-color: var(--dark_yellow);
 }
 
 .s_round_click {
@@ -1750,7 +1749,7 @@ footer {
 }
 
 .s_round_back {
-    background-color: #C30C3D;
+    background-color: var(--dark_yellow);
 }
 
 .s_arrow {
