@@ -22,6 +22,7 @@ import Tutoring from "./views/Tutoring";
 import WebDev from "./views/WebDev.jsx";
 import GameDev from "./views/GameDev.jsx";
 import DevOps from "./views/DevOps.jsx";
+import BookTutor from "./views/BookTutor.jsx";
 
 const App = () => {
   const [details, setDetails] = useState(""); 
@@ -34,10 +35,11 @@ const App = () => {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/apply" element={<Apply />} />
         <Route path="/tuitionassistance" element={<Assistance />} />
+        <Route path="/booktutoring" element={<BookTutor />} />
         <Route path="/careers" element={<Careers />} />
         {/* <Route path="/devops" element={<DevOps />} /> */}
-        {/* <Route path="/gamedevelopment" element={<GameDev />} /> */}
-        {/* <Route path="/minicourses" element={<MiniCourses />} /> */}
+        <Route path="/gamedevelopment" element={<GameDev />} />
+        <Route path="/minicourses" element={<MiniCourses />} />
         <Route path="/nexthive" element={<NextHive />} />
         <Route path="/ourhive" element={<OurHive />} />
         <Route path="/pricingplans" element={<Pricing setDetails={ setDetails } />} />

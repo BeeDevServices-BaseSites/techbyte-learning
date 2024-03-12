@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions.js";
 import Button from "../components/Button.jsx"
+import mini_course from "../assets/images/mini_course.jpg"
 
 const MiniCourses = () => {
 
@@ -15,17 +16,17 @@ const MiniCourses = () => {
         {/* SECTION 1 */}
         <div className="split_box flip">
           <div className="box_left_img">
-            <br />
-            <img src="https://s3-alpha.figma.com/hub/file/4093188630/561dfe3e-e5f8-415c-9b26-fbdf94897722-cover.png" alt="Placeholder" />          </div>
+          <img src={ mini_course } alt="Mini Courses" />
+          </div>
           <div className="box_right_text">
             <h2>
               Mini Learning Sessions
             </h2>
             <p>
-              <span>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Illum amet qui praesentium expedita facere recusandae fuga magni omnis ea commodi neque voluptatem excepturi ducimus necessitatibus laboriosam, ex nemo voluptatibus fugiat.
+              <span>L</span>ooking to expand your coding skills? Join our online programming school for mini sessions on essential topics! Build your skills with our two one-hour classes. TechByte Learning is aiming to provide you with a cost-effective way to enhance your programming knowledge.
             </p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, quidem architecto hic laborum aliquid ex aut sapiente esse sed minima accusamus atque quae eaque, quo ab nobis animi est enim.
+              Our mini sessions focus on practical skills that you can immediately apply to your projects. From version control with git, to writing SQL statements or designing websites in Figma, our expert instructors will guide you through each topic with hands-on activities. These micro courses are perfect for beginners looking to build a strong foundation in programming or for experienced developers wanting to sharpen their skills.
             </p>
           </div>
         </div>
@@ -34,18 +35,14 @@ const MiniCourses = () => {
         <div className="split_box">
           <div className="box_left_text">
             <p>
-              <span>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem unde iusto laborum dolore cum rerum provident in, totam voluptates ea vero nemo soluta deserunt assumenda hic. Enim, facilis ea.
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias ea eveniet impedit unde voluptates, quidem eaque iure, temporibus soluta eius saepe. Aspernatur doloribus blanditiis quo vel quaerat quia, minima sunt!
+                Whether you're a student, freelancer, or working professional, our mini class sessions offer a flexible schedule to fit your busy lifestyle. Sign up today and take your coding abilities to the next level with our engaging and interactive lessons.
             </p>
           </div>
-          <div className="box_right_img">
-              <img src="https://s3-alpha.figma.com/hub/file/4093188630/561dfe3e-e5f8-415c-9b26-fbdf94897722-cover.png" alt="Placeholder" />
+          <div className="box_right_text">
+            <Button to="/pricingplans" text="Check Availability" />
           </div>
         </div>
         {/* END SECTION 2 */}
-        <Button to="/apply" text="APPLY NOW" />
       </div>
     </main>
   );

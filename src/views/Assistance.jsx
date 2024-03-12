@@ -29,6 +29,7 @@ const Assistance = () => {
         </div>
         {/* END SECTION 1 */}
         <Button to="#" text="APPLY WITH FLEXXBUY" />
+        <br />
         {/* SECTION 2 */}
         <div className="split_box">
           <div className="box_left_img">

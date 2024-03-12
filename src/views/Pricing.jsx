@@ -7,10 +7,17 @@ import game_dev from "../assets/images/game_dev.jpg"
 import tutor from "../assets/images/tutor.png"
 import best_seller from "../assets/images/best_seller.png"
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
-const paypal_keys = import.meta.env.VITE_paypal_keys
+import Button from "../components/Button";
 
 
 const Pricing = ({ setDetails }) => {
+
+  const initialOptions = {
+    "client-id": "AboCjdkH7teR_lvYiywVhF41PTL0gUZ6UM0Uz5mTf3BOaFaJTh_njS1PrDz0wljMB5MYOv7PvYu1NvU0",
+    "enable-funding": "venmo,card",
+    "disable-funding": "paylater",
+    "data-sdk-integration-source": "integrationbuilder_sc",
+  };
 
   useEffect(() => {
     window.scrollTo(0,0),
@@ -23,7 +30,7 @@ const Pricing = ({ setDetails }) => {
         {/* TITLE */}
         <div className="large_box">
           <h2>
-            TechByte Program Pricing
+            TechByte Development Programs
           </h2>
         </div>
         {/* END TITLE */}
@@ -92,23 +99,22 @@ const Pricing = ({ setDetails }) => {
         </div>
         {/* END SECTION 1 */}
         {/* SECTION 2 TITLE */}
-        <PayPalScriptProvider
-          options={{ "client-id": paypal_keys }}
-        >
+        <PayPalScriptProvider options={ initialOptions } >
         <div className="large_box">
           <h2>
-            Techbyte Tutoring Pricing
+            Techbyte Tutoring
           </h2>
           <h4>
             Not sure what you need, or have questions about TechByte Tutoring?
           </h4>
           <h4>
-            Contact <a href="mailto:tutoring@techbyte-learning.com?subject=Tutoring%20Inquiry%20">tutoring@techbyte-learning.com</a> for more information.
+            Contact <a href="mailto:tutoring@techbyte-learning.com?subject=Tutoring%20Inquiry%20">tutoring@techbyte-learning.com</a>
           </h4>
           <br />
           <h5>
             Don't forget to take advantage of our bundle pricing options.
           </h5>
+
         </div>
         {/* END SECTION 2 TITLE */}
         {/* SECTION 2 */}
@@ -199,6 +205,10 @@ const Pricing = ({ setDetails }) => {
         </div>
         </PayPalScriptProvider>
         {/* END SECTION 2 */}
+        <h4>
+          Already purchased a tutoring session? 
+        </h4>
+        <Button to="/booktutoring" text="Schedule Tutoring" />
       </div>
     </main>
   );

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { changeTitle } from "../utilities/utilityFunctions";
 import Button from "../components/Button.jsx";
 import rise_above from "../assets/images/rise_above.jpg";
@@ -13,7 +14,7 @@ const Tutoring = () => {
     window.scrollTo(0,0),
     changeTitle("Tutoring - ")
   },[])
-
+  
   return (
     <main>
       <div className="wrapper">
@@ -30,6 +31,8 @@ const Tutoring = () => {
             <p>
               Don't let coding challenges hold you back any longer. Contact TechByte Learning today to schedule your personalized tutoring session and unlock your full coding potential.
             </p>
+            <h4>Already have tutor sessions?</h4>
+            <Button to="/booktutoring" text="Schedule A Tutor" />
           </div>
           <div className="box_right_img">
             <img src={ rise_above } alt="Rise Above" />
