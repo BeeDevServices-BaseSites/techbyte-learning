@@ -1,45 +1,28 @@
-import { useEffect } from "react";
-import { changeTitle } from "../utilities/utilityFunctions";
-import Employees from '../assets/json/employees.json';
-import '../App.css';
+import staff from "../assets/json/employees.json";
+import StaffCard from "../components/StaffCard";
+import staff_bios_image from '../assets/images/staff_instructors_header.jpg';
 
 const OurHive = () => {
 
-  useEffect(() => {
-    window.scrollTo(0,0),
-    changeTitle("Our Hive - ")
-  },[])
+  const card_data = staff.filter(staff => staff.is_active);
 
   return (
     <main>
       <div className="wrapper">
-        <div className="large_box">
-          <h1>Meet our Hive Members</h1>
-          <div className="background">
-            <div className="cardContent">
-              {
-                Employees && Employees.map(employee => {
-                  return (
-                    <div className="employeeCard" key={employee.id}>
-                      <div className="cardFront">
-                        <img src={employee.photo} />
-                        <p className="cardText">{employee.firstName} {employee.lastName}</p>
-                      </div>
-                      <div className="cardBack">
-                        <div className="cardText">
-                          <p>{employee.position}</p>
-                          <p>{employee.location}</p>
-                          <p>{employee.about}</p>
-                        </div>
-                      </div>  
-                    </div>
-                  )
-                })
-              }
-            </div>
+        <div className="split_box our_hive_split_box">
+          <div className="box_left_text">
+            <h2>Hive Staff</h2>
+            <p><span>W</span>hether guiding students through the latest programming languages, unlocking the secrets of cutting-edge technologies, or fostering innovative problem-solving skills, the TechByte Learning staff is committed to empowering learners with the tools they need to succeed in todays fast-paced digital landscape. Get ready to learn from the best and embark on a transformative journey with our hive of skilled instructors.</p>
+          </div>
+          <div className="box_right_img">
+            <img src={ staff_bios_image } alt="Instructor" />
           </div>
         </div>
       </div>
+      <div>
+        <h2 className="our_hive_h2">Meet Our Hive</h2>
+      </div>
+      <StaffCard card_data = { card_data }  show_tech = { false } />
     </main>
   );
 };
