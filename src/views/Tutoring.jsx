@@ -7,7 +7,7 @@ import StaffCard from "../components/StaffCard.jsx";
 
 const Tutoring = () => {
 
-  const active_tutors = tutors.filter(tutor => tutor.is_tutor);
+  const card_data = tutors.filter(tutor => tutor.is_tutor).filter(staff => staff.is_active);
 
   useEffect(() => {
     window.scrollTo(0,0),
@@ -39,7 +39,7 @@ const Tutoring = () => {
         {/* SECTION 2 */}
         <h2>Meet Our Tutors</h2>
         {/* INSTRUCTOR CARDS */}
-        <StaffCard active_tutors = { active_tutors } is_staff = { false } />
+        <StaffCard card_data = { card_data } show_tech = { true } />
         {/* END SECTION 3 */}
         <Button to="/pricingplans" text="PRICING PLANS" />
       </div>

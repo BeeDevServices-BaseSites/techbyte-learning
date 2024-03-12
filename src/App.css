@@ -1588,12 +1588,21 @@ footer {
 
 
 /*                         */
-/*        STAFF BIOS       */
+/*        STAFF CARD       */
 /*                         */
 
+.id_card_container {
+    width: 85vw;
+    min-width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem auto 2rem;
+}
+
 .container {
-    width: 75vw;
-    margin: auto;
+    width: 290px;
+    margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -1601,9 +1610,8 @@ footer {
 
 .flip_box, .front, .back {
     margin: 1rem 0;
-    width: 380px;
-    height: 350px;
-    cursor: pointer;
+    width: 290px;
+    height: 400px;
 }
 
 .container, .flip_box {
@@ -1617,6 +1625,7 @@ footer {
     backface-visibility: hidden;
     border-radius: 10px;
     box-shadow: 8px 8px 10px var(--shadow);
+    border: thin solid var(--midnight_blue)
 }
 
 .container {
@@ -1635,10 +1644,12 @@ footer {
 .front {
     background-size: cover;
     background-color: var(--midnight_blue);
+    display: flex;
+    flex-direction: column;
 }
 
 .f_title {
-    padding: 20px 0 0 30px;
+    padding: 13px 0 0 20px;
     color: var(--white);
     text-shadow: 2px 2px 0px var(--black), 
         2px -2px 0px var(--black), 
@@ -1648,11 +1659,10 @@ footer {
         0px 2px 0px var(--black), 
         -2px 0px 0px var(--black), 
         0px -2px 0px var(--black);
-        opacity: 0.85;
+        opacity: 0.95;
 }
-
 .f_subline {
-    padding: 200px 0 10px 30px;
+    padding: 207px 0 10px 20px;
     color: var(--white);
     text-shadow: 2px 2px 0px var(--black), 
         2px -2px 0px var(--black), 
@@ -1662,16 +1672,18 @@ footer {
         0px 2px 0px var(--black), 
         -2px 0px 0px var(--black), 
         0px -2px 0px var(--black);
-        opacity: 0.85;
+        opacity: 0.95;
 }
 
 .f_headline {
-    font-size: 40px;
+    font-size: 1.75rem;
     line-height: 45px;
-    padding: 5px 0 10px 5px;
+    padding: 8px 12px;
     color: var(--dark_yellow);
     background-color: var(--black);
-    opacity: 0.85;
+    border-top: thin solid var(--dark_yellow);
+    border-bottom: thin solid var(--dark_yellow);
+    opacity: 0.9;
 }
 
 .back {
@@ -1680,18 +1692,20 @@ footer {
     -moz-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .b_headline {
-    padding: 25px 25px 0 25px;
+    padding: 0 25px 0 25px;
 }
 
 .b_text {
     font-size: 1.4em;
     line-height: 28px;
-    padding-top: 10px;
     opacity: 0.85;
-    padding: 25px 20px 0 25px;
+    padding: 0 20px 20px 25px;
 }
 
 .flipped {
@@ -1710,10 +1724,11 @@ footer {
 }
 
 .r_wrap {
-    position: absolute;
-    right: 30px;
-    bottom: 44px;
+    position: relative;
+    right: 12px;
+    bottom: 12px;
     z-index: 5;
+    cursor: pointer;
 }
 
 .b_round, .s_round {
@@ -1723,25 +1738,26 @@ footer {
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    border: 4px solid var(--midnight_blue);
-    background-color: var(--shadow);
-    box-shadow: 5px 5px 10px var(--shadow);
+    border: 3px solid var(--dark_yellow);
+    box-shadow: 5px 5px 10px var(--black);
     transition: all 0.2s linear;
     font-size: 30px;
 }
 
 .b_round {
     opacity: 0;
-    background-color: var(--midnight_blue);
+    background-color: #C30C3D;
 }
 
 .b_round_hover {
-    transform: scale(1.37);
+    transform: scale(1.1);
     opacity: 0.4;
+    border: thin solid transparent;
+    box-shadow: 0px 0px 15px 5px var(--white);
 }
 
 .b_round_back_hover {
-    background-color: var(--dark_yellow);
+    background-color: #C30C3D;
 }
 
 .s_round_click {
@@ -1749,9 +1765,8 @@ footer {
 }
 
 .s_round_back {
-    background-color: var(--dark_yellow);
+    background-color: #C30C3D;
 }
-
 .s_arrow {
     width: 52px;
     height: 52px;
@@ -1761,9 +1776,21 @@ footer {
 }
 
 .s_arrow_rotate {
-    transform: rotate(-180deg);
+    transform: rotateY(180deg);
+}
+
+.tutor_technologies {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+    .b_headline {
+        font-size: 40px;
+    }
 }
 
 /*                         */
-/*    END STAFF BIOS       */
+/*    END STAFF CARD       */
 /*                         */

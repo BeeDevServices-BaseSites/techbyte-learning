@@ -4,7 +4,7 @@ import staff_bios_image from '../assets/images/staff_instructors_header.jpg';
 
 const OurHive = () => {
 
-  const active_staff_bios = staff.filter(staff => staff.is_active);
+  const card_data = staff.filter(staff => staff.is_active);
 
   return (
     <main>
@@ -22,7 +22,7 @@ const OurHive = () => {
       <div>
         <h2 className="our_hive_h2">Meet Our Hive</h2>
       </div>
-      <StaffCard active_staff = { active_staff_bios } is_staff = { true } />
+      <StaffCard card_data = { card_data }  show_tech = { false } />
     </main>
   );
 };
