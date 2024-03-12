@@ -52,7 +52,7 @@ const StaffCard = ({ card_data, show_tech }) => {
                                     <p className='b_text'>{ staff.position }</p>
                                     <p className='back_title'>Location</p>
                                     <p className='b_text'>{ staff.location }</p>
-                                    <p className='back_title'>Bio</p>
+                                    <p className='back_title'>About Me</p>
                                     <p className='b_text'>{ staff.about }</p>
                                 </div>
                             :

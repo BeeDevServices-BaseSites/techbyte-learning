@@ -1541,7 +1541,8 @@ footer {
 /*                         */
 
 .id_card_container {
-    max-width: 1600px;
+    max-width: 1500px;
+    width: 100%;
     min-width: 290px;
     display: flex;
     flex-wrap: wrap;
