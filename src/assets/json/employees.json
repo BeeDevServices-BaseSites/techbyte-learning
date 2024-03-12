@@ -1,134 +1,274 @@
 [
     {
         "id": "1",
-        "firstName": "Tom",
-        "lastName": "Cruise",
-        "photo": "https://jsonformatter.org/img/tom-cruise.jpg",
-        "position": "Instructor",
-        "location": "California",
-        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
-        "mentor": "yes",
-        "tutor": "yes"
+        "first_name": "Melissa",
+        "last_name": "Longenberger",
+        "photo": "https://images.craftsnherbs.com/new-melissa.jpg",
+        "position": "CEO & Founder",
+        "location": "Berwick, PA",
+        "about": "Full Stack Software Developer, Navy Veteran, Gardener and Crocheter with a passion for creating.",
+        "technologies": [
+            "HTML", "CSS", "JavaScript", "LESS", "React", "Vite", "Express.js", "Node", "Next.js", "Java", "C#","Python", "SQL", "PostgreSQL", "Mongo", "Pug", "Django", "Flask", "Git", "Github"
+        ],
+        "is_mentor": true,
+        "is_tutor": true,
+        "is_instructor": true,
+        "is_TA": false,
+        "is_active": true
     },
     {
         "id": "2",
-        "firstName": "Maria",
-        "lastName": "Sharapova",
-        "photo": "https://jsonformatter.org/img/Maria-Sharapova.jpg",
-        "position": "Instructor",
-        "location": "California",
-        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
-        "mentor": "yes",
-        "tutor": "yes"
+        "first_name": "Brent",
+        "last_name": "Cleary",
+        "photo": "https://images.pexels.com/photos/17814830/pexels-photo-17814830/free-photo-of-beekeeper-working-in-an-apiary.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "position": "VP of TechByte Learning",
+        "location": "Seattle, WA",
+        "about": "Full Stack Software Developer with an emphasis in C#",
+        "technologies": [
+            "HTML", "CSS", "JavaScript", "React", "Express.js", "Node", "Next.js", "C#", "Python", "PostgreSQL", "Git", "Github"
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": true,
+        "is_TA": false,
+        "is_active": true
     },
     {
         "id": "3",
-        "firstName": "Robert",
-        "lastName": "Downey Jr.",
-        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
-        "position": "Instructor",
-        "location": "California",
-        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
-        "mentor": "yes",
-        "tutor": "yes"
+        "first_name": "Kyle",
+        "last_name": "Rohr-Morey",
+        "photo": "https://images.pexels.com/photos/17814830/pexels-photo-17814830/free-photo-of-beekeeper-working-in-an-apiary.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "position": "VP of Curriculum",
+        "location": "Wethersfield, CT",
+        "about": "Frontend Development | Game Development for over 4+ years!",
+        "technologies": [
+            "HTML", "CSS", "JavaScript", "React", "Express.js", "Node", "Next.js", "Mongoose", "TypeScript", "Canvas API", "Phaser 3", "Electron", "MongoDB", "Node.js", "Git", "Github"
+        ],
+        "is_mentor": true,
+        "is_tutor": true,
+        "is_instructor": true,
+        "is_TA": false,
+        "is_active": true
     },
     {
         "id": "4",
-        "firstName": "Scooby",
-        "lastName": "Dooby-Doo",
-        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
-        "position": "Teaching Assistant",
-        "location": "California",
-        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
-        "mentor": "yes",
-        "tutor": "yes"
+        "first_name": "Chris",
+        "last_name": "Bridgewater",
+        "photo": "https://live.staticflickr.com/65535/53041911057_89c714ff20_w.jpg",
+        "position": "VP of Development",
+        "location": "Creswell, OR",
+        "about": "Full Stack Software Developer. If I'm not on my computer, I'm enjoying the outdoors!",
+        "technologies": [
+            "HTML", "CSS", "JavaScript", "LESS", "SASS", "React", "Vite", "Express.js", "Node.js", "Next.js", "Java", "C#", "Python", "SQL", "PostgreSQL", "Mongo", "Django", "Flask", "ASP.net", "VS Code", "Spring Boot", "Git", "Github", "MongoDB", "AWS EC2"
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": false
     },
     {
         "id": "5",
-        "firstName": "Shaggy",
-        "lastName": "Rogers",
-        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
-        "position": "Teaching Assistant",
-        "location": "California",
-        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
-        "mentor": "yes",
-        "tutor": "yes"
+        "first_name": "Jason",
+        "last_name": "Brady",
+        "photo": "https://images.pexels.com/photos/17814830/pexels-photo-17814830/free-photo-of-beekeeper-working-in-an-apiary.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "position": "Developer",
+        "location": "Remote",
+        "about": "",
+        "technologies": [
+
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": true
     },
     {
         "id": "6",
-        "firstName": "Daphne",
-        "lastName": "Blake",
-        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
+        "first_name": "Ruth",
+        "last_name": "Khan",
+        "photo": "https://images.pexels.com/photos/17814830/pexels-photo-17814830/free-photo-of-beekeeper-working-in-an-apiary.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         "position": "Developer",
-        "location": "California",
-        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
-        "mentor": "yes",
-        "tutor": "yes"
+        "location": "Remote",
+        "about": "",
+        "technologies": [
+            
+        ],
+        "is_mentor": true,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": true
     },
     {
         "id": "7",
-        "firstName": "Velma",
-        "lastName": "Dinkley",
-        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
-        "position": "Instructor",
-        "location": "California",
-        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
-        "mentor": "yes",
-        "tutor": "yes"
+        "first_name": "Luis",
+        "last_name": "Hernandez",
+        "photo": "https://images.pexels.com/photos/17814830/pexels-photo-17814830/free-photo-of-beekeeper-working-in-an-apiary.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "position": "Developer",
+        "location": "Seattle, WA",
+        "about": "Full Stack Software Developer",
+        "technologies": [
+            "HTML", "CSS", "JavaScript", "React", "Express.js", "Node.js", "Python", "Flask", "Django", "Java", "Spring Boot", "Linux", "MySQL", "MongoDB", "Git", "Github", "AWS EC2"
+        ],
+        "is_mentor": true,
+        "is_tutor": false,
+        "is_instructor": true,
+        "is_TA": true,
+        "is_active": true
     },
     {
         "id": "8",
-        "firstName": "Frederick",
-        "lastName": "Herman",
-        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
-        "position": "Teaching Assistant",
-        "location": "California",
-        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
-        "mentor": "yes",
-        "tutor": "yes"
+        "first_name": "Marc",
+        "last_name": "Boisvert",
+        "photo": "https://images.pexels.com/photos/17814830/pexels-photo-17814830/free-photo-of-beekeeper-working-in-an-apiary.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "position": "Developer, GPFL",
+        "location": "Vine Grove, Kentucky",
+        "about": "",
+        "technologies": [
+
+        ],
+        "is_mentor": true,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": true
     },
     {
         "id": "9",
-        "firstName": "Tanjiro",
-        "lastName": "Kamado",
-        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
-        "position": "Instructor",
-        "location": "California",
-        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
-        "mentor": "yes",
-        "tutor": "yes"
+        "first_name": "Abrar",
+        "last_name": "Hussain",
+        "photo": "https://i.ibb.co/vHxB3nL/abrar.jpg",
+        "position": "Developer",
+        "location": "Chicago, IL",
+        "about": "Full Stack Engineer",
+        "technologies": [
+            "JavaScript", "React", "Next.js", "MERN", "Firebase", "Java", "Spring Boot", "Python", "Git", "Github", "MySQL"
+        ],
+        "is_mentor": true,
+        "is_tutor": false,
+        "is_instructor": true,
+        "is_TA": true,
+        "is_active": true
     },
     {
         "id": "10",
-        "firstName": "Zenitsu",
-        "lastName": "Agatsuma",
-        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
-        "position": "Instructor",
-        "location": "California",
-        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
-        "mentor": "yes",
-        "tutor": "yes"
+        "first_name": "Christopher",
+        "last_name": "Jones",
+        "photo": "https://images.pexels.com/photos/17814830/pexels-photo-17814830/free-photo-of-beekeeper-working-in-an-apiary.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "position": "Developer",
+        "location": "Plano, TX",
+        "about": "Full Stack Software Developer with a flair for crafting creative code",
+        "technologies": [
+            "HTML", "CSS", "JavaScript", "React", "Next.js", "Django", "Python", "VS Code", "Git", "Github", "SQLite"
+        ],
+        "is_mentor": true,
+        "is_tutor": true,
+        "is_instructor": false,
+        "is_TA": true,
+        "is_active": true
     },
     {
         "id": "11",
-        "firstName": "Inosuke",
-        "lastName": "Hashibira",
-        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
-        "position": "Instructor",
-        "location": "California",
-        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
-        "mentor": "yes",
-        "tutor": "yes"
+        "first_name": "Christopher",
+        "last_name": "Ivy",
+        "photo": "https://images.pexels.com/photos/17814830/pexels-photo-17814830/free-photo-of-beekeeper-working-in-an-apiary.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "position": "Developer",
+        "location": "Springdale, AR",
+        "about": "Full Stack Software Developer with a passion for Game Development",
+        "technologies": [
+            "HTML", "CSS", "Python", "Flask", "Java", "JSP", "MongoDB", "Express.js", "React", "Node.js", "MERN", "JavaScript", "Git", "Github", "VS Code", "Spring Boot", "Windows", "MySQL", "Godot 4.1"
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": false
     },
     {
         "id": "12",
-        "firstName": "Nezuko",
-        "lastName": "Kamado",
-        "photo": "https://jsonformatter.org/img/Robert-Downey-Jr.jpg",
-        "position": "Teaching Assistant",
-        "location": "California",
-        "about": "Passionate about empowering students with practical skills and knowledge in programming, fostering a collaborative and engaging learning environment to inspire the next generation of tech enthusiasts.",
-        "mentor": "yes",
-        "tutor": "yes"
+        "first_name": "Ken",
+        "last_name": "Payne Jr",
+        "photo": "https://images.pexels.com/photos/17814830/pexels-photo-17814830/free-photo-of-beekeeper-working-in-an-apiary.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "position": "Developer",
+        "location": "Wappingers Falls, NY",
+        "about": "Technical Instructor / Instructional Technologist",
+        "technologies": [
+            "Teaching & Developing Training Materials"
+        ],
+        "is_mentor": true,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": true
+    },
+    {
+        "id": "13",
+        "first_name": "Josh",
+        "last_name": "R",
+        "photo": "",
+        "position": "Developer",
+        "location": "Remote",
+        "about": "",
+        "technologies": [
+            
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": false
+    },
+    {
+        "id": "14",
+        "first_name": "Makayla",
+        "last_name": "S",
+        "photo": "",
+        "position": "Developer",
+        "location": "Remote",
+        "about": "",
+        "technologies": [
+            
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": false
+    },
+    {
+        "id": "15",
+        "first_name": "Stevie",
+        "last_name": "G",
+        "photo": "",
+        "position": "Developer",
+        "location": "Remote",
+        "about": "",
+        "technologies": [
+            
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": false
+    },
+    {
+        "id": "16",
+        "first_name": "Laura",
+        "last_name": "L",
+        "photo": "",
+        "position": "Developer",
+        "location": "Remote",
+        "about": "",
+        "technologies": [
+            
+        ],
+        "is_mentor": false,
+        "is_tutor": false,
+        "is_instructor": false,
+        "is_TA": false,
+        "is_active": false
     }
 ]
