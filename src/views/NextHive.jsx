@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 import Button from "../components/Button";
-import price_point from "../assets/images/price_point.jpg"
-import calendar from "../assets/images/calendar.jpg"
 
 const NextHive = () => {
 
@@ -30,14 +28,14 @@ const NextHive = () => {
             <h5>2D Game Development Start Date: { game_dev_date }</h5>
           </div>
           <div className="box_right_img">
-            <img src={ calendar } alt="Calandar" />
+            <img src="https://live.staticflickr.com/65535/53584661988_e5b126055d.jpg" alt="Calandar" />
           </div>
         </div>
         {/* END SECTION 1 */}
         {/* SECTION 2 */}
         <div className="split_box flip">
           <div className="box_left_img">
-            <img src="https://www.weikfitness.com/wp-content/uploads/2023/01/lowering-your-price.jpg" alt="price point" />
+            <img src="https://live.staticflickr.com/65535/53585140910_687f09de4a.jpg" alt="price point" />
           </div>
           <div className="box_right_text">
             <h2>

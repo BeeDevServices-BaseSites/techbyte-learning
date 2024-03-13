@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
-import { Link } from "react-router-dom";
 import TutorChat from "../components/TutorChat";
 import Spinner from "../components/Spinner";
 import Button from "../components/Button";

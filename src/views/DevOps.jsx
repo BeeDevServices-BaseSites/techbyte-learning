@@ -16,7 +16,7 @@ const DevOps = () => {
         <div className="split_box flip">
           <div className="box_left_img">
             <br />
-            <img src="https://www.cloud4c.com/sites/default/files/2021-10/azure-devops-services-01.jpg" alt="DevOps" />
+            <img src="https://live.staticflickr.com/65535/53583816052_e3c94e7686_c.jpg" alt="DevOps" />
           </div>
           <div className="box_right_text">
             <h2>
@@ -42,7 +42,7 @@ const DevOps = () => {
             </p>
           </div>
           <div className="box_right_img">
-              <img id="devops" src="https://images.ctfassets.net/xz1dnu24egyd/2S16xLgZGnBkxXgFVQOrxv/24e5808aba2b4c7024c15daa6b6ef5f7/loop-white.svg" alt="Dev life cycle" />
+              <img src="https://live.staticflickr.com/65535/53585006494_0167d1870d.jpg" alt="Dev life cycle" />
           </div>
         </div>
         {/* END SECTION 2 */}

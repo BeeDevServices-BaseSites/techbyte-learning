@@ -6,6 +6,7 @@ import pricing_info from "../assets/json/course_cards.json"
 
 const Services = ({ setDetails }) => {
 
+  // data filters to insert into PriceTags component
   const mini_course_data = pricing_info.filter(price => price.is_active).filter(price => price.is_mini_course);
   const dev_course_data = pricing_info.filter(price => price.is_active).filter(price => price.is_full_course);
   const tutoring_data = pricing_info.filter(price => price.is_active).filter(price => price.is_tutoring);
@@ -47,7 +48,7 @@ const Services = ({ setDetails }) => {
           </h2>
           <br />
           {/* FULL DEV COURSE PRICE TAGS */}
-          <PriceTags  tag_data={ dev_course_data } setDetails={ setDetails } />
+          <PriceTags tag_data={ dev_course_data } setDetails={ setDetails } />
           {/* END SECTION 2 */}
           {/* SECTION 3 */}
           {/* TITLE */}

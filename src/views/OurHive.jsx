@@ -1,6 +1,5 @@
 import staff from "../assets/json/employees.json";
 import StaffCard from "../components/StaffCard";
-import staff_bios_image from '../assets/images/staff_instructors_header.jpg';
 
 const OurHive = () => {
 

@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions.js";
 import Button from "../components/Button.jsx"
-import mini_course from "../assets/images/mini_course.jpg"
 
 const MiniCourses = () => {
 
@@ -16,7 +15,7 @@ const MiniCourses = () => {
         {/* SECTION 1 */}
         <div className="split_box flip">
           <div className="box_left_img">
-          <img src={ mini_course } alt="Mini Courses" />
+          <img src="https://live.staticflickr.com/65535/53584887050_1d3da9e662.jpg" alt="Mini Courses" />
           </div>
           <div className="box_right_text">
             <h2>
