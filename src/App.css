@@ -503,7 +503,7 @@ header img {
     border: thin solid var(--midnight_blue);
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    height: 90px;
+    height: 100px;
     position: relative;
     left:-20px;
     margin-top: 150px;
@@ -517,8 +517,8 @@ header img {
     color: var(--black);
     font-size: .85rem;
     font-weight: bold;
-    margin-top: 20px;
-    padding-left: 5px;
+    margin-top: 24px;
+    padding-left: 4px;
     padding-top: 32px;
     transform: rotate(90deg);
     white-space: nowrap;
@@ -787,9 +787,28 @@ header img {
 /*      Pricing Page           */
 /*                             */
 
-.pricing_wrapper {
-    display: grid;
-    place-items: center;
+.service_links {
+    margin: auto;
+    h2 {
+        margin: 12px;
+    }
+    .service_jump_link{
+        text-align: center;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: center;
+        
+        p {
+            color: var(--midnight_blue);
+            margin: 2px 2px 12px;
+            text-decoration: underline;
+            cursor: pointer;
+
+            &:hover {
+                color: var(--green);
+            }
+        }
+    }
 }
 
 .pricing_container {
@@ -817,6 +836,7 @@ header img {
         box-shadow:  5px 5px 10px var(--shadow);
         position: relative;
         transition: all 300ms ease;
+        margin-bottom: 24px;
 
         .pricing_ribbon {
             position: absolute;
@@ -876,10 +896,11 @@ header img {
 
         img {
             display: block;
-            max-width: 100%;
+            width: 100%;
+            max-width: calc(12.5rem + 13vw);
             aspect-ratio: 16/9;
             height: auto;
-            object-fit: cover;
+            object-fit: fill;
             border-top-left-radius: 8px;;
             border-top-right-radius: 8px;
         }
@@ -888,9 +909,11 @@ header img {
             color: #0D1F2D;
             padding: 12px;
 
-            .pricing_card-text {
+            .pricing_card_text {
+                font-size: 1rem;
                 line-height: 1.3;
                 text-align: start;
+                margin-bottom: 12px;
             }
 
             a {
@@ -929,11 +952,8 @@ header img {
 }
 
 .price_tag {
+    color: var(--midnight_blue);
     text-align: center;
-}
-
-.small {
-    font-size: 1rem;
 }
 
 /*                              */
@@ -1341,23 +1361,26 @@ footer {
 /*     PAYPAL COMPONENT        */
 /*                             */
 
-.pay_button {
-    color: var(--black);
-    font-weight: 900;
+.pay_button p{
+    color: var(--midnight_blue);
+    font-weight: 700;
     max-width: 200px;
     margin: 16px auto 0;
     padding: 3px 5px 0 5px;
     cursor: default;
     text-align: center;
+    color: var(--midnight_blue);
+    font-size:.9rem;
+    
+    .lineout {
+        text-decoration: line-through;
+    }
+    
+        .sale {
+            color: red;
+        }
 }
 
-.sale {
-    color: red;
-}
-
-.lineout {
-    text-decoration: line-through;
-}
 
 
 /*                             */
