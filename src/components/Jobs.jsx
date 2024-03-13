@@ -18,7 +18,7 @@ const Jobs = ({ positions }) => {
                 {positions.map((job) => {
                     return(
                         <a href={`#${ job.id }`} key={ job.id }  onClick={(e) => handleClick(e, job.id)}>
-                            |&nbsp; { job.position }&nbsp;|
+                            |&nbsp;{ job.position }&nbsp;|
                         </a>
                 )})}
             </div>

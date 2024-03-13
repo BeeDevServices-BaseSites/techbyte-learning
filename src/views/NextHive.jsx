@@ -63,7 +63,7 @@ const NextHive = () => {
             </p>
           </div>
           <div className="box_right_text">
-            <Button to="/pricingplans" text="See Openings" />
+            <Button to="/services" text="See Openings" />
           </div>
         </div>
         {/* END SECTION 3 */}

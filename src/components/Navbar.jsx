@@ -44,7 +44,7 @@ useEffect(() => {
             <Link to="/nexthive" className="drawer_link">Next Cohort</Link>
           </li>
           <li>
-            <Link to="/pricingplans" className="drawer_link">Pricing</Link>
+            <Link to="/services" className="drawer_link">TechByte Services</Link>
           </li>
           <li>
             <Link to="/tuitionassistance" className="drawer_link">Tuition Assistance</Link>

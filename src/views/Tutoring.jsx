@@ -44,7 +44,7 @@ const Tutoring = () => {
         {/* INSTRUCTOR CARDS */}
         <StaffCard card_data = { card_data } show_tech = { true } />
         {/* END SECTION 3 */}
-        <Button to="/pricingplans" text="PRICING PLANS" />
+        <Button to="/services" text="Tutoring Packages" />
       </div>
     </main>
   );

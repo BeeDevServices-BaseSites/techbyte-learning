@@ -39,7 +39,7 @@ const MiniCourses = () => {
             </p>
           </div>
           <div className="box_right_text">
-            <Button to="/pricingplans" text="Check Availability" />
+            <Button to="/services" text="Check Availability" />
           </div>
         </div>
         {/* END SECTION 2 */}

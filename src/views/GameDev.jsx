@@ -51,7 +51,7 @@ const GameDev = () => {
         {/* SECTION 3 */}
         <div className="split_box">
           <div className="box_left_text">
-            <Button to="/nexthive#go_here" text="Next Cohort" />
+            <Button to="/nexthive" text="Next Cohort" />
           </div>
           <div className="box_right_text">
             <p>
