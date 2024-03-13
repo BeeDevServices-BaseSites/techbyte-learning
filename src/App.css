@@ -1670,7 +1670,7 @@ item2 a, .item2 {
     background-color: var(--midnight_blue);
     border-top: thin solid var(--dark_yellow);
     border-bottom: thin solid var(--dark_yellow);
-    opacity: 0.99;
+    opacity: 0.97;
 }
 
 .back {
@@ -1715,7 +1715,7 @@ item2 a, .item2 {
 .r_wrap {
     position: relative;
     right: 22px;
-    bottom: 12px;
+    bottom: 8px;
     z-index: 5;
     cursor: pointer;
 }
