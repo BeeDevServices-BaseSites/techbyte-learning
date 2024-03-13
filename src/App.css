@@ -1154,7 +1154,7 @@ footer {
 }
 
 .item:hover::before {
-	transform: scale(1.154);
+	transform: scale(1.19);
     background-color: goldenrod;
 }
 
@@ -1169,6 +1169,11 @@ footer {
 	background-size: cover;
 	background-position: center;
 	clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
+}
+
+item2 a, .item2 {
+    pointer-events: none;
+    cursor: default;
 }
 
 @media (min-width: 17rem) {
@@ -1186,6 +1191,9 @@ footer {
     }
     .bumble_bee_image {
         display: none;
+    }
+    .item:hover::before {
+        transform: scale(1.175);
     }
 }
 
