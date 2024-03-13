@@ -152,7 +152,7 @@ const Receipt = ({ details }) => {
                         </b></p>
                     </div>
                     <br />
-                    <Button to="/services" text="Go Back" />
+                    <Button to="/services" text="Close" />
                 </div>
             </main>
             }

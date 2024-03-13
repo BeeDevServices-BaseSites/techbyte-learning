@@ -40,7 +40,7 @@ const BookTutor = () => {
           <h4>
             Need to purchase tutor sessions? 
           </h4>
-          <Button to="/pricingplans" text="Purchase Tutoring" />
+          <Button to="/services" text="Purchase Tutoring" />
         </div>
       </div>
     </main>

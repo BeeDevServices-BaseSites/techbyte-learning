@@ -138,10 +138,10 @@ const Index = () => {
             <p>
               <span>D</span>on't get stuck in the honeycomb of outdated techniques! Embrace the future with TechByte Learning and pave your way to success in web development. Our industry-leading technologies, comprehensive curriculum, and focus on practical experience will set you apart from the swarm. Enroll with TechByte today  and let us help you build a rewarding career!
             </p>
+            <Button to="/nexthive" text="Next Cohort" />
           </div>
         </div>
         {/* END SECTION 7 */}
-        
       </div>
     </main>
   )
