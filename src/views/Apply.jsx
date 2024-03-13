@@ -17,7 +17,6 @@ const Apply = () => {
     }, 2500); // Timer allowing the chat box to fully load before being revealed 
   },[]);
 
-
   return (
     <main>
       <div className="wrapper">
@@ -35,7 +34,7 @@ const Apply = () => {
             Or chat with us live below
           </h4>
           <div style={{ display: showSpinner ? '' : 'none' }}>
-          <Spinner/>
+            <Spinner/>
           </div>
           <div style={{ display: !showSpinner ? '' : 'none' }} >
             <AdmissionsChat />

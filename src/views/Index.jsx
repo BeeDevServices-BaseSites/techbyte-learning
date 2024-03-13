@@ -1,10 +1,5 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
-import dev_instruction from "../assets/images/dev_instruction.jpg"
-import projects from "../assets/images/projects.png"
-import newest_tech from "../assets/images/high_tech_dev.jpg"
-import game_dev from "../assets/images/game_development.jpg"
-import your_career from "../assets/images/your_career.png"
 import Honeycomb from "../components/Honeycomb";
 import Button from "../components/Button";
 
@@ -56,14 +51,14 @@ const Index = () => {
             </p>
           </div>
           <div className="box_right_img">
-            <img src={ dev_instruction } alt="Teaching" />
+            <img src="https://live.staticflickr.com/65535/53585067135_b6189d1e41_w.jpg" alt="Teaching" />
           </div>
         </div>
         {/* END SECTION 2 */}
         {/* SECTION 3 */}
         <div className="split_box flip">
           <div className="box_left_img">
-            <img src={ newest_tech } alt="newest tech" />
+            <img src="https://live.staticflickr.com/65535/53584763389_90d41d1bc3.jpg" alt="newest tech" />
           </div>
           <div className="box_right_text">
             <h2>
@@ -80,7 +75,7 @@ const Index = () => {
         {/* SECTION 4 */}
         <div className="split_box flip">
           <div className="box_left_img">
-            <img src={ game_dev } alt="Gaming Development" />
+            <img src="https://live.staticflickr.com/65535/53584763384_c5ff93b210_c.jpg" alt="Gaming Development" />
           </div>
           <div className="box_right_text">
             <h2>
@@ -111,7 +106,7 @@ const Index = () => {
             </p>
           </div>
           <div className="box_right_img">
-            <img src={ projects } alt="projects" />
+            <img src="https://live.staticflickr.com/65535/53584662238_fec483cc56_w.jpg" alt="projects" />
           </div>
         </div>
         {/* END SECTION 5 */}
@@ -127,14 +122,14 @@ const Index = () => {
             <Button to="/minicourses" text="Mini Courses" />
           </div>
           <div className="box_right_img">
-            <img src="https://media.licdn.com/dms/image/C4D0DAQF0K6wyUhaU9A/learning-public-crop_288_512/0/1578068691935?e=2147483647&v=beta&t=-4aLuF4Idzn2HayAgQfhj66YK2PXAsEVm-KN4uHlnRM" alt="projects" />
+            <img src="https://live.staticflickr.com/65535/53584846178_ff5fddf5ae.jpg" alt="projects" />
           </div>
         </div>
         {/* END SECTION 6 */}
         {/* SECTION 7 */}
         <div className="split_box flip">
           <div className="box_left_img">
-            <img src={ your_career } alt="your career" />
+            <img src="https://live.staticflickr.com/65535/53584662203_d8a8159056.jpg" alt="your career" />
           </div>
           <div className="box_right_text">
             <h2>

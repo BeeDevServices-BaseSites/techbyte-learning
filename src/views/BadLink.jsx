@@ -1,4 +1,3 @@
-import error_404 from "../assets/images/404_error.png"
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 import Button from "../components/Button";
@@ -18,7 +17,7 @@ const BadLink = () => {
                         It appears you're lost...
                     </h2>
                     <Button to="/" text="TAKE ME HOME" />
-                    <img className="error_image" src={ error_404 } alt="Oops 404" />
+                    <img className="error_image" src="https://live.staticflickr.com/65535/53583575662_dbd34fc1d0_z.jpg" alt="Oops 404" />
                 </div>
             </div>
         </main>

@@ -1,13 +1,8 @@
 import { Link } from "react-router-dom";
 import Paypal from "../components/PayPalButton";
-import full_stack from "../assets/images/full_stack.png"
-import game_dev from "../assets/images/game_dev.jpg"
-import tutor from "../assets/images/tutor.png"
-import best_seller from "../assets/images/best_seller.png"
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 
 const PriceTags = ({ tag_data , setDetails }) => {
-
 
     const initialOptions = {
         "client-id": "AboCjdkH7teR_lvYiywVhF41PTL0gUZ6UM0Uz5mTf3BOaFaJTh_njS1PrDz0wljMB5MYOv7PvYu1NvU0",
@@ -17,14 +12,11 @@ const PriceTags = ({ tag_data , setDetails }) => {
     };
 
     return (
-
         <PayPalScriptProvider options={ initialOptions } >
             <div className="pricing_container">
                 {/* DEV CARD 1 */}
-                {tag_data.map((price_tag) => (
-                    
+                {tag_data.map(( price_tag ) => (
                     <div className="pricing_card" key={ price_tag.id }>
-
                         {/* PRICE RIBBON W/ TEXT */}
                         <div className="pricing_ribbon">
                             {price_tag.is_popular ? 
@@ -33,14 +25,12 @@ const PriceTags = ({ tag_data , setDetails }) => {
                             }
                             <div className="pricing_ribbon_text"> { price_tag.title }</div>
                         </div>
-
                         {/* PRICE TAG IMAGE */}
                         { price_tag.image == "" ? 
-                            <img src="https://doceri.thinkific.com/assets/defaults/default-product-card.png" alt="web dev card"/>
+                            <img src="https://live.staticflickr.com/65535/53584865328_7580a08c05.jpg" alt="default card"/>
                         :
                             <img src={ price_tag.image } alt={ price_tag.title } />
                         }
-
                         {/* START DATE */}
                         { price_tag.start_date !== "" ?
                             <>
@@ -50,7 +40,6 @@ const PriceTags = ({ tag_data , setDetails }) => {
                         :
                             ""
                         }
-
                         {/* COURSE SUMMARY */}
                         <div className="pricing_card_info">
                             { price_tag.summary.map((card_summary, idx) => (
@@ -58,7 +47,6 @@ const PriceTags = ({ tag_data , setDetails }) => {
                                     { card_summary }
                                 </p>
                             ))}
-
                             {/* PRICE TAG */}
                             { price_tag.has_checkout ? 
                                 <Paypal
@@ -76,14 +64,11 @@ const PriceTags = ({ tag_data , setDetails }) => {
                                     <Link to="/Apply">Apply Here</Link>
                                 </div>
                             }
-
                         </div>
                     </div>
                 ))}
             </div>
         </PayPalScriptProvider>
-
-
     )
 }
 

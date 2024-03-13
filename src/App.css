@@ -1279,22 +1279,30 @@ item2 a, .item2 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
 }
 
 .error_404 h2 {
     color: var(--midnight_blue);
-    margin-top: 10px;
+    margin: 12px 0px 24px 0px;
 }
 
 .error_image {
-    margin: 10px auto 20px;
-    width: 63%;
+    margin: 24px auto;
+    width: 100%;
+    max-width: 750px;
     min-width: 290px;
     border: thin solid var(--midnight_blue);
     border-radius: 10px;
     box-shadow: 8px 8px 10px var(--shadow);
 }
+
+
+@media (max-width: 500px) {
+    .error_404 h2 {
+        margin-top: 80px;
+    }
+}
+
 
 /*                            */
 /*     END ERROR 404          */

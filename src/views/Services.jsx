@@ -28,6 +28,7 @@ const Services = ({ setDetails }) => {
     <main>
       <div className="wrapper">
         <div className="large_box">
+          {/* SECTION 1 */}
           <div className="service_links">
             <h2>
               TechByte Learning Services
@@ -38,8 +39,8 @@ const Services = ({ setDetails }) => {
               <p onClick={(e) => handleClick(e, "tutoring")}>|&nbsp;Tutoring&nbsp;|</p>
             </div>
           </div>
-
-          {/* SECTION 1 */}
+          {/* END SECTION 1 */}
+          {/* SECTION 2 */}
           {/* TITLE */}
           <h2 id="devcourses">
             TechByte Development Programs
@@ -47,10 +48,8 @@ const Services = ({ setDetails }) => {
           <br />
           {/* FULL DEV COURSE PRICE TAGS */}
           <PriceTags  tag_data={ dev_course_data } setDetails={ setDetails } />
-
-          {/* END SECTION 1 */}
-
-          {/* SECTION 2 */}
+          {/* END SECTION 2 */}
+          {/* SECTION 3 */}
           {/* TITLE */}
           <h2 id="minisessions">
             TechByte Mini Sessions
@@ -58,9 +57,8 @@ const Services = ({ setDetails }) => {
           <br />
           {/* MINI COURSE PRICE TAGS */}
           <PriceTags tag_data={ mini_course_data } setDetails={ setDetails } />
-          {/* END SECTION 2 */}
-
-          {/* SECTION 3 */}
+          {/* END SECTION 3 */}
+          {/* SECTION 4 */}
           {/* TITLE */}
           <h2 id="tutoring">
             Techbyte Tutoring
@@ -78,7 +76,7 @@ const Services = ({ setDetails }) => {
           <br />
           {/* TUTORING PRICE TAGS */}
           <PriceTags tag_data={ tutoring_data } setDetails={ setDetails } />
-          {/* END SECTION 3 */}
+          {/* END SECTION 4 */}
         </div>
         <h4>
           Already purchased a tutoring session? 
