@@ -1,0 +1,23 @@
+/*                             */
+/*     PAYPAL COMPONENT        */
+/*                             */
+
+.pay_button p{
+    color: var(--midnight_blue);
+    font-weight: 700;
+    max-width: 200px;
+    margin: 16px auto 0;
+    padding: 3px 5px 0 5px;
+    cursor: default;
+    text-align: center;
+    color: var(--midnight_blue);
+    font-size:.9rem;
+    
+    .lineout {
+        text-decoration: line-through;
+    }
+    
+        .sale {
+            color: red;
+        }
+}

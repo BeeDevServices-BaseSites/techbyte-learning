@@ -1,0 +1,16 @@
+/*                             */
+/*         SPINNER             */
+/*                             */
+
+.spinner_background {
+    margin: 60px auto;
+    /* width: 100%; */
+}
+
+.spinner_background img {
+    height: 290px;
+    width: 290px;
+    aspect-ratio: 1/1;
+    border: 1px solid var(--midnight_blue);
+    border-radius: 50%;
+}

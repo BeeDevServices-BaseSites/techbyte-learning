@@ -1,0 +1,197 @@
+/*                         */
+/*         NAVBAR          */
+/*                         */
+
+#drawer_toggle {
+    position: absolute;
+    opacity: 0;
+}
+
+#drawer_toggle_label {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    left: 0px;
+    height:85px;
+    width: 75px;
+    display: block;
+    position: fixed;
+    background: rgba(15, 47, 71,.0);
+    z-index: 99999;
+    transition: all 300ms ease;
+}
+
+#drawer_toggle_label:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 35px;
+    border-radius: 10px;
+    background: var(--midnight_blue);
+    left: 18px;
+    top: 45px;
+    box-shadow: 0 10px 0 var(--midnight_blue), 0 20px 0 var(--midnight_blue);
+}
+
+#drawer_toggle_label:hover:before {
+    background: var(--green);
+    box-shadow: 0 10px 0 var(--green), 0 20px 0 var(--green);
+    filter: drop-shadow(5px 5px 5px var(--shadow));
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px 10px 20px var(--shadow);
+    background: #efd780;   
+    background: var(--header_gradient);
+    padding: 0 0 30px 60px;
+    z-index: 99998;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease;
+    border-bottom: 4px solid var(--midnight_blue);
+}
+
+header a {
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: var(--midnight_blue);
+    text-decoration: none;
+    text-shadow: 0.5px 0.5px 1px var(--shadow);
+    transition: all 300ms ease;
+    &:hover {
+        text-shadow: 2px 2px 2px var(--green);
+    }
+}
+
+header img {
+    position: relative;
+    top: 15px;
+    height: 100px;
+    padding-left: 30px;
+
+}
+
+#drawer {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100%;
+    width: 200px;
+    background: var(--midnight_blue);
+    overflow-x: hidden;
+    padding: 20px;
+    -webkit-overflow-scrolling: touch;
+    z-index: 99998;
+    transition: all 300ms ease;
+}
+
+#drawer_toggle:checked ~ #drawer_toggle_label {
+    height: calc(100% + 20px);
+    left: 200px;
+    width: calc(100% - 180px);
+    background: rgba(0,0,0,0.85);
+    box-shadow: 10px 10px 40px 10px black;
+    border-radius: 0 0 20px 0;
+}
+
+#drawer_toggle:checked ~ #drawer_toggle_label:hover:before {
+    background: var(--midnight_blue);
+    box-shadow: 0 10px 0 var(--midnight_blue), 0 20px 0 var(--midnight_blue);
+    filter: none;
+}
+
+/* moves main with the drawer */
+/* #drawer_toggle:checked ~ main {  
+    margin-left: 200px; 
+    transition: all 300ms ease;
+} */
+
+#drawer_toggle:checked ~ header {
+    padding-left: 250px
+}
+
+#drawer_toggle:checked ~ #drawer {
+    left: 0px;
+    box-shadow: 0px 0px 30px black;
+    z-index: 99999;
+}
+
+#drawer ul {
+    list-style-type: none;
+}
+
+#drawer ul a {
+    display: block;
+    padding: 10px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+#drawer ul a:hover {
+    color: white;
+}
+
+@media all and (max-width:720px) {
+    header{
+        padding-bottom: 16px;
+        a {
+            font-size: 3rem;
+        }
+        img {
+            top:6px;
+            height: 76px;
+            padding-left: 30px;
+        }
+    }
+    #drawer_toggle_label:before {
+        top: 28px;
+    } 
+}
+
+@media all and (max-width:560px) {
+    header a {
+            font-size: 2.25rem;
+        }
+
+}
+
+@media all and (max-width:450px) {
+    #drawer_toggle_label:before {
+        height: 4px;
+        width: 25px;
+        top: 36px;
+        box-shadow: 0 8px 0 var(--midnight_blue), 0 16px 0 var(--midnight_blue);
+    }
+    header {
+        padding-top: 5px;
+        a {
+            font-size: 1.75rem;
+        }
+        img {
+            padding-left: 0px;
+        }
+    
+    }
+    #drawer_toggle:checked ~ #drawer_toggle_label {
+        height: 100%;
+        width: 50px;
+    }
+    #drawer_toggle:checked ~ #drawer_toggle_label, #drawer_toggle:checked ~ header {
+        left: calc(100% - 50px);
+    }
+    #drawer_toggle:checked ~ #drawer {
+        width: calc(100% - 50px);
+        padding: 20px;
+    }
+}
