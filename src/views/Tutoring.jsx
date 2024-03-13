@@ -31,6 +31,7 @@ const Tutoring = () => {
               Don't let coding challenges hold you back any longer. Contact TechByte Learning today to schedule your personalized tutoring session and unlock your full coding potential.
             </p>
             <h4>Already have tutor sessions?</h4>
+            <br />
             <Button to="/booktutoring" text="Schedule A Tutor" />
           </div>
           <div className="box_right_img">
@@ -43,6 +44,7 @@ const Tutoring = () => {
         {/* INSTRUCTOR CARDS */}
         <StaffCard card_data = { card_data } show_tech = { true } />
         {/* END SECTION 3 */}
+        <br />
         <Button to="/services" text="Tutoring Packages" />
       </div>
     </main>

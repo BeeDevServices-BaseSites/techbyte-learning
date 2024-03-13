@@ -35,7 +35,7 @@ const PriceTags = ({ tag_data , setDetails }) => {
                         { price_tag.start_date !== "" ?
                             <>
                                 <br />
-                                <h4>Course Start Date: { price_tag.start_date }</h4>
+                                <h4>Course Start Date: <br className="mobile_only" /> { price_tag.start_date }</h4>
                             </>
                         :
                             ""

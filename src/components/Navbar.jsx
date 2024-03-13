@@ -55,15 +55,9 @@ useEffect(() => {
           <li>
             <Link to="/booktutoring" className="drawer_link">Schedule Tutoring</Link>
           </li>
-          {/* <li>
-            <Link to="/ourhive" className="drawer_link">Our Hive</Link>
-          </li> */}
           <li>
             <Link to="/aboutus" className="drawer_link">About Us</Link>
           </li>
-          {/* <li>
-            <Link to="/careers" className="drawer_link">Careers</Link>
-          </li> */}
           <li>
             <a href="https://learn.techbyte-learning.com/" target="_blank" className="drawer_link">Student Login</a>
           </li>

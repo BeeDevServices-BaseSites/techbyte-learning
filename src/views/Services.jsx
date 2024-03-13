@@ -40,8 +40,10 @@ const Services = ({ setDetails }) => {
               <p onClick={(e) => handleClick(e, "tutoring")}>|&nbsp;Tutoring&nbsp;|</p>
             </div>
           </div>
+        </div>
           {/* END SECTION 1 */}
           {/* SECTION 2 */}
+          <div className="large_box">
           {/* TITLE */}
           <h2 id="devcourses">
             TechByte Development Programs
@@ -49,8 +51,10 @@ const Services = ({ setDetails }) => {
           <br />
           {/* FULL DEV COURSE PRICE TAGS */}
           <PriceTags tag_data={ dev_course_data } setDetails={ setDetails } />
+        </div>
           {/* END SECTION 2 */}
           {/* SECTION 3 */}
+        <div className="large_box">
           {/* TITLE */}
           <h2 id="minisessions">
             TechByte Mini Sessions
@@ -59,7 +63,9 @@ const Services = ({ setDetails }) => {
           {/* MINI COURSE PRICE TAGS */}
           <PriceTags tag_data={ mini_course_data } setDetails={ setDetails } />
           {/* END SECTION 3 */}
+        </div>
           {/* SECTION 4 */}
+        <div className="large_box">
           {/* TITLE */}
           <h2 id="tutoring">
             Techbyte Tutoring
@@ -71,18 +77,19 @@ const Services = ({ setDetails }) => {
             Contact <a href="mailto:tutoring@techbyte-learning.com?subject=Tutoring%20Inquiry%20">tutoring@techbyte-learning.com</a>
           </h4>
           <br />
-          <h5>
+          <h5 className="center_text">
             Don't forget to take advantage of our bundle pricing options.
           </h5>
           <br />
           {/* TUTORING PRICE TAGS */}
           <PriceTags tag_data={ tutoring_data } setDetails={ setDetails } />
           {/* END SECTION 4 */}
+          <h4>
+            Already purchased a tutoring session? 
+          </h4>
+          <br />
+          <Button to="/booktutoring" text="Schedule Tutoring" />
         </div>
-        <h4>
-          Already purchased a tutoring session? 
-        </h4>
-        <Button to="/booktutoring" text="Schedule Tutoring" />
       </div>
     </main>
   );

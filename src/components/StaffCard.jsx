@@ -32,9 +32,9 @@ const StaffCard = ({ card_data, show_tech }) => {
     return (
         <div className='id_card_container'>
                 {/* CONDITIONAL RENDERING BASED ON is_staff PROP */}
-                {card_data.map((staff) => (
-                <div className='container' key={staff.id}>
-                    <div className={`flip_box ${ flipped_cards.includes(staff.id) ?     'flipped' : '' }`}>
+                {card_data.map(( staff ) => (
+                <div className='container' key={ staff.id }>
+                    <div className={`flip_box ${ flipped_cards.includes( staff.id ) ?     'flipped' : '' }`}>
                         <div className='front' style={{ backgroundImage: `url(${ staff.photo })` }}>
                             <p className='f_title'>{ staff.position }</p>
                             <p className='f_subline'>{ staff.location }</p>
@@ -54,16 +54,16 @@ const StaffCard = ({ card_data, show_tech }) => {
                             :
                                 <div className="tutor_technologies">
                                     {[...staff.technologies].map((tech, idx) => (
-                                        <p key={idx}>| {tech} |</p>
+                                        <p key={ idx }>| { tech } |</p>
                                     ))}
                                 </div>
                             }
                         </div>
                     </div>
                     <div className='r_wrap'>
-                        <div className={`b_round ${hovered_card_id === staff.id ? 'b_round_hover' : ''}`}></div>
-                        <div className={`s_round ${ clicked_card_id === staff.id ? 's_round_click' : 's_round_back' }`} onClick={() => handle_card_click(staff.id)}  onMouseEnter={() => handle_hover(staff.id)} onMouseLeave={() => handle_hover(null)} onTransitionEnd={() => handle_transition_end(staff.id)}>
-                            <div className={`s_arrow ${ flipped_cards.includes(staff.id) ?     's_arrow_rotate' : '' }`}><i className="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        <div className={`b_round ${hovered_card_id === staff.id ? 'b_round_hover' : ""}`}></div>
+                        <div className={`s_round ${ clicked_card_id === staff.id ? 's_round_click' : 's_round_back' }`} onClick={() => handle_card_click( staff.id )}  onMouseEnter={() => handle_hover( staff.id )} onMouseLeave={() => handle_hover( null )} onTransitionEnd={() => handle_transition_end( staff.id )}>
+                            <div className={`s_arrow ${ flipped_cards.includes( staff.id ) ?     's_arrow_rotate' : ""}`}><i className="fa fa-arrow-right" aria-hidden="true"></i></div>
                         </div>
                     </div>
                 </div>

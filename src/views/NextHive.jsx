@@ -24,8 +24,8 @@ const NextHive = () => {
             <p>
               <span>O</span>ur program is designed to equip you with the knowledge and skills needed to thrive in the fast-paced world of web and game development. Whether you're a beginner looking to break into the industry or an experienced programmer seeking to expand your skillset, our courses have something for everyone. Our next available cohort, affectionately known as a "hive," are:
             </p>
-            <h5>Web Development Start Date: { web_dev_date }</h5>
-            <h5>2D Game Development Start Date: { game_dev_date }</h5>
+            <h5 className="center_text">Web Development Start Date: <br className="mobile_only"/>{ web_dev_date }</h5>
+            <h5 className="center_text">2D Game Development Start Date: <br className="mobile_only"/>{ game_dev_date }</h5>
           </div>
           <div className="box_right_img">
             <img src="https://live.staticflickr.com/65535/53584661988_e5b126055d.jpg" alt="Calandar" />

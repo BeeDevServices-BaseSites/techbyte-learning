@@ -27,11 +27,11 @@ const Jobs = ({ positions }) => {
                 Send inquiries to: <br className="mobile_only"/> <a id="career_link" href="mailto:careers@techbyte-learning.com?subject=Career%20Inquiry%20">careers@techbyte-learning.com</a> 
             </h4>
             {/* JOB CARDS */}
-            {positions.map((job) => {
+            {positions.map(( job ) => {
                 return(
                     <div id={ job.id } className="job_card" key={ job.id }>
                     <h2>
-                        { job.level } { job.position}
+                        { job.level } { job.position }
                     </h2>
                     <h3>
                         Type: { job.type }
@@ -46,7 +46,7 @@ const Jobs = ({ positions }) => {
                         Requirements:
                     </h4>
                     <ul>
-                        {[...job.requirements].map((req, idx) => {
+                        {[ ...job.requirements ].map(( req, idx ) => {
                             return(
                                 <li key={ idx }>
                             { req }
@@ -57,20 +57,20 @@ const Jobs = ({ positions }) => {
                         Responsibilities:
                     </h4>
                     <ul>
-                        {[...job.responsibilities].map((responsability, idx) => {
+                        {[ ...job.responsibilities ].map(( responsability, idx ) => {
                             return(
                                 <li key={ idx }>
                             { responsability }
                             </li>
                         )})}
                     </ul>
-                    {job.able_to_do && job.able_to_do.length !== false ? (
-                        <>
+                    { job.able_to_do && job.able_to_do.length !== false ? (
+                    <>
                         <h4>
                             Able to do:
                         </h4>
                         <ul>
-                            {[...job.able_to_do].map((able, idx) => {
+                            {[ ...job.able_to_do ].map(( able, idx ) => {
                                 return(
                                     <li key={ idx }>
                                         { able }
@@ -81,7 +81,7 @@ const Jobs = ({ positions }) => {
                     </>
                     ) : (
                         <div></div>
-                        )}
+                    )}
                 </div>
             )})}
             </div>
