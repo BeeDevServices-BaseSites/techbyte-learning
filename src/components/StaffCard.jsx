@@ -1,10 +1,8 @@
 import { useState } from 'react';
 
 const StaffCard = ({ card_data, show_tech }) => {
-    const data = card_data;
 
     const [flipped_cards, set_flipped_cards] = useState([]);
-
     const [hovered_card_id, set_hovered_card_id] = useState(null);
     const [clicked_card_id, set_clicked_card_id] = useState(null);
     const [is_b_round_hovered, set_is_b_round_hovered] = useState(false);
@@ -22,7 +20,6 @@ const StaffCard = ({ card_data, show_tech }) => {
                 return [...prev, id];
             }
         });
-
         set_clicked_card_id(id);
     };
 
@@ -32,11 +29,10 @@ const StaffCard = ({ card_data, show_tech }) => {
         }
     };
 
-
     return (
         <div className='id_card_container'>
                 {/* CONDITIONAL RENDERING BASED ON is_staff PROP */}
-                {data.map((staff) => (
+                {card_data.map((staff) => (
                 <div className='container' key={staff.id}>
                     <div className={`flip_box ${ flipped_cards.includes(staff.id) ?     'flipped' : '' }`}>
                         <div className='front' style={{ backgroundImage: `url(${ staff.photo })` }}>
