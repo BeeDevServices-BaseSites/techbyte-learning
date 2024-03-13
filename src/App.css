@@ -23,6 +23,7 @@ html, body, * {
     border: 0px;
     font-family: 'Source Sans Pro', sans-serif;
     word-spacing: .097rem;
+    font-display: swap;
 }
 
 html {
@@ -125,6 +126,12 @@ p {
         min-height: 82dvh;
     }
 }
+
+
+.center_text {
+    text-align: center;
+}
+
 
 /*                         */
 /*      PAGE LAYOUTS       */
@@ -267,10 +274,6 @@ p {
         margin: 20px auto;
         width: 100%;
     }
-}
-
-.center_text {
-    text-align: center;
 }
 
 /*                              */
@@ -1259,6 +1262,18 @@ item2 a, .item2 {
 		float: none;
 		margin: 0.6375rem !important;
 	}
+}
+
+/* Required For Accessability */
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
 }
 
 /*                            */

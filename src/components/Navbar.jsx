@@ -15,7 +15,7 @@ useEffect(() => {
   return (
     <>
       <input type="checkbox" id="drawer_toggle" name="drawer_toggle"/>
-      <label htmlFor="drawer_toggle" id="drawer_toggle_label"></label>
+      <label htmlFor="drawer_toggle" id="drawer_toggle_label"><span className="visually-hidden">Empty Link</span></label>
       <header>
         <img src="https://images.craftsnherbs.com/logos/newNewLogo.png" alt="TechByte Learning Bee" />
         <Link to="/">TechByte Learning</Link>

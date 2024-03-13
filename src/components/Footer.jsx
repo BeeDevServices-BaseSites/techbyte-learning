@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer_text">
-        <h5>
+        <p>
           Website Built By: 
-        </h5>
+        </p>
         <a href="https://beedev-services.com/" target="_blank">
           BEEDEV-SERVICES
         </a>

@@ -5,14 +5,14 @@ import jsonData from "../assets/json/honeycombs.json";
 const images = jsonData.map(( item, idx ) => (
   item.link ? (
     <li className="item" key={ idx }>
-      <a href={ `#${ item.tag }` } title={ item.tag }>
+      <a href={ `#${ item.tag }` } title={ item.tag } role="button">
         <img className="honeycomb_image" src={ item.link } alt={ item.tag } />
       </a>
     </li>
   ) : (
     <li className="item2" key={ idx }>
-      <a href={ `###` }>
-        <img src="" alt=""/>
+      <a href="/#empty"  role="button">
+        <span className="visually-hidden">Empty Link</span>
       </a>
     </li>
   )
