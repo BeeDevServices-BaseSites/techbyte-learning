@@ -1,10 +1,7 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
-import { Link } from "react-router-dom";
-import contact_us from "../assets/images/contact_us.jpg"
-import follow_us from "../assets/images/follow_us.jpg"
 import Button from "../components/Button";
-import worker_bees from "../assets/images/worker_bees.jpg"
+
 
 const AboutUs = () => {
 
@@ -28,14 +25,14 @@ const AboutUs = () => {
             <Button to="/ourhive" text="Meet Our Team" />
           </div>
           <div className="box_right_img">
-            <img src="https://firebotanicals.com/wp-content/uploads/2020/10/about-us-.png" alt="About Us" />
+            <img src="https://live.staticflickr.com/65535/53584957329_87b1482ed7.jpg" alt="About Us" />
           </div>
         </div>
         {/* END SECTION 1 */}
         {/* SECTION 2 */}
         <div className="split_box flip">
           <div className="box_right_img">
-            <img src={worker_bees} alt="Our Hive" />
+            <img src="https://live.staticflickr.com/65535/53583575842_66798c42d1_c.jpg" alt="Our Hive" />
           </div>
           <div className="box_left_text">
             <p>
@@ -93,7 +90,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="box_right_img">
-            <img src={ contact_us } alt="Contact Us!" />
+            <img src="https://live.staticflickr.com/65535/53584886945_21be81e0d5.jpg" alt="Contact Us!" />
           </div>
         </div>
         {/* END SECTION 2 */}
@@ -101,7 +98,7 @@ const AboutUs = () => {
         {/* SECTION 3 */}
         <div className="split_box flip">
           <div className="box_left_img">
-            <img src={ follow_us } alt="Follow Us!" />
+            <img src="https://live.staticflickr.com/65535/53584439271_f26fbe904d_z.jpg" alt="Follow Us!" />
           </div>
           <div className="box_right_text">
             <h2>

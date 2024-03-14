@@ -16,7 +16,7 @@ const GameDev = () => {
         <div className="split_box flip">
           <div className="box_left_img">
             <br />
-            <img src="https://assets-global.website-files.com/6270e8022b05abb840d27d6f/631228480934f73f37428b74_b_Must-Have-Mobile-Game-Development-Tools-.png" alt="Game Dev" />
+            <img src="https://live.staticflickr.com/65535/53585011419_9b56ae6b3e_c.jpg" alt="Game Dev" />
           </div>
           <div className="box_right_text">
             <h2>
@@ -44,14 +44,14 @@ const GameDev = () => {
             </p>
           </div>
           <div className="box_right_img">
-              <img src="https://t3.ftcdn.net/jpg/05/74/05/78/360_F_574057895_pHarnRepLEdwoGuXhq9YZqPihKaBjUoU.jpg" alt="Game Controller" />
+              <img src="https://live.staticflickr.com/65535/53584687736_147177fc60.jpg" alt="Game Controller" />
           </div>
         </div>
         {/* END SECTION 2 */}
         {/* SECTION 3 */}
         <div className="split_box">
           <div className="box_left_text">
-            <Button to="/nexthive#go_here" text="Next Cohort" />
+            <Button to="/nexthive" text="Next Cohort" />
           </div>
           <div className="box_right_text">
             <p>

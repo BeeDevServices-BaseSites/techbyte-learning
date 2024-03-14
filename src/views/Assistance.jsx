@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
-import flexxbuy from "../assets/images/flexxbuy.png"
 import Button from "../components/Button";
 
 const Assistance = () => {
@@ -24,16 +23,15 @@ const Assistance = () => {
             </p>
           </div>
           <div className="box_right_img">
-            <img src="https://miro.medium.com/v2/resize:fit:798/1*5qJ2qOkh9TrxBr3lHgJWeQ.jpeg" alt="tuition assistance" />
+            <img src="https://live.staticflickr.com/65535/53585095295_9a5fbc242b.jpg" alt="tuition assistance" />
           </div>
         </div>
         {/* END SECTION 1 */}
-        <Button to="#" text="APPLY WITH FLEXXBUY" />
         <br />
         {/* SECTION 2 */}
         <div className="split_box">
           <div className="box_left_img">
-            <img src={ flexxbuy } alt="how it works" />
+            <img src="https://live.staticflickr.com/65535/53584969979_e8844047e8_c.jpg" alt="Flexxbuy Apply" />
           </div>
           <div className="box_right_text">
             <h2>
@@ -57,6 +55,8 @@ const Assistance = () => {
                 <b>Instant</b> decisions
               </li>
             </ul>
+            <br />
+            <Button to="#" text="APPLY WITH FLEXXBUY" />
           </div>
         </div>
         {/* END SECTION 2 */}

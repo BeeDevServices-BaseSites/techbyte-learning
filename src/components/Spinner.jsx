@@ -4,7 +4,7 @@ const Spinner = () => {
 
     return(
         <div className="spinner_background">
-            <img src={ spinner_bee } alt="Loading Spinner" />
+            <img src={ spinner_bee } alt="Loading Spinner Bee" />
         </div>
     )
 }

@@ -7,7 +7,7 @@ const GoToButton = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if(window.scrollY > 300){
+            if(window.scrollY > 250){
                 set_back_to_top_button(true);
             } else {
                 set_back_to_top_button(false);
@@ -25,7 +25,7 @@ const GoToButton = () => {
     return (
         <>
             {back_to_top_button && (
-                <button onClick={scroll_up} className="go_top_button"><i className="fa fa-arrow-up" aria-hidden="true"></i></button>
+                <button onClick={ scroll_up } className="go_top_button"><i className="fa fa-arrow-up" aria-hidden="true"></i></button>
             )}
         </>
     )

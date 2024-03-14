@@ -4,7 +4,7 @@ import { changeTitle } from "../utilities/utilityFunctions";
 import Button from "../components/Button";
 
 
-const Receipt = ({ details }) => {
+const TutoringReceipt = ({ details }) => {
 
     const navigate = useNavigate();
 
@@ -151,8 +151,7 @@ const Receipt = ({ details }) => {
                             Thank You For Joining The TechByte Learning Hive!
                         </b></p>
                     </div>
-                    <br />
-                    <Button to="/services" text="Close" />
+                    <Button to="/booktutoring" text="Schedule Tutoring" />
                 </div>
             </main>
             }
@@ -160,4 +159,4 @@ const Receipt = ({ details }) => {
     );
 }
 
-export default Receipt;
+export default TutoringReceipt;

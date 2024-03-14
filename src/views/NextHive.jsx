@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 import Button from "../components/Button";
-import price_point from "../assets/images/price_point.jpg"
-import calendar from "../assets/images/calendar.jpg"
 
 const NextHive = () => {
 
@@ -26,18 +24,18 @@ const NextHive = () => {
             <p>
               <span>O</span>ur program is designed to equip you with the knowledge and skills needed to thrive in the fast-paced world of web and game development. Whether you're a beginner looking to break into the industry or an experienced programmer seeking to expand your skillset, our courses have something for everyone. Our next available cohort, affectionately known as a "hive," are:
             </p>
-            <h5>Web Development Start Date: { web_dev_date }</h5>
-            <h5>2D Game Development Start Date: { game_dev_date }</h5>
+            <h5 className="center_text">Web Development Start Date: <br className="mobile_only"/>{ web_dev_date }</h5>
+            <h5 className="center_text">2D Game Development Start Date: <br className="mobile_only"/>{ game_dev_date }</h5>
           </div>
           <div className="box_right_img">
-            <img src={ calendar } alt="Calandar" />
+            <img src="https://live.staticflickr.com/65535/53584661988_e5b126055d.jpg" alt="Calandar" />
           </div>
         </div>
         {/* END SECTION 1 */}
         {/* SECTION 2 */}
         <div className="split_box flip">
           <div className="box_left_img">
-            <img src={ price_point } alt="price point" />
+            <img src="https://live.staticflickr.com/65535/53585140910_687f09de4a.jpg" alt="price point" />
           </div>
           <div className="box_right_text">
             <h2>
@@ -63,7 +61,7 @@ const NextHive = () => {
             </p>
           </div>
           <div className="box_right_text">
-            <Button to="/pricingplans" text="See Openings" />
+            <Button to="/services" text="See Openings" />
           </div>
         </div>
         {/* END SECTION 3 */}

@@ -13,8 +13,6 @@ import django from "../assets/images/django.png"
 import flask from "../assets/images/flask.png"
 import postgres from "../assets/images/postgres.png"
 import project_steps from "../assets/images/project_steps.png"
-import internship from "../assets/images/internship.jpg"
-import full_stack_tech from "../assets/images/full_stack_tech.jpg"
 
 const WebDev = () => {
 
@@ -30,7 +28,7 @@ const WebDev = () => {
         <div className="split_box flip">
           <div className="box_left_img">
             <br />
-            <img src={ full_stack_tech } alt="Full Stack" />
+            <img src="https://live.staticflickr.com/65535/53584887040_a8593da063_z.jpg" alt="Full Stack Development" />
           </div>
           <div className="box_right_text">
             <h2>
@@ -112,7 +110,7 @@ const WebDev = () => {
             </p>
           </div>
           <div className="box_right_img">
-            <img src={ internship } alt="intern" />
+            <img src="https://live.staticflickr.com/65535/53584887055_68b0c67717.jpg" alt="Internships" />
           </div>
         </div>
         {/* END SECTION 6 */}

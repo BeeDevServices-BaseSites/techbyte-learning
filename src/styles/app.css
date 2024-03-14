@@ -1,0 +1,124 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+/* CSS PAGE IMPORTS */
+@import url("./about_us.css");
+@import url("./button.css");
+@import url("./careers_page.css");
+@import url("./chat.css");
+@import url("./cookie_slideout.css");
+@import url("./courses.css");
+@import url("./error_404.css");
+@import url("./footer.css");
+@import url("./go_top.css");
+@import url("./honeycomb.css");
+@import url("./navbar.css");
+@import url("./page_layout.css");
+@import url("./paypal.css");
+@import url("./price_cards.css");
+@import url("./receipts.css");
+@import url("./spinner.css");
+@import url("./staff_cards.css");
+
+
+/*                       */
+/*     MAIN APP CSS      */
+/*                       */
+
+:root {
+    --white: #CBE5EC;
+    --midnight_blue: #0f2f47;
+    --shadow: #97939390;
+    --light_yellow: #F6E8B7;
+    --dark_yellow: #efd780;
+    --header_gradient: linear-gradient(0deg, rgba(239, 215, 128, 1) 42%, rgba(246, 232, 182, 1) 79%);
+    --black: #0D1F2D;
+    --green: #18AC58;
+    --font_size_default: 16px;
+}
+
+#root {
+    overflow-x: hidden;
+}
+
+html, body, * {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    word-spacing: .097rem;
+    font-display: swap;
+}
+
+html {
+    font-size: var(--font_size_default);
+}
+
+body {
+    width: 100%;
+    background-color: #CBE5EC;
+}
+
+main {
+    min-height: calc(100dvh - 234px);
+}
+
+/* font sizes */
+h1,h2,h3,h4,h5,h6,a,p {
+    transition: all 300ms ease;
+}
+
+h1 {
+    font-size: 2.25rem;
+    color: var(--midnight_blue);
+    text-shadow: 0.5px 0.5px 0.5px var(--shadow);
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: var(--midnight_blue);
+    text-shadow: 0.5px 0.5px 0.5px var(--shadow);
+}
+
+h3 {
+    font-size: 1.375rem;
+    color: var(--midnight_blue);
+}
+
+h4 {
+    font-size: 1.125rem;
+    color: var(--midnight_blue);
+}
+
+h5 {
+    font-size: 1rem;
+    color: var(--midnight_blue);
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--black);
+}
+
+.center_text {
+    text-align: center;
+}
+
+/* increase font sizes for larger screen views */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.58rem;
+    }
+    h4 {
+        font-size: 1.295rem;
+    }
+    p {
+        font-size: 1.265rem;
+    }
+}

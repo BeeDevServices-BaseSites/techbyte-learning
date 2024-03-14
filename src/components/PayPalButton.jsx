@@ -1,12 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 import { PayPalButtons } from "@paypal/react-paypal-js";
-import axios from "axios";
-import React, { useEffect, useState } from "react";
 
-const Paypal = (props) => {
+const Paypal = ( props ) => {
 
     const navigate = useNavigate();
-    const {base_price, units, description, isOnSale, percent, setDetails} = props;
+    const { base_price, units, description, isOnSale, percent, is_tutoring, setDetails } = props;
     // amount based on base price and quantity NO DISCOUNT
     const total_amount = (base_price*units).toFixed(2)
     // amount based on total amount WITH discount rate applied
@@ -16,7 +14,7 @@ const Paypal = (props) => {
         name: description,
         unit_amount: {
             currency_code: "USD",
-            value: (discount_amount/units)
+            value: ( discount_amount/units )
         },
         quantity: units,
     }
@@ -29,7 +27,8 @@ const Paypal = (props) => {
                     <span className="lineout">${ total_amount }</span> <span className="sale">save { percent }%</span>
                 </p>
             : <br /> }
-                <p>${ discount_amount }</p>
+
+                <h4>${ discount_amount }</h4>
                 <PayPalButtons
                     style={{
                         layout: "vertical",
@@ -40,7 +39,7 @@ const Paypal = (props) => {
                         tagline: "false",
                         borderRadius: 5,
                     }}
-                    createOrder={async(data, actions) => {
+                    createOrder={async( data, actions ) => {
                         return actions.order.create({
                             purchase_units: [{
                                 amount: {
@@ -57,12 +56,17 @@ const Paypal = (props) => {
                             }]
                         })
                     }}
-                    onApprove={async (data, actions) => {
+                    onApprove={async ( data, actions ) => {
                         const details = await actions.order.capture();
                         setDetails(details)
                         //console.log(details)  /////// REMOVE THIS BEFORE GOING LIVE!!!
                         //// Insert Axios Call Here ////
-                        navigate("/receipt")
+                        ////                        ////
+                        { !is_tutoring ? // dictates what receipt page is pulled up
+                            navigate("/receipt")
+                            :
+                            navigate("/tutoringreceipt")
+                        }
                     }}
                     onError={(data, actions) => {
                         console.log(actions)

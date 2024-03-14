@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 import Jobs from "../components/Jobs";
-import hiring from "../assets/images/hiring.jpg"
 import positions from "../assets/json/careers.json"
 
 const Careers = () => {
@@ -26,8 +25,8 @@ const Careers = () => {
               Thank you for your interest in joining our team. At the moment we are not hiring, but if you feel you'd be a good fit please contact us at <a id="career_link" href="mailto:careers@techbyte-learning.com?subject=Career%20Inquiry%20">careers@techbyte-learning.com</a>
               </h4>
             </div>
-            <div className="box_right_text">
-                <img className="hiring" src="https://cf42c4dc.rocketcdn.me/wp-content/uploads/2023/07/Hanging_Sign_Job_Openings-1024x1024.png" alt="Not Hiring" />
+            <div className="box_right_img">
+                <img src="https://live.staticflickr.com/65535/53585002039_a69c9be965_n.jpg" alt="Not Hiring" />
             </div>
           </div>
         </div>
@@ -43,8 +42,8 @@ const Careers = () => {
                 We are actively seeking highly skilled and talented individuals with expertise in various roles to join our team. See our openings below.
               </h4>
             </div>
-            <div className="box_right_text">
-                <img className="hiring" src={ hiring } alt="We Are Hiring" />
+            <div className="box_right_img">
+                <img src="https://live.staticflickr.com/65535/53584662093_b6259f3d99_n.jpg" alt="We Are Hiring" />
             </div>
           </div>
           {/* END SECTION 1 */}

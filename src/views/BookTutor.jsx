@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
-import { Link } from "react-router-dom";
 import TutorChat from "../components/TutorChat";
 import Spinner from "../components/Spinner";
 import Button from "../components/Button";
@@ -41,7 +40,7 @@ const BookTutor = () => {
           <h4>
             Need to purchase tutor sessions? 
           </h4>
-          <Button to="/pricingplans" text="Purchase Tutoring" />
+          <Button to="/services" text="Purchase Tutoring" />
         </div>
       </div>
     </main>

@@ -1,10 +1,8 @@
 import { useState } from 'react';
 
 const StaffCard = ({ card_data, show_tech }) => {
-    const data = card_data;
 
     const [flipped_cards, set_flipped_cards] = useState([]);
-
     const [hovered_card_id, set_hovered_card_id] = useState(null);
     const [clicked_card_id, set_clicked_card_id] = useState(null);
     const [is_b_round_hovered, set_is_b_round_hovered] = useState(false);
@@ -22,7 +20,6 @@ const StaffCard = ({ card_data, show_tech }) => {
                 return [...prev, id];
             }
         });
-
         set_clicked_card_id(id);
     };
 
@@ -32,35 +29,41 @@ const StaffCard = ({ card_data, show_tech }) => {
         }
     };
 
-
     return (
         <div className='id_card_container'>
                 {/* CONDITIONAL RENDERING BASED ON is_staff PROP */}
-                {data.map((staff) => (
-                <div className='container' key={staff.id}>
-                    <div className={`flip_box ${ flipped_cards.includes(staff.id) ?     'flipped' : '' }`} key={staff.id}>
+                {card_data.map(( staff ) => (
+                <div className='container' key={ staff.id }>
+                    <div className={`flip_box ${ flipped_cards.includes( staff.id ) ?     'flipped' : '' }`}>
                         <div className='front' style={{ backgroundImage: `url(${ staff.photo })` }}>
                             <p className='f_title'>{ staff.position }</p>
                             <p className='f_subline'>{ staff.location }</p>
-                            <h1 className='f_headline'>{ staff.first_name } { staff.last_name }</h1>
+                            <p className='f_headline'>{ staff.first_name } { staff.last_name }</p>
                         </div>
                         <div className='back'>
-                            <h1 className='b_headline'>{ staff.first_name } { staff.last_name }</h1>
+                            <p className='b_headline'>{ staff.first_name } { staff.last_name }</p>
                             { !show_tech ? 
-                                <p className='b_text'>{ staff.position }<br />{ staff.location }<br />{ staff.about }</p>
+                                <div className='back_lower'>
+                                    <p className='back_title'>Roll</p>
+                                    <p className='b_text'>{ staff.position }</p>
+                                    <p className='back_title'>Location</p>
+                                    <p className='b_text'>{ staff.location }</p>
+                                    <p className='back_title'>About Me</p>
+                                    <p className='b_text'>{ staff.about }</p>
+                                </div>
                             :
                                 <div className="tutor_technologies">
                                     {[...staff.technologies].map((tech, idx) => (
-                                        <span key={idx}> | {tech} |</span>
+                                        <p key={ idx }>| { tech } |</p>
                                     ))}
                                 </div>
                             }
                         </div>
                     </div>
-                    <div className='r_wrap'key={staff.id}>
-                        <div className={`b_round ${hovered_card_id === staff.id ? 'b_round_hover' : ''}`}></div>
-                        <div className={`s_round ${ clicked_card_id === staff.id ? 's_round_click' : 's_round_back' }`} onClick={() => handle_card_click(staff.id)}  onMouseEnter={() => handle_hover(staff.id)} onMouseLeave={() => handle_hover(null)} onTransitionEnd={() => handle_transition_end(staff.id)}>
-                            <div className={`s_arrow ${ flipped_cards.includes(staff.id) ?     's_arrow_rotate' : '' }`}></div>
+                    <div className='r_wrap'>
+                        <div className={`b_round ${hovered_card_id === staff.id ? 'b_round_hover' : ""}`}></div>
+                        <div className={`s_round ${ clicked_card_id === staff.id ? 's_round_click' : 's_round_back' }`} onClick={() => handle_card_click( staff.id )}  onMouseEnter={() => handle_hover( staff.id )} onMouseLeave={() => handle_hover( null )} onTransitionEnd={() => handle_transition_end( staff.id )}>
+                            <div className={`s_arrow ${ flipped_cards.includes( staff.id ) ?     's_arrow_rotate' : ""}`}><i className="fa fa-arrow-right" aria-hidden="true"></i></div>
                         </div>
                     </div>
                 </div>
