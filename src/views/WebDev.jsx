@@ -120,7 +120,7 @@ const WebDev = () => {
             Enroll With TechByte Learning Today
           </h2>
           <p>
-            <span>T</span>o unlock a world of endless possibilities in the web development industry. Whether you're a beginner with no prior coding experience or an experienced programmer looking to expand your skill set, our course program will empower you to succeed.
+            <span>U</span>nlock a world of endless possibilities in the web development industry with TechByte Learning. Whether you're a beginner with no prior coding experience or an experienced programmer looking to expand your skill set, our course program will empower you to succeed.
           </p>
           <p>
             Don't miss out on this incredible opportunity to become a master in full stack programming with Python and React. Take the first step towards a rewarding career and join the Techbyte Learning family today!

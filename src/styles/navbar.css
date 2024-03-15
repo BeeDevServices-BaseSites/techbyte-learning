@@ -75,7 +75,6 @@ header img {
     top: 15px;
     height: 100px;
     padding-left: 30px;
-
 }
 
 #drawer {
@@ -162,15 +161,20 @@ header img {
 @media all and (max-width:560px) {
     header a {
             font-size: 2.25rem;
+            margin-top: 16px;
         }
-
+    header img {
+        top: 15px;
+        height: 60px;
+        padding-left: 20px;
+    }
 }
 
 @media all and (max-width:450px) {
     #drawer_toggle_label:before {
         height: 4px;
         width: 25px;
-        top: 36px;
+        top: 32px;
         box-shadow: 0 8px 0 var(--midnight_blue), 0 16px 0 var(--midnight_blue);
     }
     header {
@@ -180,6 +184,7 @@ header img {
         }
         img {
             padding-left: 0px;
+            height: 55px;
         }
     
     }

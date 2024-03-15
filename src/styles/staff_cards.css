@@ -180,11 +180,11 @@
 }
 
 .b_round_hover {
-    transform: scale(1.2);
+    transform: scale(1.25);
     opacity: 0.4;
     border: 2px solid transparent;
     box-shadow: 0px 0px 6px 6px var(--white);
-    background-color: var(--white);
+    background-color: #fff;
 }
 
 .s_round_click {

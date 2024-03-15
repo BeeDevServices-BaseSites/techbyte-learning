@@ -26,9 +26,10 @@
 /*                       */
 
 :root {
-    --white: #CBE5EC;
+    --white: linear-gradient(90deg, #c3cbdc 0%, #edf1f4 74%);
+    /* --white: #CBE5EC; */
     --midnight_blue: #0f2f47;
-    --shadow: #97939390;
+    --shadow: #979393;
     --light_yellow: #F6E8B7;
     --dark_yellow: #efd780;
     --header_gradient: linear-gradient(0deg, rgba(239, 215, 128, 1) 42%, rgba(246, 232, 182, 1) 79%);
@@ -56,7 +57,8 @@ html {
 
 body {
     width: 100%;
-    background-color: #CBE5EC;
+    background: var(--white)
+    
 }
 
 main {

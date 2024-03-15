@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
-import Button from "../components/Button";
 
 const Assistance = () => {
 
@@ -56,7 +55,7 @@ const Assistance = () => {
               </li>
             </ul>
             <br />
-            <Button to="#" text="APPLY WITH FLEXXBUY" />
+            <a id="flexxbuy" href="#flexbuy"><button >APPLY WITH FLEXXBUY <br /><span className="small">(coming soon!)</span></button></a>
           </div>
         </div>
         {/* END SECTION 2 */}
