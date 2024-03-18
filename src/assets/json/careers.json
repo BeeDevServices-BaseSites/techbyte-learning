@@ -1,20 +1,20 @@
 [
     {
         "id": "1",
-        "is_active": true,
+        "is_active": false,
         "position": "Web Developer",
         "level": "Junior",
         "type": "Full Time",
         "location": "Remote",
         "salary": "52,000",
         "about": "We are seeking a skilled and passionate ...",
-        "requirements": ["Proficiency in React, Express, Python (Flask & Django) and other relavant technologies", "Strong understanding of object-oriented programming (OOP) concepts", "Experience working with relational databases like MySQL or PostgreSQL", "Familiarity with revision control systems such as git", "Excellent verbal and written communication skills to effectively collaborate with designers, developers, and stakeholders.", "Ability to work in a fast-paced, agile development environment."],
+        "requirements": ["Proficiency in React, Express, Python (Flask & Django) and other relevant technologies", "Strong understanding of object-oriented programming (OOP) concepts", "Experience working with relational databases like MySQL or PostgreSQL", "Familiarity with revision control systems such as git", "Excellent verbal and written communication skills to effectively collaborate with designers, developers, and stakeholders.", "Ability to work in a fast-paced, agile development environment."],
         "responsibilities": ["Designing and developing efficient, scalable, and user-friendly web applications", "Utilizing your expertise in React, Express, Python Django, and other technologies to handle front-end frameworks, backend servers, and database management", "Troubleshoot and debug issues as they arise", "Stay up-to-date on the latest technologies and best practices in web development","Troubleshoot and debug issues as they arise"],
         "able_to_do": ["Gain hands-on experience developing websites and web applications", "Opportunity to showcase your skills and contribute to exciting projects", "Collaborative and innovative work environment", "You will be supported by mentors and teammates as you work on tasks and projects.", "Contribute ideas and strategies to improve the overall user experience"]
     },
     {
         "id": "2",
-        "is_active": true,
+        "is_active": false,
         "position": "UI/UX Developer",
         "level": "Staff",
         "type": "Full Time",
@@ -22,12 +22,12 @@
         "salary": "$70,000",
         "about": "We are seeking a skilled and passionate ...",
         "requirements": ["Strong proficiency in HTML5, CSS3, JavaScript, and various front-end frameworks.", "Experience with UI/UX design tools such as Figma, Sketch, or Adobe XD.", "Familiarity with responsive design principles and design systems. With ability to prototype and iterate designs quickly based on user feedback.", "Excellent verbal and written communication skills to effectively collaborate with designers, developers, and stakeholders.", "Ability to work in a fast-paced, agile development environment."],
-        "responsibilities": ["Collaborate with product managers and designers to understand user requirements and create user-centered designs.", "Develop wireframes, interactive prototypes, and production-ready UI assets using design tools such as Figma, Sketch, or Adobe XD.", "Build responsive and intuitive user interfaces using HTML, CSS, and JavaScript frameworks such as React, Angular, or Vue.js.", "Ensure cross-browser, cross-platform, and cross-device compatibility, and optimize performance of UI/UX elements.Ensure cross-browser, cross-platform, and cross-device compatibility, and optimize performance of UI/UX elements.", "Collaborate with the development team to create and maintain a design system to ensure consistency across all digital products.", "Collaborate with the development team to create and maintain a design system to ensure consistency across all digital products."],
+        "responsibilities": ["Collaborate with product managers and designers to understand user requirements and create user-centered designs.", "Develop wire-frames, interactive prototypes, and production-ready UI assets using design tools such as Figma, Sketch, or Adobe XD.", "Build responsive and intuitive user interfaces using HTML, CSS, and JavaScript frameworks such as React, Angular, or Vue.js.", "Ensure cross-browser, cross-platform, and cross-device compatibility, and optimize performance of UI/UX elements.Ensure cross-browser, cross-platform, and cross-device compatibility, and optimize performance of UI/UX elements.", "Collaborate with the development team to create and maintain a design system to ensure consistency across all digital products.", "Collaborate with the development team to create and maintain a design system to ensure consistency across all digital products."],
         "able_to_do": ["design intuitive and user-friendly interfaces for our digital products.", "conduct user research and incorporate feedback to improve the overall user experience.", "stay up-to-date on design trends and best practices to ensure our products are at the forefront of usability and innovation.", " collaborate with cross-functional teams to create visually appealing designs that align with our brand guidelines."]
     },
     {
         "id": "3",
-        "is_active": true,
+        "is_active": false,
         "position": "Student Recruiter and Onboarding Specialist",
         "level": "Sr.",
         "type": "Full Time",
@@ -41,7 +41,7 @@
     },
     {
         "id": "4",
-        "is_active": true,
+        "is_active": false,
         "position": "HR Coordinator",
         "level": "Sr.",
         "type": "Full Time",
@@ -54,20 +54,20 @@
     },
     {
         "id": "5",
-        "is_active": true,
+        "is_active": false,
         "position": "Instructor - Web Development",
         "level": "",
         "type": "Full Time",
         "salary": "$65,000",
         "location": "Remote",
         "about": "We are seeking a skilled and passionate Full-Time Instructor to join our dynamic team. The ideal candidate will have expertise in HTML, CSS, JavaScript, React, Express, Pug, Vite, Python, Flask, Django, and proficiency in database technologies including PostgreSQL and MySQL. Strong object-oriented programming (OOP) knowledge is essential.",
-        "requirements": ["Proven experience in web devlopement and programming.", "In-depth knowledge of the specified technologies.", "Excellent communication and teaching skills.", "Ability to adapt teaching methods to various learning styles.", "Bachelor's degree in Computer Science or related field is preffered"],
-        "responsibilities": ["Deliver engaging and comprehensive lessons in web development technologies", "Provide mentorship and support to students in their learning journey", "Create and update course materials to ensure relevance and effectiveness", "Stay current with industry trends and incorperate them into the curriculum"],
+        "requirements": ["Proven experience in web development and programming.", "In-depth knowledge of the specified technologies.", "Excellent communication and teaching skills.", "Ability to adapt teaching methods to various learning styles.", "Bachelor's degree in Computer Science or related field is preferred"],
+        "responsibilities": ["Deliver engaging and comprehensive lessons in web development technologies", "Provide mentorship and support to students in their learning journey", "Create and update course materials to ensure relevance and effectiveness", "Stay current with industry trends and incorporate them into the curriculum"],
         "able_to_do": false
     },
     {
         "id": "6",
-        "is_active": true,
+        "is_active": false,
         "position": "Teaching Assistant",
         "level": "",
         "type": "Full Time",
@@ -80,7 +80,7 @@
     },
     {
         "id": "7",
-        "is_active": true,
+        "is_active": false,
         "position": "Teaching Assistant",
         "level": "",
         "type": "Part Time",

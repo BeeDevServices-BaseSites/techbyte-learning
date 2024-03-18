@@ -59,6 +59,9 @@ useEffect(() => {
             <Link to="/aboutus" className="drawer_link">About Us</Link>
           </li>
           <li>
+            <a href="https://techbyte-learning.com/bytewise/" target="_blank" className="drawer_link">ByteWise Dispatch</a>
+          </li>
+          <li>
             <a href="https://learn.techbyte-learning.com/" target="_blank" className="drawer_link">Student Login</a>
           </li>
         </ul>

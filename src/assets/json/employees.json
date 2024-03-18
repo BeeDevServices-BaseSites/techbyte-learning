@@ -82,14 +82,14 @@
         "is_tutor": false,
         "is_instructor": false,
         "is_TA": false,
-        "is_active": true
+        "is_active": false
     },
     {
         "id": "6",
         "first_name": "Ruth",
         "last_name": "Khan",
         "photo": "https://images.pexels.com/photos/17814830/pexels-photo-17814830/free-photo-of-beekeeper-working-in-an-apiary.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        "position": "Developer",
+        "position": "Project Manager",
         "location": "Remote",
         "about": "",
         "technologies": [
@@ -112,9 +112,9 @@
         "technologies": [
             "HTML", "CSS", "JavaScript", "React", "Express.js", "Node.js", "Python", "Flask", "Django", "Java", "Spring Boot", "Linux", "MySQL", "MongoDB", "Git", "Github", "AWS EC2"
         ],
-        "is_mentor": true,
+        "is_mentor": false,
         "is_tutor": false,
-        "is_instructor": true,
+        "is_instructor": false,
         "is_TA": true,
         "is_active": true
     },
@@ -129,7 +129,7 @@
         "technologies": [
 
         ],
-        "is_mentor": true,
+        "is_mentor": false,
         "is_tutor": false,
         "is_instructor": false,
         "is_TA": false,
@@ -146,10 +146,10 @@
         "technologies": [
             "JavaScript", "React", "Next.js", "MERN", "Firebase", "Java", "Spring Boot", "Python", "Git", "Github", "MySQL"
         ],
-        "is_mentor": true,
+        "is_mentor": false,
         "is_tutor": false,
-        "is_instructor": true,
-        "is_TA": true,
+        "is_instructor": false,
+        "is_TA": false,
         "is_active": true
     },
     {
@@ -191,7 +191,7 @@
         "first_name": "Ken",
         "last_name": "Payne Jr",
         "photo": "https://images.pexels.com/photos/17814830/pexels-photo-17814830/free-photo-of-beekeeper-working-in-an-apiary.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        "position": "Developer",
+        "position": "Instructional Technologist",
         "location": "Wappingers Falls, NY",
         "about": "Technical Instructor / Instructional Technologist",
         "technologies": [
@@ -202,73 +202,5 @@
         "is_instructor": false,
         "is_TA": false,
         "is_active": true
-    },
-    {
-        "id": "13",
-        "first_name": "Josh",
-        "last_name": "R",
-        "photo": "",
-        "position": "Developer",
-        "location": "Remote",
-        "about": "",
-        "technologies": [
-            
-        ],
-        "is_mentor": false,
-        "is_tutor": false,
-        "is_instructor": false,
-        "is_TA": false,
-        "is_active": false
-    },
-    {
-        "id": "14",
-        "first_name": "Makayla",
-        "last_name": "S",
-        "photo": "",
-        "position": "Developer",
-        "location": "Remote",
-        "about": "",
-        "technologies": [
-            
-        ],
-        "is_mentor": false,
-        "is_tutor": false,
-        "is_instructor": false,
-        "is_TA": false,
-        "is_active": false
-    },
-    {
-        "id": "15",
-        "first_name": "Stevie",
-        "last_name": "G",
-        "photo": "",
-        "position": "Developer",
-        "location": "Remote",
-        "about": "",
-        "technologies": [
-            
-        ],
-        "is_mentor": false,
-        "is_tutor": false,
-        "is_instructor": false,
-        "is_TA": false,
-        "is_active": false
-    },
-    {
-        "id": "16",
-        "first_name": "Laura",
-        "last_name": "L",
-        "photo": "",
-        "position": "Developer",
-        "location": "Remote",
-        "about": "",
-        "technologies": [
-            
-        ],
-        "is_mentor": false,
-        "is_tutor": false,
-        "is_instructor": false,
-        "is_TA": false,
-        "is_active": false
     }
 ]
