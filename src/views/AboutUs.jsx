@@ -13,6 +13,18 @@ const AboutUs = () => {
   return (
     <main>
       <div className="wrapper">
+        <div className="large_box">
+          <h2>Our Mission At <br className="mobile_only" />TechByte Learning</h2>
+          <p>
+            <span>A</span>t TechByte Learning, our vision is to revolutionize programming education by empowering learners with not just technical skills, but also fostering a collaborative and innovative mindset. 
+          </p>
+          <p>
+            We envision a future where every programmer emerges from our programs equipped not only with coding expertise but also with the ability to work seamlessly in teams, navigate complex projects with Git, deploy solutions effectively, and understand and enhance existing code. 
+          </p>
+          <p>
+            Through our transformative learning experiences, we aim to bridge the gap between coding bootcamps and real-world job requirements, making programming a holistic and enriching journey for individuals of all ages.
+          </p>
+        </div>
         {/* SECTION 1 */}
         <div className="split_box">
           <div className="box_left_text">
