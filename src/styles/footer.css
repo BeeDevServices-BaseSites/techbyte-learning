@@ -9,19 +9,22 @@ footer {
     align-items: center;
     width: 100%;
     height: 95px;
-    background: var(--dark_yellow);
-    border-top: 5px solid var(--midnight_blue);
+    background: var(--midnight_blue);
+    border-top: 2px solid var(--dark_yellow);
 }
 
 .footer_text {
     padding-left: 30px;
     
+    p {
+        color: var(--white_text);
+    }
     a {
-        color: var(--black);
+        color: var(--white_text);
         transition: all 300ms ease;
         
         &:hover {
-            color: var(--green);
+            color: var(--white);
         }
     }
 }
@@ -32,6 +35,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    filter: invert(90%);
 }
 
 .footer_image_one {

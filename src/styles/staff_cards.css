@@ -41,7 +41,7 @@
     backface-visibility: hidden;
     border-radius: 10px;
     box-shadow: 8px 8px 10px var(--shadow);
-    border: thin solid var(--midnight_blue)
+    border: thin solid var(--midnight_blue);
 }
 
 .flip_box {
@@ -61,7 +61,7 @@
 
 .f_title {
     padding: 16px 12px 0 12px;
-    color: var(--white);
+    color: var(--white_text);
     text-shadow: 2px 2px 0px var(--midnight_blue), 
         2px -2px 0px var(--midnight_blue), 
         -2px 2px 0px var(--midnight_blue), 
@@ -75,7 +75,7 @@
 
 .f_subline {
     padding: 220px 12px 10px 12px;
-    color: var(--white);
+    color: var(--white_text);
     text-shadow: 2px 2px 0px var(--midnight_blue), 
         2px -2px 0px var(--midnight_blue), 
         -2px 2px 0px var(--midnight_blue), 
@@ -88,12 +88,10 @@
 }
 
 .f_headline {
-    font-size: 1.75rem;
-    font-weight: 700;
     line-height: 45px;
     padding: 8px 12px;
     margin-bottom: 40px;
-    color: var(--dark_yellow);
+    color: var(--white);
     background-color: var(--midnight_blue);
     border-top: thin solid var(--dark_yellow);
     border-bottom: thin solid var(--dark_yellow);
@@ -124,8 +122,6 @@
 
 .b_headline {
     text-align: center;
-    font-size: 1.65rem;
-    font-weight: 700;
     padding: 40px 20px 0 12px;
 }
 
@@ -147,10 +143,10 @@
 }
 
 .flipped {
-    -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg) !important;
+    -moz-transform: rotateY(-180deg) !important;
+    -ms-transform: rotateY(-180deg) !important;
+    transform: rotateY(-180deg) !important;
 }
 
 .r_wrap {
@@ -184,7 +180,7 @@
     opacity: 0.4;
     border: 2px solid transparent;
     box-shadow: 0px 0px 6px 6px var(--white);
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .s_round_click {
@@ -211,5 +207,5 @@
 }
 
 .s_arrow_rotate {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) !important;
 }

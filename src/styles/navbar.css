@@ -32,47 +32,50 @@
     height: 5px;
     width: 35px;
     border-radius: 10px;
-    background: var(--midnight_blue);
     left: 18px;
-    top: 45px;
-    box-shadow: 0 10px 0 var(--midnight_blue), 0 20px 0 var(--midnight_blue);
+    top: 42px;
+    background: var(--white_text);
+    box-shadow: 0 10px 0 var(--white_text), 0 20px 0 var(--white_text);
 }
 
 #drawer_toggle_label:hover:before {
-    background: var(--green);
-    box-shadow: 0 10px 0 var(--green), 0 20px 0 var(--green);
-    filter: drop-shadow(5px 5px 5px var(--shadow));
+    background: var(--white);
+    box-shadow: 0 10px 0 var(--white), 0 20px 0 var(--white);
+    transition: all 100ms ease;
+    filter: drop-shadow(3px 3px 3px var(--shadow));
 }
 
 header {
     width: 100%;
     position: fixed;
     box-shadow: 0px 10px 20px var(--shadow);
-    background: #efd780;   
-    background: var(--header_gradient);
+    /* background: #efd780;   
+    background: var(--header_gradient); */
+    background-color: var(--midnight_blue);
     padding: 0 0 30px 60px;
     z-index: 99998;
     display: flex;
     align-items: center;
     transition: all 300ms ease;
-    border-bottom: 4px solid var(--midnight_blue);
+    border-bottom: 2.5px solid var(--dark_yellow);
 }
 
 header a {
     font-size: 3.25rem;
     font-weight: 800;
-    color: var(--midnight_blue);
+    color: var(--white_text);
     text-decoration: none;
     text-shadow: 0.5px 0.5px 1px var(--shadow);
-    transition: all 300ms ease;
+    transition: all 100ms ease;
     &:hover {
-        text-shadow: 2px 2px 2px var(--green);
+        color: var(--white);
+        filter: drop-shadow(1px 1px 1px var(--shadow));
     }
 }
 
 header img {
     position: relative;
-    top: 15px;
+    top: 10px;
     height: 100px;
     padding-left: 30px;
 }
@@ -133,7 +136,7 @@ header img {
 #drawer ul a {
     display: block;
     padding: 10px;
-    color: var(--white);
+    color: var(--white_text);
     text-decoration: none;
 }
 
@@ -175,7 +178,6 @@ header img {
         height: 4px;
         width: 25px;
         top: 32px;
-        box-shadow: 0 8px 0 var(--midnight_blue), 0 16px 0 var(--midnight_blue);
     }
     header {
         padding-top: 5px;

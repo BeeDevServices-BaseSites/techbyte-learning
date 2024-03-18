@@ -26,8 +26,11 @@
 /*                       */
 
 :root {
-    --white: linear-gradient(90deg, #c3cbdc 0%, #edf1f4 74%);
-    /* --white: #CBE5EC; */
+    /* --white_background: linear-gradient(270deg, #c3cbdc 0%, #edf1f4 74%); */
+    --white_background: linear-gradient(90deg, #fff 0%, #edf1f4 70%);
+    /* --white_background: #CBE5EC; */
+    --white: #FFF;
+    --white_text: #CBE5EC;
     --midnight_blue: #0f2f47;
     --shadow: #979393;
     --light_yellow: #F6E8B7;
@@ -57,7 +60,7 @@ html {
 
 body {
     width: 100%;
-    background: var(--white)
+    background: var(--white_background)
     
 }
 

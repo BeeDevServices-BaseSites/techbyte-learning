@@ -201,3 +201,25 @@
     overflow: hidden !important;
     white-space: nowrap !important;
 }
+
+
+.honeycomb_replacement_image {
+    position: relative;
+    right: 35px;
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(5px 5px 8px var(--shadow));
+}
+
+/* Hide / Show based on screen size */
+@media only screen and (min-width:1025px) {
+    .mobile-only {
+        display:none !important;
+    }
+}
+
+@media only screen and (max-width:1026px) {
+    .desktop-only {
+        display:none !important;
+    }
+}

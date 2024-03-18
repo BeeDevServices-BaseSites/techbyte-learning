@@ -91,7 +91,7 @@
                 left: 80%;
                 width: 80px !important;
                 height: 80px !important;
-                background-color: #fff;
+                background-color: var(--white);
                 border-radius: 50%;
                 border: 2px solid #A70000;
             }

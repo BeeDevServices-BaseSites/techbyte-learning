@@ -38,10 +38,10 @@ const StaffCard = ({ card_data, show_tech }) => {
                         <div className='front' style={{ backgroundImage: `url(${ staff.photo })` }}>
                             <p className='f_title'>{ staff.position }</p>
                             <p className='f_subline'>{ staff.location }</p>
-                            <p className='f_headline'>{ staff.first_name } { staff.last_name }</p>
+                            <h3 className='f_headline'>{ staff.first_name } { staff.last_name }</h3>
                         </div>
                         <div className='back'>
-                            <p className='b_headline'>{ staff.first_name } { staff.last_name }</p>
+                            <h3 className='b_headline'>{ staff.first_name } { staff.last_name }</h3>
                             { !show_tech ? 
                                 <div className='back_lower'>
                                     <p className='back_title'>Roll</p>
