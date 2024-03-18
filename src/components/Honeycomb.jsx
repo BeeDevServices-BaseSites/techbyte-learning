@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import flying_bee from "../assets/images/flyingbee.gif";
+import honeycomb from "../assets/images/honeycomb_plus_bee.png";
 import jsonData from "../assets/json/honeycombs.json";
 
 const images = jsonData.map(( item, idx ) => (
@@ -41,8 +42,13 @@ const Honeycomb = () => {
 
   return (
     <>
+    <div className="desktop-only">
       <ul className="honeycomb_container">{ ...combImages }</ul>
       <img className="bumble_bee_image" src={ flying_bee } alt="bumble bee" />
+    </div>
+    <div className="mobile-only">
+      <img className="honeycomb_replacement_image" src={ honeycomb } alt="honeycomb" />
+    </div>
     </>
   );
 };
