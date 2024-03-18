@@ -91,7 +91,7 @@
     line-height: 45px;
     padding: 8px 12px;
     margin-bottom: 40px;
-    color: var(--white);
+    color: var(--white_text);
     background-color: var(--midnight_blue);
     border-top: thin solid var(--dark_yellow);
     border-bottom: thin solid var(--dark_yellow);
