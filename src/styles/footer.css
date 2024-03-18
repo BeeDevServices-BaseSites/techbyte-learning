@@ -16,17 +16,19 @@ footer {
 .footer_text {
     padding-left: 30px;
     
-    p {
-        color: var(--white_text);
+}
+
+.footer_text a {
+    color: var(--white_text);
+    transition: all 300ms ease;
+    
+    &:hover {
+        color: var(--white);
     }
-    a {
-        color: var(--white_text);
-        transition: all 300ms ease;
-        
-        &:hover {
-            color: var(--white);
-        }
-    }
+}
+
+.footer_text p {
+    color: var(--white_text);
 }
 
 .footer_images {

@@ -136,13 +136,13 @@
     justify-content: center;
     align-items: center;
     margin: 0px 12px 50px 12px;
-
-    p {
-    font-size: 1.13rem;
-    }
 }
 
-.flipped {
+.tutor_technologies p {
+font-size: 1.13rem;
+}
+
+.flipped,.s_arrow_rotate {
     -webkit-transform: rotateY(-180deg) !important;
     -moz-transform: rotateY(-180deg) !important;
     -ms-transform: rotateY(-180deg) !important;
@@ -164,8 +164,8 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    box-shadow: 0px 0px 1px 2px var(--dark_yellow);
-    border: 2px solid var(--midnight_blue);
+    box-shadow: 0px 0px 1px 2px var(--midnight_blue);
+    border: 2px solid var(--dark_yellow);
     font-size: 30px;
     transition: all 500ms ease;
 }
@@ -185,10 +185,12 @@
 
 .s_round_click {
     transform: scale(1.7);
+    /* background-color: var(--midnight_blue); */
     background-color: #C30C3D;
 }
 
 .s_round_back {
+    /* background-color: var(--midnight_blue); */
     background-color: #C30C3D;
 }
 
@@ -200,12 +202,5 @@
     justify-content: center;
     align-items: center;
     font-size: 1.65rem;
-
-    i {
-        color: var(--dark_yellow);
-    }
-}
-
-.s_arrow_rotate {
-    transform: rotateY(180deg) !important;
+    color: var(--dark_yellow);
 }
