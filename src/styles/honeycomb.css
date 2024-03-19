@@ -90,7 +90,6 @@
 
 .item:hover {
     filter: drop-shadow(8px 8px 8px var(--shadow));
-
 }
 
 .item a, .item2 a {

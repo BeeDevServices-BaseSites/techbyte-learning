@@ -8,9 +8,13 @@ import pricing_info from "../assets/json/course_cards.json"
 const Services = ({ setDetails }) => {
 
   // data filters to insert into PriceTags component
-  const mini_course_data = pricing_info.filter(price => price.is_active).filter(price => price.is_mini_course);
   const dev_course_data = pricing_info.filter(price => price.is_active).filter(price => price.is_full_course);
+  const mini_course_data = pricing_info.filter(price => price.is_active).filter(price => price.is_mini_course);
   const tutoring_data = pricing_info.filter(price => price.is_active).filter(price => price.is_tutoring);
+
+console.log("dev count", dev_course_data.length)
+console.log("mini count", mini_course_data.length)
+console.log("tutoring count", tutoring_data.length)
 
   useEffect(() => {
     window.scrollTo(0,0),
