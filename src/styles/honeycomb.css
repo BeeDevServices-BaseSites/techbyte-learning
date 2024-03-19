@@ -210,15 +210,15 @@
     filter: drop-shadow(5px 5px 8px var(--shadow));
 }
 
-/* Hide / Show based on screen size */
+/* Hide / Show Honeycomb type based on screen size */
 @media only screen and (min-width:1025px) {
-    .mobile-only {
+    .static_honeycomb {
         display:none !important;
     }
 }
 
 @media only screen and (max-width:1026px) {
-    .desktop-only {
+    .active_honeycomb {
         display:none !important;
     }
 }

@@ -135,7 +135,7 @@ header img {
 
 #drawer ul a {
     display: block;
-    padding: 10px;
+    padding: 8px 12px;
     color: var(--white_text);
     text-decoration: none;
 }

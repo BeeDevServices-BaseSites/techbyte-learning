@@ -60,8 +60,9 @@ const PriceTags = ({ tag_data , setDetails }) => {
                                 />
                             :
                                 <div className="price_tag">
-                                    <h4>${ price_tag.price.toFixed(2) }</h4>
-                                    <Link to="/Apply">Apply Here</Link>
+                                    {/*  */}
+                                    <h4>{ price_tag.price }</h4>
+                                    <Link to="/Apply">Talk <br /> With <br />Admissions</Link>
                                 </div>
                             }
                         </div>

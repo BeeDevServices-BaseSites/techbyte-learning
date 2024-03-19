@@ -19,6 +19,7 @@
 @import url("./receipts.css");
 @import url("./spinner.css");
 @import url("./staff_cards.css");
+@import url("./ribbon.css");
 
 
 /*                       */
@@ -27,7 +28,7 @@
 
 :root {
     /* --white_background: linear-gradient(270deg, #c3cbdc 0%, #edf1f4 74%); */
-    --white_background: linear-gradient(90deg, #fff 0%,  rgba(192, 192, 192, 0.8) 90%);
+    --white_background: linear-gradient(90deg, #fff 27%,  rgba(192, 192, 192, 0.6) 90%);
     /* --white_background: #CBE5EC; */
     --white: #FFF;
     --white_text: #CBE5EC;
@@ -125,5 +126,11 @@ p {
     }
     p {
         font-size: 1.265rem;
+    }
+}
+
+@media only screen and (min-width:580px) {
+    .mobile_only {
+        display:none !important;
     }
 }

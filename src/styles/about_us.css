@@ -12,6 +12,7 @@
 
 .contacts h4 {
     text-align: start;
+    text-wrap:nowrap;
 }
 
 .contacts img {

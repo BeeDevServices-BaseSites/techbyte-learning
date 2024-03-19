@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 import Button from "../components/Button";
+import Ribbon from "../components/Ribbon"
 import PriceTags from "../components/PriceTags";
 import pricing_info from "../assets/json/course_cards.json"
 
@@ -34,6 +35,7 @@ const Services = ({ setDetails }) => {
             <h2>
               TechByte Learning Services
             </h2>
+            <p className="small">Jump To:</p>
             <div className="service_jump_link">
               <p href="#devcourses" onClick={(e) => handleClick(e, "devcourses")}>|&nbsp;Development&nbsp;|</p>
               <p href="#minisessons" onClick={(e) => handleClick(e, "minisessions")}>|&nbsp;Mini&nbsp;Sessions&nbsp;|</p>
@@ -48,6 +50,7 @@ const Services = ({ setDetails }) => {
           <h2 id="devcourses">
             TechByte Development Programs
           </h2>
+          <Ribbon />
           <br />
           {/* FULL DEV COURSE PRICE TAGS */}
           <PriceTags tag_data={ dev_course_data } setDetails={ setDetails } />

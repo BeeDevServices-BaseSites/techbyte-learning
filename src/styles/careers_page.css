@@ -95,12 +95,6 @@
     }
 }
 
-@media only screen and (min-width:580px) {
-    .mobile_only {
-        display:none !important;
-    }
-}
-
 @media only screen and (max-width:500px) {
     .hiring {
         margin-top: 0px;

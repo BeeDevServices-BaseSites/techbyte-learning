@@ -95,7 +95,7 @@ const AboutUs = () => {
               <a href="mailto:support@beedev-services.com?subject=Support%20Inquiry%20">support@beedev-services.com</a>
             </div>
             <div className="contacts">
-              <h4>
+              <h4 className="contact_title">
                 Student Login:
               </h4>
               <a href="https://learn.techbyte-learning.com/">learn.techbyte-learning.com</a>
