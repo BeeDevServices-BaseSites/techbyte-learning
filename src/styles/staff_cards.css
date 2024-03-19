@@ -41,7 +41,7 @@
     backface-visibility: hidden;
     border-radius: 10px;
     box-shadow: 8px 8px 10px var(--shadow);
-    border: thin solid var(--midnight_blue)
+    border: thin solid var(--midnight_blue);
 }
 
 .flip_box {
@@ -61,7 +61,7 @@
 
 .f_title {
     padding: 16px 12px 0 12px;
-    color: var(--white);
+    color: var(--white_text);
     text-shadow: 2px 2px 0px var(--midnight_blue), 
         2px -2px 0px var(--midnight_blue), 
         -2px 2px 0px var(--midnight_blue), 
@@ -75,7 +75,7 @@
 
 .f_subline {
     padding: 220px 12px 10px 12px;
-    color: var(--white);
+    color: var(--white_text);
     text-shadow: 2px 2px 0px var(--midnight_blue), 
         2px -2px 0px var(--midnight_blue), 
         -2px 2px 0px var(--midnight_blue), 
@@ -88,12 +88,10 @@
 }
 
 .f_headline {
-    font-size: 1.75rem;
-    font-weight: 700;
     line-height: 45px;
     padding: 8px 12px;
     margin-bottom: 40px;
-    color: var(--dark_yellow);
+    color: var(--white_text);
     background-color: var(--midnight_blue);
     border-top: thin solid var(--dark_yellow);
     border-bottom: thin solid var(--dark_yellow);
@@ -124,8 +122,6 @@
 
 .b_headline {
     text-align: center;
-    font-size: 1.65rem;
-    font-weight: 700;
     padding: 40px 20px 0 12px;
 }
 
@@ -140,17 +136,17 @@
     justify-content: center;
     align-items: center;
     margin: 0px 12px 50px 12px;
-
-    p {
-    font-size: 1.13rem;
-    }
 }
 
-.flipped {
-    -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
+.tutor_technologies p {
+font-size: 1.13rem;
+}
+
+.flipped,.s_arrow_rotate {
+    -webkit-transform: rotateY(-180deg) !important;
+    -moz-transform: rotateY(-180deg) !important;
+    -ms-transform: rotateY(-180deg) !important;
+    transform: rotateY(-180deg) !important;
 }
 
 .r_wrap {
@@ -168,8 +164,8 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    box-shadow: 0px 0px 1px 2px var(--dark_yellow);
-    border: 2px solid var(--midnight_blue);
+    box-shadow: 0px 0px 1px 2px var(--midnight_blue);
+    border: 2px solid var(--dark_yellow);
     font-size: 30px;
     transition: all 500ms ease;
 }
@@ -180,7 +176,7 @@
 }
 
 .b_round_hover {
-    transform: scale(1.2);
+    transform: scale(1.25);
     opacity: 0.4;
     border: 2px solid transparent;
     box-shadow: 0px 0px 6px 6px var(--white);
@@ -189,10 +185,12 @@
 
 .s_round_click {
     transform: scale(1.7);
+    /* background-color: var(--midnight_blue); */
     background-color: #C30C3D;
 }
 
 .s_round_back {
+    /* background-color: var(--midnight_blue); */
     background-color: #C30C3D;
 }
 
@@ -204,12 +202,5 @@
     justify-content: center;
     align-items: center;
     font-size: 1.65rem;
-
-    i {
-        color: var(--dark_yellow);
-    }
-}
-
-.s_arrow_rotate {
-    transform: rotateY(180deg);
+    color: var(--dark_yellow);
 }

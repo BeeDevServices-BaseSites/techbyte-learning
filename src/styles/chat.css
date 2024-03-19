@@ -5,9 +5,9 @@
 .admissions_chat {
     height: 600px;
     max-width: 750px;
-    width: 47dvw;
+    width: 80dvw;
     min-width: 300px;
-    margin: 40px auto;
+    margin: 40px 0;
     border: thin solid var(--midnight_blue);
     box-shadow: 5px 5px 10px var(--shadow);
 }

@@ -27,26 +27,26 @@
     cursor: pointer;
     height: 100px;
     position: relative;
-    left:-20px;
-    margin-top: 150px;
-    width: 36px;
+    left: -20px;
+    margin-top: 120px;
+    width: 40px;
     box-shadow: 5px 5px 10px var(--shadow);
     z-index: 11;
+    overflow:hidden;
 }
 
 .slideout > .slideout_tab > .tab_text {
     display: inline-block;
-    color: var(--black);
     font-size: .85rem;
     font-weight: bold;
-    margin-top: 24px;
-    padding-left: 4px;
-    padding-top: 32px;
     transform: rotate(90deg);
     white-space: nowrap;
 }
 
 .slideout > .slideout_tab > .tab_text > span {
+    position: relative;
+    top: 10px;
+    right: -40px;
     letter-spacing: 1px;
     color: var(--black);
 }
@@ -87,4 +87,30 @@
     height: 55px;
     margin-left:20px;
     transform: rotate(30deg);
+}
+
+
+@media screen and (max-width: 850px) {
+    .slideout > .slideout_tab > .tab_text > span {
+        top: 16px;
+    }
+}
+
+/* Add Shimmer */
+.slideout_tab::before {
+    content:" ";
+    display:block;
+    width:200px;
+    height:100px;
+    background: #CBE5EC50;
+    position:absolute;
+    top: 0px;
+    left:-220px;
+    transform:rotate(45deg);
+    transition:all .2s ease-in-out;  
+    z-index:1;
+}
+
+.slideout_tab:hover::before {
+    margin-left:700%;
 }

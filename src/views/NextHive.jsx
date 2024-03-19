@@ -22,7 +22,7 @@ const NextHive = () => {
               Next Cohorts
             </h2>
             <p>
-              <span>O</span>ur program is designed to equip you with the knowledge and skills needed to thrive in the fast-paced world of web and game development. Whether you're a beginner looking to break into the industry or an experienced programmer seeking to expand your skillset, our courses have something for everyone. Our next available cohort, affectionately known as a "hive," are:
+              <span>O</span>ur program is designed to equip you with the knowledge and skills needed to thrive in the fast-paced world of web and game development. Whether you're a beginner looking to break into the industry or an experienced programmer seeking to expand your skillset, our courses have something for everyone. Our next available cohorts, affectionately known as a "hives," is:
             </p>
             <h5 className="center_text">Web Development Start Date: <br className="mobile_only"/>{ web_dev_date }</h5>
             <h5 className="center_text">2D Game Development Start Date: <br className="mobile_only"/>{ game_dev_date }</h5>
