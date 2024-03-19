@@ -14,7 +14,7 @@ const Apply = () => {
     //(ternary wasnt working)
     setTimeout(() => {
       setShowSpinner(false);
-    }, 2500); // Timer allowing the chat box to fully load before being revealed 
+    }, 3000); // Timer allowing the chat box to fully load before being revealed 
   },[]);
 
   return (
@@ -22,10 +22,10 @@ const Apply = () => {
       <div className="wrapper">
         <div className="large_box">
           <h2>
-            Talk With Our Admissions Staff
+            Talk With Our <br className="mobile_only"/>Admissions Staff
           </h2>
           <h4>
-            Contact us at <a id="career_link" href="mailto:admissions@techbyte-learning.com?subject=Admissions%20Inquiry%20">admissions@techbyte-learning.com</a> 
+            Contact us at <br className="mobile_only"/><a id="career_link" href="mailto:admissions@techbyte-learning.com?subject=Admissions%20Inquiry%20">admissions@techbyte-learning.com</a> 
           </h4>
           <h4>
             Call us at <span className="phone_number">(570) 890-5252</span>

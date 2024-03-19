@@ -2,15 +2,48 @@
 /*         SPINNER             */
 /*                             */
 
+
+
 .spinner_background {
-    margin: 60px auto;
-    /* width: 100%; */
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.spinner_background img {
-    height: 290px;
-    width: 290px;
-    aspect-ratio: 1/1;
-    border: 1px solid var(--midnight_blue);
+.spinner{
+    height: 220px;
+    pointer-events: none;
     border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 130px;
+    pointer-events: none;
+    z-index: 999;
+    border-radius: 50%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .spinner {
+    animation: spinner_spin infinite 1.25s linear;
+    }
+}
+
+@keyframes spinner_spin {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
