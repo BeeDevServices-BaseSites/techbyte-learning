@@ -4,7 +4,7 @@
 
 .go_top_button {
     position: fixed;
-    top: 300px;  
+    top: 275px;  
     right: 25px;
     height: 50px;
     width: 50px;
@@ -13,6 +13,7 @@
     color: var(--dark_yellow);
     border: 3px solid var(--dark_yellow);
     border-radius: 50%;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
