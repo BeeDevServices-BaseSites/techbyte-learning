@@ -105,6 +105,7 @@ header img {
     background: rgba(0,0,0,0.85);
     box-shadow: 10px 10px 40px 10px black;
     border-radius: 0 0 20px 0;
+    z-index: 2000000001; /*required to cover the tawk.to icon*/
 }
 
 #drawer_toggle:checked ~ #drawer_toggle_label:hover:before {
