@@ -115,14 +115,11 @@
     margin-left:700%;
 }
 
-@media screen and (max-width: 720px) {
+/* tab text sizing fix for smaller screens */
+@media screen and (max-width: 870px) {
     .slideout > .slideout_tab { 
         margin-top: 40px;
     }
-}
-
-/* tab text sizing fix for smaller screens */
-@media screen and (max-width: 850px) {
     .slideout > .slideout_tab > .tab_text > span {
         top: 16px;
     }
