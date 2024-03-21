@@ -32,9 +32,9 @@ footer {
     justify-content: flex-start;
     flex-direction: column;
 
-    a, p {
+    p, a {
         font-size: 0.9rem;
-        margin: 2px 0;
+        margin: 3px 0;
     }
     a {
         color: var(--white_text);
@@ -50,13 +50,19 @@ footer {
     }
 }
 
+.footer_badges {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .footer_socials {
     position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 0 16px;
-    margin-right: 64px;
+    gap: 0 10px;
 
     svg, i {
         height: 20px;
@@ -72,14 +78,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin: 0 56px 0 16px;
     gap: 0 56px;
-    padding-left: 24px;
 }
 
 .footer_image_one,.footer_image_two {
-    position: relative;
-    top: 0px;
     filter: invert(90%);
 }
 
@@ -97,16 +99,20 @@ footer {
         align-items: flex-start;
     }
     .footer_badges {
-        position: relative;
-        top: -4px;
+        gap: 16px 0;
+        margin-bottom: 18px;
     }
     .footer_images {
-        position: relative;
-        bottom: 14px;
-        margin-right: 16px;
+        margin-right: 8px;
     }
     .footer_socials {
-        margin-right: 24px;
+        margin-right: 8px;
+    }
+    .bee_dev {
+        margin-bottom: 4px;
+        p, a {
+            margin: 0;
+        }
     }
 }
 
@@ -117,17 +123,33 @@ footer {
     }
     .footer_images {
         margin-right: 8px;
-        gap: 0 8px;
+        gap: 0 32px;
     }
     .footer_socials {
         margin-right: 8px;
         gap: 0 3px;
-        top: 8px;
     }
     .footer_image_one {
         height: 55px;
     }
     .footer_image_two {
         height: 45px;
+    }
+    .bee_dev {
+        margin-bottom: 4px;
+        p, a {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .footer_images {
+        margin-right: 4px;
+        gap: 0 24px;
+    }
+    .footer_socials {
+        margin-right: 4px;
+        gap: 0 2px;
     }
 }
