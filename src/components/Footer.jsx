@@ -4,6 +4,7 @@ import woman_owned from "../assets/images/woman_owned.png"
 const Footer = () => {
   return (
     <footer>
+      {/* LEFT SIDE OF FOOTER */}
       {/* Links In Footer */}
       <div className="footer_links">
         <div className="footer_link_column">
@@ -31,8 +32,7 @@ const Footer = () => {
             </a>
         </div>
       </div>
-
-
+      {/* RIGHT SIDE OF FOOTER */}
       <div className="footer_badges">
         {/* Footer Owner Badges */}
         <div className="footer_images">
@@ -70,7 +70,6 @@ const Footer = () => {
             <i className="fa-brands fa-discord" style={{color: "#CBE5EC"}}></i>
           </a>
         </div>
-
       </div>
     </footer>
   )
