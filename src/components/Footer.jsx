@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import vet_owned from "../assets/images/vet_owned.png"
 import woman_owned from "../assets/images/woman_owned.png"
 
@@ -24,12 +25,12 @@ const Footer = () => {
             </a>
         </div>
         <div className="footer_link_column">
-            <a href="aboutus" target="_blank">
+            <Link to="/aboutus">
               About Us
-            </a>
-            <a href="careers" target="_blank">
+            </Link>
+            <Link to="/careers">
               Careers
-            </a>
+            </Link>
         </div>
       </div>
       {/* RIGHT SIDE OF FOOTER */}
