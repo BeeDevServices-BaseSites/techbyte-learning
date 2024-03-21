@@ -89,13 +89,6 @@
     transform: rotate(30deg);
 }
 
-
-@media screen and (max-width: 850px) {
-    .slideout > .slideout_tab > .tab_text > span {
-        top: 16px;
-    }
-}
-
 /* Add Shimmer */
 .slideout_tab::before {
     content:" ";
@@ -111,6 +104,26 @@
     z-index:1;
 }
 
+.slideout_tab:hover {
+    border-top-color: var(--white) ;
+    border-right-color: var(--white) ;
+    border-bottom-color: var(--white) ;
+    
+}
+
 .slideout_tab:hover::before {
     margin-left:700%;
+}
+
+@media screen and (max-width: 720px) {
+    .slideout > .slideout_tab { 
+        margin-top: 40px;
+    }
+}
+
+/* tab text sizing fix for smaller screens */
+@media screen and (max-width: 850px) {
+    .slideout > .slideout_tab > .tab_text > span {
+        top: 16px;
+    }
 }

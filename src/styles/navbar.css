@@ -115,10 +115,10 @@ header img {
 }
 
 /* moves main with the drawer */
-/* #drawer_toggle:checked ~ main {  
+#drawer_toggle:checked ~ main {
     margin-left: 200px; 
     transition: all 300ms ease;
-} */
+}
 
 #drawer_toggle:checked ~ header {
     padding-left: 250px
