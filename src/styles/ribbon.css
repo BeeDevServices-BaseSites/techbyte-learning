@@ -1,3 +1,6 @@
+/*                   */
+/*      RIBBON       */
+/*                   */
 
 #ribbon {
     padding: .34em 1em;
@@ -34,14 +37,14 @@
     border-right-width: .75em;
     border-left-color:transparent;
 }
-	
+
 #ribbon:after {
     border: .9em solid var(--light_yellow);
 		right:-1.35em;
 		border-left-width: .75em;
 		border-right-color:transparent;
-	}
-	
+}
+
 #content:before, #content:after {
 		content:"";
 		bottom: -.5em;
@@ -51,17 +54,16 @@
 		border-color: var(--midnight_blue) transparent transparent transparent;
 		z-index: -1;
 	}
-	
+
 #content:before {
     left: 0;
     border-width: .5em 0 0 .5em;
 	}
-	
+
 #content:after {
     right: 0;
     border-width: .5em .5em 0 0;
 	}
-
 
 @media screen and (max-width: 721px) {
     #ribbon {

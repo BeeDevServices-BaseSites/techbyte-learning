@@ -24,7 +24,6 @@
     box-shadow: 8px 8px 10px var(--shadow);
 }
 
-
 @media (max-width: 500px) {
     .error_404 h2 {
         margin-top: 80px;

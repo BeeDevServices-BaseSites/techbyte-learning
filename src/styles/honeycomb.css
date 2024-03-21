@@ -12,7 +12,6 @@
     opacity: 0.9;
 }
 
-
 .honeycomb_wrapper {
     width: 100%;
 }
@@ -209,7 +208,7 @@
     filter: drop-shadow(5px 5px 8px var(--shadow));
 }
 
-/* Hide / Show Honeycomb type based on screen size */
+/* Hide/Show Honeycomb type based on screen size */
 @media only screen and (min-width:1025px) {
     .static_honeycomb {
         display:none !important;
