@@ -16,7 +16,7 @@
     border-radius: 10px;
     box-shadow: 8px 8px 10px var(--shadow);
 
-    .receipt_title{
+    .receipt_title {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -39,7 +39,7 @@
     align-items: start;
     flex-wrap: wrap;
 
-    .receipt_left, .receipt_right{
+    .receipt_left, .receipt_right {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -56,12 +56,10 @@
     border-spacing: 0;
     border: 2px solid var(--midnight_blue);
 
-
     tr {
         border: none;
         border: none;    color: var(--midnight_blue);
     }
-
     th {
         background: var(--dark_yellow);
         background: var(--header_gradient);
@@ -69,7 +67,6 @@
         padding: 5px;
         border: none;
     }
-    
     td {
         text-align: center;
         font-weight: 600;
@@ -78,7 +75,7 @@
     }
 }
 
-/* ALL THIS FOR ROUNDED BORDERS ON THE TABLE */
+/* ALL BELOW FOR ROUNDED BORDERS ON THE TABLE */
 .receipt_table tr:first-child th:first-child {
     border-top-left-radius: 10px;
 }

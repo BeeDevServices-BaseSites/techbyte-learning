@@ -25,7 +25,6 @@
         text-align: center;
         margin: 24px;
     }
-
     h5 {
         margin-top: 24px;
     }
@@ -40,14 +39,12 @@
     justify-content: center;
     flex-wrap: wrap;
 
-    
     a { 
         color: var(--midnight_blue);
         margin: 4px 0;
         text-decoration: none;
         text-align: center;
     }
-
     a:hover { 
         color: var(--green)
     }
@@ -72,32 +69,22 @@
     h2 {
         text-align: center;
     }
-
     h4 {
         width: 90%;
         text-align: start;
         margin: 5px 0;
         color: var(--midnight_blue);
     }
-
     h5 {
         width: 90%;
     }
-
     ul {
         width: 90%;
         list-style-type: circle;
     }
-
     li {
         width: 80%;
         margin: 5px auto;
-    }
-}
-
-@media only screen and (min-width:580px) {
-    .mobile_only {
-        display:none !important;
     }
 }
 

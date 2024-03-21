@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions.js";
 import Button from "../components/Button.jsx"
+import Ribbon from "../components/Ribbon.jsx";
+
 
 const GameDev = () => {
 
@@ -19,6 +21,7 @@ const GameDev = () => {
             <img src="https://live.staticflickr.com/65535/53585011419_9b56ae6b3e_c.jpg" alt="Game Dev" />
           </div>
           <div className="box_right_text">
+            <Ribbon />
             <h2>
               Level Up With
               <br />

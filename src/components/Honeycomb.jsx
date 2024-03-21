@@ -42,11 +42,11 @@ const Honeycomb = () => {
 
   return (
     <>
-    <div className="desktop-only">
+    <div className="active_honeycomb">
       <ul className="honeycomb_container">{ ...combImages }</ul>
       <img className="bumble_bee_image" src={ flying_bee } alt="bumble bee" />
     </div>
-    <div className="mobile-only">
+    <div className="static_honeycomb">
       <img className="honeycomb_replacement_image" src={ honeycomb } alt="honeycomb" />
     </div>
     </>

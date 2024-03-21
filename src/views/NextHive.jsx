@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 import Button from "../components/Button";
+import Ribbon from "../components/Ribbon.jsx";
+
 
 const NextHive = () => {
 
-  const web_dev_date = "Mid-June 2024"
-  const game_dev_date = "Mid-June 2024"
+  const web_dev_date = "Coming Soon!"
+  const game_dev_date = "Coming Soon!"
 
   useEffect(() => {
     window.scrollTo(0,0),
@@ -18,6 +20,7 @@ const NextHive = () => {
         {/* SECTION 1 */}
         <div className="split_box">
           <div className="box_left_text">
+            <Ribbon />
             <h2>
               Next Cohorts
             </h2>

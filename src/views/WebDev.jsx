@@ -13,6 +13,7 @@ import django from "../assets/images/django.png"
 import flask from "../assets/images/flask.png"
 import postgres from "../assets/images/postgres.png"
 import project_steps from "../assets/images/project_steps.png"
+import Ribbon from "../components/Ribbon.jsx";
 
 const WebDev = () => {
 
@@ -31,6 +32,7 @@ const WebDev = () => {
             <img src="https://live.staticflickr.com/65535/53584887040_a8593da063_z.jpg" alt="Full Stack Development" />
           </div>
           <div className="box_right_text">
+            <Ribbon />
             <h2>
               Unlock Your Full Potential
               <br />

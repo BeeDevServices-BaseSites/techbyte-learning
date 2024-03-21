@@ -3,7 +3,7 @@ const Cookies = () => {
         <div>
             <input type="checkbox" id="showblock"/>
             <div className="slideout">
-                <label className="slideout_tab" htmlFor="showblock" title="Cookie Info">
+                <label className="slideout_tab" htmlFor="showblock">
                     <span className="tab_text">
                         <span>Cookie Info</span>
                     </span>
