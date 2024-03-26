@@ -30,12 +30,12 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1050px) {
     .go_top_button {
         height: 35px;
         width: 35px;
         font-size: 20px;
         right: 10px;
-        top: 120px; 
+        top: 175px; 
     }
 }
