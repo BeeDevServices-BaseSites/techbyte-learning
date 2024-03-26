@@ -197,13 +197,13 @@ header img {
     }
     #drawer_toggle:checked ~ #drawer_toggle_label {
         height: 100%;
-        width: 50px;
+        width: 100%;
     }
     #drawer_toggle:checked ~ #drawer_toggle_label, #drawer_toggle:checked ~ header {
-        left: calc(100% - 50px);
+        left: 250px;
     }
     #drawer_toggle:checked ~ #drawer {
-        width: calc(100% - 50px);
+        width: 250px;
         padding: 20px;
     }
 }
