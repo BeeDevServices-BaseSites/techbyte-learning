@@ -32,37 +32,37 @@
     --white: #FFF;
     --white_text: #CBE5EC;
     --off_white: whitesmoke;
-    --midnight_blue_header: #0f2f47;
-    --midnight_blue_text: #0f2f47;
-    --shadow: #979393;
-    --course_shadow: none;
-    --grey_receipt: #dbdbdb;
     --light_yellow: #F6E8B7;
     --dark_yellow: #efd780;
     --header_gradient: linear-gradient(0deg, rgba(239, 215, 128, 1) 42%, rgba(246, 232, 182, 1) 79%);
-    --black: #0D1F2D;
     --green: #18AC58;
-    --font_size_default: 16px;
+    --grey_receipt: #dbdbdb;
+    --shadow: #979393;
+    --course_shadow: none;
     --course_background: none;
+    --midnight_blue_header: #0f2f47;
+    --midnight_blue_text: #0f2f47;
+    --black: #0D1F2D;
     --image_brightness: 100%;
+    --font_size_default: 16px;
 }
 
 [data-theme = "dark"] {
     --white_background: rgb(1, 8, 20) ;
+    --white: #CBE5EC50;
+    --white_text: #CBE5EC;
+    --off_white: #CBE5EC50;
+    --light_yellow: #161625;
+    --dark_yellow: #182445;
+    --header_gradient: linear-gradient(0deg, #182445 42%, #0f2f47 79%);
+    --green: #6da182;
+    --grey_receipt: #474b56;
+    --shadow: #1b1527;
+    --course_shadow: #1e1919;
+    --course_background: #cae1e750;
     --midnight_blue_header: #182445;
     --midnight_blue_text: #CBE5EC;
     --black: #CBE5EC;
-    --header_gradient: linear-gradient(0deg, #182445 42%, #0f2f47 79%);
-    --green: #6da182;
-    --white: #CBE5EC50;
-    --shadow: #1b1527;
-    --course_shadow: #1e1919;
-    --white_text: #CBE5EC;
-    --off_white: #CBE5EC50;
-    --grey_receipt: #474b56;
-    --light_yellow: #161625;
-    --dark_yellow: #182445;
-    --course_background: #cae1e750;
     --image_brightness: 65%;
 }
 
