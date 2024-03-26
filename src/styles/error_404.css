@@ -10,7 +10,7 @@
 }
 
 .error_404 h2 {
-    color: var(--midnight_blue);
+    color: var(--midnight_blue_text);
     margin: 12px 0px 24px 0px;
 }
 
@@ -19,7 +19,7 @@
     width: 100%;
     max-width: 750px;
     min-width: 290px;
-    border: thin solid var(--midnight_blue);
+    border: thin solid var(--midnight_blue_header);
     border-radius: 10px;
     box-shadow: 8px 8px 10px var(--shadow);
 }

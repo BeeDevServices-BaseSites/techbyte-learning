@@ -8,6 +8,6 @@
     width: 80dvw;
     min-width: 300px;
     margin: 40px 0;
-    border: thin solid var(--midnight_blue);
+    border: thin solid var(--midnight_blue_header);
     box-shadow: 5px 5px 10px var(--shadow);
 }

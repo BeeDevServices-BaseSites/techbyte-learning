@@ -5,7 +5,7 @@
 
 #career_link {
     text-decoration: underline;
-    color: var(--midnight_blue);
+    color: var(--midnight_blue_text);
 
     &:hover {
         color: var(--green);
@@ -40,7 +40,7 @@
     flex-wrap: wrap;
 
     a { 
-        color: var(--midnight_blue);
+        color: var(--midnight_blue_text);
         margin: 4px 0;
         text-decoration: none;
         text-align: center;
@@ -57,7 +57,7 @@
     min-height: 245px;
     margin: 24px;
     padding: 24px 10px;
-    border: thin solid var(--midnight_blue);
+    border: thin solid var(--midnight_blue_text);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -73,7 +73,7 @@
         width: 90%;
         text-align: start;
         margin: 5px 0;
-        color: var(--midnight_blue);
+        color: var(--midnight_blue_text);
     }
     h5 {
         width: 90%;

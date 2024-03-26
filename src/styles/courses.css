@@ -9,6 +9,10 @@
     border: none;
     box-shadow: none;
     filter: drop-shadow(5px 5px 5px var(--shadow));
+    background-color: var(--course_background);
+    box-shadow: 5px 5px 10px var(--course_shadow);
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
 .course_icons {
@@ -17,6 +21,11 @@
     display: flex;
     align-items: center;
     justify-content:space-evenly;
+    background-color: var(--course_background);
+    box-shadow: 5px 5px 10px var(--course_shadow);
+
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
 #css, #html5, #javascript, #bootstrap, #postgres, #python, #django,#flask,#reactjs,#mysql,#expressjs, #nodejs {

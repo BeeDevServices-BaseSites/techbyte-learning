@@ -20,7 +20,7 @@
     width: 75px;
     display: block;
     position: fixed;
-    background: rgba(15, 47, 71,.0);
+    background: none;
     z-index: 99999;
     transition: all 300ms ease;
 }
@@ -49,7 +49,7 @@ header {
     width: 100%;
     position: fixed;
     box-shadow: 0px 10px 20px var(--shadow);
-    background-color: var(--midnight_blue);
+    background-color: var(--midnight_blue_header);
     padding: 0 0 30px 60px;
     z-index: 99998;
     display: flex;
@@ -88,7 +88,7 @@ header img {
     left: -300px;
     height: 100%;
     width: 200px;
-    background: var(--midnight_blue);
+    background: var(--midnight_blue_header);
     overflow-x: hidden;
     padding: 10px;
     -webkit-overflow-scrolling: touch;
@@ -107,8 +107,8 @@ header img {
 }
 
 #drawer_toggle:checked ~ #drawer_toggle_label:hover:before {
-    background: var(--midnight_blue);
-    box-shadow: 0 10px 0 var(--midnight_blue), 0 20px 0 var(--midnight_blue);
+    background: var(--midnight_blue_header);
+    box-shadow: 0 10px 0 var(--midnight_blue_header), 0 20px 0 var(--midnight_blue_header);
     filter: none;
 }
 
@@ -145,7 +145,7 @@ header img {
 }
 
 #drawer ul a:hover {
-    color: white;
+    color: var(--white);
 }
 
 @media all and (max-width:720px) {

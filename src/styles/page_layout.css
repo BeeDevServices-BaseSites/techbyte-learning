@@ -107,7 +107,7 @@
     width: 90%;
     min-width: 285px;
     aspect-ratio: 2/1;
-    border: thin solid var(--midnight_blue);
+    border: thin solid var(--midnight_blue_header);
     box-shadow:  8px 8px 10px var(--shadow);
     border-radius: 20px;
 }
@@ -121,6 +121,7 @@
 
 .box_left_text li, .box_right_text li, .large_box li {
     list-style-type: disc;
+    color: var(--midnight_blue_text);
 }
 
 .box_left_text h1, .box_right_text h1, .box_left_text h2, .box_right_text h2, .large_box h1, .large_box h2 {
@@ -154,7 +155,7 @@
 /* LINK STYLE */
 .large_box a, .split_box a {
     text-decoration: underline;
-    color: var(--midnight_blue);
+    color: var(--midnight_blue_text);
 
     &:hover {
         color: var(--green);

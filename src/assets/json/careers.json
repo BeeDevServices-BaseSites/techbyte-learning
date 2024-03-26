@@ -14,7 +14,7 @@
     },
     {
         "id": "2",
-        "is_active": false,
+        "is_active": true,
         "position": "UI/UX Developer",
         "level": "Staff",
         "type": "Full Time",

@@ -22,7 +22,7 @@
     display: block;
     background: var(--dark_yellow);
     background: var(--header_gradient);
-    border: thin solid var(--midnight_blue);
+    border: thin solid var(--midnight_blue_text);
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     height: 100px;
@@ -48,15 +48,15 @@
     top: 10px;
     right: -40px;
     letter-spacing: 1px;
-    color: var(--black);
+    color: var(--midnight_blue_text);
 }
 
 .slideout > .slideout_content {
     background: var(--dark_yellow);
     background: var(--header_gradient);
-    border-top: thin solid var(--midnight_blue);
-    border-right: thin solid var(--midnight_blue);
-    border-bottom: thin solid var(--midnight_blue);
+    border-top: thin solid var(--midnight_blue_text);
+    border-right: thin solid var(--midnight_blue_text);
+    border-bottom: thin solid var(--midnight_blue_text);
     border-radius: 0 5px 5px 0;
     box-shadow: 5px 5px 10px var(--shadow);
     cursor: auto;
@@ -76,7 +76,7 @@
 .pst {
     padding-left: 10px;
     font-size: 1.75rem;
-    color: var(--midnight_blue);
+    color: var(--midnight_blue_text);
 }
 
 .cookie {
