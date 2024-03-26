@@ -2,6 +2,10 @@
 /*     PAYPAL COMPONENT        */
 /*                             */
 
+.component-frame {
+    filter: brightness(var(--image_brightness))
+}
+
 .pay_button p {
     color: var(--midnight_blue_text);
     font-weight: 700;

@@ -2,6 +2,7 @@
 /*        CHAT COMPONENT       */
 /*                             */
 
+/* chat windows */
 .admissions_chat {
     height: 600px;
     max-width: 750px;
@@ -10,4 +11,15 @@
     margin: 40px 0;
     border: thin solid var(--midnight_blue_header);
     box-shadow: 5px 5px 10px var(--shadow);
+    filter: brightness(var(--image_brightness));
+}
+
+/* pop up icon */
+#x5h61o13sd7g1711491102164 {
+    filter: brightness(var(--image_brightness));
+}
+
+/* pop up window */
+#he2mu8pcleng1711491102176 {
+    filter: brightness(var(--image_brightness));
 }

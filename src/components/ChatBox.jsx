@@ -16,7 +16,7 @@ const ChatBox = () => {
     }, []);
 
     return ( 
-        <div>
+        <div className="tawk_to_popup">
             {/* Widget will be loaded here */}
         </div>
     );

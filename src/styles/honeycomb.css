@@ -206,7 +206,7 @@
     right: 35px;
     height: 100%;
     width: 100%;
-    filter: drop-shadow(5px 5px 8px var(--shadow));
+    filter: drop-shadow(5px 5px 8px var(--shadow)) brightness(var(--image_brightness));
 }
 
 /* Hide/Show Honeycomb type based on screen size */
