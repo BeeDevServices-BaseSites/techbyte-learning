@@ -20,7 +20,6 @@ useEffect(() => {
       <header>
         <img src="https://images.craftsnherbs.com/logos/newNewLogo.png" alt="TechByte Learning Bee" />
         <Link to="/">TechByte Learning</Link>
-        <DarkMode />
       </header>
       <nav id="drawer">
         <ul>
@@ -65,6 +64,9 @@ useEffect(() => {
           </li>
           <li>
             <a href="https://learn.techbyte-learning.com/" target="_blank" className="drawer_link">Student Login</a>
+          </li>
+          <li>
+            <DarkMode />
           </li>
         </ul>
       </nav>

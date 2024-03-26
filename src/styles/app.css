@@ -44,17 +44,18 @@
     --green: #18AC58;
     --font_size_default: 16px;
     --course_background: none;
+    --image_brightness: 100%;
 }
 
 [data-theme = "dark"] {
     --white_background: rgb(1, 8, 20) ;
     --midnight_blue_header: #182445;
-    --midnight_blue_text: #e1e1ff;
-    --black: #e1e1ff;
+    --midnight_blue_text: #CBE5EC;
+    --black: #CBE5EC;
     --header_gradient: linear-gradient(0deg, #182445 42%, #0f2f47 79%);
     --green: #6da182;
     --white: #CBE5EC50;
-    --shadow: #1e1919;
+    --shadow: #1b1527;
     --course_shadow: #1e1919;
     --white_text: #CBE5EC;
     --off_white: #CBE5EC50;
@@ -62,7 +63,7 @@
     --light_yellow: #161625;
     --dark_yellow: #182445;
     --course_background: #cae1e750;
-
+    --image_brightness: 65%;
 }
 
 #root {
@@ -76,6 +77,7 @@ html, body, * {
     font-family: 'Source Sans Pro', sans-serif;
     word-spacing: .097rem;
     font-display: swap;
+    transition: all 250ms ease;
 }
 
 html {
@@ -85,7 +87,6 @@ html {
 body {
     width: 100%;
     background: var(--white_background)
-    
 }
 
 main {

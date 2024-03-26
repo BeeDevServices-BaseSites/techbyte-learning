@@ -110,6 +110,7 @@
     border: thin solid var(--midnight_blue_header);
     box-shadow:  8px 8px 10px var(--shadow);
     border-radius: 20px;
+    filter: brightness(var(--image_brightness))
 }
 
 /* TEXT FORMATING */

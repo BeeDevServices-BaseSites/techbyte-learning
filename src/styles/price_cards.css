@@ -99,7 +99,7 @@
                 border-radius: 50%;
                 border: 2px solid #A70000;
                 box-shadow: 0px 0px 0px 1px var(--midnight_blue_text);
-                filter: drop-shadow(5px 5px 10px var(--shadow));
+                filter: drop-shadow(5px 5px 10px var(--shadow)) brightness(var(--image_brightness));
             }
 
             .pricing_ribbon_text {

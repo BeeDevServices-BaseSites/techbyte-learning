@@ -87,6 +87,7 @@
     height: 55px;
     margin-left:20px;
     transform: rotate(30deg);
+    filter: drop-shadow(3px 0px 5px var(--shadow)) brightness(var(--image_brightness))
 }
 
 /* Add Shimmer */

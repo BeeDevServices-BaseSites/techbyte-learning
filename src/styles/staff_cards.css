@@ -57,6 +57,7 @@
     background-color: var(--midnight_blue_header);
     display: flex;
     flex-direction: column;
+    filter: brightness(var(--image_brightness))
 }
 
 .f_title {

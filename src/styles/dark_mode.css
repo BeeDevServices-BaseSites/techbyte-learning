@@ -3,16 +3,18 @@
 /*                     */
 
 .dark_mode {
-    margin-top: -20px;
-    margin-left: 10px;
+    /* margin-top: -20px;
+    margin-left: 10px; */
 }
 
 .dark_mode_label {
     width: 65px;
     height: 30px;
     position: relative;
+    top: 5px;
     display: block;
     background: #ebebeb;
+    border: thin solid var(--white_text);
     border-radius: 200px;
     box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
         inset 0px -5px 15px rgba(255, 255, 255, 0.4);
@@ -48,25 +50,29 @@
     width: 30px;
 }
 
-.dark_mode_label img {
+.dark_mode_label i {
     position: absolute;
     width: 20px;
-    top: -35px;
+    top: 8.5px;
     z-index: 100;
 }
-.dark_mode_label img.sun {
-    left: -25px;
-    fill: #fff;
-    transition: 0.3s;
+
+.dark_mode_label #sun {
+    left: 7.5px;
+    color: #fff;
+    transition: all 0.15s ease;
 }
-.dark_mode_label img.moon {
-    left: 10px;
-    fill: #7e7e7e;
-    transition: 0.3s;
+
+.dark_mode_label #moon {
+    left: 44px;
+    color: #7e7e7e;
+    transition: all 0.15s ease;
 }
-.dark_mode_input:checked + .dark_mode_label img.sun {
-    fill: #7e7e7e;
+
+.dark_mode_input:checked + .dark_mode_label #sun {
+    color: #7e7e7e;
 }
-.dark_mode_input:checked + .dark_mode_label img.moon {
-    fill: #fff;
+
+.dark_mode_input:checked + .dark_mode_label #moon {
+    color: #fff;
 }

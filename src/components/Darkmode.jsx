@@ -1,6 +1,3 @@
-import React from "react";
-import Sun from "../assets/images/Sun.svg";
-import Moon from "../assets/images/Moon.svg";
 
 const DarkMode = () => {
     const set_dark_mode = () => {
@@ -26,11 +23,12 @@ const DarkMode = () => {
 
     return (
         <div className="dark_mode">
-            <input onChange={toggle_theme} defaultChecked={selected_theme === "dark"} className="dark_mode_input" type="checkbox" id="darkmode_toggle" />
-            <label className="dark_mode_label" htmlFor="darkmode_toggle">
-                <img src={ Sun } alt="Sun" className="sun" />
-                <img src={ Moon } alt="Moon" className="moon" />
-            </label>
+                Dark Mode
+                <input onChange={toggle_theme} defaultChecked={selected_theme === "dark"} className="dark_mode_input" type="checkbox" id="darkmode_toggle" />
+                <label className="dark_mode_label" htmlFor="darkmode_toggle">
+                    <i id="sun" className="far fa-sun"></i>
+                    <i id="moon" className="far fa-moon"></i>
+                </label>
         </div>
     );
 };

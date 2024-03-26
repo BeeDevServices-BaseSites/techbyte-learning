@@ -76,6 +76,7 @@ header img {
     top: 10px;
     height: 100px;
     padding-left: 30px;
+    filter: brightness(var(--image_brightness))
 }
 
 #drawer {
@@ -136,7 +137,7 @@ header img {
     height: 100%;
 }
 
-#drawer ul a {
+#drawer ul a, #drawer ul li div {
     display: block;
     font-size: .9rem;
     padding: 0 12px;
