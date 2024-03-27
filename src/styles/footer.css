@@ -66,13 +66,21 @@ footer {
     align-items: center;
     gap: 0 10px;
 
+    svg {
+        transition: all 50ms ease;
+    }
+
     svg, i {
         height: 20px;
         width: 20px;
+        fill: var(--white_text);
+        color: var(--white_text);
+        stroke: none;
     }
-    i {
-        height: 20px;
-        width: 20px;
+    
+    svg:hover, i:hover {
+        fill: var(--white);
+        color: var(--white);
     }
 }
 
