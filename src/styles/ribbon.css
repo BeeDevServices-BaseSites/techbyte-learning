@@ -51,7 +51,7 @@
 		position: absolute;
 		display: block;
 		border-style: solid;
-		border-color: var(--midnight_blue_header) transparent transparent transparent;
+		border-color: #000 transparent transparent transparent;
 		z-index: -1;
 	}
 
