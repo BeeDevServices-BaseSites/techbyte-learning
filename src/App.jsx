@@ -15,6 +15,7 @@ import MiniCourses from "./views/MiniCourses.jsx";
 import NavBar from "./components/Navbar.jsx";
 import NextHive from "./views/NextHive.jsx";
 import OurHive from "./views/OurHive.jsx";
+import OurTechs from "./views/OurTechs.jsx";
 import Services from "./views/Services.jsx";
 import Receipt from "./views/Receipt.jsx";
 import Tutoring from "./views/Tutoring.jsx";
@@ -42,6 +43,7 @@ const App = () => {
         <Route path="/minicourses" element={<MiniCourses />} />
         <Route path="/nexthive" element={<NextHive />} />
         <Route path="/ourhive" element={<OurHive />} />
+        <Route path="/ourtechs" element={<OurTechs />} />
         <Route path="/receipt" element={<Receipt details={ details } />} />
         <Route path="/services" element={<Services setDetails={ setDetails } />} />
         <Route path="/tutoringreceipt" element={<TutoringReceipt details={ details } />} />

@@ -21,7 +21,7 @@ const Index = () => {
             </h2>
             <p>
               <span>A</span>ttention, aspiring tech enthusiasts, busy bees of the coding world, and those eager to expand their horizons! At TechByte, we believe in the power of education and hands-on experience to shape the future generation of web developers. Just as bees are vital to the ecosystem, we aim to be essential for your growth in the ever-evolving tech industry.
-              </p>
+            </p>
             <p>
               With TechByte, not only will you gain proficiency in cutting-edge technologies that are shaping the future, we help shape your portfolio while preparing you for the real world with built in group projects and internship opportunities. 
             </p>

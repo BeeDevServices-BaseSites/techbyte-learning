@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useEffect } from 'react';
+import DarkMode from "./Darkmode";
 
 const NavBar = () => {
 
@@ -63,6 +64,9 @@ useEffect(() => {
           </li>
           <li>
             <a href="https://learn.techbyte-learning.com/" target="_blank" className="drawer_link">Student Login</a>
+          </li>
+          <li>
+            <DarkMode />
           </li>
         </ul>
       </nav>

@@ -6,7 +6,7 @@
     margin: 15px auto;
     position:relative;
     overflow:hidden;
-    border:thin solid var(--midnight_blue);
+    border:thin solid var(--midnight_blue_text);
     border-radius: 10px;
     transition:all .2s ease-in-out;
     box-shadow: 5px 5px 10px var(--shadow);
@@ -20,7 +20,7 @@
     background:var(--dark_yellow);
     background:var(--header_gradient);
     text-transform:uppercase;
-    color: var(--midnight_blue);
+    color: var(--midnight_blue_text);
     font-weight:900;
     letter-spacing:1px;
     border: none;
@@ -33,13 +33,13 @@
     content:" ";
     display:block;
     width:200px;
-    height:80px;
+    height: 95px;
     background: #CBE5EC50;
     position:absolute;
-    top:-10px;
+    top:-5px;
     left:-200px;
     transform:rotate(45deg);
-    transition:all .3s ease-in-out;  
+    transition:all .2s ease-in-out;  
     z-index:1;
 }
 

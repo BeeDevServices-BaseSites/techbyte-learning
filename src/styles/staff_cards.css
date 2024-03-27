@@ -41,7 +41,7 @@
     backface-visibility: hidden;
     border-radius: 10px;
     box-shadow: 8px 8px 10px var(--shadow);
-    border: thin solid var(--midnight_blue);
+    border: thin solid var(--midnight_blue_header);
 }
 
 .flip_box {
@@ -54,36 +54,37 @@
 
 .front {
     background-size: cover;
-    background-color: var(--midnight_blue);
+    background-color: var(--midnight_blue_header);
     display: flex;
     flex-direction: column;
+    filter: brightness(var(--image_brightness))
 }
 
 .f_title {
     padding: 16px 12px 0 12px;
     color: var(--white_text);
-    text-shadow: 2px 2px 0px var(--midnight_blue), 
-        2px -2px 0px var(--midnight_blue), 
-        -2px 2px 0px var(--midnight_blue), 
-        -2px -2px 0px var(--midnight_blue), 
-        2px 0px 0px var(--midnight_blue), 
-        0px 2px 0px var(--midnight_blue), 
-        -2px 0px 0px var(--midnight_blue), 
-        0px -2px 0px var(--midnight_blue);
+    text-shadow: 2px 2px 0px var(--midnight_blue_header), 
+        2px -2px 0px var(--midnight_blue_header), 
+        -2px 2px 0px var(--midnight_blue_header), 
+        -2px -2px 0px var(--midnight_blue_header), 
+        2px 0px 0px var(--midnight_blue_header), 
+        0px 2px 0px var(--midnight_blue_header), 
+        -2px 0px 0px var(--midnight_blue_header), 
+        0px -2px 0px var(--midnight_blue_header);
         opacity: 0.97;
 }
 
 .f_subline {
     padding: 220px 12px 10px 12px;
     color: var(--white_text);
-    text-shadow: 2px 2px 0px var(--midnight_blue), 
-        2px -2px 0px var(--midnight_blue), 
-        -2px 2px 0px var(--midnight_blue), 
-        -2px -2px 0px var(--midnight_blue), 
-        2px 0px 0px var(--midnight_blue), 
-        0px 2px 0px var(--midnight_blue), 
-        -2px 0px 0px var(--midnight_blue), 
-        0px -2px 0px var(--midnight_blue);
+    text-shadow: 2px 2px 0px var(--midnight_blue_header), 
+        2px -2px 0px var(--midnight_blue_header), 
+        -2px 2px 0px var(--midnight_blue_header), 
+        -2px -2px 0px var(--midnight_blue_header), 
+        2px 0px 0px var(--midnight_blue_header), 
+        0px 2px 0px var(--midnight_blue_header), 
+        -2px 0px 0px var(--midnight_blue_header), 
+        0px -2px 0px var(--midnight_blue_header);
         opacity: 0.97;
 }
 
@@ -92,7 +93,7 @@
     padding: 8px 12px;
     margin-bottom: 40px;
     color: var(--white_text);
-    background-color: var(--midnight_blue);
+    background-color: var(--midnight_blue_header);
     border-top: thin solid var(--dark_yellow);
     border-bottom: thin solid var(--dark_yellow);
     opacity: 0.97;
@@ -164,7 +165,7 @@ font-size: 1.13rem;
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    box-shadow: 0px 0px 1px 2px var(--midnight_blue);
+    box-shadow: 0px 0px 1px 2px var(--midnight_blue_header);
     border: 2px solid var(--dark_yellow);
     font-size: 30px;
     transition: all 500ms ease;

@@ -141,7 +141,7 @@ const AboutUs = () => {
             </div>
             {/* DISCORD */}
             <div className="contacts">
-              <i className="fa-brands fa-discord fa-2xl" style={{color: "#0f2f47"}}></i>
+              <i className="fa-brands fa-discord fa-2xl"></i>
               <a href="https://discord.com/channels/1203563873769365584/1205562887427588116" target="_blank">TechByte Leaning Discord</a>
             </div>
             {/* UDEMY */}
