@@ -44,6 +44,7 @@
     --midnight_blue_text: #0f2f47;
     --black: #0D1F2D;
     --image_brightness: 100%;
+    --invert: 0%;
     --font_size_default: 16px;
 }
 
@@ -64,6 +65,7 @@
     --midnight_blue_text: #CBE5EC;
     --black: #CBE5EC;
     --image_brightness: 65%;
+    --invert: 100%;
 }
 
 #root {
