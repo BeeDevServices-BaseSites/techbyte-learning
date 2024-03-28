@@ -17,7 +17,7 @@
     cursor: pointer;
     left: 0px;
     height:85px;
-    width: 75px;
+    width: 70px;
     display: block;
     position: fixed;
     background: none;
@@ -38,7 +38,7 @@
     box-shadow: 0 10px 0 var(--white_text), 0 20px 0 var(--white_text);
 }
 
-#drawer_toggle_label:hover:before {
+#drawer_toggle_label:hover::before {
     background: var(--white);
     box-shadow: 0 10px 0 var(--white), 0 20px 0 var(--white);
     transition: all 100ms ease;
@@ -107,7 +107,7 @@ header img {
     z-index: 2000000001; /*required to cover the tawk.to icon*/
 }
 
-#drawer_toggle:checked ~ #drawer_toggle_label:hover:before {
+#drawer_toggle:checked ~ #drawer_toggle_label:hover:before,#drawer_toggle:checked ~ #drawer_toggle_label::before {
     background: var(--midnight_blue_header);
     box-shadow: 0 10px 0 var(--midnight_blue_header), 0 20px 0 var(--midnight_blue_header);
     filter: none;
