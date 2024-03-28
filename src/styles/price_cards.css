@@ -2,33 +2,6 @@
 /*      Pricing Page           */
 /*                             */
 
-.service_links {
-    margin: auto;
-    h2 {
-        margin: 12px;
-    }
-
-    p {
-        text-align: center;
-    }
-    .service_jump_link {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        
-        p {
-            color: var(--midnight_blue_text);
-            margin: 2px 2px 12px;
-            text-decoration: underline;
-            cursor: pointer;
-
-            &:hover {
-                color: var(--green);
-            }
-        }
-    }
-}
-
 .pricing_container {
     display: flex;
     justify-content: center;

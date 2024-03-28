@@ -1,7 +1,14 @@
+import { useEffect } from "react";
+import { changeTitle } from "../utilities/utilityFunctions.js";
 import staff from "../assets/json/employees.json";
 import StaffCard from "../components/StaffCard";
 
 const OurHive = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0,0),
+    changeTitle("Our Hive - ")
+  },[])
 
   const card_data = staff.filter(staff => staff.is_active);
 

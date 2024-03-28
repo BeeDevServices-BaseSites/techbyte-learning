@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions.js";
 import Button from "../components/Button.jsx"
 import Ribbon from "../components/Ribbon.jsx";
+import LinkDark from "../components/LinkDark.jsx";
 
 
 const GameDev = () => {
@@ -69,6 +70,9 @@ const GameDev = () => {
             <div className="box_left_text">
                 <p>
                   <span>L</span>et TechByte Learning give you the opportunity to expand your creativity and technical skills while working on exciting projects that showcase your talents, turning your gaming dreams into reality.
+                </p>
+                <p>
+                  For more information contact us at <LinkDark jump_to="mailto:admissions@beedev-services.com?subject=Admissions%20Inquiry%20" text="admissions@beedev-services.com" /> or call us at <b>(570) 731-8660</b> to learn more and secure your spot. Limited seats available, so act now!
                 </p>
             </div>
             <div className="box_right_text">
