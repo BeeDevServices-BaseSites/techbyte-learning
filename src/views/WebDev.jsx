@@ -14,6 +14,7 @@ import flask from "../assets/images/flask.png"
 import postgres from "../assets/images/postgres.png"
 import project_steps from "../assets/images/project_steps.png"
 import Ribbon from "../components/Ribbon.jsx";
+import LinkDark from "../components/LinkDark.jsx";
 
 const WebDev = () => {
 
@@ -128,7 +129,7 @@ const WebDev = () => {
             Don't miss out on this incredible opportunity to become a master in full stack programming with Python and React. Take the first step towards a rewarding career and join the Techbyte Learning family today!
           </p>
           <p>
-            For more information contact us at <a id="career_link" href="mailto:admissions@beedev-services.com?subject=Admissions%20Inquiry%20">admissions@beedev-services.com</a> or call us at (570) 731-8660 to learn more and secure your spot. Limited seats available, so act now!
+            For more information contact us at <LinkDark jump_to="mailto:admissions@beedev-services.com?subject=Admissions%20Inquiry%20" text="admissions@beedev-services.com" /> or call us at <b>(570) 731-8660</b> to learn more and secure your spot. Limited seats available, so act now!
           </p>
           <Button to="/nexthive" text="Next Cohort" />
         </div>

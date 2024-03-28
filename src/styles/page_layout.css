@@ -154,16 +154,6 @@
         text-shadow:  0.5px 0.5px 1px var(--shadow);
 }
 
-/* LINK STYLE */
-.large_box a, .split_box a {
-    text-decoration: underline;
-    color: var(--midnight_blue_text);
-
-    &:hover {
-        color: var(--green);
-    }
-}
-
 /* ADD A BACKGROUND TO ANY BOX */
 .add_background {
     width: 43%;
@@ -182,4 +172,97 @@
         margin: 20px auto;
         width: 100%;
     }
+}
+
+/* text centering */
+.center_text, #center_text {
+    text-align: center;
+    margin: 12px
+}
+
+/* Style for links container */
+.remove_underline {
+    text-decoration: none;
+}
+
+.jump_link_wrapper {
+    margin: 24px 0 0;
+    max-width: 750px;
+    min-width: 290px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    p {
+        margin: 0;
+    }
+}
+
+/* Style for 'DarkLink' links */
+.dark_link {
+    position: relative;
+    color: var(--midnight_blue_text);
+    text-decoration: none;
+    cursor: pointer;
+    text-wrap: nowrap;
+    font-weight: 600;
+
+    &:hover {
+        color: var(--green);
+    }
+    &::before {
+        left: 0; 
+    }
+    &::after {
+        right: 0;
+    }
+}
+
+.dark_link:before, .dark_link:after {
+    content: '';
+    border-bottom: 1px solid var(--green);
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.dark_link:hover:before, .dark_link:hover:after {
+    width: 50%;
+}
+
+/* Style for 'LightLink_Link' & 'LightLink_a' links */
+.light_link {
+    position: relative;
+    font-size: 0.9rem;
+    color: var(--white_text);
+    text-decoration: none;
+    cursor: pointer;
+    text-wrap: nowrap;
+
+    &:hover {
+        color: var(--white);
+    }
+    &::before {
+        left: 0; 
+    }
+    &::after {
+        right: 0;
+    }
+}
+
+.light_link:before, .light_link:after {
+    content: '';
+    border-bottom: 1px solid var(--white);
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.light_link:hover:before, .light_link:hover:after {
+    width: 50%;
 }

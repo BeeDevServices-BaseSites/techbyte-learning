@@ -4,6 +4,8 @@ import Button from "../components/Button";
 import Ribbon from "../components/Ribbon"
 import PriceTags from "../components/PriceTags";
 import pricing_info from "../assets/json/course_cards.json"
+import LinkJumpTo from "../components/LinkJumpTo";
+import LinkDark from "../components/LinkDark";
 
 const Services = ({ setDetails }) => {
 
@@ -12,41 +14,26 @@ const Services = ({ setDetails }) => {
   const mini_course_data = pricing_info.filter(price => price.is_active).filter(price => price.is_mini_course);
   const tutoring_data = pricing_info.filter(price => price.is_active).filter(price => price.is_tutoring);
 
-console.log("dev count", dev_course_data.length)
-console.log("mini count", mini_course_data.length)
-console.log("tutoring count", tutoring_data.length)
-
   useEffect(() => {
     window.scrollTo(0,0),
     changeTitle("TechByte Services - ")
   },[])
 
-  const handleClick = (e, id) => {
-    e.preventDefault();
-    const element = document.getElementById(id);
-    window.scrollTo({
-        top: element.offsetTop -150,
-        behavior: 'smooth'
-    });
-}
-
   return (
     <main>
       <div className="wrapper">
-        <div className="large_box">
           {/* SECTION 1 */}
-          <div className="service_links">
+          <div className="large_box">
             <h2>
               TechByte Learning Services
             </h2>
-            <p className="small">Jump To:</p>
-            <div className="service_jump_link">
-              <p href="#devcourses" onClick={(e) => handleClick(e, "devcourses")}>|&nbsp;Development&nbsp;|</p>
-              <p href="#minisessons" onClick={(e) => handleClick(e, "minisessions")}>|&nbsp;Mini&nbsp;Sessions&nbsp;|</p>
-              <p onClick={(e) => handleClick(e, "tutoring")}>|&nbsp;Tutoring&nbsp;|</p>
+            <h5>Jump To:</h5>
+            <div className="jump_link_wrapper">
+              <LinkJumpTo jump_to="devcourses" text="Development" />
+              <LinkJumpTo jump_to="minisessions" text="Mini Sessions" />
+              <LinkJumpTo jump_to="tutoring" text="Tutoring" />
             </div>
           </div>
-        </div>
           {/* END SECTION 1 */}
           {/* SECTION 2 */}
           <div className="large_box">
@@ -81,7 +68,7 @@ console.log("tutoring count", tutoring_data.length)
             Not sure what you need, or have questions about TechByte Tutoring?
           </h4>
           <h4>
-            Contact <a href="mailto:tutoring@techbyte-learning.com?subject=Tutoring%20Inquiry%20">tutoring@techbyte-learning.com</a>
+            Contact: <LinkDark jump_to="mailto:tutoring@techbyte-learning.com?subject=Tutoring%20Inquiry%20" text="tutoring@techbyte-learning.com" />
           </h4>
           <br />
           <h5 className="center_text">

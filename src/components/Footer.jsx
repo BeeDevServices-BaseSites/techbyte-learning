@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import vet_owned from "../assets/images/vet_owned.png"
 import woman_owned from "../assets/images/woman_owned.png"
+import LinkLight_a from "./LinkLight_a";
+import LinkLight_Link from "./LinkLight_Link";
 
 const Footer = () => {
   return (
@@ -12,25 +14,15 @@ const Footer = () => {
           <p>
             Website Built By:
           </p>
-          <a href="https://beedev-services.com/" target="_blank">
-            BEEDEV-SERVICES
-          </a>
+          <LinkLight_a href="https://beedev-services.com/" text="BEEDEV-SERVICES" />
         </div>
         <div className="footer_link_column">
-            <a href="https://techbyte-learning.com/bytewise/" target="_blank">
-              ByteWise Dispatch
-            </a>
-            <a href="https://learn.techbyte-learning.com/" target="_blank">
-              Student Login
-            </a>
+            <LinkLight_a href="https://techbyte-learning.com/bytewise/" text="ByteWise Dispatch" />
+            <LinkLight_a href="https://learn.techbyte-learning.com/" text="Student Login" />
         </div>
         <div className="footer_link_column">
-            <Link to="/aboutus">
-              About Us
-            </Link>
-            <Link to="/careers">
-              Careers
-            </Link>
+            <LinkLight_Link href="/aboutus" text="About Us" />
+            <LinkLight_Link href="/careers" text="Careers" />
         </div>
       </div>
       {/* RIGHT SIDE OF FOOTER */}

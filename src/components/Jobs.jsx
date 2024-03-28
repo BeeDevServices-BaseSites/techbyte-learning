@@ -1,3 +1,4 @@
+import LinkJumpTo from "./LinkJumpTo";
 
 const Jobs = ({ positions }) => {
 
@@ -11,20 +12,19 @@ const Jobs = ({ positions }) => {
     }
 
     return (
-            <div className="jobs_container">
-                <h5>Jump To:</h5>
+        <div className="jobs_container">
+            <h5>Jump To:</h5>
             {/* LINKS TO CAREERS */}
-            <div className="career_jump_link">
+            <div className="jump_link_wrapper">
                 {positions.map((job) => {
                     return(
-                        <a href={`#${ job.id }`} key={ job.id }  onClick={(e) => handleClick(e, job.id)}>
-                            |&nbsp;{ job.position }&nbsp;|
-                        </a>
+                        <LinkJumpTo key={ job.id } jump_to={ job.id } text={ job.position } />
                 )})}
             </div>
             {/* END LINKS */}
+            <br />
             <h4>
-                Send inquiries to: <br className="mobile_only"/> <a id="career_link" href="mailto:careers@techbyte-learning.com?subject=Career%20Inquiry%20">careers@techbyte-learning.com</a> 
+                Send inquiries to: <br className="mobile_only"/> <a className="dark_link" href="mailto:careers@techbyte-learning.com?subject=Career%20Inquiry%20">careers@techbyte-learning.com</a> 
             </h4>
             {/* JOB CARDS */}
             {positions.map(( job ) => {
@@ -84,7 +84,7 @@ const Jobs = ({ positions }) => {
                     )}
                 </div>
             )})}
-            </div>
+        </div>
     );
 };
 

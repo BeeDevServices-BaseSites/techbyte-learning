@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import React, { useEffect } from 'react';
 import DarkMode from "./Darkmode";
+import LightLink_Link from "./LinkLight_Link"
+import LinkLight_a from "./LinkLight_a";
 
 const NavBar = () => {
 
@@ -24,46 +26,46 @@ useEffect(() => {
       <nav id="drawer">
         <ul>
           <li>
-            <Link to="/" className="drawer_link">Home Page</Link>
+            <LightLink_Link href="/" text="Home Page" />
           </li>
           <li>
-            <Link to="/webdevelopment" className="drawer_link">Web Development</Link>
+            <LightLink_Link href="/webdevelopment" text="Web Development" />
           </li>
           <li>
-            <Link to="/gamedevelopment" className="drawer_link">2D Game Development</Link>
+            <LightLink_Link href="/gamedevelopment" text="2D Game Development" />
           </li>
           {/* <li>
-            <Link to="/devops" className="drawer_link">DevOps</Link>
+            <LightLink_Link href="/devops" text="DevOps" />
           </li> */}
           <li>
-            <Link to="/minicourses" className="drawer_link">Mini Courses</Link>
+            <LightLink_Link href="/minicourses" text="Mini Courses" />
           </li>
           <li>
-            <Link to="/tutoring" className="drawer_link">Tutoring</Link>
+            <LightLink_Link href="/tutoring" text="Tutoring" />
           </li>
           <li>
-            <Link to="/nexthive" className="drawer_link">Next Cohort</Link>
+            <LightLink_Link href="/nexthive" text="Next Cohort" />
           </li>
           <li>
-            <Link to="/services" className="drawer_link">Services</Link>
+            <LightLink_Link href="/services" text="Services" />
           </li>
           <li>
-            <Link to="/tuitionassistance" className="drawer_link">Tuition Assistance</Link>
+          <LightLink_Link href="/tuitionassistance" text="Tuition Assistance" />
           </li>
           <li>
-            <Link to="/apply" className="drawer_link">Apply</Link>
+            <LightLink_Link href="/apply" text="Apply" />
           </li>
           <li>
-            <Link to="/booktutoring" className="drawer_link">Schedule Tutoring</Link>
+            <LightLink_Link href="/booktutoring" text="Schedule Tutoring" />
           </li>
           <li>
-            <Link to="/aboutus" className="drawer_link">About Us</Link>
+            <LightLink_Link href="/aboutus" text="About Us" />
           </li>
           <li>
-            <a href="https://techbyte-learning.com/bytewise/" target="_blank" className="drawer_link">ByteWise Dispatch</a>
+            <LinkLight_a href="https://techbyte-learning.com/bytewise/" text="ByteWise Dispatch" />
           </li>
           <li>
-            <a href="https://learn.techbyte-learning.com/" target="_blank" className="drawer_link">Student Login</a>
+            <LinkLight_a href="https://learn.techbyte-learning.com/" text="Student Login" />
           </li>
           <li>
             <DarkMode />
