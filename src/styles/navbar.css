@@ -192,7 +192,6 @@ header img {
             padding-left: 0px;
             height: 55px;
         }
-
     }
     #drawer_toggle:checked ~ #drawer_toggle_label {
         height: 100%;
