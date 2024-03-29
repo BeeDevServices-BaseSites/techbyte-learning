@@ -1,0 +1,71 @@
+/* OUR TECH COMPONENT STYLE */
+
+/* Code Example Box Styles */
+.code_box, .code_box_result {
+    margin: 24px 0;
+    width: 70%;
+    max-width: 700px;
+    min-width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--off_white);
+    padding: 16px;
+    border: thin solid var(--midnight_blue_header);
+
+    h1 {
+        font-size: 1.2rem;
+        color: var(--midnight_blue_text);
+        margin: 8px 0;
+    }
+    p {
+        font-size: 0.9rem;
+        color: var(--midnight_blue_text);
+        text-align: start;
+        margin: 8px 0;
+    }
+    img {
+        height: 150px;
+        aspect-ratio: auto;
+        margin: 16px 0;
+    }
+    a {
+        color: var(--blue);
+    
+        &:hover{
+            color: var(--green);
+        }
+    }
+}
+
+
+/* CSS EXAMPLE STYLE (OVERRIDES ABOVE STYLE)*/
+.css {
+    h1 {
+        color: darkred;
+    }
+    p {
+        color:goldenrod;
+        font-weight: bold;
+    }
+    img {
+        border: 2px solid red;
+    }
+    a {
+        color: green;
+    
+        &:hover{
+            color: red;
+        }
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:579px) {
+    .code_box p {
+        font-size: 0.625rem;
+    }
+}

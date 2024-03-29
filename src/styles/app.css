@@ -21,6 +21,7 @@
 @import url("./staff_cards.css");
 @import url("./ribbon.css");
 @import url("./dark_mode.css");
+@import url("./our_techs.css");
 
 
 /*                       */
@@ -46,6 +47,7 @@
     --image_brightness: 100%;
     --invert: 0%;
     --font_size_default: 16px;
+    --blue: blue;
 }
 
 [data-theme = "dark"] {
@@ -66,6 +68,7 @@
     --black: #CBE5EC;
     --image_brightness: 65%;
     --invert: 100%;
+    --blue: whitesmoke;
 }
 
 #root {
