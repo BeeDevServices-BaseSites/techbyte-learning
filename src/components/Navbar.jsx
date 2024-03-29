@@ -6,11 +6,20 @@ import LinkLight_a from "./LinkLight_a";
 
 const NavBar = () => {
 
-useEffect(() => {
+  useEffect(() => {
     const drawerLinks = document.querySelectorAll('.drawer_link');
     drawerLinks.forEach(link => { 
       link.addEventListener('click', () => { 
         document.getElementById('drawer_toggle').checked = false;
+      });
+    });
+
+    const drawerLinkDark = document.querySelectorAll('.drawer_link_dark');
+    drawerLinkDark.forEach(link => { 
+      link.addEventListener('click', () => { 
+        setTimeout(() => {
+          document.getElementById('drawer_toggle').checked = false;
+        }, 500);
       });
     });
   }, []);
@@ -25,49 +34,49 @@ useEffect(() => {
       </header>
       <nav id="drawer">
         <ul>
-          <li>
+          <li className="drawer_link">
             <LightLink_Link href="/" text="Home Page" />
           </li>
-          <li>
+          <li className="drawer_link">
             <LightLink_Link href="/webdevelopment" text="Web Development" />
           </li>
-          <li>
+          <li className="drawer_link">
             <LightLink_Link href="/gamedevelopment" text="2D Game Development" />
           </li>
-          {/* <li>
+          {/* <li className="drawer_link">
             <LightLink_Link href="/devops" text="DevOps" />
           </li> */}
-          <li>
+          <li className="drawer_link">
             <LightLink_Link href="/minicourses" text="Mini Courses" />
           </li>
-          <li>
+          <li className="drawer_link">
             <LightLink_Link href="/tutoring" text="Tutoring" />
           </li>
-          <li>
+          <li className="drawer_link">
             <LightLink_Link href="/nexthive" text="Next Cohort" />
           </li>
-          <li>
+          <li className="drawer_link">
             <LightLink_Link href="/services" text="Services" />
           </li>
-          <li>
+          <li className="drawer_link">
           <LightLink_Link href="/tuitionassistance" text="Tuition Assistance" />
           </li>
-          <li>
+          <li className="drawer_link">
             <LightLink_Link href="/apply" text="Apply" />
           </li>
-          <li>
+          <li className="drawer_link">
             <LightLink_Link href="/booktutoring" text="Schedule Tutoring" />
           </li>
-          <li>
+          <li className="drawer_link">
             <LightLink_Link href="/aboutus" text="About Us" />
           </li>
-          <li>
+          <li className="drawer_link">
             <LinkLight_a href="https://techbyte-learning.com/bytewise/" text="ByteWise Dispatch" />
           </li>
-          <li>
+          <li className="drawer_link">
             <LinkLight_a href="https://learn.techbyte-learning.com/" text="Student Login" />
           </li>
-          <li>
+          <li className="drawer_link_dark">
             <DarkMode />
           </li>
         </ul>
