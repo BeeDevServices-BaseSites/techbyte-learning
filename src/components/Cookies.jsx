@@ -1,3 +1,5 @@
+import cookies from "../assets/images/cookies.svg"
+
 const Cookies = () => {
     return (
         <div>
@@ -11,7 +13,7 @@ const Cookies = () => {
                 <div className="slideout_content">
                     <div className="push_right">
                         <p className="pst">
-                            Psst....<img className="cookie_img" src="https://lordicon.com/icons/wired/flat/2354-cookies.svg" alt="Cookies"/>
+                            Psst....<img className="cookie_img" src={ cookies } alt="Cookies"/>
                         </p>
                         <p className="cookie">
                             We use Cookies to offer you a better browsing experience, analyse site traffic and personalize content.
