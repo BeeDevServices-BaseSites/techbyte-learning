@@ -7,10 +7,10 @@ const CSS = () => {
                 What is CSS?
             </h2>
             <p>
-            CSS stands for Cascading Style Sheets and it is a language used to describe the presentation of a website or webpage. In simpler terms, CSS is what makes a website look visually appealing by controlling and styling elements like fonts, colors, layouts, and spacing. It allows web designers to customize the appearance of their website without changing the actual content. CSS works in conjunction with HTML (the structure of a webpage) to create the overall design and layout of a website.
+                CSS stands for Cascading Style Sheets and it is a language used to describe the presentation of a website or webpage. In simpler terms, CSS is what makes a website look visually appealing by controlling and styling elements like fonts, colors, layouts, and spacing. It allows web designers to customize the appearance of their website without changing the actual content. CSS works in conjunction with HTML (the structure of a webpage) to create the overall design and layout of a website.
             </p>
             <br />
-            {/* HTML EXAMPLE */}
+            {/*  EXAMPLE */}
             <h5>
                 Lets add some CSS to our HTML example:
             </h5>
@@ -46,7 +46,7 @@ const CSS = () => {
             </div>
             {/* END EXAMPLE SECTION */}
 
-            {/* HTML RESULT SECTION */}
+            {/* CSS RESULT SECTION */}
             <h5>
                 Here is the result:
             </h5>
@@ -58,7 +58,7 @@ const CSS = () => {
             </div>
             {/* END RESULT SECTION */}
             <p>
-            By adding specific CSS code to our HTML example, we can create a visual apeal to our website with customized elements such as colors, fonts, and borders.
+                By adding specific CSS to our example, we can create a visual apeal to our website with customized elements such as colors, fonts, and borders.
             </p>
         </>
     )
