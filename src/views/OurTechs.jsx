@@ -18,13 +18,13 @@ const OurTechs = () => {
             <div id="language_javascript" className="large_box">
                 <JavaScript />
             </div>
-            <div id="language_javascript" className="large_box">
+            <div id="language_git" className="large_box">
                 <Git />
             </div>
-            <div id="language_javascript" className="large_box">
+            <div id="language_sass" className="large_box">
                 <Sass />
             </div>
-            <div id="language_javascript" className="large_box">
+            <div id="language_less" className="large_box">
                 <Less />
             </div>
         </div>
