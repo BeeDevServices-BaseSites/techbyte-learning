@@ -1,3 +1,4 @@
+import bat_cat from "../assets/images/bat_cat.jpeg"
 
 const CSS = () => {
 
@@ -11,49 +12,40 @@ const CSS = () => {
             </p>
             <br />
             {/*  EXAMPLE */}
-            <h5>
+            <h5 className="center_text">
                 Lets add some CSS to our HTML example:
             </h5>
             <div className="code_box">
-                <code>
-                    <p>
+                <pre>
+                    <code>
                         h1 &#123;<br/>
                         &nbsp;&nbsp;color: darkred;<br/>
                         &#125;;<br/>
-                    </p>
-                    <p>
                         p &#123;<br/>
                         &nbsp;&nbsp;color: goldenrod;<br/>
                         &nbsp;&nbsp;font-weight: bold;<br/>
                         &#125;;<br/>
-                    </p>
-                    <p>
                         img &#123;<br/>
                         &nbsp;&nbsp;border: 2px solid red;<br/>
                         &#125;;<br/>
-                    </p>
-                    <p>
                         a &#123;<br/>
                         &nbsp;&nbsp;color: green;<br/>
                         &#125;;<br/>
-                    </p>
-                    <p>
                         a:hover &#123;<br/>
                         &nbsp;&nbsp;color: red;<br/>
                         &#125;;<br/>
-                    </p>
-                </code>
+                    </code>
+                </pre>
             </div>
             {/* END EXAMPLE SECTION */}
-
             {/* CSS RESULT SECTION */}
-            <h5>
-                Here is the result:
+            <h5 className="center_text">
+                This is our result:
             </h5>
             <div className="code_box_result css">
                 <h1>Welcome to TechByte Learning</h1>
                 <p>This is a paragraph of text on my website.</p>
-                <img src="https://cataas.com/cat/gif" alt="Random Cat Image"/>
+                <img src={ bat_cat } alt="Random Cat Image"/>
                 <a href="https://cataas.com/cat" target="_blank">Visit A Random Cat Image</a>
             </div>
             {/* END RESULT SECTION */}

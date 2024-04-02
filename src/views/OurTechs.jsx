@@ -1,9 +1,11 @@
 import CSS from "../components/CSS"
 import HTML5 from "../components/HTML5"
 import JavaScript from "../components/Javascript"
+import Git from "../components/Git"
+import Sass from "../components/Sass"
+import Less from "../components/Less"
 
 const OurTechs = () => {
-
 
     return(
         <div className="wrapper">
@@ -15,6 +17,15 @@ const OurTechs = () => {
             </div>
             <div id="language_javascript" className="large_box">
                 <JavaScript />
+            </div>
+            <div id="language_javascript" className="large_box">
+                <Git />
+            </div>
+            <div id="language_javascript" className="large_box">
+                <Sass />
+            </div>
+            <div id="language_javascript" className="large_box">
+                <Less />
             </div>
         </div>
     )

@@ -13,13 +13,12 @@
     padding: 16px 8px;
     border: thin solid var(--midnight_blue_header);
     border-radius: 5px;
-
     h1 {
         font-size: 1.2rem;
         color: var(--midnight_blue_text);
         margin: 8px 0;
     }
-    p {
+    code, p {
         font-size: 0.9rem;
         color: var(--midnight_blue_text);
         text-align: start;
@@ -88,10 +87,27 @@
     }
 }
 
+#example_button_sass {
+    background-color: #3366cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #000;
+    border: none;
+}
 
-
-@media only screen and (max-width:579px) {
-    .code_box p {
+@media only screen and (min-width:880px) {
+    .line_break {
+        display:none !important;
+    }
+}
+@media only screen and (max-width:750px) {
+    .code_box code, .code_box p {
+        font-size: 0.75rem;
+    }
+}
+@media only screen and (max-width:625px) {
+    .code_box code, .code_box p {
         font-size: 0.625rem;
     }
 }

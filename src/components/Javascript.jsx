@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom";
 
 const JavaScript = () => {
 
     function changeText() {
-        document.getElementById('example_button').innerText = 'Clicked!';
-    }
-    function changeTextBack() {
-        document.getElementById('example_button').innerText = 'Click Me!';
+        var button = document.getElementById('example_button');
+        if(button.innerText === "Click Me!") {
+            button.innerText = "Reset Me!"
+        } else {
+            button.innerText = "Click Me!"
+        }
     }
 
     return (
@@ -20,37 +21,45 @@ const JavaScript = () => {
             <br />
             {/* HTML EXAMPLE */}
             <h5 className="center_text">
-                Lets use a button for our JavaScript example:
+                Lets use a button for our JavaScript example: <br />
+                We will make it say "Click Me!":
             </h5>
             <div className="code_box">
-                <code>
-                    <p>
-                        &lt;button onclick="changeText()"&gt;Click Me!&lt;/button&gt;
-                    </p>
-                </code>
+                <pre>
+                    <code>
+                        &lt;button id="example_button" onclick="changeText()"&gt;<br className="line_break" />
+                        &nbsp;&nbsp;&nbsp;Click Me! <br className="line_break" />
+                        &lt;/button&gt;
+                    </code>
+                </pre>
             </div>
             <h5 className="center_text">
-                Now we will use a little JavaScript to change the button text when clicked:
+                Now we will use a little JavaScript to change the button text when clicked. <br />
+                When clicked it will say "Reset Me!"
             </h5>
             <div className="code_box">
-                <code>
-                    <p>
+                <pre>
+                    <code>
                         &lt;script&gt;<br />
-                        &nbsp;&nbsp; function changeText() &#123;<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('example_button').innerText = 'Clicked!';<br />
-                        &nbsp;&nbsp;&#125;<br />&lt;/script&gt;
-                    </p>
-                </code>
+                        &nbsp;&nbsp;function changeText() &#123;<br />
+                        &nbsp;&nbsp;&nbsp;var button = document.getElementById("example_button")<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;if(button.innerText === "Click Me!") &#123;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;button.innerText = "Reset Me!";<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&#125; else  &#123;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;button.innerText = "Click Me!";<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&#125;<br />
+                        &nbsp;&nbsp;&#125;<br />
+                        &lt;/script&gt;
+                    </code>
+                </pre>
             </div>
             {/* END EXAMPLE SECTION */}
-
             {/* HTML RESULT SECTION */}
             <h5 className="center_text">
-                Here is the result:
+                Here is our result:
             </h5>
             <div className="code_box_result css">
                 <button id="example_button" onClick={ changeText }> Click Me! </button>
-                <Link id="example_reset" onClick={ changeTextBack }>Click To Reset</Link>
             </div>
             {/* END RESULT SECTION */}
             <p>

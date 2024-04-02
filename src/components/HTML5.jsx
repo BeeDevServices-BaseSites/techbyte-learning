@@ -1,3 +1,4 @@
+import bat_cat from "../assets/images/bat_cat.jpeg"
 
 const HTML5 = () => {
 
@@ -14,33 +15,28 @@ const HTML5 = () => {
             </p>
             <br />
             {/* HTML EXAMPLE */}
-            <h5>
+            <h5 className="center_text">
                 Here is an example of HTML:
             </h5>
             <div className="code_box">
-                <p>
-                    &lt;h1&gt;Welcome to TechByte Learning&lt;/h1&gt;
-                </p>
-                <p>
-                    &lt;p&gt;This is a paragraph of text on my website.&lt;/p&gt;
-                </p>
-                <p>
-                &lt;img&gt;src="https://cataas.com/cat/gif" alt="Random Cat Image"/&gt;
-                </p>
-                <p>
-                    &lt;a href="https://www.example.com"&gt;Visit example.com&lt;/a&gt;
-                </p>
+                <pre>
+                    <code>
+                        &lt;h1&gt;Welcome to TechByte Learning&lt;/h1&gt;<br />
+                        &lt;p&gt;This is a paragraph of text on my website.&lt;/p&gt;<br />
+                        &lt;img&gt;src="https://cataas.com/cat" alt="Random Cat Image"/&gt;<br />
+                        &lt;a href="https://www.example.com"&gt;Visit example.com&lt;/a&gt;<br />
+                    </code>
+                </pre>
             </div>
             {/* END EXAMPLE SECTION */}
-
             {/* HTML RESULT SECTION */}
-            <h5>
-                Here is the result:
+            <h5 className="center_text">
+                This is our result:
             </h5>
             <div className="code_box_result">
                 <h1>Welcome to TechByte Learning</h1>
                 <p>This is a paragraph of text on my website.</p>
-                <img src="https://cataas.com/cat/gif" alt="Random Cat Image"/>
+                <img src={ bat_cat } alt="Random Cat Image"/>
                 <a href="https://cataas.com/cat" target="_blank">Visit A Random Cat Image</a>
             </div>
             {/* END RESULT SECTION */}
