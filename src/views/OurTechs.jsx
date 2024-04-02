@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import CSS from "../components/CSS"
 import HTML5 from "../components/HTML5"
 import JavaScript from "../components/Javascript"
@@ -6,6 +7,19 @@ import Sass from "../components/Sass"
 import Less from "../components/Less"
 
 const OurTechs = () => {
+
+        useEffect(() => {
+            const hash = window.location.hash;
+            if (hash) {
+                const element = document.querySelector(hash);
+                if (element) {
+                    window.scrollTo({
+                        top: element.offsetTop -150,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        }, []);
 
     return(
         <div className="wrapper">
