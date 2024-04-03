@@ -8,6 +8,14 @@ import Less from "../components/Less"
 import VsCode from "../components/VsCode"
 import GitHub from "../components/GitHub"
 import Postman from "./Postman"
+import Reactjs from "../components/Reactjs"
+import Nodejs from "../components/Nodejs"
+import MySQL from "../components/MySQL"
+import Python from "../components/Python"
+import Flask from "../components/Flask"
+import PostgreSQL from "../components/PostgreSQL"
+import Pandas from "../components/Pandas"
+import Pug from "../components/Pug"
 
 const OurTechs = () => {
 
@@ -50,34 +58,34 @@ const OurTechs = () => {
             <div id="language_github" className="large_box">
                 <GitHub />
             </div>
+            <div id="language_reactjs" className="large_box">
+                <Reactjs />
+            </div>
+            <div id="language_nodejs" className="large_box">
+                <Nodejs />
+            </div>
             <div id="language_postman" className="large_box">
                 <Postman />
             </div>
-            <div id="language_reactjs" className="large_box">
-                
-            </div>
-            <div id="language_nodejs" className="large_box">
-                
-            </div>
             <div id="language_mysql" className="large_box">
-                
+                <MySQL />
             </div>
             <div id="language_python" className="large_box">
-                
+                <Python />
             </div>
             <div id="language_flask" className="large_box">
-                
+                <Flask />
             </div>
             <div id="language_postgresql" className="large_box">
-                
-            </div>
-            <div id="language_internship" className="large_box">
-                
-            </div>
-            <div id="language_pandas" className="large_box">
-                
+                <PostgreSQL />
             </div>
             <div id="language_pug" className="large_box">
+                <Pug />
+            </div>
+            <div id="language_pandas" className="large_box">
+                <Pandas />
+            </div>
+            <div id="language_internship" className="large_box">
                 
             </div>
             <div id="language_sylvester&tweety" className="large_box">
