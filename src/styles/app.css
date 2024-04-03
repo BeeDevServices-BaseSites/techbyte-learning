@@ -82,9 +82,6 @@ html, body, * {
     font-family: 'Source Sans Pro', sans-serif;
     word-spacing: .097rem;
     font-display: swap;
-    transition: all 250ms ease;
-    -webkit-transition: all 250ms ease;
-
 }
 
 html {
