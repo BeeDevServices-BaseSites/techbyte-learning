@@ -16,13 +16,11 @@
 }
 
 .contacts i, .contacts svg path {
-    border-radius: 5px;
-    filter: drop-shadow(5px 5px 2px var(--shadow));
     fill: var(--midnight_blue_text);
     color: var(--midnight_blue_text);
 }
 
-.contacts a, .phone_number {
+.phone_number {
     position: relative;
     margin-left: 5px;
     padding: 0;

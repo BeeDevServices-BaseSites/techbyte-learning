@@ -62,3 +62,11 @@
     transform: translateX(-100%);
     background: linear-gradient(180deg, #777, #3a3a3a);
 }
+
+.dark_mode_input:not(:checked) + .dark_mode_label #moon:hover {
+    color: cyan;
+}
+
+.dark_mode_input:checked + .dark_mode_label #sun:hover {
+    color: goldenrod;
+}

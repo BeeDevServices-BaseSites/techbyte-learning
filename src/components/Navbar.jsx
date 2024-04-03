@@ -1,14 +1,25 @@
 import { Link } from "react-router-dom";
 import React, { useEffect } from 'react';
 import DarkMode from "./Darkmode";
+import LightLink_Link from "./LinkLight_Link"
+import LinkLight_a from "./LinkLight_a";
 
 const NavBar = () => {
 
-useEffect(() => {
+  useEffect(() => {
     const drawerLinks = document.querySelectorAll('.drawer_link');
     drawerLinks.forEach(link => { 
       link.addEventListener('click', () => { 
         document.getElementById('drawer_toggle').checked = false;
+      });
+    });
+
+    const drawerLinkDark = document.querySelectorAll('.drawer_link_dark');
+    drawerLinkDark.forEach(link => { 
+      link.addEventListener('click', () => { 
+        setTimeout(() => {
+          document.getElementById('drawer_toggle').checked = false;
+        }, 500);
       });
     });
   }, []);
@@ -23,49 +34,49 @@ useEffect(() => {
       </header>
       <nav id="drawer">
         <ul>
-          <li>
-            <Link to="/" className="drawer_link">Home Page</Link>
+          <li className="drawer_link">
+            <LightLink_Link href="/" text="Home Page" />
           </li>
-          <li>
-            <Link to="/webdevelopment" className="drawer_link">Web Development</Link>
+          <li className="drawer_link">
+            <LightLink_Link href="/webdevelopment" text="Web Development" />
           </li>
-          <li>
-            <Link to="/gamedevelopment" className="drawer_link">2D Game Development</Link>
+          <li className="drawer_link">
+            <LightLink_Link href="/gamedevelopment" text="2D Game Development" />
           </li>
-          {/* <li>
-            <Link to="/devops" className="drawer_link">DevOps</Link>
+          {/* <li className="drawer_link">
+            <LightLink_Link href="/devops" text="DevOps" />
           </li> */}
-          <li>
-            <Link to="/minicourses" className="drawer_link">Mini Courses</Link>
+          <li className="drawer_link">
+            <LightLink_Link href="/minicourses" text="Mini Courses" />
           </li>
-          <li>
-            <Link to="/tutoring" className="drawer_link">Tutoring</Link>
+          <li className="drawer_link">
+            <LightLink_Link href="/tutoring" text="Tutoring" />
           </li>
-          <li>
-            <Link to="/nexthive" className="drawer_link">Next Cohort</Link>
+          <li className="drawer_link">
+            <LightLink_Link href="/nexthive" text="Next Cohort" />
           </li>
-          <li>
-            <Link to="/services" className="drawer_link">Services</Link>
+          <li className="drawer_link">
+            <LightLink_Link href="/services" text="Services" />
           </li>
-          <li>
-            <Link to="/tuitionassistance" className="drawer_link">Tuition Assistance</Link>
+          <li className="drawer_link">
+          <LightLink_Link href="/tuitionassistance" text="Tuition Assistance" />
           </li>
-          <li>
-            <Link to="/apply" className="drawer_link">Apply</Link>
+          <li className="drawer_link">
+            <LightLink_Link href="/apply" text="Apply" />
           </li>
-          <li>
-            <Link to="/booktutoring" className="drawer_link">Schedule Tutoring</Link>
+          <li className="drawer_link">
+            <LightLink_Link href="/booktutoring" text="Schedule Tutoring" />
           </li>
-          <li>
-            <Link to="/aboutus" className="drawer_link">About Us</Link>
+          <li className="drawer_link">
+            <LightLink_Link href="/aboutus" text="About Us" />
           </li>
-          <li>
-            <a href="https://techbyte-learning.com/bytewise/" target="_blank" className="drawer_link">ByteWise Dispatch</a>
+          <li className="drawer_link">
+            <LinkLight_a href="https://techbyte-learning.com/bytewise/" text="ByteWise Dispatch" />
           </li>
-          <li>
-            <a href="https://learn.techbyte-learning.com/" target="_blank" className="drawer_link">Student Login</a>
+          <li className="drawer_link">
+            <LinkLight_a href="https://learn.techbyte-learning.com/" text="Student Login" />
           </li>
-          <li>
+          <li className="drawer_link_dark">
             <DarkMode />
           </li>
         </ul>

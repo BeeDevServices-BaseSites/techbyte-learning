@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 import Jobs from "../components/Jobs";
+import LinkDark from "../components/LinkDark"
 import positions from "../assets/json/careers.json"
 
 const Careers = () => {
@@ -22,7 +23,7 @@ const Careers = () => {
                 TechByte Careers
               </h2>
               <h4>
-              Thank you for your interest in joining our team. At the moment we are not hiring, but if you feel you'd be a good fit please contact us at <a id="career_link" href="mailto:careers@techbyte-learning.com?subject=Career%20Inquiry%20">careers@techbyte-learning.com</a>
+              Thank you for your interest in joining our team. At the moment we are not hiring, but if you feel you'd be a good fit please contact us at <LinkDark href="mailto:careers@techbyte-learning.com?subject=Career%20Inquiry%20" text="careers@techbyte-learning.com" />
               </h4>
             </div>
             <div className="box_right_img">

@@ -17,7 +17,7 @@
     cursor: pointer;
     left: 0px;
     height:85px;
-    width: 75px;
+    width: 70px;
     display: block;
     position: fixed;
     background: none;
@@ -38,7 +38,7 @@
     box-shadow: 0 10px 0 var(--white_text), 0 20px 0 var(--white_text);
 }
 
-#drawer_toggle_label:hover:before {
+#drawer_toggle_label:hover::before {
     background: var(--white);
     box-shadow: 0 10px 0 var(--white), 0 20px 0 var(--white);
     transition: all 100ms ease;
@@ -107,7 +107,7 @@ header img {
     z-index: 2000000001; /*required to cover the tawk.to icon*/
 }
 
-#drawer_toggle:checked ~ #drawer_toggle_label:hover:before {
+#drawer_toggle:checked ~ #drawer_toggle_label:hover:before,#drawer_toggle:checked ~ #drawer_toggle_label::before {
     background: var(--midnight_blue_header);
     box-shadow: 0 10px 0 var(--midnight_blue_header), 0 20px 0 var(--midnight_blue_header);
     filter: none;
@@ -135,18 +135,17 @@ header img {
     justify-content: space-evenly;
     align-content: space-evenly;
     height: 100%;
+
+    li {
+        padding: 0 12px;
+    }
 }
 
-#drawer ul a, #drawer ul li div {
+#drawer ul li div {
     display: block;
     font-size: .9rem;
-    padding: 0 12px;
     color: var(--white_text);
     text-decoration: none;
-}
-
-#drawer ul a:hover {
-    color: var(--white);
 }
 
 @media all and (max-width:720px) {
@@ -193,7 +192,6 @@ header img {
             padding-left: 0px;
             height: 55px;
         }
-
     }
     #drawer_toggle:checked ~ #drawer_toggle_label {
         height: 100%;

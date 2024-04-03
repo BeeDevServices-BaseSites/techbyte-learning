@@ -3,6 +3,7 @@ import { changeTitle } from "../utilities/utilityFunctions";
 import TutorChat from "../components/TutorChat";
 import Spinner from "../components/Spinner";
 import Button from "../components/Button";
+import LinkDark from "../components/LinkDark";
 
 const BookTutor = () => {
 
@@ -23,10 +24,13 @@ const BookTutor = () => {
       <div className="wrapper">
         <div className="large_box">
           <h2>
-            Schedule A Tutor
+            Schedule A Tutoring Session
           </h2>
           <h4>
             Set up a tutoring session with one of our experts below.
+          </h4>
+          <h4>
+            Email us at <br className="mobile_only"/><LinkDark href="mailto:tutoring@techbyte-learning.com?subject=Tutoring%20Inquiry%20" text="tutoring@techbyte-learning.com" />
           </h4>
           <h4>
             Or, Call us at <span className="phone_number">(570) 890-5252</span>

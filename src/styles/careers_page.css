@@ -2,16 +2,6 @@
 /*                              */
 /*         CAREERS PAGE         */
 /*                              */
-
-#career_link {
-    text-decoration: underline;
-    color: var(--midnight_blue_text);
-
-    &:hover {
-        color: var(--green);
-    }
-}
-
 .jobs_container {
     max-width: 1200px;
     min-width: 290px;

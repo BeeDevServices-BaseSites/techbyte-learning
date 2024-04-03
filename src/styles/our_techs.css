@@ -1,0 +1,113 @@
+/* OUR TECH COMPONENT STYLE */
+
+/* Code Example Box Styles */
+.code_box, .code_box_result {
+    margin: 24px 0;
+    width: 70%;
+    max-width: 700px;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--shadow);
+    padding: 16px 8px;
+    border: thin solid var(--midnight_blue_header);
+    border-radius: 5px;
+    h1 {
+        font-size: 1.2rem;
+        color: var(--midnight_blue_text);
+        margin: 8px 0;
+    }
+    code, p {
+        font-size: 0.9rem;
+        color: var(--midnight_blue_text);
+        text-align: start;
+        margin: 8px 0;
+    }
+    img {
+        height: 150px;
+        aspect-ratio: auto;
+        margin: 16px 0;
+    }
+    a {
+        color: var(--blue);
+    }
+}
+
+
+/* CSS EXAMPLE STYLE (OVERRIDES ABOVE STYLE)*/
+.css {
+    h1 {
+        color: darkred;
+    }
+    p {
+        color:goldenrod;
+        font-weight: bold;
+    }
+    img {
+        border: 2px solid red;
+    }
+    a {
+        color: green;
+    
+        &:hover{
+            color: red;
+        }
+    }
+    button {
+        position: relative;
+        margin: 16px 0 8px 0;
+        border-radius: 5px;
+        background-color: var(--green);
+        color: var(--grey_receipt);
+        border: thin solid var(--grey_receipt);
+        padding: 10px;
+        box-shadow: 3px 3px 5px var(--shadow);
+        
+        &:hover {
+            background-color: var(--grey_receipt);
+            color: var(--green);
+            border: thin solid var(--green);
+        }
+
+        &:active {
+            top:3px;
+        }
+    }
+}
+
+#example_reset {
+    position: relative;
+    margin: 16px 0 8px 0;
+    color: green;
+    text-decoration: none;
+
+    &:hover {
+        color: red;
+    }
+}
+
+#example_button_sass {
+    background-color: #3366cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #000;
+    border: none;
+}
+
+@media only screen and (min-width:880px) {
+    .line_break {
+        display:none !important;
+    }
+}
+@media only screen and (max-width:750px) {
+    .code_box code, .code_box p {
+        font-size: 0.75rem;
+    }
+}
+@media only screen and (max-width:625px) {
+    .code_box code, .code_box p {
+        font-size: 0.625rem;
+    }
+}
