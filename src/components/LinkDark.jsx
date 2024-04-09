@@ -3,7 +3,7 @@ const LinkDark = ({ href, text }) => {
 
 
     return (
-        <a className="remove_underline" href={ href }><span className="dark_link">{ text }</span></a>
+        <a className="remove_underline dark_link" href={ href }>{ text }</a>
     )
 }
 

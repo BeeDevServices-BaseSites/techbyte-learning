@@ -11,7 +11,7 @@ const LinkJumpTo = ({ jump_to, text }) => {
     }
 
     return (
-        <p className="remove_underline" onClick={(e) => handleClick(e, `${ jump_to }` )}><span className="dark_link">|&nbsp;{ text }&nbsp;|</span></p>
+        <p className="remove_underline dark_link" onClick={(e) => handleClick(e, `${ jump_to }` )}>|&nbsp;{ text }&nbsp;|</p>
     )
 }
 
