@@ -1,0 +1,172 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+/* CSS PAGE IMPORTS */
+@import url("./about_us.css");
+@import url("./button.css");
+@import url("./careers_page.css");
+@import url("./chat.css");
+@import url("./cookie_slideout.css");
+@import url("./courses.css");
+@import url("./error_404.css");
+@import url("./footer.css");
+@import url("./go_top.css");
+@import url("./honeycomb.css");
+@import url("./navbar.css");
+@import url("./page_layout.css");
+@import url("./paypal.css");
+@import url("./price_cards.css");
+@import url("./receipts.css");
+@import url("./spinner.css");
+@import url("./staff_cards.css");
+@import url("./ribbon.css");
+@import url("./dark_mode.css");
+@import url("./our_techs.css");
+
+
+/*                       */
+/*     MAIN APP CSS      */
+/*                       */
+
+:root {
+    --white_background: linear-gradient(90deg, #fff 27%,  rgba(192, 192, 192, 0.6) 90%);
+    --white: #FFF;
+    --white_text: #CBE5EC;
+    --off_white: whitesmoke;
+    --light_yellow: #F6E8B7;
+    --dark_yellow: #efd780;
+    --header_gradient: linear-gradient(0deg, rgba(239, 215, 128, 1) 42%, rgba(246, 232, 182, 1) 79%);
+    --green: #18AC58;
+    --grey_receipt: #dbdbdb;
+    --shadow: #979393;
+    --course_shadow: none;
+    --course_background: none;
+    --midnight_blue_header: #0f2f47;
+    --midnight_blue_text: #0f2f47;
+    --black: #0D1F2D;
+    --image_brightness: 100%;
+    --invert: 0%;
+    --font_size_default: 16px;
+    --blue: blue;
+}
+
+[data-theme = "dark"] {
+    --white_background: rgb(1, 8, 20) ;
+    --white: #CBE5EC50;
+    --white_text: #CBE5EC;
+    --off_white: #CBE5EC50;
+    --light_yellow: #161625;
+    --dark_yellow: #182445;
+    --header_gradient: linear-gradient(0deg, #182445 42%, #0f2f47 79%);
+    --green: #6da182;
+    --grey_receipt: #474b56;
+    --shadow: #1b1527;
+    --course_shadow: #1e1919;
+    --course_background: #cae1e750;
+    --midnight_blue_header: #182445;
+    --midnight_blue_text: #CBE5EC;
+    --black: #CBE5EC;
+    --image_brightness: 65%;
+    --invert: 100%;
+    --blue: whitesmoke;
+}
+
+#root {
+    overflow-x: hidden;
+}
+
+html, body, * {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    word-spacing: .097rem;
+    font-display: swap;
+    transition: all 250ms ease;
+    -webkit-transition: all 250ms ease;
+
+}
+
+html {
+    font-size: var(--font_size_default);
+}
+
+body {
+    width: 100%;
+    background: var(--white_background)
+}
+
+main {
+    min-height: calc(100dvh - 234px);
+}
+
+/* font sizes */
+h1, h2, h3, h4, h5, h6, a, p {
+    transition: all 300ms ease;
+}
+
+h1 {
+    font-size: 2.25rem;
+    color: var(--midnight_blue_text);
+    text-shadow: 0.5px 0.5px 0.5px var(--shadow);
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: var(--midnight_blue_text);
+    text-shadow: 0.5px 0.5px 0.5px var(--shadow);
+}
+
+h3 {
+    font-size: 1.375rem;
+    color: var(--midnight_blue_text);
+}
+
+h4 {
+    font-size: 1.125rem;
+    color: var(--midnight_blue_text);
+}
+
+h5 {
+    font-size: 1rem;
+    color: var(--midnight_blue_text);
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--black);
+}
+
+/* increase font sizes for larger screen views */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.58rem;
+    }
+    h4 {
+        font-size: 1.295rem;
+    }
+    p {
+        font-size: 1.265rem;
+    }
+    .basic_link {
+        font-size: 1.125rem;
+    }
+}
+
+@media only screen and (min-width:580px) {
+    .mobile_only {
+        display:none !important;
+    }
+}
+
+@media only screen and (max-width:579px) {
+    .desktop_only {
+        display:none !important;
+    }
+}

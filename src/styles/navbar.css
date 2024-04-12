@@ -1,0 +1,207 @@
+/*                         */
+/*         NAVBAR          */
+/*                         */
+
+#drawer_toggle {
+    position: absolute;
+    opacity: 0;
+}
+
+#drawer_toggle_label {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    left: 0px;
+    height:85px;
+    width: 70px;
+    display: block;
+    position: fixed;
+    background: none;
+    z-index: 99999;
+    transition: all 300ms ease;
+}
+
+#drawer_toggle_label:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 35px;
+    border-radius: 10px;
+    left: 18px;
+    top: 42px;
+    background: var(--white_text);
+    box-shadow: 0 10px 0 var(--white_text), 0 20px 0 var(--white_text);
+}
+
+#drawer_toggle_label:hover::before {
+    background: var(--white);
+    box-shadow: 0 10px 0 var(--white), 0 20px 0 var(--white);
+    transition: all 100ms ease;
+    filter: drop-shadow(3px 3px 3px var(--shadow));
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px 10px 20px var(--shadow);
+    background-color: var(--midnight_blue_header);
+    padding: 0 0 30px 60px;
+    z-index: 99998;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease;
+    border-bottom: 2.5px solid var(--dark_yellow);
+}
+
+header a {
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: var(--white_text);
+    text-decoration: none;
+    text-shadow: 0.5px 0.5px 1px var(--shadow);
+    transition: all 100ms ease;
+    &:hover {
+        color: var(--white);
+        filter: drop-shadow(1px 1px 1px var(--shadow));
+    }
+}
+
+header img {
+    position: relative;
+    top: 10px;
+    height: 100px;
+    padding-left: 30px;
+    filter: brightness(var(--image_brightness))
+}
+
+#drawer {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100%;
+    width: 200px;
+    background: var(--midnight_blue_header);
+    overflow-x: hidden;
+    padding: 10px;
+    -webkit-overflow-scrolling: touch;
+    z-index: 99998;
+    transition: all 300ms ease;
+}
+
+#drawer_toggle:checked ~ #drawer_toggle_label {
+    height: calc(100% + 20px);
+    left: 200px;
+    width: calc(100% - 180px);
+    background: rgba(0,0,0,0.85);
+    box-shadow: 10px 10px 40px 10px black;
+    border-radius: 0 0 20px 0;
+    z-index: 2000000001; /*required to cover the tawk.to icon*/
+}
+
+#drawer_toggle:checked ~ #drawer_toggle_label:hover:before,#drawer_toggle:checked ~ #drawer_toggle_label::before {
+    background: var(--midnight_blue_header);
+    box-shadow: 0 10px 0 var(--midnight_blue_header), 0 20px 0 var(--midnight_blue_header);
+    filter: none;
+}
+
+#drawer_toggle:checked ~ main {
+    margin-left: 200px; 
+    transition: all 300ms ease;
+}
+
+#drawer_toggle:checked ~ header {
+    padding-left: 250px
+}
+
+#drawer_toggle:checked ~ #drawer {
+    left: 0px;
+    box-shadow: 0px 0px 30px black;
+    z-index: 99999;
+}
+
+#drawer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    height: 100%;
+
+    li {
+        padding: 0 12px;
+    }
+}
+
+#drawer ul li div {
+    display: block;
+    font-size: .9rem;
+    color: var(--white_text);
+    text-decoration: none;
+}
+
+@media all and (max-width:720px) {
+    header{
+        padding-bottom: 16px;
+        a {
+            font-size: 3rem;
+        }
+        img {
+            top:6px;
+            height: 76px;
+            padding-left: 30px;
+        }
+    }
+    #drawer_toggle_label:before {
+        top: 28px;
+    } 
+}
+
+@media all and (max-width:560px) {
+    header a {
+            font-size: 2.25rem;
+            margin-top: 16px;
+        }
+    header img {
+        top: 15px;
+        height: 60px;
+        padding-left: 20px;
+    }
+}
+
+@media all and (max-width:450px) {
+    #drawer_toggle_label:before {
+        height: 4px;
+        width: 25px;
+        top: 32px;
+    }
+    header {
+        padding-top: 5px;
+        a {
+            font-size: 1.75rem;
+        }
+        img {
+            padding-left: 0px;
+            height: 55px;
+        }
+    }
+    #drawer_toggle:checked ~ #drawer_toggle_label {
+        height: 100%;
+        width: 100%;
+    }
+    #drawer_toggle:checked ~ #drawer_toggle_label, #drawer_toggle:checked ~ header {
+        left: 250px;
+    }
+    #drawer_toggle:checked ~ #drawer {
+        width: 250px;
+        padding: 20px;
+    }
+}
