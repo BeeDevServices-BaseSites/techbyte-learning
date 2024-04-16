@@ -6,7 +6,7 @@ const Pug = () => {
             What is Pug?
         </h2>
         <p>
-            PUUUUUG LYFE!! coming soon....
+            PUUUUUG LYFE!! coming soon.... TEST
         </p>
         </>
     );
