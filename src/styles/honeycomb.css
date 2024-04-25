@@ -49,6 +49,7 @@
     empty-cells: hide;
     filter: drop-shadow(4px 4px 8px var(--shadow)) brightness(var(--image_brightness));
     pointer-events: none;
+    user-select: none;
     cursor: default;
 }
 

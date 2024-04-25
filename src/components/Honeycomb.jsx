@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import flying_bee from "../assets/images/flyingbee.gif";
 import honeycomb from "../assets/images/honeycomb_plus_bee.png";
 import jsonData from "../assets/json/honeycombs.json";
@@ -6,15 +7,15 @@ import jsonData from "../assets/json/honeycombs.json";
 const images = jsonData.map(( item, idx ) => (
   item.link ? (
     <li className="item" key={ idx }>
-      <a href={ `#${ item.tag }` } title={ item.tag } role="button">
+      <Link to={ `ourtechs#language_${ item.tag }` } title={ item.tag } role="button">
         <img className="honeycomb_image" src={ item.link } alt={ item.tag } />
-      </a>
+      </Link>
     </li>
   ) : (
     <li className="item2" key={ idx }>
-      <a href="/#empty"  role="button">
+      <Link to="/#empty"  role="button">
         <span className="visually-hidden">Empty Link</span>
-      </a>
+      </Link>
     </li>
   )
 ));
