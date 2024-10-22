@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import React, { useEffect } from 'react';
 import DarkMode from "./Darkmode";
 import LightLink_Link from "./LinkLight_Link"
-import LinkLight_a from "./LinkLight_a";
+import LinkLight_a from "./LinkLight_a"
+import Title from "./Title";
 
 const NavBar = () => {
 
@@ -29,8 +30,8 @@ const NavBar = () => {
       <input type="checkbox" id="drawer_toggle" name="drawer_toggle"/>
       <label htmlFor="drawer_toggle" id="drawer_toggle_label"><span className="visually-hidden">Empty Link</span></label>
       <header>
-        <img src="https://images.craftsnherbs.com/logos/newNewLogo.png" alt="TechByte Learning Bee" />
-        <Link to="/">TechByte Learning</Link>
+        {/* <img src="https://images.thehive-services.com/techByteLearning/logo01.png" alt="TechByte Learning Bee" /> */}
+        <Link to="/"><Title /></Link>
       </header>
       <nav id="drawer">
         <ul>
