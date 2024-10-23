@@ -33,7 +33,7 @@
     width: 35px;
     border-radius: 10px;
     left: 18px;
-    top: 42px;
+    top: 32px;
     background: var(--white_text);
     box-shadow: 0 10px 0 var(--white_text), 0 20px 0 var(--white_text);
 }
@@ -69,17 +69,6 @@ header a img {
         filter: drop-shadow(2px 2px 4px black);
     }
 }
-
-/* header svg {
-    position: relative;
-    top: 22px;
-    height: 50px;
-    width: 50px;
-    margin-left: 30px;
-    color: var(--dark_yellow);
-    filter: brightness(var(--image_brightness));
-    transition: transform 2.5s ease;
-} */
 
 header svg:hover {
     transform: rotate(360deg);
@@ -158,16 +147,12 @@ header svg:hover {
     header{
         padding-bottom: 16px;
 
-        a img {
+        img {
         top: 15px;
         margin-left: 10px;
         transition: all 100ms ease;
         }
-
     }
-    #drawer_toggle_label:before {
-        top: 28px;
-    } 
 }
 
 @media all and (max-width:450px) {
