@@ -2,9 +2,10 @@ import { useEffect } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 import Button from "../components/Button";
 import LinkDark from "../components/LinkDark";
-import { FaFacebookSquare, FaLinkedin, FaYoutubeSquare, FaDiscord } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { SiUdemy } from "react-icons/si";
+import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaYoutube } from "react-icons/fa6";
+// import { FaSquareXTwitter } from "react-icons/fa6";
+// import { SiUdemy } from "react-icons/si";
 const LinkPhone = import.meta.env.VITE_LINK_PHONE;
 const DisplayPhone = import.meta.env.VITE_DISPLAY_PHONE;
 const LinkFax = import.meta.env.VITE_LINK_FAX;
@@ -125,33 +126,33 @@ const AboutUs = () => {
             {/* FACEBOOK */}
             <div className="contacts">
               <FaFacebookSquare />
-              <LinkDark href="https://www.facebook.com/techbytelearning" text="TechByte Learning Facebook" />
+              <LinkDark href="https://www.facebook.com/techbytelearning/" text="TechByte Learning Facebook" />
             </div>
             {/* LINKEDIN */}
             <div className="contacts">
               <FaLinkedin />
-              <LinkDark href="https://www.linkedin.com/company/techbyte-learning/" text="TechByte Learning LinkedIn" />
+              <LinkDark href="https://www.linkedin.com/company/tech-byte-learning/" text="TechByte Learning LinkedIn" />
             </div>
             {/* TWITTER */}
             <div className="contacts">
-              <FaSquareXTwitter />
-              <LinkDark href="https://www.twitter.com/techByteHive" text="TechByte Learning Twitter" />
+              <FaInstagram />
+              <LinkDark href="https://www.instagram.com/techbyte.learning/" text="TechByte Learning Twitter" />
             </div>
             {/* YOUTUBE */}
             <div className="contacts">
-              <FaYoutubeSquare />
-              <LinkDark href="https://www.youtube.com/@BeeDev_TechByte" text="TechByte Learning Youtube" />
+              <FaYoutube />
+              <LinkDark href="https://www.youtube.com/@TechByte_Learning" text="TechByte Learning Youtube" />
             </div>
             {/* DISCORD */}
-            <div className="contacts">
+            {/* <div className="contacts">
               <FaDiscord />
               <LinkDark href="https://discord.com/channels/1203563873769365584/1205562887427588116" text="TechByte Leaning Discord" />
-            </div>
+            </div> */}
             {/* UDEMY */}
-            <div className="contacts">
+            {/* <div className="contacts">
               <SiUdemy />
               <LinkDark href="https://www.udemy.com/user/techbyte-learning/" text="TechByte Learning Udemy" />
-            </div>
+            </div> */}
           </div>
         </div>
         {/* END SECTION 3 */}
