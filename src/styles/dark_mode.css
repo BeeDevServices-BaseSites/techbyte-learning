@@ -16,19 +16,19 @@
     cursor: pointer;
     transition: 0.3s;
 
-    i {
+    #sun, #moon {
         position: absolute;
         width: 20px;
-        top: 8.5px;
+        top: 8px;
         z-index: 100;
     }
     #sun {
-        left: 7.5px;
+        left: 5.5px;
         color: var(--midnight_blue_text);
         transition: all 0.15s ease;
     }
     #moon {
-        left: 44px;
+        left: 39.5px;
         color: var(--midnight_blue_text);
         transition: all 0.15s ease;
     }

@@ -1,3 +1,5 @@
+import { FaRegMoon, FaRegSun } from "react-icons/fa";
+
 const DarkMode = () => {
     const set_dark_mode = () => {
         document.querySelectorAll(".dark_mode_input").forEach(input => {
@@ -36,8 +38,8 @@ const DarkMode = () => {
             Dark Mode
             <input onChange={toggle_theme} defaultChecked={selected_theme === "dark"} className="dark_mode_input" type="checkbox" id="darkmode_toggle" />
             <label className="dark_mode_label" htmlFor="darkmode_toggle">
-                <i id="sun" className="far fa-sun"></i>
-                <i id="moon" className="far fa-moon"></i>
+                <FaRegSun id="sun"/>
+                <FaRegMoon id="moon"/>
             </label>
         </div>
     );

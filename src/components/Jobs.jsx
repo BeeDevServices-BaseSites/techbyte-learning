@@ -1,4 +1,5 @@
 import LinkJumpTo from "./LinkJumpTo";
+const CareersEmail = import.meta.env.VITE_CAREERS_EMAIL;
 
 const Jobs = ({ positions }) => {
 
@@ -24,7 +25,7 @@ const Jobs = ({ positions }) => {
             {/* END LINKS */}
             <br />
             <h4>
-                Send inquiries to: <br className="mobile_only"/> <a className="dark_link" href="mailto:careers@techbyte-learning.com?subject=Career%20Inquiry%20">careers@techbyte-learning.com</a> 
+                Send inquiries to: <br className="mobile_only"/> <a className="remove_underline dark_link" href={`mailto:${CareersEmail}?subject=Careers%20Inquiry%20`} target="_blank">{CareersEmail}</a> 
             </h4>
             {/* JOB CARDS */}
             {positions.map(( job ) => {

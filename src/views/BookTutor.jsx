@@ -4,6 +4,9 @@ import TutorChat from "../components/TutorChat";
 import Spinner from "../components/Spinner";
 import Button from "../components/Button";
 import LinkDark from "../components/LinkDark";
+const TutoringEmail = import.meta.env.VITE_TUTORING_EMAIL;
+const DisplayPhone = import.meta.env.VITE_DISPLAY_PHONE;
+const LinkPhone = import.meta.env.VITE_LINK_PHONE;
 
 const BookTutor = () => {
 
@@ -12,7 +15,6 @@ const BookTutor = () => {
   useEffect(() => {
     window.scrollTo(0,0);
     changeTitle("Schedule Tutor - ");
-    // swap element visability 
     //(ternary wasnt working)
     setTimeout(() => {
       setShowSpinner(false);
@@ -27,13 +29,13 @@ const BookTutor = () => {
             Schedule A Tutoring Session
           </h2>
           <h4>
-            Set up a tutoring session with one of our experts below.
+            Email us at <br className="mobile_only"/><a className="remove_underline dark_link" href={`mailto:${TutoringEmail}?subject=Tutoring%20Inquiry%20`} target="_blank">{TutoringEmail}</a>
           </h4>
           <h4>
-            Email us at <br className="mobile_only"/><LinkDark href="mailto:tutoring@techbyte-learning.com?subject=Tutoring%20Inquiry%20" text="tutoring@techbyte-learning.com" />
+            Call us at <a className="remove_underline dark_link" href={LinkPhone}>{DisplayPhone}</a>
           </h4>
           <h4>
-            Or, Call us at <span className="phone_number">(570) 890-5252</span>
+            Or set up a tutoring session with one of our experts below.
           </h4>
           <div style={{ display: showSpinner ? '' : 'none' }}>
           <Spinner/>

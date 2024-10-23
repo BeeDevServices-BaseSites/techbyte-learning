@@ -3,6 +3,8 @@ import React, { useEffect } from 'react';
 import DarkMode from "./Darkmode";
 import LightLink_Link from "./LinkLight_Link"
 import LinkLight_a from "./LinkLight_a";
+import { MdOutlineHexagon } from "react-icons/md";
+import TBLogo from "../assets/images/techbyte_logo-nobg.png"
 
 const NavBar = () => {
 
@@ -29,8 +31,7 @@ const NavBar = () => {
       <input type="checkbox" id="drawer_toggle" name="drawer_toggle"/>
       <label htmlFor="drawer_toggle" id="drawer_toggle_label"><span className="visually-hidden">Empty Link</span></label>
       <header>
-        <img src="https://images.craftsnherbs.com/logos/newNewLogo.png" alt="TechByte Learning Bee" />
-        <Link to="/">TechByte Learning</Link>
+        <Link to="/"><img src={TBLogo} alt="TechByte Logo" /></Link>
       </header>
       <nav id="drawer">
         <ul>

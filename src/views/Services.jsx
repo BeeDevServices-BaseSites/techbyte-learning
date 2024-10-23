@@ -6,6 +6,7 @@ import PriceTags from "../components/PriceTags";
 import pricing_info from "../assets/json/course_cards.json"
 import LinkJumpTo from "../components/LinkJumpTo";
 import LinkDark from "../components/LinkDark";
+const TutoringEmail = import.meta.env.VITE_TUTORING_EMAIL;
 
 const Services = ({ setDetails }) => {
 
@@ -68,7 +69,7 @@ const Services = ({ setDetails }) => {
             Not sure what you need, or have questions about TechByte Tutoring?
           </h4>
           <h4>
-            Contact: <LinkDark jump_to="mailto:tutoring@techbyte-learning.com?subject=Tutoring%20Inquiry%20" text="tutoring@techbyte-learning.com" />
+            Contact: <a className="remove_underline dark_link" href={`mailto:${TutoringEmail}?subject=Tutoring%20Inquiry%20`} target="_blank">{TutoringEmail}</a>
           </h4>
           <br />
           <h5 className="center_text">
