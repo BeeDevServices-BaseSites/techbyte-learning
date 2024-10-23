@@ -58,25 +58,32 @@ header {
     border-bottom: 2.5px solid var(--dark_yellow);
 }
 
-header a {
-    font-size: 3.25rem;
-    font-weight: 800;
-    color: var(--white_text);
-    text-decoration: none;
-    text-shadow: 0.5px 0.5px 1px var(--shadow);
+header a img {
+    position: relative;
+    top: 20px;
+    height: 100px;
     transition: all 100ms ease;
+    margin-left: 30px;
+
     &:hover {
         color: var(--white);
-        filter: drop-shadow(1px 1px 1px var(--shadow));
+        filter: drop-shadow(2px 2px 1px var(--shadow));
     }
 }
 
-header img {
+/* header svg {
     position: relative;
-    top: 10px;
-    height: 100px;
-    padding-left: 30px;
-    filter: brightness(var(--image_brightness))
+    top: 22px;
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+    color: var(--dark_yellow);
+    filter: brightness(var(--image_brightness));
+    transition: transform 2.5s ease;
+} */
+
+header svg:hover {
+    transform: rotate(360deg);
 }
 
 #drawer {
@@ -151,30 +158,17 @@ header img {
 @media all and (max-width:720px) {
     header{
         padding-bottom: 16px;
-        a {
-            font-size: 3rem;
+
+        a img {
+        top: 15px;
+        margin-left: 10px;
+        transition: all 100ms ease;
         }
-        img {
-            top:6px;
-            height: 76px;
-            padding-left: 30px;
-        }
+
     }
     #drawer_toggle_label:before {
         top: 28px;
     } 
-}
-
-@media all and (max-width:560px) {
-    header a {
-            font-size: 2.25rem;
-            margin-top: 16px;
-        }
-    header img {
-        top: 15px;
-        height: 60px;
-        padding-left: 20px;
-    }
 }
 
 @media all and (max-width:450px) {
@@ -183,23 +177,16 @@ header img {
         width: 25px;
         top: 32px;
     }
-    header {
-        padding-top: 5px;
-        a {
-            font-size: 1.75rem;
-        }
-        img {
-            padding-left: 0px;
-            height: 55px;
-        }
-    }
+
     #drawer_toggle:checked ~ #drawer_toggle_label {
         height: 100%;
         width: 100%;
     }
+
     #drawer_toggle:checked ~ #drawer_toggle_label, #drawer_toggle:checked ~ header {
         left: 250px;
     }
+
     #drawer_toggle:checked ~ #drawer {
         width: 250px;
         padding: 20px;

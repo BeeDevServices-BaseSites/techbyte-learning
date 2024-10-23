@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import { changeTitle } from "../utilities/utilityFunctions";
 import AdmissionsChat from "../components/AdmissionsChat";
 import Spinner from "../components/Spinner";
-import LinkDark from "../components/LinkDark";
+const AdmissionsEmail = import.meta.env.VITE_ADMISSIONS_EMAIL;
+const DisplayPhone = import.meta.env.VITE_DISPLAY_PHONE;
+const LinkPhone = import.meta.env.VITE_LINK_PHONE;
 
 const Apply = () => {
 
@@ -12,7 +14,6 @@ const Apply = () => {
     window.scrollTo(0,0);
     changeTitle("Apply - ");
     // swap element visability 
-    //(ternary wasnt working)
     setTimeout(() => {
       setShowSpinner(false);
     }, 3000); // Timer allowing the chat box to fully load before being revealed 
@@ -26,10 +27,10 @@ const Apply = () => {
             Talk With Our <br className="mobile_only"/>Admissions Staff
           </h2>
           <h4>
-            Email us at <br className="mobile_only"/><LinkDark href="mailto:admissions@techbyte-learning.com?subject=Admissions%20Inquiry%20" text="admissions@techbyte-learning.com" />
+            Email us at <br className="mobile_only"/><a className="remove_underline dark_link" href={`mailto:${AdmissionsEmail}?subject=Admissions%20Inquiry%20`} target="_blank">{AdmissionsEmail}</a>
           </h4>
           <h4>
-            Call us at <span className="phone_number">(570) 890-5252</span>
+            Call us at <a className="remove_underline dark_link" href={LinkPhone}>{DisplayPhone}</a>
           </h4>
           <h4>
             Or chat with us live below

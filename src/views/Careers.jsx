@@ -3,6 +3,7 @@ import { changeTitle } from "../utilities/utilityFunctions";
 import Jobs from "../components/Jobs";
 import LinkDark from "../components/LinkDark"
 import positions from "../assets/json/careers.json"
+const CareersEmail = import.meta.env.VITE_CAREERS_EMAIL;
 
 const Careers = () => {
 
@@ -23,7 +24,8 @@ const Careers = () => {
                 TechByte Careers
               </h2>
               <h4>
-              Thank you for your interest in joining our team. At the moment we are not hiring, but if you feel you'd be a good fit please contact us at <LinkDark href="mailto:careers@techbyte-learning.com?subject=Career%20Inquiry%20" text="careers@techbyte-learning.com" />
+              Thank you for your interest in joining our team. At the moment we are not hiring, but if you feel you'd be a good fit please contact us at <a className="remove_underline dark_link" href={`mailto:${CareersEmail}?subject=Careers%20Inquiry%20`} target="_blank">{CareersEmail}</a>
+
               </h4>
             </div>
             <div className="box_right_img">

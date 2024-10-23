@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import { FaArrowUp } from "react-icons/fa";
 
 const GoToButton = () => {
 
@@ -25,7 +26,7 @@ const GoToButton = () => {
     return (
         <>
             {back_to_top_button && (
-                <button onClick={ scroll_up } className="go_top_button"><i className="fa fa-arrow-up" aria-hidden="true"></i></button>
+                <button onClick={ scroll_up } className="go_top_button"><FaArrowUp /></button>
             )}
         </>
     )

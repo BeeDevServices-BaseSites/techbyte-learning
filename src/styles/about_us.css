@@ -15,9 +15,11 @@
     text-wrap:nowrap;
 }
 
-.contacts i, .contacts svg path {
+.contacts svg {
     fill: var(--midnight_blue_text);
     color: var(--midnight_blue_text);
+    height: 35px;
+    width: 35px;
 }
 
 .phone_number {
@@ -50,5 +52,11 @@
 @media screen and (max-width: 450px) {
     .contact_container {
         width: 290px;
+    }
+    .contacts h4 {
+        font-size: 0.9rem;
+    }
+    .contacts a, .phone_number {
+        font-size: .8rem;
     }
 }

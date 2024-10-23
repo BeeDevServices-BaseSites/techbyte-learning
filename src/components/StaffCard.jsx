@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { FaArrowRight } from "react-icons/fa";
+
 
 const StaffCard = ({ card_data, show_tech }) => {
 
@@ -63,7 +65,7 @@ const StaffCard = ({ card_data, show_tech }) => {
                     <div className='r_wrap'>
                         <div className={`b_round ${hovered_card_id === staff.id ? 'b_round_hover' : ""}`}></div>
                         <div className={`s_round ${ clicked_card_id === staff.id ? 's_round_click' : 's_round_back' }`} onClick={() => handle_card_click( staff.id )}  onMouseEnter={() => handle_hover( staff.id )} onMouseLeave={() => handle_hover( null )} onTransitionEnd={() => handle_transition_end( staff.id )}>
-                            <div className={`s_arrow ${ flipped_cards.includes( staff.id ) ?     's_arrow_rotate' : ""}`}><i className="fa fa-arrow-right" aria-hidden="true"></i></div>
+                            <div className={`s_arrow ${ flipped_cards.includes( staff.id ) ?     's_arrow_rotate' : ""}`}><FaArrowRight /></div>
                         </div>
                     </div>
                 </div>
