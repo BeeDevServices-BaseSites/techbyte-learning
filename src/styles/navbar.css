@@ -66,8 +66,7 @@ header a img {
     margin-left: 30px;
 
     &:hover {
-        color: var(--white);
-        filter: drop-shadow(2px 2px 1px var(--shadow));
+        filter: drop-shadow(2px 2px 4px black);
     }
 }
 
