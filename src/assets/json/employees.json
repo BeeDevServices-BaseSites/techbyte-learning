@@ -95,11 +95,11 @@
         "technologies": [
             
         ],
-        "is_mentor": true,
+        "is_mentor": false,
         "is_tutor": false,
         "is_instructor": false,
         "is_TA": false,
-        "is_active": true
+        "is_active": false
     },
     {
         "id": "7",
@@ -115,8 +115,8 @@
         "is_mentor": false,
         "is_tutor": false,
         "is_instructor": false,
-        "is_TA": true,
-        "is_active": true
+        "is_TA": false,
+        "is_active": false
     },
     {
         "id": "8",
@@ -133,7 +133,7 @@
         "is_tutor": false,
         "is_instructor": false,
         "is_TA": false,
-        "is_active": true
+        "is_active": false
     },
     {
         "id": "9",
@@ -150,7 +150,7 @@
         "is_tutor": false,
         "is_instructor": false,
         "is_TA": false,
-        "is_active": true
+        "is_active": false
     },
     {
         "id": "10",
@@ -163,11 +163,11 @@
         "technologies": [
             "HTML", "CSS", "JavaScript", "React", "Next.js", "Django", "Python", "VS Code", "Git", "Github", "SQLite"
         ],
-        "is_mentor": true,
-        "is_tutor": true,
+        "is_mentor": false,
+        "is_tutor": false,
         "is_instructor": false,
-        "is_TA": true,
-        "is_active": true
+        "is_TA": false,
+        "is_active": false
     },
     {
         "id": "11",
@@ -197,7 +197,7 @@
         "technologies": [
             "Teaching & Developing Training Materials"
         ],
-        "is_mentor": true,
+        "is_mentor": false,
         "is_tutor": false,
         "is_instructor": false,
         "is_TA": false,
