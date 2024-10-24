@@ -1,0 +1,103 @@
+/*                             */
+/*      RECEIPT COMPONENT      */
+/*                             */
+
+.receipt_container {
+    width: 50%;
+    min-width: 285px;
+    margin: 60px auto 30px;
+    background-color: var(--grey_receipt);
+    padding: 24px 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: thin solid var(--midnight_blue_header);
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px var(--shadow);
+
+    .receipt_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.receipt_container a{
+    text-decoration: underline;
+    color: var(--midnight_blue_text);
+
+    &:hover {
+        color: var(--green);
+    }
+}
+
+.receipt_header {
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+
+    .receipt_left, .receipt_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 220px;
+        margin: 10px auto;
+    }
+}
+
+.receipt_table {
+    width: 90%;
+    margin: 25px auto;
+    border-collapse:inherit;
+    border-radius: 13px;
+    border-spacing: 0;
+    border: 2px solid var(--midnight_blue_header);
+
+    tr {
+        border: none;
+        border: none;    color: var(--midnight_blue_header);
+    }
+    th {
+        background: var(--dark_yellow);
+        background: var(--header_gradient);
+        width: 25%;
+        padding: 5px;
+        border: none;
+        color: var(--midnight_blue_text);
+    }
+    td {
+        text-align: center;
+        font-weight: 600;
+        background-color: var(--off_white);
+        border: none;
+        color: var(--midnight_blue_text);
+    }
+}
+
+/* ALL BELOW FOR ROUNDED BORDERS ON THE TABLE */
+.receipt_table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.receipt_table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.receipt_table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.receipt_table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.receipt_container tr:first-child th {
+    border-bottom: 2px solid var(--midnight_blue_header);
+}
+
+.receipt_container tr:last-child td:last-child, .receipt_container tr:last-child td:nth-child(3) {
+    border-top: 1px solid var(--midnight_blue_header);
+}
